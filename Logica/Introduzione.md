@@ -1,5 +1,7 @@
 Introduzione
 
+<strong>Accentrare il testo</strong>
+
 # Logica
 
 La **logica** è lo studio del ragionamento.
@@ -82,4 +84,73 @@ Nel caso ritrovo una contraddizione allora il contesto non esite e quindi il teo
 
 ### contrapposizione
 DImostrare un teorema attraverso il suo  contrario.
+Per dimostrare *Se P allora Q*
+si può dimostrare che *Se non P allora non Q*
+
+
+#### esempio
 *Se non piove mi bagno* ->  *se  piove non mi bagno*
+
+
+### dimostrazione per composizione
+
+Se si sono dimostrati i teoremi 
+*Se P1,P2,... Pn allora Q*
+*Se Q allora R*
+Se P1,P2,..., Pn allora R
+Infatti se valgono P1,.., Pn allora valendo Q e valendo Q vale anche R è possibile semplificare il teorema **sommando le dimostrazioni**.
+
+### dimostrazione per casi 
+
+Per dimostrare un teorema della forma 
+<p align=center> *Se P allora Q* <p>
+dove l'ipotesi P è:
+<p align=center>*P1 o P2 o ... Pn.*</p>
+è conveniente dividere in n teoremi la dimostrazione per semplificare il tutto in:
+<p align=center> *Se P1 allora Q* <p/>
+<p align=center> *Se P2 allora Q* <p/>
+<p align=center> *...* <p/>
+<p align=center> *...* <p/>
+<p align=center> *Se Pn allora Q* <p/>
+
+Perchè dividere permette di avere una dimostrazione "più forte" rispetto ad avere un generico P e siamo in grado di vedere ogni caso particolare di P per i quali il teorema è vero o falso.
+
+La dimostrazione per casi è solitamente utilizzata per teoremi assenti di ipotesi
+Per esempio supponiamo di voler dimostrare:
+<p align=center> Q </p>
+
+<strong>*(Aggiungere un esempio)* </strong>
+
+
+## Equivalenza  
+
+L'equivalenza significa da due affermazioni qualunque P e Q esse abbiano come conseguenza l'altra, quindi in qualunque contensto noi scegliamo esse saranno o vere o false entrambe:
+
+*Se P allora Q*
+*Se Q allora P*
+
+Se cambiano il contesto le due affermazioni sono una vera e l'altra falsa allora non si ottiene l'equivalenza.
+
+Inoltre ogni affermazione è equivalente a se stessa:
+
+*P ha come conseguenza P*
+
+
+# Glossario Proprietà
+
+## Conseguenze
+
+- **Riflessive**:
+- **Transitive**: 
+	- *Se P allora Q*.
+	- *Se Q allora R* .
+	- Si deduce che *Se P allora R*.
+
+## Equivalenza
+
+- **Riflessiva**: Qualunque sia P, si ha che:
+	- *P è equivalente a P.*
+- **Transitiva**: Qualunque siano P,Q e R:
+	- *Se P è equivalente a Q e Q è equivalente a R, allora P è equivalente a R.*
+- **Simmetrica**: Qualunque siano P e Q:
+	- *Se P è equivalente a Q, allora Q è equivalente a P*.
