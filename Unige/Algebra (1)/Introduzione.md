@@ -31,7 +31,7 @@ $$
 #### esempio:
 
 $$
-A = \{x | X è un inumero intero pari \}
+A = \{x | X \ è \ un \ numero \ intero \ pari \}
 $$
 
 $$
