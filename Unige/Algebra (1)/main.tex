@@ -1,5 +1,9 @@
 \documentclass{article}
 \usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{caption}
+
+
 
 \begin{document}
 
@@ -43,8 +47,7 @@ Che si legge \textit{A uguale agli elementi di x tali che $P(x)$}, dove:
         \item x sono gli elementi.
         \item $P(x)$ la proprietà dell'insieme \textit{A} che gli elementi di \textit{A} devono rispettare.
 \end{itemize}
-La proprietà $P(x)$ ha l'obbligo di essere \textbf{oggettiva} ovvero in grado di dare un valore oggettivamente vero o falso ad un elemento.
-
+La proprietà $P(x)$ ha l'obbligo di essere \textbf{oggettiva} ovvero in grado di dare un valore oggettivamente vero o falso ad un elemento. \par
 Possiamo utilizzare un esempio più concreto come può essere quello dei numeri pari scriviendo:
 \begin{equation}
         A = \{x : x \quad \textrm{è un numero pari} \} 
@@ -77,6 +80,9 @@ Ed infine, l'insieme vuoto che si rappresente con il simbolo:
 Spiegandolo brevemente questo insieme non contiene nessun elemento (infatti si definisce vuoto), e possiede alcune proprietà interessanti come per esempio quello di essere contenuto in qualsiasi insieme.
 
 
+\newpage
+
+
 \subsection{Connettivi Logici}
 Attraverso quelli che chiamiamo \textbf{connettivi logici} possiamo eseguire delle operazioni tra insiemi, da queste operazioni noi possiamo ricavare due valori: vero o falso,  andiamone a vederne alcune. \par
 
@@ -91,28 +97,26 @@ Prima di tutto definiamo due \textbf{proposizioni/affermazioni} fittizzie che ch
 
 
 \subsection{Quantificatori universali}
-Abbiamo poi quelli che si chiamano quantificatori universali che servono a andremo a spiegare partendo da una proposizione qualsiasi che chiameremo $P$. \par
+Abbiamo poi quelli che si chiamano quantificatori universali che servono a descrivere le proposizioni e le andremo a spiegare partendo da una proposizione qualsiasi che chiameremo $P$. \\
 
 Scriviamo:
 \begin{equation}
 P : \forall x \in A  
 \end{equation}
-per dire che \textbf{per ogni}elemento di $A$ la proposizione $P$ vale. \par
+per dire che \textbf{per ogni} elemento di $A$ la proposizione $P$ vale. \\
 
 Mentre scriviamo:
 \begin{equation}
 P : \exists x \in A  
 \end{equation}
-Per dire che \textbf{esiste almeno}un elemento di $A$ tale per cui la proposizione $P$ è vera. \par
+Per dire che \textbf{esiste almeno} un elemento di $A$ tale per cui la proposizione $P$ è vera. \\
 
-Possiamo fare un esempio concreto, prendiamo un insieme $A = {2,4,6,8}$ e $P(x) = \textrm{x + 2 è pari}$
-Avendo questi elementi possiamo dire che:
-
+Possiamo fare un esempio concreto, prendiamo un insieme $A = \{2,4,6,8\}$ e $P(x) = \textrm{x + 2 è pari}$ da questo possiamo dire con certezza che: 
 \begin{align}
         \forall x \in A \quad P(x) \quad \textrm{è vera in quanto ogni elemento di A è pari} \\
         \exists x \in A \quad P(x) \quad \textrm{è vera in quanto almeno un elemento di A è pari}
 \end{align}
-
+\\
 
 Abbiamo poi \textbf{l'esiste unico} che sta ad indicare che esiste un solo elemento in un dato insieme affinché una proposizione risulti vera:
 \begin{equation}
@@ -121,7 +125,72 @@ Abbiamo poi \textbf{l'esiste unico} che sta ad indicare che esiste un solo eleme
 
 
 \subsection{Definizioni}
+Ora andiamo ad introdurre alcune definizioni della teoria degli insiemi prendendo due insiemi fittizzi $A$ e $B$. \\
 
+Si dice che $A$ è contenuto in $B$ se:
+\begin{equation}
+        \{\forall x \in A: x \in B\}
+\end{equation}
+e si legge \textit{per tutti gli elementi di A sono elementi di B} e lo scriviamo in questo modo:
+\begin{equation}        
+        A \subseteq B        
+\end{equation}
+ovvero \textit{A sottoinsieme di B oppure A contenuto in B}. \newline
+
+Poi abbiamo $A$ uguale a $B$ se:
+\begin{equation}
+        x \in A \Leftrightarrow x \in B
+\end{equation}
+ovvero \textit{ogni elemento x appartiene sia ad A che a B}. \newline
+
+Troviamo poi \textbf{l'unione} tra due insiemi: 
+\begin{equation}
+        A \cup B
+\end{equation}
+che sta a significare che ogni elemento di A appartene anche a B, scritto in matematichese:
+\begin{equation}
+        A \cup B = \{x : (x \in A) \vee (x \in B)\}
+\end{equation} \newline
+
+
+Mentre \textbf{l'intersezione} che rappresenta l'insieme degli elementi in comune tra due insiemi si scrive: 
+\begin{equation}
+        A \cap B
+\end{equation}
+e significa:
+\begin{equation}
+        A \cap B = \{x : (x \in A) \wedge (x \in B)\}
+\end{equation} \newline
+
+Infine abbiamo la \textbf{differenza o complementare} che è praticamente una sottrazione tra insiemi si scrive:
+\begin{equation}
+        B \setminus A = {x : (x \in B) \wedge (x \notin A)}
+\end{equation}
+ovvero tutti gli elementi di $B$ che non appartengono ad $A$, spiegato meglio si tolgono a $B$ gli elementi che fanno parte di $A$. \newline
+
+Ma noi vogliamo esempi pratici giusto?, ok e  allora prendiamo due insiemi: $A = \{1,2,4\}$ e $B = \{1,2,3,4,5\}$ avremo che:
+\begin{align}
+        A \subseteq B \quad \textrm{vero} \\
+        A = B \quad \textrm{falso} \\
+        A \cup B = \{1, 2, 3, 4, 5\} \quad \textrm{oppure} \quad A \cup B = B \\
+        A \cap B = \{1, 2, 4\} \quad \textrm{oppure} \quad A \cap B = A \\ 
+        B \setminus A = \{3, 4, 5\}
+\end{align}
+
+
+\subsection{Insieme delle parti}
+L'insieme delle parti è l'insieme dei sottoinsiemi contenuti in un dato insieme, ok spieghiamolo meglio, l'insieme delle parti di un insieme $A$ è l'insieme degli elementi che sono sottoinsiemi dell'insieme $A$. \par
+Se la cosa vi confonde ancora facciamo un esempio concreto, prendiamo un insieme $A = \{1,2,3\}$ l'insieme delle parti, che si scrive $P(A)$ è:
+
+\begin{equation}
+        P(A) = \{\emptyset, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, A \}
+\end{equation}
+Adesso il concetto dovrebbe essere (spero), più chiaro. \newline 
+
+Prendiamo un esempio particolare dell'insieme delle parti, l'insieme delle parti dell'insieme vuoto, come sappiamo infatti l'insieme vuoto non ha nessun elemento, ma l'insieme delle parti è differente è l'insieme dei sotto insiemi di un dato insieme e come sappiamo ogni insieme ha come elemento l'insieme vuoto perciò:
+\begin{equation}
+        P\{\emptyset\} = \{\emptyset  \}
+\end{equation}
 
 
 
