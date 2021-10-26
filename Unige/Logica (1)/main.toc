@@ -1,0 +1,5 @@
+\contentsline {section}{\numberline {1}Cos'e' la Logica}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Teorema}{2}{}%
+\contentsline {subsection}{\numberline {1.2}Proposizione}{2}{}%
+\contentsline {section}{\numberline {2}Alberi}{2}{}%
+\contentsline {subsection}{\numberline {2.1}Connettivo principale}{2}{}%

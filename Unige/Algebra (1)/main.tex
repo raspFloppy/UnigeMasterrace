@@ -1,6 +1,5 @@
 \documentclass{article}
-
-
+\usepackage{amsmath}
 
 \begin{document}
 
@@ -25,7 +24,6 @@ Consideriamo di avere un insieme di nome \textit{A} e un elemento che chiamiamo 
 \end{equation}
 
 Mentre l'opposto ovvero che un elemento \textit{x} non fa parte di \textit{A} (perchè non rispetta le proprietà dell'insieme), allora si dice \textit{x} \textbf{Non Appartiene} ad \textit{A}, e ciò in si scrive (Nella lingua degli algebristi):
-
 \begin{equation}
         x \not \in A
 \end{equation}
@@ -43,8 +41,86 @@ Oppure (visto che piace ai matematici) sintetizzare ancora di più scrivendo:
 Che si legge \textit{A uguale agli elementi di x tali che $P(x)$}, dove:
 \begin{itemize}
         \item x sono gli elementi.
-        \item $P(x)$ la proprietà dell'insieme \textit(A) che gli elementi di \textit{A} devono rispettare.
+        \item $P(x)$ la proprietà dell'insieme \textit{A} che gli elementi di \textit{A} devono rispettare.
 \end{itemize}
+La proprietà $P(x)$ ha l'obbligo di essere \textbf{oggettiva} ovvero in grado di dare un valore oggettivamente vero o falso ad un elemento.
+
+Possiamo utilizzare un esempio più concreto come può essere quello dei numeri pari scriviendo:
+\begin{equation}
+        A = \{x : x \quad \textrm{è un numero pari} \} 
+\end{equation}
+
+In questo caso possiamo dire che:
+\begin{align*}
+        2 \in A \\
+        3 \not \in A \\
+        Alessio \not \in A \\ 
+\end{align*}
+In quanto 2 è pari perciò appartiene ad A, 3 è dispari quindi non appartiene all'insieme e Alessio non è un numero pari quindi non può appartenere all'insieme descritto.
+
+Questo perchè la proprietà di essere pari è \textbf{oggettiva} mentre per esempio:
+\begin{equation}
+        B = \{x : x \quad \textrm{è un libro interessante} \} 
+\end{equation}
+Non può essere un insieme in quanto essere un \textit{libro interessante} non è una proprietà oggettiva.
+
+Proseguendo possiamo trovare anche insiemi che contengono un solo elemento, questi insiemi sono detti \textbf{singoletti} e sono scritti:
+\begin{equation}
+        \{*\}
+\end{equation}
+Dove * rappresenta il singolo elemento.
+
+Ed infine, l'insieme vuoto che si rappresente con il simbolo:
+\begin{equation}
+        \emptyset 
+\end{equation}
+Spiegandolo brevemente questo insieme non contiene nessun elemento (infatti si definisce vuoto), e possiede alcune proprietà interessanti come per esempio quello di essere contenuto in qualsiasi insieme.
+
+
+\subsection{Connettivi Logici}
+Attraverso quelli che chiamiamo \textbf{connettivi logici} possiamo eseguire delle operazioni tra insiemi, da queste operazioni noi possiamo ricavare due valori: vero o falso,  andiamone a vederne alcune. \par
+
+Prima di tutto definiamo due \textbf{proposizioni/affermazioni} fittizzie che chiamiamo $P$ e $D$ e partendo da questi andiamo a scrivere le operazioi che si possono effettuare su di essi:
+\begin{itemize}
+        \item La \textbf{Disgiunzione} scritta: $P \vee D$ ha valore vero quando almeno una delle due proposizione risulta vera, se entrambe sono false avremo invece un valore falso. 
+        \item La \textbf{Congiunzione} scritta: $P \wedge D$ ha valore vero solo quando entrambe sono vere altrimenti otteniamo un valore falso.
+        \item La \textbf{Negazione} scritta: $\lnot P$ inverte il valore della propsizione, se infatti P è vera $\lnot P$ sarà falsa e viceversa.
+        \item L' \textbf{Implicazione} scritta: $P \Rightarrow D$ ha valore vero solo quando D è vera.
+        \item L' \textbf{Equivalenza} scritta: $P \Leftrightarrow D$ ha valore vero solo quando P e D hanno lo stesso valore logico (vero;vero), (falso;falso).
+\end{itemize}
+
+
+\subsection{Quantificatori universali}
+Abbiamo poi quelli che si chiamano quantificatori universali che servono a andremo a spiegare partendo da una proposizione qualsiasi che chiameremo $P$. \par
+
+Scriviamo:
+\begin{equation}
+P : \forall x \in A  
+\end{equation}
+per dire che \textbf{per ogni}elemento di $A$ la proposizione $P$ vale. \par
+
+Mentre scriviamo:
+\begin{equation}
+P : \exists x \in A  
+\end{equation}
+Per dire che \textbf{esiste almeno}un elemento di $A$ tale per cui la proposizione $P$ è vera. \par
+
+Possiamo fare un esempio concreto, prendiamo un insieme $A = {2,4,6,8}$ e $P(x) = \textrm{x + 2 è pari}$
+Avendo questi elementi possiamo dire che:
+
+\begin{align}
+        \forall x \in A \quad P(x) \quad \textrm{è vera in quanto ogni elemento di A è pari} \\
+        \exists x \in A \quad P(x) \quad \textrm{è vera in quanto almeno un elemento di A è pari}
+\end{align}
+
+
+Abbiamo poi \textbf{l'esiste unico} che sta ad indicare che esiste un solo elemento in un dato insieme affinché una proposizione risulti vera:
+\begin{equation}
+        \exists! x \in A
+\end{equation}
+
+
+\subsection{Definizioni}
 
 
 
