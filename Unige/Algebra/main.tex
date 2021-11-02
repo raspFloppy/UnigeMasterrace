@@ -1,7 +1,9 @@
 \documentclass{article}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{hyperref}
 \usepackage{caption}
+
 
 
 
@@ -192,6 +194,141 @@ Prendiamo un esempio particolare dell'insieme delle parti, l'insieme delle parti
         P\{\emptyset\} = \{\emptyset  \}
 \end{equation}
 
+
+\section{Esempio}
+
+Se considero la funzione:
+\begin{align}
+        f : Z^2 \rightarrow Z \\
+        (x,y) \rightarrow 21x - 15y
+\end{align}
+Dobbiamo dimostrare che la funzione è \textbf{iniettiva} o \textbf{surriettiva}.
+Prendiamo quindi $f(1,1) = 21 - 15 = 6$ possiamo dire che \newline
+$f \textrm{surriettiva} \Leftrightarrow f(Z^2) = 2$ \newline
+e che quindi:
+$f(Z^2) = {n \in Z : \exists(x,y) \in Z^2 n=f(x,y)=21x - 15y} $
+
+Quella che abbiamo appena scritto è una funzione \textbf{Diofantea} ovvero $MCD(21,15) : n \Leftrightarrow f(Z^2)={3k : k \in Z}$
+
+E quindi possiamo dire con certezza che la funzione non è né surriettiva e né iniettiva perchè
+
+
+\begin{align}
+        1 \notin f(Z^2) \\
+        \textrm{Perchè fissato } n \in 3Z
+\end{align}
+
+
+\section{Numeri Primi}
+\textit{I numeri primi sono quei \textbf{numeri interi maggiori di 1 che sono divisibili solo per 1 e se stessi}, se questa proprietà non viene rispettata allora il numero è invece \textbf{composto}} che scritto in matematichese:
+\begin{align}
+       a \in Z, a>1
+\end{align}
+
+Dimostramo ora un \textbf{Lemma} dei numeri primi:
+
+\begin{align}
+        a,b \in Z, p \in Z \quad \textrm{Primo} \\
+        p | a \quad \textrm{o} p | a*b
+\end{align}
+Quindi supponiamo di avere $p T a$, dimostriamo che $p|b$
+$p | a*b \Rightarrow \exists k \in Z$ tale che $a*b = k*p$
+
+Possiamo dimostrarlo utilizzando anche \textbf{Bezout} (DA FARE A CASA).
+
+
+\subsection{Teoria fondamentale dell'aritmetica}
+Ok prepariamoci a scrivere un pò di formule. \newline
+si dice che: $a \in Z, a \not = 0,1,-1$ allora $a$ si scrive in un modo unico come prodotto di primi:
+\begin{equation}
+a =
+\end{equation}
+
+
+\subsection{Teorema di euclide}
+Esistono infiniti numeri primi e lo possiamo dimostrare attraverso una dimostrazione per assurdo.
+Supponiamo infatti per assurdo che esistano soltato $p_1,\ldots,p_n$ numeri primi. \par
+Perfetto ora consideriamo un numero $N = p_1* \ldots * p_n$.
+La divisione euclidea di $N$ per $p_1$ da resto 1.
+Analogamente $N$ diviso per $N = p_1* \ldots * p_n$ da resto $1$ \par
+
+$p_1 \dag N$ \ldots  $p_n \dag N$ contraddice il teorema precedente e perciò abbiamo dimostrato che ci sono infiniti numeri primi, ok può non essere chiarissimo quindi vado ad utilizzare i numeri per fare un esempio:
+\begin{align*}
+        N = 2 * 7 + 1 = 14 + 1 = 15 \quad \textrm{Non è primo} \\
+        3 | 15, 5 | 15
+\end{align*}
+Abbiamo infatti trovato due nuovi numeri primi 3 e 5 quindi ci sono infiniti numeri primi.
+
+
+\section{Numeri complessi}
+Noi definiamo numeri complessi quei numeri che
+
+
+$C = R x R$ denotiamo che $(x,y) \in R^2$ come $x + iy$ e consideriamo $i$ come unità immaginaria, definiamo due operazioni su C
+\begin{itemize}
+        \item \textbf{Somma} $(x + iy) + (u + iv) := (x+u) + i(y+v)$ con $x,y,u,v \in R$
+        \item \textbf{Prodotto} $(x + iy) * (u + iv) := (xu - yv) + i(xv+yu)$ con $x,y,u,v \in R$
+\end{itemize}
+Utiiziamo un esempio numerico:
+
+
+\begin{align}
+        \textrm{Somma: } \quad (2 + 3i) + (4 + 5i) = (2 + 4) + i(3 + 5) = 6 + 8i \\
+        \textrm{Prodotto: } \quad (2 + 3i) + (4 + 5i) = (2 * 4) + i(2*5 + 3*4) = (8-15 + i(10+12)) = 7 + 22i
+\end{align}
+
+Anche se i calcoli possono sembrare complssi possiamo semplificare il tutto con questo ragionamento:
+
+\begin{equation}
+        i + i = (0*0 - 1*1) + i(0+1 + 0+1) = -1+ i0 = -1
+\end{equation}
+
+L'inverso di $x + iy$ rispetto al punto si denota con ${(x + iy)}^{-1}$ oppure $\frac{1}{x + iy}$
+
+
+\subsection{Piano di Gauss}
+Con $\mathbb{C} = \mathbb{R}^2$ consideriamo un piano cartesiano possiamo rappresentare tutti i numeri complessi utilizzando però delle coordinate dette \textbf{Polari}.
+Da un punto $x$ e un punto $y$ troviamo un punto $z$ possiamo infatti dire che $z = x+iy$ dove il $|z|$  rappresenta la distanza del punto $z$ dall'origine (l'intersezione dell'asse x e y) e lo si può calcolare attraverso \textbf{Pitagora} con $|z| := \sqrt{x^2+y^2}$. \par
+E quindi se $z \in \mathbb{R}$ allora $|z| = \sqrt{x^2}$
+
+\subsection{Proprietà dei numeri complessi}
+
+\begin{itemize}
+        \item $\overline{zw} = z * \overline{w}$ \\
+        \item $\overline{z} = z$ \\
+        \item $\overline{z+w} = \overline{z} + \overline{w}$ \\
+        \item $z+\overline{z}=2Re(z)$ \\
+        \item $z - \overline{z}=2Im(z)$ \\
+\end{itemize}
+Cercare le dimostrazioni su internet perchè oggi il prof ha deciso di fare il cosplay di Flash.
+
+Altre proprietà però con il modulo:
+\begin{itemize}
+        \item $z * \overline{z} =   |z|^{2}$ \\
+        \item $|zw| = |z| |w|$ \\
+        \item $|z+w| \le |z| + |w|$ \\
+        \item $z \not = 0 \quad z^{-1} = \frac{\overline{z}}{|z|^{2}} $ \\
+\end{itemize}
+
+\textbf{CERCARE SU INTERNET DISUGUAGLIANZA TRIANGOLARE E GRAFICO CON IL MODULO} \newline
+
+$\theta = \arg(z)$
+argomento di z angolo formato da z e l'asse $Re$ $\theta$ è definito a meno di $Re$ multipli di $2\pi$
+
+\textbf{CERCARE SU INTERNET FORMA TRIGONOMETRICA Z} \newline
+
+Ok facciamo un esempio, prendiamo $z = 2$, avremo quindi $|z| = \sqrt{2^2 = 2}$ e $\arg{z} = 0$.\par
+A questo punto possiamo dire che $z = 2(\cos(0) + i\sin(0))$ \newline
+
+\textbf{RICORDARSI CHE Re STA PER PARTE REALE (GRAZIE GABRIEL DEL PASSATO)} \newline
+
+
+\subsection{Forma esponenziale}
+Avendo $z \in \mathbb{C}, z \not = 0$ \newline
+$\theta = \arg z$ e  $z = | z | e^i*\arg(z)$ \newline
+$w \in \mathbb{C}, w \not = 0 := |z| (\cos(\theta) + i\sin(\theta))$ \newline
+
+\textbf{CERCARE FORMULA DI DE MOUIURE}
 
 
 \end{document}
