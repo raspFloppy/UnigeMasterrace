@@ -13,9 +13,10 @@
 \author{Floppy Loppy}
 \date{September 2021}
 \maketitle
-
 \tableofcontents
 \newpage
+
+
 
 
 \section{Insiemi}
@@ -126,6 +127,41 @@ Abbiamo poi \textbf{l'esiste unico} che sta ad indicare che esiste un solo eleme
 \end{equation}
 
 
+\subsection{Ordine dei quantificatori}
+Come ogni cosa in matematica bisogna rispettare gli ordini delle varie operazioni e questo vale anche per i quantificatori universali, si abbia per esempio:
+\begin{align}
+        P: x+y = 0  \quad \mbox{allora:} \\
+        \exists y \forall x P : \exists y \forall x \quad x + y = 0
+\end{align}
+La proposizione dice che esiste un numero che è opposto di ogni numero (perchè appunto un numero sommato al suo opposto è a zero). \par
+Se cambiamo l'ordine dei quantificatori però cambiamo il significato di della proposizione, proviamo:
+\begin{itemize}
+        \item $\forall y \exists x P$ che significa che ogni y esiste almeno un opposto 	
+        \item $\exists x \forall y$ che significa esiste almeno un x che è opposto a tutti i numeri
+\end{itemize}
+Come abbiamo visto abbiamo radicalmente cambiato il significato della proposizione P. \newline
+
+Nel caso ci fossero ancora dubbi utilizzerò questo esempio: \newline
+Prendiamo una proposizione $P$ che dice che x paga da bere a y, utilizzando gli esempi di prima avremo che:
+\begin{itemize}
+        \item $\forall y \exists x P$ che significa che ogni y a almeno una persona x che gli paga da bere. 
+        \item $\exists x \forall y$ che significa esiste almeno una persona x che paga da bere a tutti.
+\end{itemize}
+Spero che con questo esempio possa aver chiarito le idee.
+
+
+\subsection{Quantificatori Rquivalenti}
+Per indicare un equivalenza tra proposizioni noi utilizziamo il simbolo $\equiv$ un esempio di equivalenza tra proposizioni può essere: $\exists x \exists \equiv \exists y \exists x$.
+
+
+\subsection{Negazione di un quantificatore}
+Ok la negazione è semplice quindi non mi dilungherò molto:
+Prendiamo una proposizone $P$: lo studente supererà l'esame, avremo:
+
+
+
+
+
 \subsection{Definizioni}
 Ora andiamo ad introdurre alcune definizioni della teoria degli insiemi prendendo due insiemi fittizzi $A$ e $B$. \\
 
@@ -195,34 +231,54 @@ Prendiamo un esempio particolare dell'insieme delle parti, l'insieme delle parti
 \end{equation}
 
 
-\section{Esempio}
+\subsection{Proprietà degli insiemi}
+Ora mostriamo alcune proprietà degli insiemi per poi successivamente dimostrarli:
+\begin{enumerate}
+        \item $A \cup B = B \cup A$\label{item:prop1}	
+        \item $(A \cup B) = A \cup (B \cup C)$\label{item:prop2}
+        \item $A \cup A = A \quad \mbox{Idempotenza}$\label{item:prop3}
+        \item $(A \cap B) \cap C = A \cap (B \cap C)$\label{item:prop4}
+        \item $A \cap A = A$\label{item:prop5}
+\end{enumerate}
 
+
+\textbf{AGGIUNGERE LE DIMOSTRAZIONI}
+
+
+\subsection{Insiemi numerici}
+
+
+
+
+\newpage
+\section{Esempio}
 Se considero la funzione:
 \begin{align}
-        f : Z^2 \rightarrow Z \\
+        f :  \mathbb{Z}^{2} \rightarrow \mathbb{Z} \\
         (x,y) \rightarrow 21x - 15y
 \end{align}
 Dobbiamo dimostrare che la funzione è \textbf{iniettiva} o \textbf{surriettiva}.
 Prendiamo quindi $f(1,1) = 21 - 15 = 6$ possiamo dire che \newline
-$f \textrm{surriettiva} \Leftrightarrow f(Z^2) = 2$ \newline
+$f \textrm{surriettiva} \Leftrightarrow f(\mathbb{Z}^{2}) = 2$
 e che quindi:
-$f(Z^2) = {n \in Z : \exists(x,y) \in Z^2 n=f(x,y)=21x - 15y} $
+$f(\mathbb{Z}^{2}) = {n \in \mathbb{Z} : \exists(x,y) \in \mathbb{Z}^{2} n=f(x,y)=21x - 15y} $
 
-Quella che abbiamo appena scritto è una funzione \textbf{Diofantea} ovvero $MCD(21,15) : n \Leftrightarrow f(Z^2)={3k : k \in Z}$
+Quella che abbiamo appena scritto è una funzione \textbf{Diofantea} ovvero $MCD(21,15) : n \Leftrightarrow f(\mathbb{Z}^{2})={3k : k \in \mathbb{Z}}$. \par
 
-E quindi possiamo dire con certezza che la funzione non è né surriettiva e né iniettiva perchè
-
-
+E quindi possiamo dire con certezza che la funzione non è né surriettiva e né iniettiva perchè:
 \begin{align}
-        1 \notin f(Z^2) \\
-        \textrm{Perchè fissato } n \in 3Z
+        1 \notin f(\mathbb{Z}^{2}) \\
+        \textrm{Perchè fissato } & n \in 3Z
 \end{align}
 
 
+
+
+\newpage
 \section{Numeri Primi}
 \textit{I numeri primi sono quei \textbf{numeri interi maggiori di 1 che sono divisibili solo per 1 e se stessi}, se questa proprietà non viene rispettata allora il numero è invece \textbf{composto}} che scritto in matematichese:
 \begin{align}
-       a \in Z, a>1
+       a \in \mathbb{Z}, a>1
 \end{align}
 
 Dimostramo ora un \textbf{Lemma} dei numeri primi:
@@ -269,16 +325,14 @@ $C = R x R$ denotiamo che $(x,y) \in R^2$ come $x + iy$ e consideriamo $i$ come 
         \item \textbf{Somma} $(x + iy) + (u + iv) := (x+u) + i(y+v)$ con $x,y,u,v \in R$
         \item \textbf{Prodotto} $(x + iy) * (u + iv) := (xu - yv) + i(xv+yu)$ con $x,y,u,v \in R$
 \end{itemize}
+
 Utiiziamo un esempio numerico:
-
-
 \begin{align}
         \textrm{Somma: } \quad (2 + 3i) + (4 + 5i) = (2 + 4) + i(3 + 5) = 6 + 8i \\
         \textrm{Prodotto: } \quad (2 + 3i) + (4 + 5i) = (2 * 4) + i(2*5 + 3*4) = (8-15 + i(10+12)) = 7 + 22i
 \end{align}
 
 Anche se i calcoli possono sembrare complssi possiamo semplificare il tutto con questo ragionamento:
-
 \begin{equation}
         i + i = (0*0 - 1*1) + i(0+1 + 0+1) = -1+ i0 = -1
 \end{equation}
@@ -329,6 +383,73 @@ $\theta = \arg z$ e  $z = | z | e^i*\arg(z)$ \newline
 $w \in \mathbb{C}, w \not = 0 := |z| (\cos(\theta) + i\sin(\theta))$ \newline
 
 \textbf{CERCARE FORMULA DI DE MOUIURE}
+
+
+\subsection{Equazioni di secondo grado complesse}
+Una radice semplice si calcola quando si hanno equazioni di grado inferiore al terzo, nello specifico ogni equazione di secondo grado $ax^2+bx+c = 0$ con $a,b,c \in \mathbb{C}$ ha due soluzioni in $\mathbb{C}$. \par
+Si trovano così  $\Delta := b^2 - 4ac$ dove:
+\begin{itemize}
+        \item $\Delta = 0 \quad \mbox{prendo} \quad \delta_1 = \delta_2 = 0$	
+        \item $\Delta \not = 0 \quad \mbox{per il teorema} \quad \exists \delta_1,\delta_2 \in \mathbb{C} \quad \mbox{distinti, tali che} \quad \delta_1^2 = \delta_2^2 = \Delta$	
+\end{itemize}
+
+Le soluzioni dell'equazione di secondo grado si trovano facendo:
+\begin{align}
+        z_1 = \frac{-b + \delta_1}{2a} \\
+        z_1 = \frac{-b + \delta_2}{2a} 
+\end{align}
+
+Mentre:
+\begin{align}
+        \mbox{Se} \quad \Delta = 0, \delta_1=\delta_2 \quad \mbox{quindi} \quad z_1=z_2 \\
+        \mbox{Se} \quad \Delta < 0, \delta_1 \not = \delta_2 \quad \mbox{quindi} \quad z_1 \not = z_2 
+\end{align}
+
+
+\subsection{Radici complesse}
+le $Zk$ sono chiamate radici complesse che se le andassimo a disegnare sul piano di Gauss formerebbero i su \newline
+
+Facciamo un esempio, le radici cubiche $(n=3)$ di $z = -8 +i*0$ del modulo di $z, \quad|z| = \sqrt{Re(z^2)+In(z^2)} = \sqrt{-8^2 + 0^2} = \sqrt{(-8^2)} = 8$.
+
+
+\subsection{Teorema fondametale dell'Algebra}
+Il teorema fondamentale dell'algebra dice che ogni polinomio in $\mathbb{R}$ o $\mathbb{C}$ di grado $\geq 1$ ha soluzioni nei $\mathbb{C}$ \newline 
+Ovvero sia $p(x) = a_n X^n + a_{n-1} X^{n-1} + \cdots + a_1 X + a_0$ un polinomio, $p(x) = a_n  + a_{n-1} + \cdots + a_1 + a_0 \in \mathbb{C} a_n \not = 0$ di grado $n$ \par
+Allora $p(x)$ ha $n$ soluzioni in $\mathbb{C}$ contate con la loro molteciplità.\par
+Cioè $p(x)$ si può decomporre come $p(x) = {a_(x-w_1)}^{m_1} \cdots {(x-w_r)}^{m_r}$ \newline
+
+(a detta del prof è troppo complesso dimostrarlo e se lo dice lui io mi fido)
+
+
+
+
+
+\newpage
+\section{Relazioni di Equivalenza}
+Prima di tutto definiamo un insieme $A$, una relazione $R \subseteq AxA$ si dice di equivalenza se soddisfa:
+
+\begin{enumerate}
+        \item \underline{Riflessiva} ($\forall a \in A (a,a) \in \mathbb{R})$
+        \item \underline{Simmetrica} ($(a,b) \in \mathbb{R} \Rightarrow (b,a) \in \mathbb{R}$)
+        \item \underline{Transitiva} ($(a,b) \in \mathbb{R},(b,c) \in \mathbb{R} \Rightarrow (a,c) \in \mathbb{R}$)
+\end{enumerate}
+
+
+Generalmente indichiamo una relazione d'equivalenza con un simbolo  $\backsim$ oppure $\equiv$ e scriviamo $a \backsim b$ oppure $a \equiv b$ oppure $aRb$ per indicare $(a,b) \in \mathbb{R}$
+
+
+\subsection{Equivalenza modulare}
+$A = \mathbb{Z}$ fissiamo $n \in \mathbb{Z}, n \geq 1$ definiamo $\backsim_n$ \par
+$x \backsim_n y \Leftrightarrow \exists k \in \mathbb{Z}$ tale che $x-y = Kn$ si diche che $x$ è congruo a $y$ mmodulo $n$ e si scrive $x \equiv y MOD n$.
+
+
+$\forall x \in \mathbb{Z} \mbox{vale} \quad x \equiv x \mod n$ perchè $\exists K \in \mathbb{Z}$ tale che $x-x = K*n$ 
+
+
+\subsection{Classe di equivalenza}
+Sia $A$ un insieme e sia $\backsim$ una relazione di equivalenza su $A$. La \underline{classe di equivalenza} di un elemento $a \in A$ con $\overline{a} = [a] := \{b\in A : b \backsim a\}$ è un insieme. \par
+$a$ si chiama rappresentante della classe $[a]$ e notare bene che $a \in [a]$ perchè $a \backsim a$.
+
 
 
 \end{document}
