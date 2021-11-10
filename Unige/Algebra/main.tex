@@ -83,9 +83,6 @@ Ed infine, l'insieme vuoto che si rappresente con il simbolo:
 Spiegandolo brevemente questo insieme non contiene nessun elemento (infatti si definisce vuoto), e possiede alcune proprietà interessanti come per esempio quello di essere contenuto in qualsiasi insieme.
 
 
-\newpage
-
-
 \subsection{Connettivi Logici}
 Attraverso quelli che chiamiamo \textbf{connettivi logici} possiamo eseguire delle operazioni tra insiemi, da queste operazioni noi possiamo ricavare due valori: vero o falso,  andiamone a vederne alcune. \par
 
@@ -100,13 +97,13 @@ Prima di tutto definiamo due \textbf{proposizioni/affermazioni} fittizzie che ch
 
 
 \subsection{Quantificatori universali}
-Abbiamo poi quelli che si chiamano quantificatori universali che servono a descrivere le proposizioni e le andremo a spiegare partendo da una proposizione qualsiasi che chiameremo $P$. \\
+Abbiamo poi quelli che si chiamano quantificatori universali che servono a descrivere le proposizioni e le andremo a spiegare partendo da una proposizione qualsiasi che chiameremo $P$. \newline
 
 Scriviamo:
 \begin{equation}
 P : \forall x \in A  
 \end{equation}
-per dire che \textbf{per ogni} elemento di $A$ la proposizione $P$ vale. \\
+per dire che \textbf{per ogni} elemento di $A$ la proposizione $P$ vale. \newline
 
 Mentre scriviamo:
 \begin{equation}
@@ -449,6 +446,109 @@ $\forall x \in \mathbb{Z} \mbox{vale} \quad x \equiv x \mod n$ perchè $\exists 
 \subsection{Classe di equivalenza}
 Sia $A$ un insieme e sia $\backsim$ una relazione di equivalenza su $A$. La \underline{classe di equivalenza} di un elemento $a \in A$ con $\overline{a} = [a] := \{b\in A : b \backsim a\}$ è un insieme. \par
 $a$ si chiama rappresentante della classe $[a]$ e notare bene che $a \in [a]$ perchè $a \backsim a$.
+
+
+
+
+\newpage
+\section{Cardinalità}
+Con \textbf{cardinalità} noi intendiamo definire quali e quanti elementi fanno parte di un certo insieme utilizzando il linguaggio matematico. \par
+
+Supponiamo per esempio che $A,B$ sono insiemi, possiamo dire che $A,B$ sono \textbf{equipotenti} se $\exists f:A \rightarrow B$ bigettiva, in tal caso scriviamo $|A| = |B|$. \par
+
+Ok detto questo mostriamo alcune proprietà:
+\begin{enumerate}
+        \item \textbf{Riflessiva} A è equipotente con $A$ tramite $id_A A \rightarrow A$ bigettiva.
+        \item \textbf{Simmetrica} $A$ è equipotente a $B$ $\Rightarrow \exists f:A \rightarrow B$ bigettiva. 
+        \item \textbf{Transitiva} $A$ equipotente a $B$, $B$ equipotente a $C$.	
+\end{enumerate}
+
+Con X insieme diciamo che:
+\begin{itemize}
+        \item $X$ è finito se $X = \not 0$ oppure $\exists n \in \mathbb{N}$ tale che $X$ è equivalente a $\{1,2,3,4,n\}$ e in tal caso diciamo che $X$ ha cardinalità $n$ scrivendo $|X| = n$.
+        \item X è \textbf{infinito} se X non è finito (ovviamente), si dice che X insieme è $= \not 0$ allora sono equivalenti e si dice anche che:
+        \begin{enumerate}
+                \item$X$ è infinito
+                \item $\exists Y \subset X$
+                \item c	
+        \end{enumerate}
+        \item 	
+\end{itemize}
+
+$X$ si dice \textbf{numerabile} (o di cardinalità numerabile) se $|X| = |\mathbb{N}|$ e scriviamo $|X| = X_0$ e lo si chiama \textbf{Aleph Zero}. \par
+Se $X$ è numerabile $\Rightarrow X$ infinito. \newline
+$f \circ s \circ f^{-1} X \rightarrow X$ iniettiva, ma non surriettiva.
+
+Esempio proviamo a vedere se $\mathbb{Z}$ che contiene $\mathbb{N}$. \par
+\begin{equation}
+        f : \mathbb{N} \rightarrow \mathbb{Z}
+\end{equation}
+ok ora vediamo che: \newline
+
+\[
+f(n) =
+\begin{cases}
+        \frac{n}{2} \quad \mbox{se $n$ è pari} \\
+        \frac{n + 1}{2} \quad \mbox{se $n$ è dispari}
+\end{cases}
+\]
+
+se invece $f$ è bigettiva, l'inversa è $f^{-1}: \mathbb{Z} \to \mathbb{N}$
+
+
+$\mathbb{N} x \mathbb{N}$ è numerabile dimostriamo che $f: \mathbb{N} x \mathbb{N} \to \mathbb{N}$.
+
+\textbf{AGGIUNGERE ESEMPI}.
+
+Definiamo $A,B$ insiemi e scriviamo: 
+%\begin{itemize}
+%        \item $|A| \le |B|$ se $\exists f:A \to B$ iniettiva.
+%        \item $|A| < |B|$ se: $|A| \le |B|$ ($\exists f:A \to B)$ iniettiva. $|A| \not = |B|$ ($\not \exists f:A \to B)$ iniettiva$
+%\end{itemize}
+
+\textbf{Altra parte di lezione mancante}
+
+\subsection{Teorema di Cantor-Bernstein}
+$A,B$ insiemi, $\exists f : A \to B$ iniettiva, $g: B \to A$ iniettiva, allora esiste una funzione $\exists h: A \to B$ bigettiva. \par
+In formule questo ci dice che se:
+\begin{equation}
+        |A| \le |B| \quad |B| \le |A| \Rightarrow |A| = |B|
+\end{equation} \newline
+
+Se $A,B$ finiti, $|A| = n, \quad |B|= m \quad n,m \in \mathbb{N}$ allora: 
+
+\[n=m :
+\begin{cases}
+        |A| \le |B| \Rightarrow n \le m \\
+        |B| \le |A| \Rightarrow m \le n
+\end{cases}
+\]
+
+
+Definiamo $X$ insieme, diciamo che:
+\begin{itemize}
+        \item X è \underline{al più numerabile} se $|X| \le |\mathbb{N}|$	
+        \item X è \underline{più che numerabile} se $|X| > |\mathbb{N}|$
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
