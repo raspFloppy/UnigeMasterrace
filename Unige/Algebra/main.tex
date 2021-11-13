@@ -5,8 +5,6 @@
 \usepackage{caption}
 
 
-
-
 \begin{document}
 
 \title{Appunti belli di Algebra}
@@ -15,7 +13,6 @@
 \maketitle
 \tableofcontents
 \newpage
-
 
 
 
@@ -469,10 +466,9 @@ Con X insieme diciamo che:
         \item X è \textbf{infinito} se X non è finito (ovviamente), si dice che X insieme è $= \not 0$ allora sono equivalenti e si dice anche che:
         \begin{enumerate}
                 \item$X$ è infinito
-                \item $\exists Y \subset X$
-                \item c	
+                \item $\exists Y \subsetneq X$ tale che $|Y|=|X|$.
+                \item $\exists f:X \to X$ iniettiva, ma non suriettiva.
         \end{enumerate}
-        \item 	
 \end{itemize}
 
 $X$ si dice \textbf{numerabile} (o di cardinalità numerabile) se $|X| = |\mathbb{N}|$ e scriviamo $|X| = X_0$ e lo si chiama \textbf{Aleph Zero}. \par
@@ -531,24 +527,91 @@ Definiamo $X$ insieme, diciamo che:
         \item X è \underline{più che numerabile} se $|X| > |\mathbb{N}|$
 \end{itemize}
 
+\textbf{PROBABILMENTE C'È TROPPA ROBA CHE NON HO SCRITTO} \newline
+
+
+\subsection{Impossibilità della surriettività dei numerabili}
+Prendiamo la proposizione che prende $X$ insieme con $X \not =  \not 0$ allora non esite alcuna mappa surriettiva $X \to P(x)$ \par
+In particolare questo ci dice che $|X| \not = |P(x)|$ e quindi $X$ e $P(x)$ non sono equipotenti.
+
+Bene proviamo a dimostrare quello che abbiamo appena detto per assurdo, supponiamo infatti per assurdo che $\exists f : X \to P(x)$ surriettiva e prendiamo un insieme $S = {x \in X : x \not \in f(x)}$. \par 
+Abbiamo che:
+\begin{itemize}
+        \item $S \subseteq X$, Eventualmente $S$ può essere $\emptyset$.
+        \item $S \in P(x)$ ed essendo $f$ surgettiva $\exists s \in X$ tale che $f(s) = S$ 
+\end{itemize}
+Quindi la domanda è $s \in S$ o $s \not \in S$, andiamo a trovare la contraddizione:
+\begin{enumerate}
+        \item Se $s \in S$ allora $s \not \in f(s) = S$ che è una \textbf{CONTRADDIZIONE}.
+        \item Se $s \not \in S$ allora $s \in f(s) = S$ che è anch'essa una \textbf{CONTRADDIZIONE}.
+\end{enumerate}
+
+Da tutto questo osserviamo che $X \not = \emptyset \exists f : X \to P(x)$ iniettiva e cioè $f(x) = {x}$ (il singoletto composto da x) e ciò implica che $\Rightarrow |X| \le |P(x)|$. 
+
+La proposione precedente ci dice che $|X| < |P(x)|$ ad esempio per $X = \mathbb{N}$ si ha: \newline
+$|P(\mathbb{N})| > |\mathbb{N}| = \aleph_0 $ dove $P(\mathbb{N})$ è più che numerabile.
+
+\subsection{Argomento che il prof si tiene segreto}
+Definiamo $A,B$ insiemi.
+\begin{equation}
+        B^A := {f:A \to B \quad \mbox{funzione}}
+\end{equation}
+E nel caso in cui $B = {0,1}$ si usa indicare ${0,1}^A$ con $2^A$.
+
+
+Vogliamo $X$ insieme dove $X \not = \emptyset$ allora $P(x)$ è equipotente a ${0,1}^x$. \newline
+$|P(x)| = |{0,1}^x|$.
+
+Dimostriamo (quello che ho scritto senza sapere cosa stavo scrivendo) con:
+\begin{align*}
+        \phi : {0,1}^x \to P(x) \\
+        f \mapsto {f(1)}^{-1} = \{x \in X : f(x) = 1\} \subseteq X
+\end{align*}
+
+Iniziamo con le dimostrazioni:
+\underline{$\phi$ surriettiva} sia $A \in P(x), A \subseteq X$ sottoinsieme e considero $X_A : X \to {0,1}$.
 
 
 
+\[x \mapsto  
+\begin{cases}
+        1 \quad \mbox{se} \quad x \in A \\
+        0 \quad \mbox{se} \quad x \not \in A \\
+\end{cases}
+\]
+
+\begin{align*}
+X_A \in {0,1}^X \\
+\phi(X_A) = {X_A}{-1}(1) = \{x \in X : X_A(x) = 1\} = \{x \in X : x \in A\} = A.
+\end{align*}
+
+Ora che non so che cazzo ho scritto prendiamo $\phi$ iniettiva e $f,g \in {0,1}^x, f \not = g$ tesi $\phi(f) \not = \phi(g)$.
+$f,g : X \to {0,1}$ \newline
+$f \not = g \Rightarrow \exists x \in X$ tale che $f(x) \not = g(x)$.
+Supponiamo che $f(x) = 1 \Rightarrow g(x) = 0$ \newline
+$\Rightarrow x \in {f}{-1} = \phi(f) x \not \in {g}{-1}(1) = \phi(g) \Rightarrow \phi(f) \not = \phi(g)$
+
+\textbf{MA CHE CAZZO HO APPENA SCRITTO} \newline
 
 
+Prendiamo il lemma $A = {a_1,\ldots,a_n}$ insieme finito, $B$ insieme finito, $|B^A| = |B^n|$ che (a quanto dice il prof) è facilmente dimostrabile:
+\begin{align*}
+         \varphi : B^A \to B^n = Bx,\ldots,xB \\
+                   f \mapsto (f(a_1),\ldots,f(a_n))
+\end{align*}
+
+Corollario $A,B$ insiemi finiti, allora $AxB, B^A, P(A)$ sono insiemi finiti di cardinalità:
+\begin{itemize}
+        \item $|A*B| = |A|*|B|$	
+        \item $|B^A| = |B|^{|A|}$
+        \item $P(A) = |{0,1}^A| = |\{0,1\}|^{|A|} = 2^{|A|}$	
+\end{itemize}
 
 
+\subsection{Cardinalità dei $\mathbb{Q}$}
+\underline{Lemma} prendiamo $\{X_m : m \in \mathbb{N}\}, |X_n| \le \aleph_0, X_m \not = \emptyset \forall n \in \mathbb{N}$ se $|Xm| < \aleph_0 \forall n \in \mathbb{N}$ allora $X_n \cap X_m = \emptyset$ se $n \not = m$ allora $|\bigcup_{n \in \mathbb{N}}^{1}X_n| = \aleph_0$ \newline
 
-
-
-
-
-
-
-
-
-
-
+\textit{unione numerabile di numerabile è numerabile}, ok campione.
 
 
 
