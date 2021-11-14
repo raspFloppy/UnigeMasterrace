@@ -3,7 +3,8 @@
 \usepackage{amssymb}
 \usepackage{hyperref}
 \usepackage{caption}
-
+\usepackage{graphicx}
+\graphicspath{{./images}}
 
 
 
@@ -147,16 +148,23 @@ Prendiamo una proposizione $P$ che dice che x paga da bere a y, utilizzando gli 
 Spero che con questo esempio possa aver chiarito le idee.
 
 
-\subsection{Quantificatori Rquivalenti}
+\subsection{Quantificatori Equivalenti}
 Per indicare un equivalenza tra proposizioni noi utilizziamo il simbolo $\equiv$ un esempio di equivalenza tra proposizioni può essere: $\exists x \exists \equiv \exists y \exists x$.
 
 
 \subsection{Negazione di un quantificatore}
 Ok la negazione è semplice quindi non mi dilungherò molto:
 Prendiamo una proposizone $P$: lo studente supererà l'esame, avremo:
+\begin{itemize}
+        \item $\lnot \forall x P(x)$, che significa che \underline{non tutti gli studenti hanno superato l'esame} (che non significa che nessuno ha superato l'esame).    
+        \item $\lnot \exists x P(x)$, che significa che \underline{non esiste alcuno studente che ha superato l'esame}.
+\end{itemize}
 
-
-
+Se volessimo fare un equivalenza potremo dire che: \newline
+\begin{itemize}
+        \item $\lnot \forall x P \equiv \exists x \lnot P$ 
+        \item $\lnot \exists x P \equiv \forall x \lnot P$
+\end{itemize}
 
 
 \subsection{Definizioni}
@@ -179,8 +187,8 @@ Poi abbiamo $A$ uguale a $B$ se:
 ovvero \textit{ogni elemento x appartiene sia ad A che a B}. \newline
 
 Troviamo poi \textbf{l'unione} tra due insiemi: 
-\begin{equation}
-        A \cup B
+\begin{equation}\label{eq:def_unione}
+        A \cup B 
 \end{equation}
 che sta a significare che ogni elemento di A appartene anche a B, scritto in matematichese:
 \begin{equation}
@@ -204,13 +212,13 @@ Infine abbiamo la \textbf{differenza o complementare} che è praticamente una so
 ovvero tutti gli elementi di $B$ che non appartengono ad $A$, spiegato meglio si tolgono a $B$ gli elementi che fanno parte di $A$. \newline
 
 Ma noi vogliamo esempi pratici giusto?, ok e  allora prendiamo due insiemi: $A = \{1,2,4\}$ e $B = \{1,2,3,4,5\}$ avremo che:
-\begin{align}
-        A \subseteq B \quad \textrm{vero} \\
-        A = B \quad \textrm{falso} \\
-        A \cup B = \{1, 2, 3, 4, 5\} \quad \textrm{oppure} \quad A \cup B = B \\
-        A \cap B = \{1, 2, 4\} \quad \textrm{oppure} \quad A \cap B = A \\ 
-        B \setminus A = \{3, 4, 5\}
-\end{align}
+\begin{itemize}
+        \item $A \subseteq B \quad \mbox{vero}$ 
+        \item $A = B \quad \mbox{falso}$
+        \item $A \cup B = \{1, 2, 3, 4, 5\} \quad \mbox{oppure} \quad A \cup B = B$
+        \item $A \cap B = \{1, 2, 4\} \quad \mbox{oppure} \quad A \cap B = A$
+        \item $B \setminus A = \{3, 4, 5\}$
+\end{itemize}
 
 
 \subsection{Insieme delle parti}
@@ -222,7 +230,7 @@ Se la cosa vi confonde ancora facciamo un esempio concreto, prendiamo un insieme
 \end{equation}
 Adesso il concetto dovrebbe essere (spero), più chiaro. \newline 
 
-Prendiamo un esempio particolare dell'insieme delle parti, l'insieme delle parti dell'insieme vuoto, come sappiamo infatti l'insieme vuoto non ha nessun elemento, ma l'insieme delle parti è differente è l'insieme dei sotto insiemi di un dato insieme e come sappiamo ogni insieme ha come elemento l'insieme vuoto perciò:
+Prendiamo un esempio particolare dell'insieme delle parti, \textbf{l'insieme delle parti dell'insieme vuoto}, come sappiamo infatti l'insieme vuoto non ha nessun elemento, ma l'insieme delle parti è differente è l'insieme dei sotto insiemi di un dato insieme e come sappiamo ogni insieme ha come elemento l'insieme vuoto perciò:
 \begin{equation}
         P\{\emptyset\} = \{\emptyset  \}
 \end{equation}
@@ -231,18 +239,46 @@ Prendiamo un esempio particolare dell'insieme delle parti, l'insieme delle parti
 \subsection{Proprietà degli insiemi}
 Ora mostriamo alcune proprietà degli insiemi per poi successivamente dimostrarli:
 \begin{enumerate}
-        \item $A \cup B = B \cup A$\label{item:prop1}	
-        \item $(A \cup B) = A \cup (B \cup C)$\label{item:prop2}
-        \item $A \cup A = A \quad \mbox{Idempotenza}$\label{item:prop3}
-        \item $(A \cap B) \cap C = A \cap (B \cap C)$\label{item:prop4}
-        \item $A \cap A = A$\label{item:prop5}
+        \item $A \cup B = B \cup A$\label{itm:prop1}	
+        \item $(A \cup B) = A \cup (B \cup C)$\label{itm:prop_associativa1}
+        \item $A \cup A = A \quad \mbox{Idempotenza}$\label{itm:prop3}
+        \item $(A \cap B) \cap C = A \cap (B \cap C)$\label{itm:prop_associativa2} 
+        \item $A \cap A = A$\label{itm:prop5}
 \end{enumerate}
 
-
-\textbf{AGGIUNGERE LE DIMOSTRAZIONI}
+olte di queste sono facilmente dimostrabili, proviamo ad esempio a dimostrare la~\ref{itm:prop_associativa1} che è appunto la proprietà associativa: \newline
+Se noi abbiamo che $x \in (A \cup B) \cup C \Leftrightarrow (x \in A \cup B) \lor (x \in C)$ perchè appunto se $x$ appartiene all'insieme formato dall'unione di $A,B,C$ e conoscendo la definizione dell'unione~\ref{eq:def_unione}  sappiamo che $x$ deve appartenere almeno ad uno tra $A,B,C$ e quindi possiamo scrivere che $(x \in A) \lor (x \in B) \lor (x \in C)$ che può essere riscritta in $x \in A \lor ((x \in B) \lor (x \in C))$ che sarebbe come scrivere (se seguiamo la definizione di unione) $x \in A \lor (x \in B \cup C)$ che si può trasformare in $x \in A \cup (x \in B \cup C)$.
+Dimostrando che $x$ può appartenere all'insieme formato da $A,B,C$ anche cambiando l'ordine in è scritta l'unione dei tre insiemi, noi abbiamo dimostrato proprio che~\ref{itm:prop_associativa1} è vera e anche se non l'ho dimostrato anche~\ref{itm:prop_associativa2} è vera.\par
+Se avete capito il meccanismo con il quale ho dimostrato~\ref{itm:prop_associativa1} allora potete facilmente dimostrare~\ref{itm:prop1}~\ref{itm:prop3} e~\ref{itm:prop5}.
 
 
 \subsection{Insiemi numerici}
+Gli insiemi numerici sono appunto gli insiemi formati da numeri. \par
+Non mi dilungherò troppo in questa parte perchè molte nozioni sono già state apprese alle superiori ed alle medie, vi basti sapere che:
+\begin{itemize}
+        \item $0$ è contenuto in $\mathbb{N}$
+        \item Di $\mathbb{C}$ Parleremo esautivamente al capitolo~\ref{sec:numeri_complessi} 
+\end{itemize}
+
+Per fare un breve riassunto degli insiemi numerici:
+\begin{figure}[h]
+        \centering
+                \includegraphics[width=0.5\textwidth]{insiemi_numerici.png}
+        \caption{Insiemi numerici}\label{fig:insiemi_numerici}
+\end{figure}
+
+
+\subsection{Insiemi Indiciati}
+
+\begin{equation*}
+        10 \exists A
+\end{equation*}
+
+
+
+
+\newpage
+\section{Relazioni e Funzioni}
 
 
 
@@ -313,7 +349,10 @@ $p_1 \dag N$ \ldots  $p_n \dag N$ contraddice il teorema precedente e perciò ab
 Abbiamo infatti trovato due nuovi numeri primi 3 e 5 quindi ci sono infiniti numeri primi.
 
 
-\section{Numeri complessi}
+
+
+\newpage
+\section{Numeri complessi}\label{sec:numeri_complessi}
 Noi definiamo numeri complessi quei numeri che
 
 
