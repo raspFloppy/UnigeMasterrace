@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.10.21)  11 NOV 2021 15:42
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.10.13)  14 NOV 2021 15:40
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -250,6 +254,26 @@ Package caption Info: Standard document class detected.
 \c@continuedfloat=\count276
 Package caption Info: hyperref package is loaded.
 )
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen159
+\Gin@req@width=\dimen160
+)
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count277
@@ -257,6 +281,7 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
+<<<<<<< HEAD
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
@@ -276,6 +301,27 @@ LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 Package hyperref Info: Link coloring OFF on input line 8.
+=======
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+Package hyperref Info: Link coloring OFF on input line 11.
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -288,9 +334,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count278
 )
+<<<<<<< HEAD
 LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
 LaTeX Info: Redefining \nameref on input line 8.
+=======
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
+LaTeX Info: Redefining \nameref on input line 11.
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
@@ -298,12 +350,44 @@ LaTeX Info: Redefining \nameref on input line 8.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+<<<<<<< HEAD
 LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
+=======
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count279
+\scratchdimen=\dimen161
+\scratchbox=\box50
+\nofMPsegments=\count280
+\nofMParguments=\count281
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count282
+\MPscratchDim=\dimen162
+\MPnumerator=\count283
+\makeMPintoPDFobject=\count284
+\everyMPtoPDFconversion=\toks22
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
+
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
+<<<<<<< HEAD
 LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
+=======
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -315,208 +399,394 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<<<<<<< HEAD
 Overfull \hbox (3.16724pt too wide) in paragraph at lines 21--21
+=======
+Overfull \hbox (3.16724pt too wide) in paragraph at lines 25--25
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 \OT1/cmr/m/n/10 dell'insieme stesso, per es-em-pio gli el-e-menti dell'insieme 
 dei nu-meri pari dovranno
  []
 
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 3
+<<<<<<< HEAD
 5.
+=======
+9.
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+<<<<<<< HEAD
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
  [3] [4]
 Underfull \hbox (badness 10000) in paragraph at lines 97--98
+=======
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
+ [3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 102--104
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 108--110
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 115--117
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 136--137
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 [5]
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 160--161
+=======
+Overfull \hbox (19.54564pt too wide) in paragraph at lines 160--161
+[]$\OMS/cmsy/m/n/10 :9\OML/cmm/m/it/10 xP\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT
+1/cmr/m/n/10 )$, che sig-nifica che $[]$. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 169--171
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 175--177
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 [6]
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 185--186
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 186--188
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 195--196
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 200--202
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 219--221
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 [7]
+<<<<<<< HEAD
 Overfull \hbox (4.97287pt too wide) in paragraph at lines 229--230
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 230--232
+
+ []
+
+
+Overfull \hbox (4.97287pt too wide) in paragraph at lines 240--241
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 \OT1/cmr/m/n/10 Ora mos-tri-amo al-cune pro-priet^^Ra degli in-siemi per poi su
 c-ces-si-va-mente di-mostrarli: 
  []
 
+<<<<<<< HEAD
 [8]
 Overfull \hbox (52.67097pt too wide) in paragraph at lines 253--259
+=======
+
+Overfull \hbox (0.88951pt too wide) in paragraph at lines 249--251
+[]\OT1/cmr/m/n/10 olte di queste sono facil-mente di-mostra-bili, provi-amo ad 
+es-em-pio a di-mostrare
+ []
+
+[8]
+<./images/insiemi_numerici.png, id=234, 1002.74625pt x 1002.74625pt>
+File: ./images/insiemi_numerici.png Graphic file (type png)
+<use ./images/insiemi_numerici.png>
+Package pdftex.def Info: ./images/insiemi_numerici.png  used on input line 266.
+
+(pdftex.def)             Requested size: 172.5pt x 172.49959pt.
+ [9 <./images/insiemi_numerici.png>] [10]
+Overfull \hbox (52.67097pt too wide) in paragraph at lines 292--298
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 \OML/cmm/m/it/10 f[] \OMS/cmsy/m/n/10 , \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\U/m
 sb/m/n/10 Z[]\OT1/cmr/m/n/10 ) = 2$ e che quindi: $\OML/cmm/m/it/10 f\OT1/cmr/m
 /n/10 (\U/msb/m/n/10 Z[]\OT1/cmr/m/n/10 ) = []$ 
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (29.75984pt too wide) in paragraph at lines 260--260
+=======
+Overfull \hbox (29.75984pt too wide) in paragraph at lines 299--299
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 []\OT1/cmr/m/n/10 Quella che ab-bi-amo ap-pena scritto ^^Re una fun-zione \OT1/
 cmr/bx/n/10 Dio-fan-tea \OT1/cmr/m/n/10 ovvero $\OML/cmm/m/it/10 MCD\OT1/cmr/m/
 n/10 (21\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 15) :
  []
 
+<<<<<<< HEAD
 [9]
 Overfull \hbox (16.0007pt too wide) in paragraph at lines 299--300
+=======
+[11]
+Overfull \hbox (16.0007pt too wide) in paragraph at lines 338--339
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 \OT1/cmr/m/n/10 Esistono in-finiti nu-meri primi e lo pos-si-amo di-mostrare at
 -traverso una di-mostrazione
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (3.159pt too wide) in paragraph at lines 305--306
+=======
+Overfull \hbox (3.159pt too wide) in paragraph at lines 344--345
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 []$\OML/cmm/m/it/10 p[][]N$ \OT1/cmr/m/n/10 ...$\OML/cmm/m/it/10 p[][]N$ \OT1/c
 mr/m/n/10 con-trad-dice il teo-rema prece-dente e perci^^Ro ab-bi-amo di-mostra
 to
  []
 
+<<<<<<< HEAD
 [10]
 Overfull \hbox (53.78041pt too wide) detected at line 327
+=======
+[12]
+Overfull \hbox (53.78041pt too wide) detected at line 369
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 []
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 345--346
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 387--388
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 346--347
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 347--348
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 389--390
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 348--349
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 349--350
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 355--356
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 397--398
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 356--357
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 398--399
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 357--358
 
  []
 
 [11]
 Underfull \hbox (badness 10000) in paragraph at lines 358--359
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
+
+ []
+
+
+<<<<<<< HEAD
 Overfull \hbox (11.46524pt too wide) in paragraph at lines 361--362
+=======
+Overfull \hbox (11.46524pt too wide) in paragraph at lines 403--404
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 []\OT1/cmr/bx/n/10 CERCARE SU IN-TER-NET DIS-UG-UAGLIANZA TRI-AN-GO-LARE
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 361--362
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 403--404
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 366--367
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 408--409
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 369--370
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 371--372
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 375--378
 
  []
 
 [12]
 Underfull \hbox (badness 10000) in paragraph at lines 404--405
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 417--420
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 446--447
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 413--414
 
  []
 
 [13]
 Overfull \hbox (9.51906pt too wide) in paragraph at lines 444--444
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
+
+ []
+
+[15]
+Overfull \hbox (9.51906pt too wide) in paragraph at lines 486--486
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 \OT1/cmr/m/n/10 Sia $\OML/cmm/m/it/10 A$ \OT1/cmr/m/n/10 un in-sieme e sia $\U/
 msa/m/n/10 v$ \OT1/cmr/m/n/10 una re-lazione di equiv-alenza su $\OML/cmm/m/it/
 10 A$\OT1/cmr/m/n/10 . La $[]$
  []
 
+<<<<<<< HEAD
 [14]
 Underfull \hbox (badness 10000) in paragraph at lines 481--483
 
@@ -567,6 +837,30 @@ Here is how much of TeX's memory you used:
  412333 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,14n,74p,360b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
+=======
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 524--526
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 555--556
+
+ []
+
+[18] (./main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 7CDB8601C0604638281684D85D3A0CE4;4701.
+ ) 
+Here is how much of TeX's memory you used:
+ 10250 strings out of 478994
+ 151914 string characters out of 5864750
+ 446070 words of memory out of 5000000
+ 27503 multiletter control sequences out of 15000+600000
+ 412333 words of font info for 61 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 71i,14n,74p,621b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -582,6 +876,7 @@ type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share
+<<<<<<< HEAD
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf-dis
 t/fonts/type1/public/cm-super/sfrm1000.pfb>
 Output written on main.pdf (17 pages, 238953 bytes).
@@ -590,4 +885,13 @@ PDF statistics:
  357 compressed objects within 4 object streams
  113 named destinations out of 1000 (max. 500000)
  241 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (18 pages, 355478 bytes).
+PDF statistics:
+ 397 PDF objects out of 1000 (max. 8388607)
+ 353 compressed objects within 4 object streams
+ 106 named destinations out of 1000 (max. 500000)
+ 238 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
 
