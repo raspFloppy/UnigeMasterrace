@@ -3,6 +3,7 @@
 \usepackage{amssymb}
 \usepackage{hyperref}
 \usepackage{caption}
+\usepackage{mathtools}
 \usepackage{graphicx}
 \graphicspath{{./images}}
 
@@ -621,14 +622,14 @@ Iniziamo con le dimostrazioni:
 
 \begin{align*}
 X_A \in {0,1}^X \\
-\phi(X_A) = {X_A}{-1}(1) = \{x \in X : X_A(x) = 1\} = \{x \in X : x \in A\} = A.
+\varphi(X_A) = {X_A}{-1}(1) = \{x \in X : X_A(x) = 1\} = \{x \in X : x \in A\} = A.
 \end{align*}
 
 Ora che non so che cazzo ho scritto prendiamo $\phi$ iniettiva e $f,g \in {0,1}^x, f \not = g$ tesi $\phi(f) \not = \phi(g)$.
 $f,g : X \to {0,1}$ \newline
 $f \not = g \Rightarrow \exists x \in X$ tale che $f(x) \not = g(x)$.
 Supponiamo che $f(x) = 1 \Rightarrow g(x) = 0$ \newline
-$\Rightarrow x \in {f}{-1} = \phi(f) x \not \in {g}{-1}(1) = \phi(g) \Rightarrow \phi(f) \not = \phi(g)$
+$\Rightarrow x \in {f}{-1} = \varphi(f) x \not \in {g}{-1}(1) = \varphi(g) \Rightarrow \varphi(f) \not = \varphi(g)$
 
 \textbf{MA CHE CAZZO HO APPENA SCRITTO} \newline
 
@@ -648,9 +649,121 @@ Corollario $A,B$ insiemi finiti, allora $AxB, B^A, P(A)$ sono insiemi finiti di 
 
 
 \subsection{Cardinalità dei $\mathbb{Q}$}
+
+Prima di tutto diciamo che $\mathbb{Q}$ è numerabile, e lo possiamo dimostrare con:
+\begin{align*}
+        \varphi : \mathbb{Q}\{0\} \to \mathbb{N}* \\
+        \frac{p}{q} \mapsto |p| + |q|
+\end{align*}
+
+Avendo $p,q \in \mathbb{Z}, p,q \not = 0, MCD(p,q)=1$ e quindi, $Q = {0} \cup \bigcup_{n \in \mathbb{N}}{\varphi^{-1}(n)}$.
+
+Si dice quindi che \underline{unione numerabile} di insiemi finiti $\not = 0$ e disgiunti $\Rightarrow Q $ numerabile. \newline
+
+\textbf{Cercare la diagonale di Cantor}
+
 \underline{Lemma} prendiamo $\{X_m : m \in \mathbb{N}\}, |X_n| \le \aleph_0, X_m \not = \emptyset \forall n \in \mathbb{N}$ se $|Xm| < \aleph_0 \forall n \in \mathbb{N}$ allora $X_n \cap X_m = \emptyset$ se $n \not = m$ allora $|\bigcup_{n \in \mathbb{N}}^{1}X_n| = \aleph_0$ \newline
 
-\textit{unione numerabile di numerabile è numerabile}, ok campione.
+
+\subsection{Cardinalità di $\mathbb{R}$}
+$ \mathbb{R}$ è equipotente a $P(\mathbb{N})$, in particolare è più che numerabile. \par
+
+\begin{align*}
+        \mbox{Cardinalità} \quad 0,1,2,\ldots n\ldots,\aleph_0 \\
+        \mbox{Insiemi} \quad \emptyset, {*}, {1,2}, \ldots, {1,\ldots,n},\ldots,\mathbb{N},\mathbb{Z},\mathbb{Q},\ldots        
+\end{align*}
+
+
+\subsection{Ipotesi del continuo}
+Questa ipotesi, formulata da \underline{Cantor} chiede se $ \exists A$ insieme tale che $\aleph_0 < |A| < 2^{\aleph_0}$?? 
+
+\textit{BTW questi problemi non verrano trattati nel corso ma sono good to know}.
+
+
+
+
+\newpage
+\section{Calcolo Combinatorico}
+
+Iniziamo con una definizione, se abbiamo $X$ insieme infinito, \par ovvero: $\{X \to X \quad \mbox{Bigettiva}\}$ è l'insieme delle \underline{permutazioni di $X$}, nel caso in cui $X = \{1,\ldots, n\}$, l'insieme è detto \textbf{Insieme delle permutazioni} si denota con:
+\begin{equation*}
+        S_n = \{\{1,\ldots, n\} \to \{ 1,\ldots,n\} \quad \mbox{Bigettiva}\}.
+\end{equation*}
+
+E con il \textit{lemma} $X,Y$ insiemi finiti, $|X| = n \le m = |Y|$ Il numero delle applicazioni iniettive $X \to Y$ è uguale:
+\begin{equation*}
+        m * (m-1)*\ldots*(m-n+1)
+\end{equation*}
+
+Osserviamo che se $n > m, \not \exists X \to Y$ iniettiva, facilmente dimostrabile con $|X| = n \Rightarrow X = \{x_1,x_2,\ldots,x_n\}$. \par
+Possiamo vedere in quanti modi possiamo definire $f:X \to Y$ iniettiva. 
+Prendimo $X = \{x_1,\ldots,x_n\} \to Y = \{y_1,\ldots,y_n\}$:
+\begin{itemize}
+        \item $x_1 \mapsto \mbox{?}$ ho $m$ possibili scelte.
+        \item $x_2 \mapsto \mbox{?}$ ho $m-1$ possibili scelte.
+        \item $x_3 \mapsto \mbox{?}$ ho $m-2$ possibili scelte.
+        \item $x_n \mapsto \mbox{?}$ ho $m-(n-1)$ possibili scelte.
+\end{itemize}
+
+In tutto quindi avremo $m(m-1),\ldots,(m-n+1)$ possibili funzioni $X \to Y$ iniettive $\square$. \par
+
+Corollario $|X| = |Y| = n$ ci sono $n(n-1),\ldots,(n-n+1) = n(n-1),\ldots,(2)$ funzioni bigettive da $X$ a $Y$. \par
+Definiamo $n \in \mathbb{N}$, il \underline{fattoriale} di $n$:
+\[ n! = 
+\begin{cases}
+        n * (n-1) * \ldots * 2 * 1 \quad \mbox{se} \quad n>0\\
+        1 \quad \quad \mbox{se} \quad n = 0
+\end{cases}
+\]
+
+Un altro corollario, $|S_n| = n$! che definiamo con:
+\begin{align*}
+        n,k \in \mathbb{N}, n \ge 1, 0 \le k \le n, \quad \mbox{\underline{il coefficiente binomiale}} \\
+        (n k) := \frac{n!}{k!(n-k)!}
+\end{align*}
+
+
+
+\subsection{Mi inventerò un titolo}
+X insieme finito, $|X| = n$ per ogni intero $0 \le k \le n$ il numero di sottoinsiemi di $X$ con $k$ elementi è $(n su k)$.
+
+Dimostrimolo:
+\begin{itemize}
+        \item $k=0$, c'è solo un insieme con 0 elementi: $\emptyset$
+        \item $k=n$, c'è solo un insieme con n elementi: $(n su n) = (n su 0) = 1$
+\end{itemize}
+
+
+Ora proviamo a cotruire un $Y \subseteq X$ con $\#Y = k$ e $0 < k < n$ \par
+\begin{itemize}
+        \item Scegliamo il 1° elemento di $y$:$n$ possibilità
+        \item Scegliamo il 2° elemento di $y$:$n-(k-1)$ possibilità
+\end{itemize}
+
+Devo dividere per il numero di permutazioni di una stringa con $k$ elementi:
+\begin{equation*}
+        \frac{n(n-1)\ldots(n-k+1)}{k!} = (n su k) \square
+\end{equation*}
+
+
+\underline{Lemma} $(n su k) = (n-1 su k) + (m-1 k-1)$ 
+
+
+\subsection{Coefficiente binomiale}
+Il coefficiente binoiale è $x,y \in \mathbb{C}, n \in \mathbb{N}*$ allora:
+\begin{equation*}
+        {(x+y)}^{n} = \sum_{k=0}^{n}(n su k)x^{n-k}y^k
+\end{equation*}
+
+Dimostriamolo attraverso l'induzione: \newline
+\textbf{CHE SEGUIRÒ E POI SCRIVERÒ IN FUTURO QUANDO RIFINISCO GLI APPUNTI VERO GABRIEL???}.
+
+
+Corollario $X$ insieme finito, $|X| = n$ allora $|P(x)| = 2^n$ dimostrabile $\forall 0 \le k \le n$ il numero di sottoinsiemi di $k$ elementi di $X$ è (n su k). \par
+Il numero di sottoinsiemi di $X$ è: 
+\begin{equation*}
+        \sum_{k=0}^{n}(n su k) = 2^n
+\end{equation*}
 
 
 

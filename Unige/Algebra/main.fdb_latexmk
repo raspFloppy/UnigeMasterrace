@@ -1,9 +1,5 @@
 # Fdb version 3
-<<<<<<< HEAD
-["pdflatex"] 1636641765 "main.tex" "main.pdf" "main" 1636641766
-=======
-["pdflatex"] 1636900802 "main.tex" "main.pdf" "main" 1636900803
->>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
+["pdflatex"] 1637143189 "main.tex" "main.pdf" "main" 1637143190
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1617738065 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -100,32 +96,23 @@
   "/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1617738065 27164 3d5f7887a89df4eb2f6e86ba26ef3254 ""
   "/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1617738065 678 4792914a8f45be57bb98413425e4c7af ""
   "/usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty" 1617738065 5766 13a9e8766c47f30327caf893ece86ac8 ""
+  "/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty" 1617738065 56225 7495368d972ca2d9f8b56ffeb102b52c ""
+  "/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty" 1617738065 5582 a43dedf8e5ec418356f1e9dfe5d29fc3 ""
   "/usr/share/texmf-dist/tex/latex/refcount/refcount.sty" 1617738065 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1617738065 9715 b051d5b493d9fe5f4bc251462d039e5f ""
+  "/usr/share/texmf-dist/tex/latex/tools/calc.sty" 1617738065 10216 5efd55f2010055e7b7875afd6a75be82 ""
   "/usr/share/texmf-dist/tex/latex/url/url.sty" 1617738065 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1617738065 39911 2da6c67557ec033436fe5418a70a8a61 ""
-<<<<<<< HEAD
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1634824127 334215 ad2feb41952e3720830b65f83a01c5b0 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1634824121 2812682 a088eedba91c3aecf526964fb9446119 ""
-  "main.aux" 1636641766 4869 ae59d3c60aed189b792555adeac168cd "pdflatex"
-  "main.out" 1636641766 5138 cb5a6a093be0189674915050a2f06062 "pdflatex"
-  "main.tex" 1636641765 27172 ddfe0875c2a537d671812171e483059b ""
-  "main.toc" 1636641766 2621 de7a8886b5132fe58f2df11b59821357 "pdflatex"
+  "images/insiemi_numerici.png" 1637136339 135758 85a4ea5e5a5e0764346191eab18e4720 ""
+  "main.aux" 1637143190 6206 413b41bd160917a91106732fea625143 "pdflatex"
+  "main.out" 1637143190 6249 6366c580277380268e2603416dd04366 "pdflatex"
+  "main.tex" 1637143189 34160 cb83fe09a5247606af59cbf233e7932e ""
+  "main.toc" 1637143190 3224 20200ee2625d13ee1c6a7fe0cb19acd9 "pdflatex"
   (generated)
-  "main.out"
-  "main.toc"
-=======
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1634140649 5045527 a0ef06d06af438d62994481e52c2af5f ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1634140630 2812677 e3d85330e9c79cd0094fc14ffdff433f ""
-  "images/insiemi_numerici.png" 1636828388 135758 85a4ea5e5a5e0764346191eab18e4720 ""
-  "main.aux" 1636900803 5117 a38541375ad0ec9c50915a2712b88d2a "pdflatex"
-  "main.out" 1636900803 4701 7cdb8601c0604638281684d85d3a0ce4 "pdflatex"
-  "main.tex" 1636885785 25944 736ce72a6d1121adc08ecedad311952c ""
-  "main.toc" 1636900803 2465 87bda9a2ddef7e16670109481b4a5483 "pdflatex"
-  (generated)
->>>>>>> 26d95d64e07339699e67bdcc473a4cbb0788a64e
-  "main.log"
   "main.pdf"
-  "main.aux"
-  "main.out"
   "main.toc"
+  "main.aux"
+  "main.log"
+  "main.out"
