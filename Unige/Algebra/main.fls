@@ -1,4 +1,4 @@
-PWD /home/floppyrch/Floppy/Unige/UnigeMasterace/Unige/Algebra
+PWD /home/riot/Riot/School/Unige/UnigeMasterace/Unige/Algebra
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT main.tex
@@ -625,6 +625,16 @@ INPUT ./images/insiemi_numerici.png
 INPUT ./images/insiemi_numerici.png
 INPUT ./images/insiemi_numerici.png
 INPUT ./images/insiemi_numerici.png
+INPUT ./images/relazioni.png
+INPUT ./images/relazioni.png
+INPUT ./images/relazioni.png
+INPUT ./images/relazioni.png
+INPUT ./images/relazioni.png
+INPUT ./images/esempio_funzione.jpg
+INPUT ./images/esempio_funzione.jpg
+INPUT ./images/esempio_funzione.jpg
+INPUT ./images/esempio_funzione.jpg
+INPUT ./images/esempio_funzione.jpg
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT main.aux
 INPUT ./main.out

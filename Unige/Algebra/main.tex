@@ -268,15 +268,103 @@ Per fare un breve riassunto degli insiemi numerici:
 
 \subsection{Insiemi Indiciati}
 
-\begin{equation*}
-        10 \exists A
-\end{equation*}
-
 
 
 
 \newpage
 \section{Relazioni e Funzioni}
+Gli elementi appartenenti a uno o più insiemi possono essere collegati attraverso diversi tipi di relazioni, per esempio i membri di una famiglia sono collegati tra loro attraverso una relazione di parentela. \par
+
+\subsection{Relazioni}
+In matematica una relazione può essere espressa attraverso $ a \to b$ oppure $ a R b $ dove $ a $ e $ b $ sono elementi di un certo insieme ed $ R $ è una relazione. \par
+Questo tipo di relazione tra $ a $ e $ b $ si dice \textbf{Relazione binaria} e significa che la coppia $ (a,b) \in R $. \par
+
+\begin{figure}[h]
+        \centering
+                \includegraphics[width=0.75\textwidth]{relazioni.png}
+        \caption{una relazione geografica}\label{fig:esempio_relazione}
+\end{figure}
+
+Altri tipi di relazioni sono:
+\begin{itemize}
+        \item \underline{Relazione vuota}: se $ R = \emptyset \subseteq X*Y $ 
+        \item \underline{Relazione totale}: se $ R = X*Y $ 
+        \item \underline{Relazione diagonale}: se $ X=Y $ in particolare viene definita con: \newline $ \Delta := \{(x,x) \in X*X\} = \{(x_1,x_2) \in X*X : x_1 = x_2\} $  
+\end{itemize}
+Facciamo un esempio di relazione diagonale: \newline
+Prendiamo un insieme $ X = \{1,2,3\} $ avremo $ \Delta = \{(1,1), (2,2),(3,3)\} $ come relazione diagonale su $ X $.
+
+
+\subsection{Funzioni}
+Una funzione è anch'essa una relazione tra elementi di insiemi ma questo tipo di relazione deve rispettare questa prorpietà:
+\begin{equation}\label{eq:prop_funzione}
+        f \subseteq X*Y : \forall x \in X \quad \exists! y \in Y : (x,y) \in f 
+\end{equation}
+E si può denotare brevemente con:
+\begin{equation*}
+        f : X \to Y
+\end{equation*}
+Dove $ X $ è il detto \textbf{Dominio} e $ Y $ è detto \textbf{Codominio}. \par  
+Inoltre possiamo evitarci la scrittura $ (x,y) \in f $ scrivendo semplicemente $ y = f(x) $ dicendo che $ y $ è l'immagine di $ x $ mediante $ f $. \par   
+
+\begin{figure}[h]
+        \centering
+                \includegraphics[width=0.75\textwidth]{esempio_funzione.jpg}
+        \caption{rappresentazione di una funzione}\label{fig:esempio_funzione}
+\end{figure}
+Facciamo un esempio di cosa è una funzione e di cosa non lo è: \newline
+Prendiamo $ X = \{1,2,3\} \quad  Y = \{a,b,c,d,e,f\} \quad $  e $\quad  \varphi, \rho \subseteq X*Y$, ipotiziamo che:
+\begin{itemize}
+        \item $ \varphi = \{(1,a), (1,d), (2,e), (3,a)\} $ 
+        \item $ \rho = \{(1,c), (2,c), (3,a)\} $ 
+\end{itemize}
+
+Da questo possiamo di con certezza che:
+\begin{itemize}
+        \item $ \varphi$ non è una funzione in quanto non rispetta~\ref{eq:prop_funzione} infatti troviamo che per $ x = 1 $ esistono due $ y $ differenti. 
+        \item $ \rho $ è una funzione in quanto rispetta~\ref{eq:prop_funzione}, infatti ogni $ x $ ha un solo corrispettivo $ y $.     
+\end{itemize}
+
+Aggiungo che la funzione $ \rho $ ha una $ y $ a cui corrispondono due $ x \quad $ ($ (1,c), (2,c) $) questo però non viola~\ref{eq:prop_funzione} in quanto è $ x $ che deve rispettare quella proprietà non $ y $.  
+
+
+\subsection{Immagine e controimmagine}
+Definiamo ora cosa sono l'immagine e la controimmagine di una funzione
+
+\subsubsection{Immagine}
+L'immagine della funzione è semplicemente la funzione stessa $ y = f(x) $ scritto anche:
+\begin{equation*}
+        f(A) := \{y \in Y, \exists x \in A : y = f(x) \}
+\end{equation*}
+Dove $ A \subseteq X $ ovvero $ A $ sottoinsieme del dominio. \newline  
+Ovvero gli elementi del \textbf{dominio} $ X $ che vengono mandati in un solo \textbf{codominio} $ Y $ 
+
+\subsubsection{Controimmagine}
+La controimmagine sono invece gli elementi del \textbf{codominio} $ Y $ che vengono mandati n  
+
+
+\subsection{Il grafico della funzione}
+
+
+\subsection{Iniettività, Surgettività e Bigettività}
+\subsection{Tipi di funzioni}
+\subsubsection{Funzione Identità}
+\subsubsection{Funzione Parte Intera}
+\subsubsection{Funzione Parte Frazionaria}
+\subsubsection{Funzione Composta}
+
+
+\subsection{Invertibilità}
+
+\newpage
+\section{Assioma della scelta}
+
+\newpage
+\section{Principio di Induzione}
+\subsection{Prima forma}
+\subsection{Seconda forma}
+\subsection{Terza forma}
+
 
 
 
@@ -297,10 +385,10 @@ $f(\mathbb{Z}^{2}) = {n \in \mathbb{Z} : \exists(x,y) \in \mathbb{Z}^{2} n=f(x,y
 Quella che abbiamo appena scritto è una funzione \textbf{Diofantea} ovvero $MCD(21,15) : n \Leftrightarrow f(\mathbb{Z}^{2})={3k : k \in \mathbb{Z}}$. \par
 
 E quindi possiamo dire con certezza che la funzione non è né surriettiva e né iniettiva perchè:
-\begin{align}
+\begin{align*}
         1 \notin f(\mathbb{Z}^{2}) \\
         \textrm{Perchè fissato } & n \in 3Z
-\end{align}
+\end{align*}
 
 
 
@@ -765,6 +853,55 @@ Il numero di sottoinsiemi di $X$ è:
         \sum_{k=0}^{n}(n su k) = 2^n
 \end{equation*}
 
+
+
+
+\newpage
+\section{Relazioni d'ordine}
+Le relazioni d'ordine sono un tipo di relazione che hanno come modello la disuguaglianza per esempio tra insiemi di diverso tipo oppure oggetti che non necessariamente sono numeri. \par
+Se vogliamo dare una definizione più precisa possiamo dire che se $ X $  insieme, $ R \subseteq X * X $ relazione $ R $ è un \underline{preordine} se:
+\begin{itemize}
+        \item \underline{Riflessiva}: $ \forall x \in X \quad (x,x) \in R$ 
+        \item \underline{Transitiva}: $ (x,y) \in R \quad (y,z)  \in R \Rightarrow (x,z) \in R$ 
+        \item \underline{Antisimmetrica}: $ ((x,y) \in R) \land ((y,x) \in R) \Rightarrow x = y $ 
+\end{itemize}
+
+si dice che $ R $ è un ordine parziale. \newline
+In questo caso $ X $ si dice \underline{parzialmente ordinato} (POSET) \par
+Scriviamo $ (x,y) \in R $ come $ x \triangle y $ oppure $ x \le y | (x, \triangle)$  dove $x$ è un insieme e $ \triangle $ è un \textbf{ordine parziale} su $ X $    
+
+Definiamo meglio $ (x, \triangle) \quad  POSET \quad x,y \in X$, si dicono \underline{confrontabili} se vale $ (x \triangle y) \lor (y \triangle x) $, altrimenti si dicono non confrontabili  se tutti gli elementi di $ X $ sono confrontabili, $ \triangle $ si dice \underline{ordine totale}.  \par
+
+\subsection{Esempi di relazioni d'ordine}
+Prendiamo come adesso alcuni esempi: \newline 
+$ \mathbb{R}, \le $ è totalmente ordinato ($ \le $ è un ordine totale su $ \mathbb{R} $) 1.:
+\begin{itemize}
+        \item $ x \le x \forall x \in \mathbb{R} $ \underline{Riflessiva}
+        \item $ x \le y, y \le z \Rightarrow x \le z$ \underline{Transitiva}
+        \item $ x \le y, y \le x \Rightarrow x=y  \mathbb{R} $ \underline{Antisimmetrica}
+\end{itemize}
+è totale perchè dati $ x $ \newline
+
+2. $ < $ minore stretto non è un ordine parziale su $ \mathbb{R} $ non soddisfa la riflessiva \newline
+
+3. $ \triangle = \{(x,y) \in X : x = y\}$ ordine parziale. \newline 
+
+4. $ \mathbb{C} z \triangle w \Leftrightarrow |z| \le |w| $ dove $ z,w \in \mathbb{C} $  è un preordine ma, ma non un ordine parziale perchè:
+
+\begin{itemize}
+        \item \underline{Riflessiva} $ z \triangle z$ si perchè $ |z| \le |z| $
+        \item \underline{Transitiva} $ x \triangle y, y \triangle z \Rightarrow x \triangle z$  si perchè $ |x| \le |y| $
+        \item \underline{Antisimmetrico} no perchè prendiamo per esempio \newline $ x = i, |i| = 1 \le 1 = |1| \quad i \triangle 1 $ ma $ i \not = 1 $  \newline $ y = 1 \quad |1| = 1 \le 1 = |i| \quad 1 \triangle i $    
+\end{itemize}
+
+5. $ X $ insieme, $ X \not = \emptyset $, definiamo una relazione d'ordine su $ P(x)  A,B \in P(x) \quad \quad A \triangle B \Leftrightarrow A \subseteq B $ \par
+In particolare $ (P(x), \subseteq )$ è un POSET:\newline
+\begin{itemize}
+        \item $ A \subseteq A $
+        \item $ A \subseteq B, B \subseteq C \Rightarrow A \subseteq C $
+        \item $ A \subseteq B, A \subseteq B \Rightarrow A = B $
+\end{itemize}
+$ \subseteq $ non è totale, esempio $ X = \{1,2,5\}, A = \{1,2\}, B = \{2,3\} $ e se $ X \not = \{*\} $    
 
 
 \end{document}
