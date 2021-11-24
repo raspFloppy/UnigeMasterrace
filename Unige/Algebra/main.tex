@@ -359,10 +359,71 @@ La controimmagine sono invece gli elementi del \textbf{codominio} $ Y $ che veng
 \newpage
 \section{Assioma della scelta}
 
+
+
 \newpage
 \section{Principio di Induzione}
+Il \underline{Principio di induzione} detto anche procedimento induttivo è un procedimento matematico per dimostrare la validità di una tesi attraverso la verifica della veridicità di due condizioni:
+\begin{itemize}
+        \item \underline{passo zero}: $(n_0)$
+        \item \underline{passo induttivo}: $(n)$
+\end{itemize}
+Se lo scriviamo in matematichese diciamo che se abbiamo una proposizione $P$ e:
+\begin{align*}
+        P(n_0) \quad \mbox{vera} \\
+        P(n) \quad \mbox{vera}
+\end{align*}
+Allora $P(n)$ è vera. \par
+Ne consegue quindi che anche $P(n+1)$ è vera, potremo dire semplicemente che se:
+\begin{equation*}
+        P(n) \quad \mbox{vera} \quad \Rightarrow \quad P(n+1) \quad \mbox{vera}
+\end{equation*}
+
+Utiliziamo un esempio, dimostramo che $\forall n \ge 0$ la somma che denotiamo con $S(n)$ dei primi numeri naturali:
+\begin{equation*}
+        S(n) = 0 + 1 + 2 + 3 + 4 + 5 + \cdots + n
+\end{equation*}
+è data da:
+\begin{equation*}
+        S(n) = \frac{n(n+1)}{2} \quad \forall n \ge 1
+\end{equation*}
+
+La nostra proposizione sarà quindi:
+\begin{equation*}
+        P(n) : S(n) = \frac{n(n+1)}{2}
+\end{equation*}
+
+Il nostro compito sarà quindi quello di dimostrare che $P(n_0)$ e $P(n)$ è vero $\forall n \ge 1$. \par
+Quindi dimostriamo $S(n)$ con $n = 1$:
+
+\begin{equation}\label{eq:esempio_induzione_1}
+        S(1) = \frac{0*(0+1)}{2} = 0
+\end{equation}
+
+A questo punto secondo la proprietà dell'induzione anche $P(n+1)$ sarà vera ovvero $S(1)$:
+\begin{equation}\label{eq:esempio_induzione_2}
+        S(1) = \frac{1*(1+1)}{2} = 1
+\end{equation}
+
+Esistono tre tipi di induzione che spiegheremo di seguito.
+
+
 \subsection{Prima forma}
+Il \underline{Principio di induzione prima forma} dice che con $P$ proposizione sui numeri naturali:
+\begin{enumerate}
+        \item $P(0)$ è vera. 
+        \item $P(n)$ è vera $\Rightarrow P(n)$ vera allora $P(n)$ vera $\forall n \in \mathbb{N}$. 
+\end{enumerate}
+Un esempio di ciò è~\ref{eq:esempio_induzione_1} e~\ref{eq:esempio_induzione_2}.
+
+
 \subsection{Seconda forma}
+Il \underline{Principio di induzione seconda forma} dice che con $P$ proposizione sui numeri naturali e $n_0 \in \mathbb{N}$ dove $n_0$ è il \textbf{passo zero} se vale:
+\begin{enumerate}
+        \item $P(n_0)$ vera.
+        \item $P(n)$ vera.
+\end{enumerate}
+
 \subsection{Terza forma}
 
 
