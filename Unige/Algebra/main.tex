@@ -266,9 +266,33 @@ Per fare un breve riassunto degli insiemi numerici:
 \end{figure}
 
 
-\subsection{Insiemi Indiciati}
+\subsection{Insiemi Indiciati}\label{sec:insiemi_indiciati}
+Un \textbf{Insieme indiciato} è una famiglia di insiemi definiti da un indice $i \in I$ dove $I \in \mathbb{N}$, infatti potenzialmente $I = \{1,2,3,\ldots,n\}$. \par
+Scriviamo un insieme indicato come:
+\begin{equation}\label{eq:famiglia_insiemi_indiciati}
+        \mathcal{F} = {\{A_i\}}_{i \in I}
+\end{equation} 
 
+Dove $\mathcal{F}$ è la famiglia, $A_i$ è l'insieme e $i$ l'indice dell'insieme. \newline
+Un insieme $A_i$ ha una certa proprietà che viene ripetuta per tutti gli $A_i$ presenti nella famiglia, possiamo infatti immaginare la famiglia~\ref{eq:famiglia_insiemi_indiciati} come l'unione degli insiemi indiciati che contiene:
+\begin{equation*}
+        \bigcup_{i \in I}A_i = \{P(x)\}
+\end{equation*}
+Se avessimo $I = \{1,2,3,4,5\}$ sarebbe come scrivere:
+\begin{equation*}
+        A_1 \cup A_2 \cup A_3 \cup A_4 \cup A_5
+\end{equation*}
 
+Facciamo un esempio, prendiamo $A_i = \{x \in \mathbb{N} : x \not = 2i\}$ con $I = \{1,2,3\}$, avremo che:
+\begin{itemize}
+        \item $A_1 = \{\mathbb{N} \not = 2\}$
+        \item $A_2 = \{\mathbb{N} \not = 4\}$
+        \item $A_3 = \{\mathbb{N} \not = 6\}$
+        \item $A_1 \cup A_2 \cup A_3 = \mathbb{N}$ oppure $\mathcal{F} = {\{A_i\}}_{i \in I} = \mathbb{N}$
+        \item $A_1 \cap A_2 \cap A_3 = \{\mathbb{N} \not = 2, \mathbb{N} \not = 4, \mathbb{N} \not = 6\}$
+\end{itemize}
+
+Prendete con le pinze questa definizione, ma potremo immaginare gli insiemi indiciati come array di array che hanno le stesse proprietà.
 
 
 \newpage
