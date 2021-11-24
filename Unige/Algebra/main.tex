@@ -901,7 +901,90 @@ In particolare $ (P(x), \subseteq )$ è un POSET:\newline
         \item $ A \subseteq B, B \subseteq C \Rightarrow A \subseteq C $
         \item $ A \subseteq B, A \subseteq B \Rightarrow A = B $
 \end{itemize}
-$ \subseteq $ non è totale, esempio $ X = \{1,2,5\}, A = \{1,2\}, B = \{2,3\} $ e se $ X \not = \{*\} $    
+$ \subseteq $ non è totale, esempio $ X = \{1,2,5\}, A = \{1,2\}, B = \{2,3\} $ e se $ X \not = \{*\} $
+
+
+\subsection{Tipi di ordini}
+Definiamo $(A_1, \triangle_1), \ldots, (A_n, \triangle_n) \quad POSET$ definimo ordini parziali su $A_1x, \ldots, xA_n$. \newline
+
+
+\subsubsection{Ordine lessicografico (LEX)}
+\underline{Ordine lessicografico (LEX)}:
+\[ 
+(a_1,a_2,\ldots, a_n) \triangle_{lex} (b_1,b_2,\ldots, b_n) \Leftrightarrow   
+\begin{cases}
+        a_1 \triangle_1 b_1 \quad \mbox{se} \quad  a_1 \not = b_1 \\
+        a_{k+1} \triangle_{k+1} b_{k+1} \quad \mbox{se} \quad  a_j = b_j \forall j = 1,\ldots, k
+\end{cases}
+\]
+
+
+\subsubsection{Ordine prodotto}
+\underline{Ordine prodotto} $\triangle_1x,\ldots,\triangle_n$:
+\begin{equation*}
+        (a_1,\ldots,a_n) \triangle_1x,\ldots, x\triangle_n(b_1,\ldots,b_n) \Leftrightarrow a_i \triangle_i b_i \forall i = 1,\ldots,n
+\end{equation*}
+
+Facciamo un esempio numerico, prendiamo $(\mathbb{R}, \le)$ consideriamo $\mathbb{R}^2, \mathbb{R}*\mathbb{R}$, possiamo dire che:
+\begin{equation*}
+        (1, 0) \quad \mbox{e} \quad (0,1) \quad \mbox{non sono confrontabili con $\le x \le$}
+\end{equation*}
+Mentre utilizzando il \textbf{LEX} possiamo facilmente dire che:
+\begin{equation*}
+        (1, 0) \ge_{LEX} (0,1)
+\end{equation*}
+
+Facciamo un altro esempio, prendiamo $(2,3) \le x \le(2,5)$ perchè $2 \le 2$ e $3 \le 5$. \par
+Facciamo un ultimo esempio, prendiamo $(2,3) \le_{LEX} x \le(2,5)$ perchè $2 = 2$ e $3 \le 5$. \newline
+
+Se tutti i $POSET$ sono totalmente ordinati allora anche l'ordine $LEX$ è totalmente ordinato, scriviamo quindi:
+
+\begin{equation*}
+        (A_1,\triangle_1), \ldots, (A_n, \triangle_n) \Rightarrow (A_1x,\ldots,xA_n,\triangle_{LEX})
+\end{equation*}
+Esempio:
+\begin{equation*}
+        (\mathbb{R}^2, \le_{LEX}) \quad \mbox{TOTALMENTE ORDINATO} \quad (\mathbb{R}^2, \le x \le) \quad \mbox{non è competamente ordintato}. 
+\end{equation*}
+
+
+\subsubsection{Ordine indotto}
+Diciamo ordine indotto $(X, \triangle) \quad POSET$, $ Y \subseteq X$ con:
+\begin{equation*}
+        y_1 \triangle_y,y_2 \Leftrightarrow y_1 \triangle y_2 \quad \forall y_1,y_2 \in Y \subseteq X
+\end{equation*}
+
+Diciamo che $Y$ è una catena se $(Y, \triangle y)$ è totalmente ordinato. \par
+
+Esempio prendiamo $(\mathbb{N}*, I) \quad POSET$ non è totalmente ordinato perchè se prendiamo $2$ e $3$ \textbf{non sono confrontabili}. \par
+\textbf{Aggiungere l'esempio (MIN 0:40)}
+
+
+\subsection{Minimo e massimo}
+Definiamo con $(X, \triangle), Y \subseteq X, Y \not = \emptyset$:
+\begin{itemize}
+        \item $y$ è \underline{minimo} di $Y$ se $\forall x \in Y$  vale $y \triangle x$ scriviamo $y = \min Y$
+        \item $y$ è \underline{massimo} di $Y$ se $\forall x \in Y$  vale $x \triangle y$ scriviamo $y = \max Y$
+        \item $y$ è \underline{elemento minimale} di $Y$ se $\forall x \in Y$  vale $(x \triangle y \Rightarrow x = y)$
+        \item $y$ è \underline{elemento massimale} di $Y$ se $\forall x \in Y$  vale $(y \triangle x \Rightarrow x = y)$
+\end{itemize}
+
+Ad esempio se prendiamo come $POSET \quad (\mathbb{N}, \le), Y = \mathbb{N}$ possiamo dire che:
+\begin{itemize}
+        \item $Y$ ha un minimo, $0$, che è anche elemento minimale.
+        \item $Y$ non ha un massimo, e non ci sono elementi massimali. 
+\end{itemize}
+
+\textit{Osserviamo che se esistono massimo e minimo, sono unici}:
+\begin{itemize}
+        \item Se il minimo esiste, ogni elemento minimale coincide con il minimo.
+        \item Se il massimo esiste, ogni elemento massimale coincide con il massimo.
+        \item Se $\triangle$ è totale, esiste un elemento minimale $\Leftrightarrow$ esiste il minimo.
+        \item Se $\triangle$ è totale, esiste un elemento massimale $\Leftrightarrow$ esiste il massimo. 
+\end{itemize}
+
+
+Un ottimo metodo per trovare i minimali e i massimali è il \textbf{Diagramma di Hasse}. \par
 
 
 \end{document}
