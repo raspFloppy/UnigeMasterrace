@@ -418,14 +418,20 @@ Un esempio di ciò è~\ref{eq:esempio_induzione_1} e~\ref{eq:esempio_induzione_2
 
 
 \subsection{Seconda forma}
-Il \underline{Principio di induzione seconda forma} dice che con $P$ proposizione sui numeri naturali e $n_0 \in \mathbb{N}$ dove $n_0$ è il \textbf{passo zero} se vale:
+Il \underline{Principio di induzione seconda forma} dice che con $P$ proposizione sui numeri naturali e $n_0 \in \mathbb{N}$ dove $n_0$ è il \textbf{passo zero}, se vale:
 \begin{enumerate}
         \item $P(n_0)$ vera.
-        \item $P(n)$ vera.
+        \item $P(n)$ vera $\Rightarrow P(n+1)$ vera.
 \end{enumerate}
+Allora $P(n)$ è vera $\forall n \ge n_0$.
 
 \subsection{Terza forma}
-
+Il \underline{Principio di induzione terza forma} dice che con $P$ proposizione su $\mathbb{Z}$ e $n_0 \in \mathbb{Z}$ dove $n_0$ è il \textbf{passo zero}, se vale:
+\begin{enumerate}
+        \item $P(n_0)$ vera. 
+        \item $P(n)$ vera $\forall m \in \mathbb{Z} \quad n_0 \le m < n \Rightarrow P(n)$ vera. 
+\end{enumerate}
+Allora diciamo che $P(n)$ vera $\forall n \ge n_0$.
 
 
 
@@ -450,6 +456,9 @@ E quindi possiamo dire con certezza che la funzione non è né surriettiva e né
         1 \notin f(\mathbb{Z}^{2}) \\
         \textrm{Perchè fissato } & n \in 3Z
 \end{align*}
+
+
+
 
 
 
