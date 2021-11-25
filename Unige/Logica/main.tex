@@ -1,4 +1,13 @@
 \documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{todonotes}
+\usepackage{graphicx}
+
+\graphicspath{{.images}}
 
 
 \begin{document}
@@ -9,29 +18,41 @@
 
 \maketitle
 \tableofcontents
+\listoftodos\
+
+
+
 \newpage
-
-
 \section{Cos'e' la Logica}
-
 La \textbf{logica} e' lo studio del ragionamento, e quando parliamo di \textbf{logica matematica} ci riferiamo allo studio del ragionamento matematico. \par
 Il ragionamento ci è utile per la risoluzione dei problemi, attraverso la logica noi studiamo il ragionamento, e attraverso il ragionamento noi produciamo la logica. Si può dire che la \textbf{logica studia se stessa}.\par
 In matematica ed informatica la logica la verità è stabilita da delle \textbf{dimostrazioni}. \par
 Le dimostrazioni che risultano vere vengono definiti \textbf{teoremi}.
+
 
 \subsection{Teorema}
 Un teorema è composto da un'\textbf{ipotesi (o assunzione)} e da una \textbf{tesi}, l'ipotesi è  una o più assunzioni da cui partiamo mentre la tesi è la conseguenza del/delle ipotesi.
 
 
 \subsection{Proposizione}
+\todo{Aggiungere DEF proposizione}
 
+
+
+
+\newpage
+\section{Logica proposizionale}
+La logica proposizionale viene definita attraverso delle \textbf{interpretazioni} ed il significato è ottenibile attraverso una tavola di verità. \todo{Completare DEF logica proposizionale}\par
+
+
+
+
+\newpage
 \section{Alberi}
-Noi definiamo albero \par
-Un albero è binario quando \par 
+Noi definiamo albero \todo{Aggiungere DEF di albero }\par
+Un albero è binario quando \todo{Aggiungere DEF di albero binario}\par 
 Un albero si dice etichettato quando ad ogni nodo è associato un elemento. \par
-
 L'albero sintattico di una formula proposizionale P è l'albero binario etichettato finito tale che:
-
 \begin{itemize}
         \item La radice è etichettata con $P$
         \item Se un nodo è etichettato con una formula  $Q$, allora:
@@ -44,20 +65,33 @@ L'albero sintattico di una formula proposizionale P è l'albero binario etichett
 
 
 \subsection{Connettivo principale}
-
-
-Il connettivo principale di un albero è qu
-
+Il connettivo principale di un albero è \todo{Aggiungere DEF di connettivo di albero} 
 Per individuare il connettivo principale attraverso una formula \textbf{non atomica} $P$ dobbiamo verificare queste proprietà:
 
-\begin{itemize}
-        \item  
 
+
+
+\newpage
+\section{Logica del prim'ordine}
+Un linguaggio di prim'ordine è composto da:
+\begin{itemize}
+        \item Una certa quantità di \textbf{simboli di relazione} ($ <,\le,\ldots $).
+        \item Una certa quantità di \textbf{simboli di funzionali}. ($ +,*,\ldots $).
+        \item Una certa quantità di \textbf{simboli di costante}. ($ 0,1,2,\ldots,\pi,\ldots $).
+\end{itemize}
+Con la logica del prim'ordine noi andiamo 
+
+
+\subsection{Contesto nella logica del prim'ordine}
+Una $ L$-struttura  $ A $ consiste di:
+\begin{itemize}
+        \item Un insieme non vuoto $ |A| $ detto \textit{universo} o \textit{dominio} della struttura.
+        \todo{Aggiungere esempi}
 \end{itemize}
 
-
-
-\section{Logica del prim'ordine}
+ \begin{equation*}
+        \mathcal{A} = (A, P^{\mathcal{A}}) \quad  \mbox{ha infiniti contesti interpretabili dove} \quad A \not = \emptyset \quad P^{\mathcal{A}} \subseteq A*A 
+\end{equation*}\todo{Spiegare la formula}
 
 
 
