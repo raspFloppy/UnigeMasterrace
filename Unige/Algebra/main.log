@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.10.13)  24 NOV 2021 20:11
-=======
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.10.13)  23 NOV 2021 17:46
->>>>>>> e377c73 (repo updated)
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.10.13)  25 NOV 2021 08:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -791,63 +787,37 @@ Overfull \hbox (0.88951pt too wide) in paragraph at lines 251--252
 es-em-pio a di-mostrare
  []
 
-<<<<<<< HEAD
-[8]
-<./images/insiemi_numerici.png, id=401, 1002.74625pt x 1002.74625pt>
-=======
 [9]
-<./images/insiemi_numerici.png, id=409, 1002.74625pt x 1002.74625pt>
->>>>>>> e377c73 (repo updated)
+<./images/insiemi_numerici.png, id=439, 1002.74625pt x 1002.74625pt>
 File: ./images/insiemi_numerici.png Graphic file (type png)
 <use ./images/insiemi_numerici.png>
 Package pdftex.def Info: ./images/insiemi_numerici.png  used on input line 268.
 
 (pdftex.def)             Requested size: 172.5pt x 172.49959pt.
-<<<<<<< HEAD
- [9 <./images/insiemi_numerici.png>] [10]
-<./images/relazioni.png, id=418, 501.875pt x 216.81pt>
-File: ./images/relazioni.png Graphic file (type png)
-<use ./images/relazioni.png>
-Package pdftex.def Info: ./images/relazioni.png  used on input line 308.
-(pdftex.def)             Requested size: 258.75pt x 111.78575pt.
-<./images/esempio_funzione.jpg, id=419, 702.625pt x 242.9075pt>
-File: ./images/esempio_funzione.jpg Graphic file (type jpg)
-<use ./images/esempio_funzione.jpg>
-Package pdftex.def Info: ./images/esempio_funzione.jpg  used on input line 336.
-
-(pdftex.def)             Requested size: 258.75pt x 89.45552pt.
- [11 <./images/relazioni.png>]
-Overfull \hbox (1.58037pt too wide) in paragraph at lines 352--353
-=======
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 274.
- [10 <./images/insiemi_numerici.png>]
-<./images/relazioni.png, id=417, 501.875pt x 216.81pt>
+ine 291.
+ [10 <./images/insiemi_numerici.png>] [11]
+<./images/relazioni.png, id=456, 501.875pt x 216.81pt>
 File: ./images/relazioni.png Graphic file (type png)
 <use ./images/relazioni.png>
-Package pdftex.def Info: ./images/relazioni.png  used on input line 288.
+Package pdftex.def Info: ./images/relazioni.png  used on input line 315.
 (pdftex.def)             Requested size: 258.75pt x 111.78575pt.
-<./images/esempio_funzione.jpg, id=418, 702.625pt x 242.9075pt>
+<./images/esempio_funzione.jpg, id=457, 702.625pt x 242.9075pt>
 File: ./images/esempio_funzione.jpg Graphic file (type jpg)
 <use ./images/esempio_funzione.jpg>
-Package pdftex.def Info: ./images/esempio_funzione.jpg  used on input line 316.
+Package pdftex.def Info: ./images/esempio_funzione.jpg  used on input line 343.
 
 (pdftex.def)             Requested size: 258.75pt x 89.45552pt.
- [11 <./images/relazioni.png>]
-Overfull \hbox (1.58037pt too wide) in paragraph at lines 332--333
->>>>>>> e377c73 (repo updated)
+ [12 <./images/relazioni.png>]
+Overfull \hbox (1.58037pt too wide) in paragraph at lines 359--360
 []\OT1/cmr/m/n/10 Aggiungo che la fun-zione $\OML/cmm/m/it/10 ^^Z$ \OT1/cmr/m/n
 /10 ha una $\OML/cmm/m/it/10 y$ \OT1/cmr/m/n/10 a cui cor-rispon-dono due $\OML
 /cmm/m/it/10 x $ \OT1/cmr/m/n/10 ($(1\OML/cmm/m/it/10 ; c\OT1/cmr/m/n/10 )\OML/
 cmm/m/it/10 ; \OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 ; c\OT1/cmr/m/n/10 )$)
  []
 
-<<<<<<< HEAD
-[12 <./images/esempio_funzione.jpg>] [13] [14] [15] [16]
-Overfull \hbox (52.67097pt too wide) in paragraph at lines 469--475
-=======
-[12 <./images/esempio_funzione.jpg>]
-Overfull \hbox (24.9468pt too wide) in paragraph at lines 353--354
+[13 <./images/esempio_funzione.jpg>]
+Overfull \hbox (24.9468pt too wide) in paragraph at lines 380--381
 []\OT1/cmr/m/n/10 Prendiamo come es-em-pio un in-sieme $\OML/cmm/m/it/10 X \OT1
 /cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/
 n/10 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OMS/cmsy/m/n/10 g$ \OT1/cmr/m/n/10 e
@@ -855,381 +825,221 @@ n/10 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OMS/cmsy/m/n/10 g$ \OT1/cmr/m/n/10 e
 /it/10 a; b; c; d; e; f\OMS/cmsy/m/n/10 g$
  []
 
-[13]
-<./images/es_funz_identita.png, id=441, 253.69781pt x 225.09094pt>
+[14]
+<./images/es_funz_identita.png, id=479, 253.69781pt x 225.09094pt>
 File: ./images/es_funz_identita.png Graphic file (type png)
 <use ./images/es_funz_identita.png>
-Package pdftex.def Info: ./images/es_funz_identita.png  used on input line 400.
+Package pdftex.def Info: ./images/es_funz_identita.png  used on input line 427.
 
 (pdftex.def)             Requested size: 258.75pt x 229.5794pt.
-<./images/esempio_funzione_parte_intera.png, id=442, 1405.25pt x 989.6975pt>
+<./images/esempio_funzione_parte_intera.png, id=480, 1405.25pt x 989.6975pt>
 File: ./images/esempio_funzione_parte_intera.png Graphic file (type png)
 <use ./images/esempio_funzione_parte_intera.png>
 Package pdftex.def Info: ./images/esempio_funzione_parte_intera.png  used on in
-put line 421.
+put line 448.
 (pdftex.def)             Requested size: 258.75pt x 182.23038pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14 <./images/es_funz_identita.png>] [15 <./images/esempio_funzione_parte_inter
-a.png>] [16] [17]
-Overfull \hbox (52.67097pt too wide) in paragraph at lines 453--459
->>>>>>> e377c73 (repo updated)
+[15 <./images/es_funz_identita.png>] [16 <./images/esempio_funzione_parte_inter
+a.png>] [17] [18] [19]
+Overfull \hbox (52.67097pt too wide) in paragraph at lines 547--553
 \OML/cmm/m/it/10 f[] \OMS/cmsy/m/n/10 , \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\U/m
 sb/m/n/10 Z[]\OT1/cmr/m/n/10 ) = 2$ e che quindi: $\OML/cmm/m/it/10 f\OT1/cmr/m
 /n/10 (\U/msb/m/n/10 Z[]\OT1/cmr/m/n/10 ) = []$ 
  []
 
 
-<<<<<<< HEAD
-Overfull \hbox (29.75984pt too wide) in paragraph at lines 476--476
-=======
-Overfull \hbox (29.75984pt too wide) in paragraph at lines 460--460
->>>>>>> e377c73 (repo updated)
+Overfull \hbox (29.75984pt too wide) in paragraph at lines 554--554
 []\OT1/cmr/m/n/10 Quella che ab-bi-amo ap-pena scritto ^^Re una fun-zione \OT1/
 cmr/bx/n/10 Dio-fan-tea \OT1/cmr/m/n/10 ovvero $\OML/cmm/m/it/10 MCD\OT1/cmr/m/
 n/10 (21\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 15) :
  []
 
-<<<<<<< HEAD
-[17]
-Overfull \hbox (16.0007pt too wide) in paragraph at lines 518--519
-=======
-[18]
-Overfull \hbox (16.0007pt too wide) in paragraph at lines 499--500
->>>>>>> e377c73 (repo updated)
+[20]
+Overfull \hbox (16.0007pt too wide) in paragraph at lines 596--597
 \OT1/cmr/m/n/10 Esistono in-finiti nu-meri primi e lo pos-si-amo di-mostrare at
 -traverso una di-mostrazione
  []
 
 
-<<<<<<< HEAD
-Overfull \hbox (3.159pt too wide) in paragraph at lines 524--525
-=======
-Overfull \hbox (3.159pt too wide) in paragraph at lines 505--506
->>>>>>> e377c73 (repo updated)
+Overfull \hbox (3.159pt too wide) in paragraph at lines 602--603
 []$\OML/cmm/m/it/10 p[][]N$ \OT1/cmr/m/n/10 ...$\OML/cmm/m/it/10 p[][]N$ \OT1/c
 mr/m/n/10 con-trad-dice il teo-rema prece-dente e perci^^Ro ab-bi-amo di-mostra
 to
  []
 
-<<<<<<< HEAD
-[18]
-Overfull \hbox (53.78041pt too wide) detected at line 549
-=======
-[19]
-Overfull \hbox (53.78041pt too wide) detected at line 530
->>>>>>> e377c73 (repo updated)
+[21]
+Overfull \hbox (53.78041pt too wide) detected at line 627
 []
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 567--568
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 548--549
->>>>>>> e377c73 (repo updated)
+Underfull \hbox (badness 10000) in paragraph at lines 645--646
 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 568--569
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 549--550
->>>>>>> e377c73 (repo updated)
+Underfull \hbox (badness 10000) in paragraph at lines 646--647
 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 569--570
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 550--551
->>>>>>> e377c73 (repo updated)
+Underfull \hbox (badness 10000) in paragraph at lines 647--648
 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 570--571
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 551--552
->>>>>>> e377c73 (repo updated)
+Underfull \hbox (badness 10000) in paragraph at lines 648--649
 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 571--572
-
- []
-
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 577--578
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 578--579
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 579--580
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 580--581
-
- []
-
-
-Overfull \hbox (11.46524pt too wide) in paragraph at lines 583--584
-[]\OT1/cmr/bx/n/10 CERCARE SU IN-TER-NET DIS-UG-UAGLIANZA TRI-AN-GO-LARE
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 583--584
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 588--589
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 591--592
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 593--594
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 597--600
-
- []
-
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 626--627
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 635--636
-
- []
-
-[21]
-Overfull \hbox (9.51906pt too wide) in paragraph at lines 666--666
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 552--553
-
- []
-
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 558--559
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 559--560
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 560--561
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 561--562
-
- []
-
-
-Overfull \hbox (11.46524pt too wide) in paragraph at lines 564--565
-[]\OT1/cmr/bx/n/10 CERCARE SU IN-TER-NET DIS-UG-UAGLIANZA TRI-AN-GO-LARE
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 564--565
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 569--570
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 572--573
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 574--575
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 578--581
-
- []
-
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 607--608
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 616--617
+Underfull \hbox (badness 10000) in paragraph at lines 649--650
 
  []
 
 [22]
-Overfull \hbox (9.51906pt too wide) in paragraph at lines 647--647
->>>>>>> e377c73 (repo updated)
+Underfull \hbox (badness 10000) in paragraph at lines 655--656
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--657
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 657--658
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 658--659
+
+ []
+
+
+Overfull \hbox (11.46524pt too wide) in paragraph at lines 661--662
+[]\OT1/cmr/bx/n/10 CERCARE SU IN-TER-NET DIS-UG-UAGLIANZA TRI-AN-GO-LARE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 661--662
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 666--667
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 669--670
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 671--672
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 675--678
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 704--705
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 713--714
+
+ []
+
+[24]
+Overfull \hbox (9.51906pt too wide) in paragraph at lines 744--744
 \OT1/cmr/m/n/10 Sia $\OML/cmm/m/it/10 A$ \OT1/cmr/m/n/10 un in-sieme e sia $\U/
 msa/m/n/10 v$ \OT1/cmr/m/n/10 una re-lazione di equiv-alenza su $\OML/cmm/m/it/
 10 A$\OT1/cmr/m/n/10 . La $[]$
  []
 
-<<<<<<< HEAD
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 703--705
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 781--783
 
  []
 
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 734--735
-=======
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 684--686
-
- []
-
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 715--716
->>>>>>> e377c73 (repo updated)
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 812--813
 
  []
 
 
-<<<<<<< HEAD
-Overfull \hbox (14.78091pt too wide) in paragraph at lines 752--753
-=======
-Overfull \hbox (14.78091pt too wide) in paragraph at lines 733--734
->>>>>>> e377c73 (repo updated)
+Overfull \hbox (14.78091pt too wide) in paragraph at lines 830--831
 []\OT1/cmr/bx/n/10 PROBABILMENTE C'[]E TROPPA ROBA CHE NON HO SCRITTO 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 752--753
+Underfull \hbox (badness 10000) in paragraph at lines 830--831
 
  []
 
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 816--817
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 733--734
-
- []
-
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 797--798
->>>>>>> e377c73 (repo updated)
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 894--895
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-<<<<<<< HEAD
-(hyperref)                removing `math shift' on input line 833.
+(hyperref)                removing `math shift' on input line 911.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 833.
-
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 843--844
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 847--848
-
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 850.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 850.
-
-[26] [27]
-Overfull \hbox (20.5156pt too wide) in paragraph at lines 940--942
-\OT1/cmr/bx/n/10 CHE SEGUIR[]O E POI SCRIVER[]O IN FU-TURO QUANDO RIFINISCO
- []
+(hyperref)                removing `math shift' on input line 911.
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 977--978
-=======
-(hyperref)                removing `math shift' on input line 814.
+Underfull \hbox (badness 10000) in paragraph at lines 921--922
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 925--926
+
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 814.
-
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 824--825
->>>>>>> e377c73 (repo updated)
-
- []
-
-
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 979--980
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 828--829
->>>>>>> e377c73 (repo updated)
-
- []
-
-
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 981--982
-=======
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 831.
+(hyperref)                removing `math shift' on input line 928.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 831.
+(hyperref)                removing `math shift' on input line 928.
 
-[27] [28] [29]
-Underfull \hbox (badness 10000) in paragraph at lines 958--959
->>>>>>> e377c73 (repo updated)
+[29] [30] [31]
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1056
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1057--1058
 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 992--993
+Underfull \hbox (badness 10000) in paragraph at lines 1059--1060
 
  []
 
-[29]
-Overfull \hbox (25.47176pt too wide) in paragraph at lines 1002--1003
+
+Underfull \hbox (badness 10000) in paragraph at lines 1070--1071
+
+ []
+
+[32]
+Overfull \hbox (25.47176pt too wide) in paragraph at lines 1080--1081
 \OT1/cmr/m/n/10 Definiamo $(\OML/cmm/m/it/10 A[]; \OMS/cmsy/m/n/10 4[]\OT1/cmr/
 m/n/10 )\OML/cmm/m/it/10 ; [] ; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A[]; \OMS/cms
 y/m/n/10 4[]\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 POSET$ \OT1/cmr/m/n/10 defin-imo
@@ -1237,61 +1047,38 @@ y/m/n/10 4[]\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 POSET$ \OT1/cmr/m/n/10 defin-imo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1002--1003
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 960--961
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1081
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 962--963
->>>>>>> e377c73 (repo updated)
-
- []
-
-
-<<<<<<< HEAD
-Overfull \hbox (16.20169pt too wide) detected at line 1013
+Overfull \hbox (16.20169pt too wide) detected at line 1091
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]; a[]; [] ; a[]\OT1/cmr/m/n/10 )\OMS/cmsy/
 m/n/10 4[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 b[]; b[]; [] ; b[]\OT1/cmr/m/n/10 )
  \OMS/cmsy/m/n/10 , []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1032--1033
+Underfull \hbox (badness 10000) in paragraph at lines 1110--1111
 
  []
 
 
-Overfull \hbox (55.30962pt too wide) detected at line 1042
+Overfull \hbox (55.30962pt too wide) detected at line 1120
 \OT1/cmr/m/n/10 (\U/msb/m/n/10 R[]\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 ^^T[]\OT1
 /cmr/m/n/10 ) [] (\U/msb/m/n/10 R[]\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 ^^T \OML
 /cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^T\OT1/cmr/m/n/10 ) []\OML/cmm/m/it/10 :
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 973--974
-
->>>>>>> e377c73 (repo updated)
  []
 
-[30] [31] (./main.aux)
+[33] [34] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-<<<<<<< HEAD
-(rerunfilecheck)             Checksum: AC3236A45947765C9AB4CD37C873B683;10126.
+(rerunfilecheck)             Checksum: DA7B2BE3017FC9A58A8E4622CDF77DA3;10129.
  ) 
 Here is how much of TeX's memory you used:
- 10932 strings out of 478994
- 163742 string characters out of 5864750
- 461785 words of memory out of 5000000
- 28112 multiletter control sequences out of 15000+600000
-=======
-(rerunfilecheck)             Checksum: F1F48DBC454FEA8BFBCAEFF276E04C6D;9192.
- ) 
-Here is how much of TeX's memory you used:
- 21942 strings out of 478994
- 399193 string characters out of 5864750
- 676286 words of memory out of 5000000
- 38883 multiletter control sequences out of 15000+600000
->>>>>>> e377c73 (repo updated)
+ 21970 strings out of 478994
+ 399619 string characters out of 5864750
+ 676488 words of memory out of 5000000
+ 38893 multiletter control sequences out of 15000+600000
  412333 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,14n,102p,626b,953s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1312,19 +1099,10 @@ msfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf-dis
 t/fonts/type1/public/cm-super/sfrm1000.pfb>
-<<<<<<< HEAD
-Output written on main.pdf (31 pages, 450777 bytes).
+Output written on main.pdf (34 pages, 476620 bytes).
 PDF statistics:
- 656 PDF objects out of 1000 (max. 8388607)
- 594 compressed objects within 6 object streams
- 165 named destinations out of 1000 (max. 500000)
- 512 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
-Output written on main.pdf (31 pages, 463296 bytes).
-PDF statistics:
- 653 PDF objects out of 1000 (max. 8388607)
- 571 compressed objects within 6 object streams
- 156 named destinations out of 1000 (max. 500000)
- 582 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> e377c73 (repo updated)
+ 711 PDF objects out of 1000 (max. 8388607)
+ 625 compressed objects within 7 object streams
+ 174 named destinations out of 1000 (max. 500000)
+ 630 words of extra memory for PDF output out of 10000 (max. 10000000)
 

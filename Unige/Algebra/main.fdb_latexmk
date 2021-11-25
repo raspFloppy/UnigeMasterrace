@@ -1,9 +1,5 @@
 # Fdb version 3
-<<<<<<< HEAD
-["pdflatex"] 1637781105 "main.tex" "main.pdf" "main" 1637781106
-=======
-["pdflatex"] 1637685992 "main.tex" "main.pdf" "main" 1637685993
->>>>>>> e377c73 (repo updated)
+["pdflatex"] 1637826183 "main.tex" "main.pdf" "main" 1637826184
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1617738065 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -183,33 +179,20 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1617738065 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1634140649 5045527 a0ef06d06af438d62994481e52c2af5f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1634140630 2812677 e3d85330e9c79cd0094fc14ffdff433f ""
-  "images/es_funz_identita.png" 1637677943 1445 cbbca3df1fbd1b218ecaff630b34e899 ""
+  "images/es_funz_identita.png" 1637825909 1445 cbbca3df1fbd1b218ecaff630b34e899 ""
   "images/esempio_funzione.jpg" 1637319361 10469 f17abe485f1b8adf1bb7bace6363b822 ""
-  "images/esempio_funzione_parte_intera.png" 1637678300 8914 476822d7f41d154fbfd36f589d92d074 ""
+  "images/esempio_funzione_parte_intera.png" 1637825909 8914 476822d7f41d154fbfd36f589d92d074 ""
   "images/insiemi_numerici.png" 1636828388 135758 85a4ea5e5a5e0764346191eab18e4720 ""
   "images/relazioni.png" 1637318097 43141 db7349d48e3c902ca022021c7cceb562 ""
-<<<<<<< HEAD
-  "main.aux" 1637781105 10348 12f53a9ba16c2b572f6c5ebc782dfff4 "pdflatex"
-  "main.out" 1637781105 10126 ac3236a45947765c9ab4cd37c873b683 "pdflatex"
-  "main.tex" 1637781092 49281 81bbd5b9ba397f4c2ea5b67b2d78a46d ""
-  "main.toc" 1637781105 5431 09100afc6eaffaafb42aa5506c18f872 "pdflatex"
+  "main.aux" 1637826184 11806 b9797de18b0624a5151ac37077885462 "pdflatex"
+  "main.out" 1637826184 10129 da7b2be3017fc9a58a8e4622cdf77da3 "pdflatex"
+  "main.tdo" 1637826184 255 59222b8c14373956937301187c0b99e6 "pdflatex"
+  "main.tex" 1637826181 52445 c1d5976e6fea2d6e2a073229ac4a8335 ""
+  "main.toc" 1637826184 5436 f5a29f51d5e8071223006f7526cae3bd "pdflatex"
   (generated)
   "main.aux"
-  "main.pdf"
-  "main.toc"
-  "main.log"
   "main.out"
-=======
-  "main.aux" 1637685993 10673 1a8febb811e51c569cb58c4a11b3e8bb "pdflatex"
-  "main.out" 1637685993 9192 f1f48dbc454fea8bfbcaeff276e04c6d "pdflatex"
-  "main.tdo" 1637685993 255 84cb48ccf2678617ebc71ce7d5f1da0d "pdflatex"
-  "main.tex" 1637685991 44423 f00a90e9f587112cbf8c560b0febb166 ""
-  "main.toc" 1637685993 4889 e08c8a008e96a41c67332289143b77c1 "pdflatex"
-  (generated)
   "main.toc"
-  "main.out"
-  "main.aux"
   "main.pdf"
   "main.log"
   "main.tdo"
->>>>>>> e377c73 (repo updated)
