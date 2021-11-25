@@ -1295,9 +1295,73 @@ Esempio prendiamo $(\mathbb{R}, \le) \quad Y = (0,1)$ intervallo aperto $= \{x \
         \item 2 è maggiorante per y in quanto $2 \ge y \forall y \in Y$
 \end{itemize}
 
-Per esempio prendiamo $(\mathbb{R}, \le) \quad Y = (0,1)$ intervallo aperto dove $ = \{x \in \mathbb{R} : 0 < x < 1\}$ in qunto $2$ è maggiorante per $y$ visto che $2 \ge y \quad  \forall Y$.
+Per esempio prendiamo $(\mathbb{R}, \le) \quad Y = (0,1)$ intervallo aperto dove $ = \{x \in \mathbb{R} : 0 < x < 1\}$ in qunto $2$ è maggiorante per $y \quad $ visto che $2 \ge y \quad  \forall Y$.
 
-ciao_1
+
+Definiamo $(X, \triangle)$ POSET, diciamo che $X$ è \underline{Bene ordinato} se ogni sottoinsieme  $\not = \emptyset$ ammette minimo. \par
+Ad esempio se prendiamo $(\mathbb{N}, \le)$ è bene ordinato
+Ad esempio se prendiamo $(\mathbb{Z}, \le)$ non è bene ordinato. \par
+Ci piacciono gli esempi quindi prendiamo anche $\mathbb{N}*\mathbb{N}, \le * \le  $ non è bene ordintato \par
+Se invece utilizziamo l'ordine \textbf{LEX} con una coppia ordinata ($(x_1,\triangle_1)$) ($x_2,\triangle_2$) POSET.\newline
+
+
+\subsection{Assioma del buon ordinamento}\label{Assioma_del_buon_ordinamento}
+Se prendiamo $X$ insieme, $X \not = \emptyset$ allora $\exists \triangle$ ordine prziale tale ce $(x,\triangle)$ bene ordinato. \par
+
+Citando il \textbf{Lemma di Zorn} $(x, \triangle)$ POSET, $X \not = \emptyset$ tale che ogni catena in $X$ possiede almeno un maggiorante, Allora $X$ possiede elementi massimali. \par
+\textit{(Assioma della scelta) $\Leftrightarrow$ (Assioma B.O.)  $\Leftrightarrow$ (Lemma di Zorn)}. \par
+
+
+
+
+
+
+\newpage
+\section{Principio di Induzione Strutturale}
+\todo{DEF:dare una definizione non matematica}
+
+Prendiamo $(x,\triangle)$ POSET ben definito, $\mathcal{P}$ affermazione sugli elementi di $X$ se vale:
+
+\begin{enumerate}
+        \item $\mathcal{P}(x)$ vera $\forall x \in X$ minimale
+        \item $\forall y,z \in X $ tale che $y \triangle z$ se $\mathcal{P}(y)$ vera allora $\mathcal{P}(z)$ vera 
+\end{enumerate}
+Allora $\mathcal{P}(x)$ vera $\forall x \in X$.
+
+
+
+
+
+
+
+\newpage
+\section{Aritmetica modulare}
+\todo{DEF:Aggiungere una definizione non matematica}
+
+Definiamo un insieme $ A $, \underline{operazione (binaria)} su $ A $ è una funzione che:
+\begin{equation*}
+        * : A * A \to A
+\end{equation*}
+Denotiamo $*(x,y) = x*y$ con $ x,y \in A $. \par
+Per esempio quando eseguiamo una somma noi stiamo facendo:
+\begin{align*}
+        + : \mathbb{N}*\mathbb{N} \to \mathbb{N} \\
+        \quad \quad \quad (n,m) \mapsto n + m
+\end{align*}
+Con i numeri:
+\begin{equation*}
+        (2,3) \mapsto 2 + 3 = 5
+\end{equation*}
+
+\section{Proprietà dell'aritmentica modulare}
+Se abbiamo $ * : A*A \to A $ operazione possiamo avere:
+\begin{itemize}
+        \item $ * $  \underline{commutativa} $ \quad x * y = y * x \quad \forall x,y \in A $
+        \item $ * $  \underline{associativa} $ \quad x * (y * z) = (x * y) * z \quad \forall x,y,z \in A$
+        \item $ * $ \underline{un elemento neutro} $ \quad \exists e \in A $ tale che $ e * x= x * e = x  \quad  \forall x \in A$. 
+\end{itemize}
+
+
 
 
 
