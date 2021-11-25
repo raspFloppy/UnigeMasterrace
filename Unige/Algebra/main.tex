@@ -5,6 +5,7 @@
 \usepackage{caption}
 \usepackage{mathtools}
 \usepackage{graphicx}
+\usepackage{todonotes}
 \graphicspath{{./images}}
 
 \begin{document}
@@ -15,9 +16,12 @@
 \maketitle
 \tableofcontents
 \newpage
+\listoftodos\
 
 
 
+
+\newpage
 \section{Insiemi}
 Noi definiamo \textbf{insieme} una \textbf{collezione} di elementi, questi elementi possono qualsiasi cosa: numeri, oggetti, persone, ecc.. \par
 Gli elementi fanno parte di un insieme soltanto se rispettano le proprietà dell'insieme stesso, per esempio gli elementi dell'insieme dei numeri pari dovranno avere come proprietà quella di essere pari appunto. \par
@@ -70,7 +74,7 @@ Questo perchè la proprietà di essere pari è \textbf{oggettiva} mentre per ese
 Non può essere un insieme in quanto essere un \textit{libro interessante} non è una proprietà oggettiva.
 
 Proseguendo possiamo trovare anche insiemi che contengono un solo elemento, questi insiemi sono detti \textbf{singoletti} e sono scritti:
-\begin{equation}
+\begin{equation}\label{def_singoletto}
         \{*\}
 \end{equation}
 Dove * rappresenta il singolo elemento.
@@ -224,13 +228,13 @@ L'insieme delle parti è l'insieme dei sottoinsiemi contenuti in un dato insieme
 Se la cosa vi confonde ancora facciamo un esempio concreto, prendiamo un insieme $A = \{1,2,3\}$ l'insieme delle parti, che si scrive $P(A)$ è:
 
 \begin{equation}
-        P(A) = \{\emptyset, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, A \}
+        \mathcal{P}(A) = \{\emptyset, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, A \}
 \end{equation}
 Adesso il concetto dovrebbe essere (spero), più chiaro. \newline 
 
 Prendiamo un esempio particolare dell'insieme delle parti, \textbf{l'insieme delle parti dell'insieme vuoto}, come sappiamo infatti l'insieme vuoto non ha nessun elemento, ma l'insieme delle parti è differente è l'insieme dei sotto insiemi di un dato insieme e come sappiamo ogni insieme ha come elemento l'insieme vuoto perciò:
 \begin{equation}
-        P\{\emptyset\} = \{\emptyset  \}
+        \mathcal{P}\{\emptyset\} = \{\emptyset  \}
 \end{equation}
 
 
@@ -245,7 +249,7 @@ Ora mostriamo alcune proprietà degli insiemi per poi successivamente dimostrarl
 \end{enumerate}
 
 olte di queste sono facilmente dimostrabili, proviamo ad esempio a dimostrare la~\ref{itm:prop_associativa1} che è appunto la proprietà associativa: \newline
-Se noi abbiamo che $x \in (A \cup B) \cup C \Leftrightarrow (x \in A \cup B) \lor (x \in C)$ perchè appunto se $x$ appartiene all'insieme formato dall'unione di $A,B,C$ e conoscendo la definizione dell'unione~\ref{eq:def_unione}  sappiamo che $x$ deve appartenere almeno ad uno tra $A,B,C$ e quindi possiamo scrivere che $(x \in A) \lor (x \in B) \lor (x \in C)$ che può essere riscritta in $x \in A \lor ((x \in B) \lor (x \in C))$ che sarebbe come scrivere (se seguiamo la definizione di unione) $x \in A \lor (x \in B \cup C)$ che si può trasformare in $x \in A \cup (x \in B \cup C)$.
+Se noi abbiamo che $x \in (A \cup B) \cup C \Leftrightarrow (x \in A \cup B) \lor (x \in C)$ perchè appunto se $x$ appartiene all'insieme formato dall'unione di $A,B,C$ e conoscendo la definizione dell'unione~\ref{eq:def_unione}  sappiamo che $x$ deve appartenere almeno ad uno tra $A,B,C$ e quindi possiamo scrivere che $(x \in A) \lor (x \in B) \lor (x \in C)$ che può essere riscritta in $x \in A \lor ((x \in B) \lor (x \in C))$ che sarebbe come scrivere (se seguiamo la definizione di unione) $x \in A \lor (x \in B \cup C)$ che si può trasformare in $x \in A \cup (x \in B \cup C)$. \par
 Dimostrando che $x$ può appartenere all'insieme formato da $A,B,C$ anche cambiando l'ordine in è scritta l'unione dei tre insiemi, noi abbiamo dimostrato proprio che~\ref{itm:prop_associativa1} è vera e anche se non l'ho dimostrato anche~\ref{itm:prop_associativa2} è vera.\par
 Se avete capito il meccanismo con il quale ho dimostrato~\ref{itm:prop_associativa1} allora potete facilmente dimostrare~\ref{itm:prop1}~\ref{itm:prop3} e~\ref{itm:prop5}.
 
@@ -266,6 +270,7 @@ Per fare un breve riassunto degli insiemi numerici:
 \end{figure}
 
 
+<<<<<<< HEAD
 \subsection{Insiemi Indiciati}\label{sec:insiemi_indiciati}
 Un \textbf{Insieme indiciato} è una famiglia di insiemi definiti da un indice $i \in I$ dove $I \in \mathbb{N}$, infatti potenzialmente $I = \{1,2,3,\ldots,n\}$. \par
 Scriviamo un insieme indicato come:
@@ -282,6 +287,10 @@ Se avessimo $I = \{1,2,3,4,5\}$ sarebbe come scrivere:
 \begin{equation*}
         A_1 \cup A_2 \cup A_3 \cup A_4 \cup A_5
 \end{equation*}
+=======
+\subsection{Insiemi Indiciati}
+\todo{Aggiungere teoria degli insiemi indiciati}
+>>>>>>> e377c73 (repo updated)
 
 Facciamo un esempio, prendiamo $A_i = \{x \in \mathbb{N} : x \not = 2i\}$ con $I = \{1,2,3\}$, avremo che:
 \begin{itemize}
@@ -361,23 +370,94 @@ L'immagine della funzione è semplicemente la funzione stessa $ y = f(x) $ scrit
         f(A) := \{y \in Y, \exists x \in A : y = f(x) \}
 \end{equation*}
 Dove $ A \subseteq X $ ovvero $ A $ sottoinsieme del dominio. \newline  
-Ovvero gli elementi del \textbf{dominio} $ X $ che vengono mandati in un solo \textbf{codominio} $ Y $ 
+\todo{Aggiungere definizione di Immagine}
 
 \subsubsection{Controimmagine}
-La controimmagine sono invece gli elementi del \textbf{codominio} $ Y $ che vengono mandati n  
+La controimmagine sono invece gli elementi del \textbf{codominio} $ Y $ che vengono mandati nel \textbf{dominio} $ X $. \par 
+Scritto in \textit{matematichese}:
+\begin{equation*}
+        {f}^{-1}(B) = \{ x \in X : f(x) \in B  \}
+\end{equation*}
+ 
+Prendiamo come esempio un insieme $ X = \{1,2,3\}$ e un insieme $ Y = \{a,b,c,d,e,f\} $  e una funzione che dice:
+\begin{align*}
+        \varphi : X \to Y \\
+        \quad 1 \mapsto c \\
+        \quad 2 \mapsto c \\
+        \quad 3 \mapsto a \\
+\end{align*}
+
+E prendiamo tre insiemi che sono \textit{singoletti}~\ref{def_singoletto}, $ B = \{a\} \quad E = \{c\} \quad F = \{d\}$, avremo che:
+\begin{itemize}
+        \item $ B = \{a\} \Rightarrow {f}^{-1}(B) = {3} $ in quanto $ a \in Y $. 
+        \item $ E = \{c\} \Rightarrow {f}^{-1}(E) = {1,2}$ in quanto $ c \in Y $.  
+        \item $ F = \{d\} \Rightarrow {f}^{-1}(F) = {\emptyset} $ in quanto $ d \not \in Y $.
+\end{itemize}
+
+
+\subsection{Iniettività, Surgettività e Bigettività}
+Una funzione può essere \textbf{iniettiva, surriettiva e bigettiva}, ora spieghiamo cosa significa:
+\begin{itemize}
+        \item \underline{Iniettiva}: quando $ \forall x_1,x_2 \in X \quad \mbox{per cui} \quad f(x_1)=f(x_2) \Rightarrow x_1=x_2  $.   
+        \item \underline{Surriettiva}: quando $ \forall y \in Y  \exists x \in X : f(x) = y $.   
+        \item \underline{Bigettiva}: quando la funzione è sia iniettiva che surriettiva.  
+\end{itemize}
 
 
 \subsection{Il grafico della funzione}
 
 
-\subsection{Iniettività, Surgettività e Bigettività}
-\subsection{Tipi di funzioni}
 \subsubsection{Funzione Identità}
+La funzione \textbf{Identità (o funzione identica)}, è una funzione che associa ad ogni valore di $ x $ se stessa \par
+Per esempio $ y=x $ o $ y = x + 0 $ sono funzioni identità. \newline
+Noi scriviamo la funzione identità come:
+\begin{align*}
+        Id_x : X \to X \\
+        \quad x \mapsto x
+\end{align*}
+
+Facciamo un esempio di funzione identità, prendiamo:
+\begin{align*}
+        Id_{\mathbb{N}} : \mathbb{N} \to \mathbb{N} \\
+        \quad n \mapsto n
+\end{align*}
+
+Se prendiamo per esempio $ 1 \in \mathbb{N} $ avremo $ Id(1) = 1 $ \par
+La funzione identità è \textbf{sempre bigettiva}.
+\begin{figure}[h]
+        \centering
+                \includegraphics[width=0.75\textwidth]{es_funz_identita.png}
+        \caption{La bisettrice del 1 e 3 quadrante è una funzione identità}\label{fig:esempio_funzione_identità}
+\end{figure}
+
+
 \subsubsection{Funzione Parte Intera}
+La \textbf{funzione parte intera (o funzione floor)} è una funzione che si indica con $ \lfloor x \rfloor $ che associa ad ogni numero $ \mathbb{Z} $  il numero stesso e ad un numero decimale, l'intero precedente. \par
+In matematichese questo si definisce come:
+\begin{equation*}
+        \forall x \in \mathbb{R} \forall n \in \mathbb{Z} \quad n \le n \Rightarrow n \le P(x)
+\end{equation*}
+Dove $ P(x) $ è il più grande intero $ \le  x$. \par
+Facciamo qualche esempio: 
+\begin{itemize}
+        \item $ P(\frac{3}{2}) = 1$ perchè $ \frac{3}{2} = 1,5 $ dove $ 1 $ è la parte intera.   
+        \item $ P( - \frac{1}{2}) = -1$ perchè $ - \frac{1}{2} = -0,5 $ dove in questo caso è $ -1 $ l'intero più vicino. 
+\end{itemize} 
+
+
+\begin{figure}[h]
+        \centering
+                \includegraphics[width=0.75\textwidth]{esempio_funzione_parte_intera.png}
+        \caption{Esempio di funzione parte intera}\label{fig:esempio_funzione_parte_intera}
+\end{figure}
+
+
 \subsubsection{Funzione Parte Frazionaria}
+
+
+
+
 \subsubsection{Funzione Composta}
-
-
 \subsection{Invertibilità}
 
 \newpage
@@ -938,7 +1018,7 @@ Il coefficiente binoiale è $x,y \in \mathbb{C}, n \in \mathbb{N}*$ allora:
 \end{equation*}
 
 Dimostriamolo attraverso l'induzione: \newline
-\textbf{CHE SEGUIRÒ E POI SCRIVERÒ IN FUTURO QUANDO RIFINISCO GLI APPUNTI VERO GABRIEL???}.
+\todo{Dimostrare il coefficiente binomiale attraverso l'induzione}
 
 
 Corollario $X$ insieme finito, $|X| = n$ allora $|P(x)| = 2^n$ dimostrabile $\forall 0 \le k \le n$ il numero di sottoinsiemi di $k$ elementi di $X$ è (n su k). \par
