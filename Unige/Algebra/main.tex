@@ -8,7 +8,11 @@
 \usepackage{todonotes}
 \graphicspath{{./images}}
 
+
 \begin{document}
+
+
+
 
 \title{Appunti molto belli di Algebra}
 \author{Floppy Loppy}
@@ -21,11 +25,14 @@
 
 
 
+
+
 \newpage
 \section{Insiemi}
 Noi definiamo \textbf{insieme} una \textbf{collezione} di elementi, questi elementi possono qualsiasi cosa: numeri, oggetti, persone, ecc.. \par
 Gli elementi fanno parte di un insieme soltanto se rispettano le proprietà dell'insieme stesso, per esempio gli elementi dell'insieme dei numeri pari dovranno avere come proprietà quella di essere pari appunto. \par
 Perfetto ora che abbiamo una definizione di insieme possiamo iniziare ad introdurre la sintassi e alcune proprietà.
+
 
 \subsection{Proprietà degli insiemi}
 Consideriamo di avere un insieme di nome \textit{A} e un elemento che chiamiamo \textit{x} che fa parte di \textit{A} (perchè rispetta le proprietà dell'insieme), allora si dice che \textit{x} \textbf{Appartiene} ad \textit{A}, ciò in Algebra si scrive:
@@ -86,6 +93,7 @@ Ed infine, l'insieme vuoto che si rappresente con il simbolo:
 Spiegandolo brevemente questo insieme non contiene nessun elemento (infatti si definisce vuoto), e possiede alcune proprietà interessanti come per esempio quello di essere contenuto in qualsiasi insieme.
 
 
+
 \subsection{Connettivi Logici}
 Attraverso quelli che chiamiamo \textbf{connettivi logici} possiamo eseguire delle operazioni tra insiemi, da queste operazioni noi possiamo ricavare due valori: vero o falso,  andiamone a vederne alcune. \par
 
@@ -97,6 +105,7 @@ Prima di tutto definiamo due \textbf{proposizioni/affermazioni} fittizzie che ch
         \item L' \textbf{Implicazione} scritta: $P \Rightarrow D$ ha valore vero solo quando D è vera.
         \item L' \textbf{Equivalenza} scritta: $P \Leftrightarrow D$ ha valore vero solo quando P e D hanno lo stesso valore logico (vero;vero), (falso;falso).
 \end{itemize}
+
 
 
 \subsection{Quantificatori universali}
@@ -127,6 +136,7 @@ Abbiamo poi \textbf{l'esiste unico} che sta ad indicare che esiste un solo eleme
 \end{equation}
 
 
+
 \subsection{Ordine dei quantificatori}
 Come ogni cosa in matematica bisogna rispettare gli ordini delle varie operazioni e questo vale anche per i quantificatori universali, si abbia per esempio:
 \begin{align}
@@ -150,8 +160,10 @@ Prendiamo una proposizione $P$ che dice che x paga da bere a y, utilizzando gli 
 Spero che con questo esempio possa aver chiarito le idee.
 
 
+
 \subsection{Quantificatori Equivalenti}
 Per indicare un equivalenza tra proposizioni noi utilizziamo il simbolo $\equiv$ un esempio di equivalenza tra proposizioni può essere: $\exists x \exists \equiv \exists y \exists x$.
+
 
 
 \subsection{Negazione di un quantificatore}
@@ -167,6 +179,7 @@ Se volessimo fare un equivalenza potremo dire che: \newline
         \item $\lnot \forall x P \equiv \exists x \lnot P$ 
         \item $\lnot \exists x P \equiv \forall x \lnot P$
 \end{itemize}
+
 
 
 \subsection{Definizioni}
@@ -223,6 +236,7 @@ Ma noi vogliamo esempi pratici giusto?, ok e  allora prendiamo due insiemi: $A =
 \end{itemize}
 
 
+
 \subsection{Insieme delle parti}
 L'insieme delle parti è l'insieme dei sottoinsiemi contenuti in un dato insieme, ok spieghiamolo meglio, l'insieme delle parti di un insieme $A$ è l'insieme degli elementi che sono sottoinsiemi dell'insieme $A$. \par
 Se la cosa vi confonde ancora facciamo un esempio concreto, prendiamo un insieme $A = \{1,2,3\}$ l'insieme delle parti, che si scrive $P(A)$ è:
@@ -236,6 +250,7 @@ Prendiamo un esempio particolare dell'insieme delle parti, \textbf{l'insieme del
 \begin{equation}
         \mathcal{P}\{\emptyset\} = \{\emptyset  \}
 \end{equation}
+
 
 
 \subsection{Proprietà degli insiemi}
@@ -254,6 +269,7 @@ Dimostrando che $x$ può appartenere all'insieme formato da $A,B,C$ anche cambia
 Se avete capito il meccanismo con il quale ho dimostrato~\ref{itm:prop_associativa1} allora potete facilmente dimostrare~\ref{itm:prop1}~\ref{itm:prop3} e~\ref{itm:prop5}.
 
 
+
 \subsection{Insiemi numerici}
 Gli insiemi numerici sono appunto gli insiemi formati da numeri. \par
 Non mi dilungherò troppo in questa parte perchè molte nozioni sono già state apprese alle superiori ed alle medie, vi basti sapere che:
@@ -268,6 +284,7 @@ Per fare un breve riassunto degli insiemi numerici:
                 \includegraphics[width=0.5\textwidth]{insiemi_numerici.png}
         \caption{Insiemi numerici}\label{fig:insiemi_numerici}
 \end{figure}
+
 
 
 \subsection{Insiemi Indiciati}\label{sec:insiemi_indiciati}
@@ -287,8 +304,8 @@ Se avessimo $I = \{1,2,3,4,5\}$ sarebbe come scrivere:
 \end{equation*}
 
 
+
 \subsection{Insiemi Indiciati}
-\todo{Aggiungere teoria degli insiemi indiciati}
 
 Facciamo un esempio, prendiamo $A_i = \{x \in \mathbb{N} : x \not = 2i\}$ con $I = \{1,2,3\}$, avremo che:
 \begin{itemize}
@@ -302,9 +319,12 @@ Facciamo un esempio, prendiamo $A_i = \{x \in \mathbb{N} : x \not = 2i\}$ con $I
 Prendete con le pinze questa definizione, ma potremo immaginare gli insiemi indiciati come array di array che hanno le stesse proprietà.
 
 
+
+
 \newpage
 \section{Relazioni e Funzioni}
 Gli elementi appartenenti a uno o più insiemi possono essere collegati attraverso diversi tipi di relazioni, per esempio i membri di una famiglia sono collegati tra loro attraverso una relazione di parentela. \par
+
 
 \subsection{Relazioni}
 In matematica una relazione può essere espressa attraverso $ a \to b$ oppure $ a R b $ dove $ a $ e $ b $ sono elementi di un certo insieme ed $ R $ è una relazione. \par
@@ -324,6 +344,7 @@ Altri tipi di relazioni sono:
 \end{itemize}
 Facciamo un esempio di relazione diagonale: \newline
 Prendiamo un insieme $ X = \{1,2,3\} $ avremo $ \Delta = \{(1,1), (2,2),(3,3)\} $ come relazione diagonale su $ X $.
+
 
 
 \subsection{Funzioni}
@@ -359,6 +380,7 @@ Da questo possiamo di con certezza che:
 Aggiungo che la funzione $ \rho $ ha una $ y $ a cui corrispondono due $ x \quad $ ($ (1,c), (2,c) $) questo però non viola~\ref{eq:prop_funzione} in quanto è $ x $ che deve rispettare quella proprietà non $ y $.  
 
 
+
 \subsection{Immagine e controimmagine}
 Definiamo ora cosa sono l'immagine e la controimmagine di una funzione
 
@@ -368,7 +390,6 @@ L'immagine della funzione è semplicemente la funzione stessa $ y = f(x) $ scrit
         f(A) := \{y \in Y, \exists x \in A : y = f(x) \}
 \end{equation*}
 Dove $ A \subseteq X $ ovvero $ A $ sottoinsieme del dominio. \newline  
-\todo{Aggiungere definizione di Immagine}
 
 \subsubsection{Controimmagine}
 La controimmagine sono invece gli elementi del \textbf{codominio} $ Y $ che vengono mandati nel \textbf{dominio} $ X $. \par 
@@ -393,7 +414,8 @@ E prendiamo tre insiemi che sono \textit{singoletti}~\ref{def_singoletto}, $ B =
 \end{itemize}
 
 
-\subsection{Iniettività, Surgettività e Bigettività}
+
+\subsection{Iniettività, Surgettività e Bigettività}\label{sec:iniettiva_surriettiva_bigettiva}
 Una funzione può essere \textbf{iniettiva, surriettiva e bigettiva}, ora spieghiamo cosa significa:
 \begin{itemize}
         \item \underline{Iniettiva}: quando $ \forall x_1,x_2 \in X \quad \mbox{per cui} \quad f(x_1)=f(x_2) \Rightarrow x_1=x_2  $.   
@@ -402,7 +424,27 @@ Una funzione può essere \textbf{iniettiva, surriettiva e bigettiva}, ora spiegh
 \end{itemize}
 
 
+
 \subsection{Il grafico della funzione}
+
+\begin{figure}[!h]
+\centering
+        \includegraphics[width=0.25\textwidth]{esempio_grafico_funzione.jpg}
+        \caption{Esempio grafico di una parabola}\label{fig:esempio_grafico_funzione}
+\end{figure}
+
+
+Il grafico di una funzione $f$ è semplicemente la rappresentazione grafica di una funzione come può essere ad esempio la funzione della parabola.
+
+Noi dicamo che il grafico di una funzione è:
+\begin{equation*}
+        \lceil f : \{(x, f(x)) : x \in X\} 
+\end{equation*}
+
+
+
+\subsection{Tipi di funzione} 
+Esistono diversi tipi di funzione, di seguite ne mostrerò alcuni tipi.
 
 
 \subsubsection{Funzione Identità}
@@ -421,15 +463,15 @@ Facciamo un esempio di funzione identità, prendiamo:
 \end{align*}
 
 Se prendiamo per esempio $ 1 \in \mathbb{N} $ avremo $ Id(1) = 1 $ \par
-La funzione identità è \textbf{sempre bigettiva}.
 \begin{figure}[h]
         \centering
                 \includegraphics[width=0.75\textwidth]{es_funz_identita.png}
         \caption{La bisettrice del 1 e 3 quadrante è una funzione identità}\label{fig:esempio_funzione_identità}
 \end{figure}
+La funzione identità è \textbf{sempre bigettiva}.
 
 
-\subsubsection{Funzione Parte Intera}
+\subsubsection{Funzione Parte Intera}\label{sec:funzione_parte_intera}
 La \textbf{funzione parte intera (o funzione floor)} è una funzione che si indica con $ \lfloor x \rfloor $ che associa ad ogni numero $ \mathbb{Z} $  il numero stesso e ad un numero decimale, l'intero precedente. \par
 In matematichese questo si definisce come:
 \begin{equation*}
@@ -450,16 +492,54 @@ Facciamo qualche esempio:
 \end{figure}
 
 
-\subsubsection{Funzione Parte Frazionaria}
+\subsubsection{Funzione Parte Frazionaria}\label{sec:funzione_parte_frazionaria}
+La \textbf{funzione parte frazionaria} detta anche \textbf{Mantissa} è una funzione che associa ad ogni numero $ \mathbb{Z} $ 0, ad un numero decimale positivo la sua parte decimale e ad un numero decimale negativo la sua controparte decimale \underline{complementare}.
+La \textbf{Mantissa} si denota con:
+\begin{equation*}
+        M(x) \quad mant(x) \quad \{x\} \quad frac(x) 
+\end{equation*}
+E in matematichese significa che:
+\begin{equation*}
+        M(x) = x - \lfloor x \rfloor \quad \forall x \in \mathbb{R}
+\end{equation*}
+
+Facciamo qualche esempio:
+\begin{itemize}
+        \item $ M(1) = 0 $ alla parte intera viene assegnato $ 0 $  
+        \item $ M(1,32) = 0,32 $ alla parte intera viene assegnato $ 0 $ rimane la parte decimale positiva.
+        \item $ M(-0,43) = -0,43 + 1 = 0,57 $ si trova il complementare che in questo caso rimane decimale. 
+\end{itemize} 
+
+
+\begin{figure}[!h]
+        \centering
+                \includegraphics[width=0.3\textwidth]{esempio_funzione_parte_frazionaria.png}
+                \caption{Rappresentazione grafica di una funzione parte frazionaria}\label{fig:esempio_funzione_parte_frazionaria}
+\end{figure}
+
+
+\subsubsection{Funzione Composta}\label{sec:funzione_composta}
+Una funzione \textbf{composta} è una funzione che si ottiene tramite due funzione $ f $ e $ g $ e applicando all'immagine della prima funzione la seconda funzione, scritto in formula:
+\begin{equation*}
+        f \circ g
+\end{equation*}
+
+\begin{figure}[h]
+        \centering
+                \includegraphics[width=0.75\textwidth]{esempio_funzione_composta.png}
+                \caption{Rappresentazione di una funzione composta}\label{fig:esempio_funzione_composta}
+\end{figure}
 
 
 
+\subsection{Invertibilità}\label{sec:invertibilità}
 
-\subsubsection{Funzione Composta}
-\subsection{Invertibilità}
+
 
 \newpage
 \section{Assioma della scelta}
+
+
 
 
 
@@ -510,6 +590,7 @@ A questo punto secondo la proprietà dell'induzione anche $P(n+1)$ sarà vera ov
 Esistono tre tipi di induzione che spiegheremo di seguito.
 
 
+
 \subsection{Prima forma}
 Il \underline{Principio di induzione prima forma} dice che con $P$ proposizione sui numeri naturali:
 \begin{enumerate}
@@ -517,6 +598,7 @@ Il \underline{Principio di induzione prima forma} dice che con $P$ proposizione 
         \item $P(n)$ è vera $\Rightarrow P(n)$ vera allora $P(n)$ vera $\forall n \in \mathbb{N}$. 
 \end{enumerate}
 Un esempio di ciò è~\ref{eq:esempio_induzione_1} e~\ref{eq:esempio_induzione_2}.
+
 
 
 \subsection{Seconda forma}
@@ -527,6 +609,7 @@ Il \underline{Principio di induzione seconda forma} dice che con $P$ proposizion
 \end{enumerate}
 Allora $P(n)$ è vera $\forall n \ge n_0$.
 
+
 \subsection{Terza forma}
 Il \underline{Principio di induzione terza forma} dice che con $P$ proposizione su $\mathbb{Z}$ e $n_0 \in \mathbb{Z}$ dove $n_0$ è il \textbf{passo zero}, se vale:
 \begin{enumerate}
@@ -534,6 +617,8 @@ Il \underline{Principio di induzione terza forma} dice che con $P$ proposizione 
         \item $P(n)$ vera $\forall m \in \mathbb{Z} \quad n_0 \le m < n \Rightarrow P(n)$ vera. 
 \end{enumerate}
 Allora diciamo che $P(n)$ vera $\forall n \ge n_0$.
+
+
 
 
 
@@ -565,6 +650,8 @@ E quindi possiamo dire con certezza che la funzione non è né surriettiva e né
 
 
 
+
+
 \newpage
 \section{Numeri Primi}
 \textit{I numeri primi sono quei \textbf{numeri interi maggiori di 1 che sono divisibili solo per 1 e se stessi}, se questa proprietà non viene rispettata allora il numero è invece \textbf{composto}} che scritto in matematichese:
@@ -584,12 +671,14 @@ $p | a*b \Rightarrow \exists k \in Z$ tale che $a*b = k*p$
 Possiamo dimostrarlo utilizzando anche \textbf{Bezout} (DA FARE A CASA).
 
 
+
 \subsection{Teoria fondamentale dell'aritmetica}
 Ok prepariamoci a scrivere un pò di formule. \newline
 si dice che: $a \in Z, a \not = 0,1,-1$ allora $a$ si scrive in un modo unico come prodotto di primi:
 \begin{equation}
 a =
 \end{equation}
+
 
 
 \subsection{Teorema di euclide}
@@ -605,6 +694,8 @@ $p_1 \dag N$ \ldots  $p_n \dag N$ contraddice il teorema precedente e perciò ab
         3 | 15, 5 | 15
 \end{align*}
 Abbiamo infatti trovato due nuovi numeri primi 3 e 5 quindi ci sono infiniti numeri primi.
+
+
 
 
 
@@ -634,10 +725,12 @@ Anche se i calcoli possono sembrare complssi possiamo semplificare il tutto con 
 L'inverso di $x + iy$ rispetto al punto si denota con ${(x + iy)}^{-1}$ oppure $\frac{1}{x + iy}$
 
 
+
 \subsection{Piano di Gauss}
 Con $\mathbb{C} = \mathbb{R}^2$ consideriamo un piano cartesiano possiamo rappresentare tutti i numeri complessi utilizzando però delle coordinate dette \textbf{Polari}.
 Da un punto $x$ e un punto $y$ troviamo un punto $z$ possiamo infatti dire che $z = x+iy$ dove il $|z|$  rappresenta la distanza del punto $z$ dall'origine (l'intersezione dell'asse x e y) e lo si può calcolare attraverso \textbf{Pitagora} con $|z| := \sqrt{x^2+y^2}$. \par
 E quindi se $z \in \mathbb{R}$ allora $|z| = \sqrt{x^2}$
+
 
 \subsection{Proprietà dei numeri complessi}
 
@@ -658,17 +751,19 @@ Altre proprietà però con il modulo:
         \item $z \not = 0 \quad z^{-1} = \frac{\overline{z}}{|z|^{2}} $ \\
 \end{itemize}
 
-\textbf{CERCARE SU INTERNET DISUGUAGLIANZA TRIANGOLARE E GRAFICO CON IL MODULO} \newline
+\todo{DEF:disugiaglainza triangolare}
+\todo{FIG:grafico con il modulo}
 
 $\theta = \arg(z)$
 argomento di z angolo formato da z e l'asse $Re$ $\theta$ è definito a meno di $Re$ multipli di $2\pi$
 
-\textbf{CERCARE SU INTERNET FORMA TRIGONOMETRICA Z} \newline
+\todo{FIG:forma trigonometrica $ \mathbb{Z} $ } 
 
 Ok facciamo un esempio, prendiamo $z = 2$, avremo quindi $|z| = \sqrt{2^2 = 2}$ e $\arg{z} = 0$.\par
 A questo punto possiamo dire che $z = 2(\cos(0) + i\sin(0))$ \newline
 
-\textbf{RICORDARSI CHE Re STA PER PARTE REALE (GRAZIE GABRIEL DEL PASSATO)} \newline
+\todo{REM:Re sta per parte reale} 
+
 
 
 \subsection{Forma esponenziale}
@@ -676,7 +771,8 @@ Avendo $z \in \mathbb{C}, z \not = 0$ \newline
 $\theta = \arg z$ e  $z = | z | e^i*\arg(z)$ \newline
 $w \in \mathbb{C}, w \not = 0 := |z| (\cos(\theta) + i\sin(\theta))$ \newline
 
-\textbf{CERCARE FORMULA DI DE MOUIURE}
+\todo{TEO:formula di De Mouire}
+
 
 
 \subsection{Equazioni di secondo grado complesse}
@@ -700,10 +796,11 @@ Mentre:
 \end{align}
 
 
+
 \subsection{Radici complesse}
 le $Zk$ sono chiamate radici complesse che se le andassimo a disegnare sul piano di Gauss formerebbero i su \newline
-
 Facciamo un esempio, le radici cubiche $(n=3)$ di $z = -8 +i*0$ del modulo di $z, \quad|z| = \sqrt{Re(z^2)+In(z^2)} = \sqrt{-8^2 + 0^2} = \sqrt{(-8^2)} = 8$.
+
 
 
 \subsection{Teorema fondametale dell'Algebra}
@@ -718,26 +815,26 @@ Cioè $p(x)$ si può decomporre come $p(x) = {a_(x-w_1)}^{m_1} \cdots {(x-w_r)}^
 
 
 
+
+
 \newpage
 \section{Relazioni di Equivalenza}
 Prima di tutto definiamo un insieme $A$, una relazione $R \subseteq AxA$ si dice di equivalenza se soddisfa:
-
 \begin{enumerate}
         \item \underline{Riflessiva} ($\forall a \in A (a,a) \in \mathbb{R})$
         \item \underline{Simmetrica} ($(a,b) \in \mathbb{R} \Rightarrow (b,a) \in \mathbb{R}$)
         \item \underline{Transitiva} ($(a,b) \in \mathbb{R},(b,c) \in \mathbb{R} \Rightarrow (a,c) \in \mathbb{R}$)
 \end{enumerate}
 
-
 Generalmente indichiamo una relazione d'equivalenza con un simbolo  $\backsim$ oppure $\equiv$ e scriviamo $a \backsim b$ oppure $a \equiv b$ oppure $aRb$ per indicare $(a,b) \in \mathbb{R}$
+
 
 
 \subsection{Equivalenza modulare}
 $A = \mathbb{Z}$ fissiamo $n \in \mathbb{Z}, n \geq 1$ definiamo $\backsim_n$ \par
 $x \backsim_n y \Leftrightarrow \exists k \in \mathbb{Z}$ tale che $x-y = Kn$ si diche che $x$ è congruo a $y$ mmodulo $n$ e si scrive $x \equiv y MOD n$.
-
-
 $\forall x \in \mathbb{Z} \mbox{vale} \quad x \equiv x \mod n$ perchè $\exists K \in \mathbb{Z}$ tale che $x-x = K*n$ 
+
 
 
 \subsection{Classe di equivalenza}
@@ -747,8 +844,10 @@ $a$ si chiama rappresentante della classe $[a]$ e notare bene che $a \in [a]$ pe
 
 
 
+
+
 \newpage
-\section{Cardinalità}
+\section{Cardinalità}\todo{RIP:recuperare lezione sulla cardinalità}
 Con \textbf{cardinalità} noi intendiamo definire quali e quanti elementi fanno parte di un certo insieme utilizzando il linguaggio matematico. \par
 
 Supponiamo per esempio che $A,B$ sono insiemi, possiamo dire che $A,B$ sono \textbf{equipotenti} se $\exists f:A \rightarrow B$ bigettiva, in tal caso scriviamo $|A| = |B|$. \par
@@ -794,7 +893,7 @@ se invece $f$ è bigettiva, l'inversa è $f^{-1}: \mathbb{Z} \to \mathbb{N}$
 
 $\mathbb{N} x \mathbb{N}$ è numerabile dimostriamo che $f: \mathbb{N} x \mathbb{N} \to \mathbb{N}$.
 
-\textbf{AGGIUNGERE ESEMPI}.
+\todo{ES:aggiungere esempi}.
 
 Definiamo $A,B$ insiemi e scriviamo: 
 %\begin{itemize}
@@ -802,7 +901,7 @@ Definiamo $A,B$ insiemi e scriviamo:
 %        \item $|A| < |B|$ se: $|A| \le |B|$ ($\exists f:A \to B)$ iniettiva. $|A| \not = |B|$ ($\not \exists f:A \to B)$ iniettiva$
 %\end{itemize}
 
-\textbf{Altra parte di lezione mancante}
+
 
 \subsection{Teorema di Cantor-Bernstein}
 $A,B$ insiemi, $\exists f : A \to B$ iniettiva, $g: B \to A$ iniettiva, allora esiste una funzione $\exists h: A \to B$ bigettiva. \par
@@ -827,7 +926,6 @@ Definiamo $X$ insieme, diciamo che:
         \item X è \underline{più che numerabile} se $|X| > |\mathbb{N}|$
 \end{itemize}
 
-\textbf{PROBABILMENTE C'È TROPPA ROBA CHE NON HO SCRITTO} \newline
 
 
 \subsection{Impossibilità della surriettività dei numerabili}
@@ -851,6 +949,7 @@ Da tutto questo osserviamo che $X \not = \emptyset \exists f : X \to P(x)$ iniet
 La proposione precedente ci dice che $|X| < |P(x)|$ ad esempio per $X = \mathbb{N}$ si ha: \newline
 $|P(\mathbb{N})| > |\mathbb{N}| = \aleph_0 $ dove $P(\mathbb{N})$ è più che numerabile.
 
+
 \subsection{Argomento che il prof si tiene segreto}
 Definiamo $A,B$ insiemi.
 \begin{equation}
@@ -872,7 +971,6 @@ Iniziamo con le dimostrazioni:
 \underline{$\phi$ surriettiva} sia $A \in P(x), A \subseteq X$ sottoinsieme e considero $X_A : X \to {0,1}$.
 
 
-
 \[x \mapsto  
 \begin{cases}
         1 \quad \mbox{se} \quad x \in A \\
@@ -891,9 +989,6 @@ $f \not = g \Rightarrow \exists x \in X$ tale che $f(x) \not = g(x)$.
 Supponiamo che $f(x) = 1 \Rightarrow g(x) = 0$ \newline
 $\Rightarrow x \in {f}{-1} = \varphi(f) x \not \in {g}{-1}(1) = \varphi(g) \Rightarrow \varphi(f) \not = \varphi(g)$
 
-\textbf{MA CHE CAZZO HO APPENA SCRITTO} \newline
-
-
 Prendiamo il lemma $A = {a_1,\ldots,a_n}$ insieme finito, $B$ insieme finito, $|B^A| = |B^n|$ che (a quanto dice il prof) è facilmente dimostrabile:
 \begin{align*}
          \varphi : B^A \to B^n = Bx,\ldots,xB \\
@@ -908,6 +1003,7 @@ Corollario $A,B$ insiemi finiti, allora $AxB, B^A, P(A)$ sono insiemi finiti di 
 \end{itemize}
 
 
+
 \subsection{Cardinalità dei $\mathbb{Q}$}
 
 Prima di tutto diciamo che $\mathbb{Q}$ è numerabile, e lo possiamo dimostrare con:
@@ -920,9 +1016,10 @@ Avendo $p,q \in \mathbb{Z}, p,q \not = 0, MCD(p,q)=1$ e quindi, $Q = {0} \cup \b
 
 Si dice quindi che \underline{unione numerabile} di insiemi finiti $\not = 0$ e disgiunti $\Rightarrow Q $ numerabile. \newline
 
-\textbf{Cercare la diagonale di Cantor}
+\todo{FIG:cardinalità di Cantor}
 
 \underline{Lemma} prendiamo $\{X_m : m \in \mathbb{N}\}, |X_n| \le \aleph_0, X_m \not = \emptyset \forall n \in \mathbb{N}$ se $|Xm| < \aleph_0 \forall n \in \mathbb{N}$ allora $X_n \cap X_m = \emptyset$ se $n \not = m$ allora $|\bigcup_{n \in \mathbb{N}}^{1}X_n| = \aleph_0$ \newline
+
 
 
 \subsection{Cardinalità di $\mathbb{R}$}
@@ -934,10 +1031,12 @@ $ \mathbb{R}$ è equipotente a $P(\mathbb{N})$, in particolare è più che numer
 \end{align*}
 
 
+
 \subsection{Ipotesi del continuo}
 Questa ipotesi, formulata da \underline{Cantor} chiede se $ \exists A$ insieme tale che $\aleph_0 < |A| < 2^{\aleph_0}$?? 
-
 \textit{BTW questi problemi non verrano trattati nel corso ma sono good to know}.
+
+
 
 
 
@@ -984,15 +1083,14 @@ Un altro corollario, $|S_n| = n$! che definiamo con:
 
 
 
-\subsection{Mi inventerò un titolo}
-X insieme finito, $|X| = n$ per ogni intero $0 \le k \le n$ il numero di sottoinsiemi di $X$ con $k$ elementi è $(n su k)$.
 
+\subsection{Mi inventerò un titolo}\todo{RIP:trovare il titolo di questa subsection}
+X insieme finito, $|X| = n$ per ogni intero $0 \le k \le n$ il numero di sottoinsiemi di $X$ con $k$ elementi è $(n su k)$.
 Dimostrimolo:
 \begin{itemize}
         \item $k=0$, c'è solo un insieme con 0 elementi: $\emptyset$
         \item $k=n$, c'è solo un insieme con n elementi: $(n su n) = (n su 0) = 1$
 \end{itemize}
-
 
 Ora proviamo a cotruire un $Y \subseteq X$ con $\#Y = k$ e $0 < k < n$ \par
 \begin{itemize}
@@ -1005,8 +1103,8 @@ Devo dividere per il numero di permutazioni di una stringa con $k$ elementi:
         \frac{n(n-1)\ldots(n-k+1)}{k!} = (n su k) \square
 \end{equation*}
 
-
 \underline{Lemma} $(n su k) = (n-1 su k) + (m-1 k-1)$ 
+
 
 
 \subsection{Coefficiente binomiale}
@@ -1016,14 +1114,15 @@ Il coefficiente binoiale è $x,y \in \mathbb{C}, n \in \mathbb{N}*$ allora:
 \end{equation*}
 
 Dimostriamolo attraverso l'induzione: \newline
-\todo{Dimostrare il coefficiente binomiale attraverso l'induzione}
-
+\todo{ES:Dimostrare il coefficiente binomiale attraverso l'induzione}
 
 Corollario $X$ insieme finito, $|X| = n$ allora $|P(x)| = 2^n$ dimostrabile $\forall 0 \le k \le n$ il numero di sottoinsiemi di $k$ elementi di $X$ è (n su k). \par
 Il numero di sottoinsiemi di $X$ è: 
 \begin{equation*}
         \sum_{k=0}^{n}(n su k) = 2^n
 \end{equation*}
+
+
 
 
 
@@ -1044,6 +1143,7 @@ Scriviamo $ (x,y) \in R $ come $ x \triangle y $ oppure $ x \le y | (x, \triangl
 
 Definiamo meglio $ (x, \triangle) \quad  POSET \quad x,y \in X$, si dicono \underline{confrontabili} se vale $ (x \triangle y) \lor (y \triangle x) $, altrimenti si dicono non confrontabili  se tutti gli elementi di $ X $ sono confrontabili, $ \triangle $ si dice \underline{ordine totale}.  \par
 
+
 \subsection{Esempi di relazioni d'ordine}
 Prendiamo come adesso alcuni esempi: \newline 
 $ \mathbb{R}, \le $ è totalmente ordinato ($ \le $ è un ordine totale su $ \mathbb{R} $) 1.:
@@ -1059,7 +1159,6 @@ $ \mathbb{R}, \le $ è totalmente ordinato ($ \le $ è un ordine totale su $ \ma
 3. $ \triangle = \{(x,y) \in X : x = y\}$ ordine parziale. \newline 
 
 4. $ \mathbb{C} z \triangle w \Leftrightarrow |z| \le |w| $ dove $ z,w \in \mathbb{C} $  è un preordine ma, ma non un ordine parziale perchè:
-
 \begin{itemize}
         \item \underline{Riflessiva} $ z \triangle z$ si perchè $ |z| \le |z| $
         \item \underline{Transitiva} $ x \triangle y, y \triangle z \Rightarrow x \triangle z$  si perchè $ |x| \le |y| $
@@ -1076,8 +1175,10 @@ In particolare $ (P(x), \subseteq )$ è un POSET:\newline
 $ \subseteq $ non è totale, esempio $ X = \{1,2,5\}, A = \{1,2\}, B = \{2,3\} $ e se $ X \not = \{*\} $
 
 
+
 \subsection{Tipi di ordini}
-Definiamo $(A_1, \triangle_1), \ldots, (A_n, \triangle_n) \quad POSET$ definimo ordini parziali su $A_1x, \ldots, xA_n$. \newline
+Definiamo $(A_1, \triangle_1), \ldots, (A_n, \triangle_n) \quad POSET$ definimo ordini parziali su $A_1x, \ldots, xA_n$. \par
+Esistono diversi tipi di ordini che ora andremo a spiegare nel dettaglio.
 
 
 \subsubsection{Ordine lessicografico (LEX)}
@@ -1126,10 +1227,11 @@ Diciamo ordine indotto $(X, \triangle) \quad POSET$, $ Y \subseteq X$ con:
         y_1 \triangle_y,y_2 \Leftrightarrow y_1 \triangle y_2 \quad \forall y_1,y_2 \in Y \subseteq X
 \end{equation*}
 
-Diciamo che $Y$ è una catena se $(Y, \triangle y)$ è totalmente ordinato. \par
+Diciamo che $Y$ è una \textbf{catena} se $(Y, \triangle y)$ è totalmente ordinato. \par
 
-Esempio prendiamo $(\mathbb{N}*, I) \quad POSET$ non è totalmente ordinato perchè se prendiamo $2$ e $3$ \textbf{non sono confrontabili}. \par
+Esempio, prendiamo $(\mathbb{N}*, I) \quad POSET$ non è totalmente ordinato perchè se prendiamo $2$ e $3$ \textbf{non sono confrontabili}. \par
 \textbf{Aggiungere l'esempio (MIN 0:40)}
+
 
 
 \subsection{Minimo e massimo}
@@ -1157,6 +1259,8 @@ Ad esempio se prendiamo come $POSET \quad (\mathbb{N}, \le), Y = \mathbb{N}$ pos
 
 
 Un ottimo metodo per trovare i minimali e i massimali è il \textbf{Diagramma di Hasse}. \par
+
+
 
 
 \end{document}

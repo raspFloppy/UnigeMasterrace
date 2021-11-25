@@ -19,44 +19,45 @@
 \contentsline {subsubsection}{\numberline {2.3.2}Controimmagine}{14}{subsubsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.4}Iniettività, Surgettività e Bigettività}{14}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Il grafico della funzione}{14}{subsection.2.5}%
-\contentsline {subsubsection}{\numberline {2.5.1}Funzione Identità}{14}{subsubsection.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.5.2}Funzione Parte Intera}{15}{subsubsection.2.5.2}%
-\contentsline {subsubsection}{\numberline {2.5.3}Funzione Parte Frazionaria}{16}{subsubsection.2.5.3}%
-\contentsline {subsubsection}{\numberline {2.5.4}Funzione Composta}{16}{subsubsection.2.5.4}%
-\contentsline {subsection}{\numberline {2.6}Invertibilità}{16}{subsection.2.6}%
-\contentsline {section}{\numberline {3}Assioma della scelta}{17}{section.3}%
-\contentsline {section}{\numberline {4}Principio di Induzione}{18}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Prima forma}{19}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Seconda forma}{19}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Terza forma}{19}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Esempio}{20}{section.5}%
-\contentsline {section}{\numberline {6}Numeri Primi}{21}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Teoria fondamentale dell'aritmetica}{21}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Teorema di euclide}{21}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Numeri complessi}{22}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Piano di Gauss}{22}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Proprietà dei numeri complessi}{22}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Forma esponenziale}{23}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Equazioni di secondo grado complesse}{23}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Radici complesse}{24}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Teorema fondametale dell'Algebra}{24}{subsection.7.6}%
-\contentsline {section}{\numberline {8}Relazioni di Equivalenza}{25}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Equivalenza modulare}{25}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Classe di equivalenza}{25}{subsection.8.2}%
-\contentsline {section}{\numberline {9}Cardinalità}{26}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Teorema di Cantor-Bernstein}{27}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Impossibilità della surriettività dei numerabili}{27}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Argomento che il prof si tiene segreto}{28}{subsection.9.3}%
+\contentsline {subsection}{\numberline {2.6}Tipi di funzione}{15}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Funzione Identità}{15}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}Funzione Parte Intera}{16}{subsubsection.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.6.3}Funzione Parte Frazionaria}{16}{subsubsection.2.6.3}%
+\contentsline {subsubsection}{\numberline {2.6.4}Funzione Composta}{17}{subsubsection.2.6.4}%
+\contentsline {subsection}{\numberline {2.7}Invertibilità}{17}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Assioma della scelta}{18}{section.3}%
+\contentsline {section}{\numberline {4}Principio di Induzione}{19}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Prima forma}{20}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Seconda forma}{20}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Terza forma}{20}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Esempio}{21}{section.5}%
+\contentsline {section}{\numberline {6}Numeri Primi}{22}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Teoria fondamentale dell'aritmetica}{22}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Teorema di euclide}{22}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Numeri complessi}{23}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Piano di Gauss}{23}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Proprietà dei numeri complessi}{23}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Forma esponenziale}{24}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Equazioni di secondo grado complesse}{24}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Radici complesse}{25}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Teorema fondametale dell'Algebra}{25}{subsection.7.6}%
+\contentsline {section}{\numberline {8}Relazioni di Equivalenza}{26}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Equivalenza modulare}{26}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Classe di equivalenza}{26}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Cardinalità}{27}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Teorema di Cantor-Bernstein}{28}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Impossibilità della surriettività dei numerabili}{28}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Argomento che il prof si tiene segreto}{29}{subsection.9.3}%
 \contentsline {subsection}{\numberline {9.4}Cardinalità dei $\mathbb {Q}$}{29}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Cardinalità di $\mathbb {R}$}{29}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}Ipotesi del continuo}{29}{subsection.9.6}%
-\contentsline {section}{\numberline {10}Calcolo Combinatorico}{30}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Mi inventerò un titolo}{30}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Coefficiente binomiale}{31}{subsection.10.2}%
-\contentsline {section}{\numberline {11}Relazioni d'ordine}{32}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Esempi di relazioni d'ordine}{32}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}Tipi di ordini}{33}{subsection.11.2}%
-\contentsline {subsubsection}{\numberline {11.2.1}Ordine lessicografico (LEX)}{33}{subsubsection.11.2.1}%
-\contentsline {subsubsection}{\numberline {11.2.2}Ordine prodotto}{33}{subsubsection.11.2.2}%
-\contentsline {subsubsection}{\numberline {11.2.3}Ordine indotto}{34}{subsubsection.11.2.3}%
-\contentsline {subsection}{\numberline {11.3}Minimo e massimo}{34}{subsection.11.3}%
+\contentsline {subsection}{\numberline {9.5}Cardinalità di $\mathbb {R}$}{30}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Ipotesi del continuo}{30}{subsection.9.6}%
+\contentsline {section}{\numberline {10}Calcolo Combinatorico}{31}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Mi inventerò un titolo}{31}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Coefficiente binomiale}{32}{subsection.10.2}%
+\contentsline {section}{\numberline {11}Relazioni d'ordine}{33}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Esempi di relazioni d'ordine}{33}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Tipi di ordini}{34}{subsection.11.2}%
+\contentsline {subsubsection}{\numberline {11.2.1}Ordine lessicografico (LEX)}{34}{subsubsection.11.2.1}%
+\contentsline {subsubsection}{\numberline {11.2.2}Ordine prodotto}{34}{subsubsection.11.2.2}%
+\contentsline {subsubsection}{\numberline {11.2.3}Ordine indotto}{35}{subsubsection.11.2.3}%
+\contentsline {subsection}{\numberline {11.3}Minimo e massimo}{35}{subsection.11.3}%
