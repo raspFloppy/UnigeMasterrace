@@ -1275,8 +1275,28 @@ Ad esempio se prendiamo come $POSET \quad (\mathbb{N}, \le), Y = \mathbb{N}$ pos
         \item Se $\triangle$ è totale, esiste un elemento massimale $\Leftrightarrow$ esiste il massimo. 
 \end{itemize}
 
-
 Un ottimo metodo per trovare i minimali e i massimali è il \textbf{Diagramma di Hasse}. \par
+
+
+
+\subsection{Maggioranti e minoranti}
+Definiamo $(X, \triangle)$ POSET, $Y \subseteq X, Y \not = \emptyset, z \in X$:
+
+\begin{itemize}
+        \item $z$ è un \underline{minorante} di $Y$ se $\forall y \in Y \quad z \triangle y$
+        \item $z$ è un \underline{maggiorante} di $Y$ se $\forall y \in Y \quad y \triangle z$
+
+        \item Se l'insieme dei minoranti di $Y$ è non vuoto ed ha un massimo $M$ allora diciamo che $M$ è l'estremo inferiore di $Y$ e lo denotiamo con $\inf \quad  Y = M$
+        \item Se l'insieme dei maggioranti di $Y$ è non vuoto ed ha un minimo $m$ allora diciamo che $m$ è l'estremo superiore di $Y$ e lo denotiamo con $\sup \quad  Y = M$
+\end{itemize}
+
+Esempio prendiamo $(\mathbb{R}, \le) \quad Y = (0,1)$ intervallo aperto $= \{x \in \mathbb{R} : 0 < x < 1\}$:
+\begin{itemize}
+        \item 2 è maggiorante per y in quanto $2 \ge y \forall y \in Y$
+\end{itemize}
+
+Per esempio prendiamo $(\mathbb{R}, \le) \quad Y = (0,1)$ intervallo aperto dove $ = \{x \in \mathbb{R} : 0 < x < 1\}$ in qunto $2$ è maggiorante per $y$ visto che $2 \ge y \quad  \forall Y$.
+
 
 
 
