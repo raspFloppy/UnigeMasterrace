@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{amsthm}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{hyperref}
@@ -7,6 +8,13 @@
 \usepackage{graphicx}
 \usepackage{todonotes}
 \graphicspath{{./images}}
+
+\newtheorem{exmp}{Esempio}
+\newtheorem{theorem}{Teorema}
+\newtheorem{definition}{Definizione}
+%\newtheorem{corollary}{Corollario}
+%\newtheorem{lemma}{Lemma}
+
 
 
 \begin{document}
@@ -519,10 +527,12 @@ Facciamo qualche esempio:
 
 
 \subsubsection{Funzione Composta}\label{sec:funzione_composta}
-Una funzione \textbf{composta} è una funzione che si ottiene tramite due funzione $ f $ e $ g $ e applicando all'immagine della prima funzione la seconda funzione, scritto in formula:
-\begin{equation*}
-        f \circ g
-\end{equation*}
+Una funzione \textbf{composta} è una funzione che si ottiene tramite due funzioni $ g $ e $ f $ e applicando all'immagine della prima funzione la seconda funzione, scritto in formula:
+\begin{align*}
+        g \circ f \\
+        oppure \\
+        g(f)
+\end{align*}
 
 \begin{figure}[h]
         \centering
@@ -530,14 +540,91 @@ Una funzione \textbf{composta} è una funzione che si ottiene tramite due funzio
                 \caption{Rappresentazione di una funzione composta}\label{fig:esempio_funzione_composta}
 \end{figure}
 
+In parole povere noi associamo al dominio $ X $ della funzione $ g $ il codominio $ Y $ della funzione $ f $. \par
+\begin{exmp}
+        Prendiamo $ g(x) = x + 2 $ e $ f(x) = 10x + 1 $, noi avremo che:
+                
+                \begin{equation*}
+                        g \circ f = (10x + 1) + 2
+                \end{equation*}
+\end{exmp}
+
+Di seguido elencherò alcune proprietà della funzione composta:\label{proprietà_funzione_composta}
+\begin{itemize}
+        \item La funzione composta è associativa $ h \circ (g \circ f) =  (h \circ g ) \circ f$.
+        \item Se $ f,g $ sono iniettive $\quad  \Rightarrow \quad $  $ f \circ g $ iniettiva.   
+        \item Se $ f,g $ sono surriettive $\quad  \Rightarrow \quad $  $ f \circ g $ surriettiva.   
+        \item Se $ f,g $ sono bigettive $\quad  \Rightarrow \quad $  $ f \circ g $ bigettiva.   
+\end{itemize}
 
 
-\subsection{Invertibilità}\label{sec:invertibilità}
+
+\subsection{Invertibilità di una funzione}\label{sec:invertibilità}
+\begin{definition}
+        Una funzione si dice \textbf{invertibile} quando da un $ f : X \to Y $ è possibile avere la funzione $ f^{-1} : Y \to X $   
+\end{definition}
+
+Una funzione può essere invertibile a \textbf{destra, sinistra, o in entrambi i lati (invertibile e basta)}, ora andremo a vedere come. 
+
+
+\subsubsection{Invertibile a sinistra}\label{sec:invertibile_a_sinistra}
+\begin{definition}     
+        Una funzione $ f $  è invertibile a \textbf{sinistra} quando:
+        \begin{equation*}
+                \exists g : Y \to X, g \circ f = Id_x 
+        \end{equation*}
+        E si dice che $ g  $ è \underline{l'inversa sinistra} di $ f $.          
+\end{definition}
+
+
+\subsubsection{Invertibile a destra}\label{sec:invertibile_a_destra}
+\begin{definition}     
+        Una funzione $ f $ è invertibile a \textbf{destra} quando:
+        \begin{equation*}
+                \exists h : Y \to X, f \circ h = Id_y 
+        \end{equation*}
+        E si dice che $ h  $ è \underline{l'inversa sinistra} di $ f $.           
+\end{definition}
+
+
+\subsubsection{Invertibile a destra e sinistra}\label{sec:invertibile_a_destra_e_sinistra}
+\begin{definition}     
+        Una funzione $ f $ è invertibile a \textbf{destra e sinistra} quando:
+        \begin{equation*}
+                \exists t : Y \to X, t \circ f = Id_x \wedge f \circ t = Id_y 
+        \end{equation*}
+        E si dice che $ t  $ è \underline{l'inversa} di $ f $ e si denota con $ f^{-1} $.           
+\end{definition}
+
+
+\subsubsection{Teorema dell'invertibilità}
+\begin{theorem}
+       Se $ f: X \to Y $ funzione allora:
+       \begin{equation*}
+               f \quad \mbox{è iniettiva} \quad \Leftrightarrow \quad f \quad \mbox{è invertibile a sinistra}
+       \end{equation*}
+\end{theorem}
+Andiamo a dimostrarlo:
+\begin{proof}
+        $ \leftarrow $ assiumiamo che $ \exists g : Y \to X \quad g \circ f = Id_x  $ \par
+        Per essere iniettiva $ x_1 = x_2$ ma quindi possiamo dire che $ g(f(x_1)) = g(f(x_2)) $ \newline
+        Ma ciò significa fare $ Id_x(x_1) = Id_x(x_2) $ che è come dire $ x_1 = x_2 $.  
+\end{proof}
+
+\begin{proof}
+        $ \rightarrow $ assiumiamo che $ f$ sia iniettiva \par
+        Costruiamo quindi un $ g : Y \to X $ un'inversa sinistra di $ f $ e prendiamo un elemento $x_0 \in X$ e andiamo a definire un $ g(y) $ tale che:
+        \[ g(y)
+        \begin{cases}
+                x \quad \mbox{se} \quad y \in f(x) \Rightarrow \exists! x \in X \quad f(x) = y     \\
+                x_0 \quad \mbox(se) y \not \in f(x)
+        \end{cases}
+        \]
+\end{proof}
 
 
 
-\newpage
-\section{Assioma della scelta}
+\subsection{Assioma della scelta}
 
 
 
@@ -561,6 +648,7 @@ Ne consegue quindi che anche $P(n+1)$ è vera, potremo dire semplicemente che se
         P(n) \quad \mbox{vera} \quad \Rightarrow \quad P(n+1) \quad \mbox{vera}
 \end{equation*}
 
+\begin{exmp}\label{es:esempio_induzione}
 Utiliziamo un esempio, dimostramo che $\forall n \ge 0$ la somma che denotiamo con $S(n)$ dei primi numeri naturali:
 \begin{equation*}
         S(n) = 0 + 1 + 2 + 3 + 4 + 5 + \cdots + n
@@ -577,7 +665,7 @@ La nostra proposizione sarà quindi:
 
 Il nostro compito sarà quindi quello di dimostrare che $P(n_0)$ e $P(n)$ è vero $\forall n \ge 1$. \par
 Quindi dimostriamo $S(n)$ con $n = 1$:
-
+        
 \begin{equation}\label{eq:esempio_induzione_1}
         S(1) = \frac{0*(0+1)}{2} = 0
 \end{equation}
@@ -586,6 +674,7 @@ A questo punto secondo la proprietà dell'induzione anche $P(n+1)$ sarà vera ov
 \begin{equation}\label{eq:esempio_induzione_2}
         S(1) = \frac{1*(1+1)}{2} = 1
 \end{equation}
+\end{exmp}
 
 Esistono tre tipi di induzione che spiegheremo di seguito.
 
