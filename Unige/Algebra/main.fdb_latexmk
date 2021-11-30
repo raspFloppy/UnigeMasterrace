@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1638206794 "main.tex" "main.pdf" "main" 1638206795
+["pdflatex"] 1638285636 "main.tex" "main.pdf" "main" 1638285638
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1617738065 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -13,6 +13,8 @@
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1617738065 940 228d6584342e91276bf566bcf9716b83 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1617738065 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1617738065 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm" 1617738065 1332 f817c21a1ba54560425663374f1b651a ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm" 1617738065 1336 3125ccb448c1a09074e3aa4a9832f130 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm" 1617738065 1532 9162035f4e7176612125649e348e2195 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1617738065 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1617738065 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -189,15 +191,15 @@
   "images/esempio_grafico_funzione.jpg" 1637829499 32505 1f1e05843a5879e9255347a8d4be9e6f ""
   "images/insiemi_numerici.png" 1636828388 135758 85a4ea5e5a5e0764346191eab18e4720 ""
   "images/relazioni.png" 1637318097 43141 db7349d48e3c902ca022021c7cceb562 ""
-  "main.aux" 1638206795 19657 e93d8a46630053aea999ad1eade9075d "pdflatex"
-  "main.out" 1638206795 14131 1434f02fc62bcf57f5283c3af127d9d1 "pdflatex"
-  "main.tdo" 1638206795 1072 3a81d737804c0857f887c7585e84fe7f "pdflatex"
-  "main.tex" 1638206792 65782 ef3354a49eb2028842759d879955e265 ""
-  "main.toc" 1638206795 7407 92827a00cf4ad656c05ceb1f5ee19a86 "pdflatex"
+  "main.aux" 1638285637 20189 c9bc041bc7ae0e11bdc1dc7cad884495 "pdflatex"
+  "main.out" 1638285637 14007 584a9680ea7a3029011c1475bd0f1c5f "pdflatex"
+  "main.tdo" 1638285637 1141 2830845f08b600bf00969f3504a4a072 "pdflatex"
+  "main.tex" 1638285636 68077 7172468ea70cb8fdc191a2d8584b6b06 ""
+  "main.toc" 1638285637 7275 1b0a8dfcc294bf84650c09bb6a365ae0 "pdflatex"
   (generated)
-  "main.log"
   "main.toc"
+  "main.tdo"
+  "main.log"
   "main.out"
   "main.aux"
-  "main.tdo"
   "main.pdf"

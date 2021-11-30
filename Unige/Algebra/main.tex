@@ -9,10 +9,10 @@
 \usepackage{todonotes}
 \graphicspath{{./images}}
 
-\newtheorem{exmp}{Esempio}
+\newtheorem{exmp}{Esempio}[section]
 \newtheorem{theorem}{Teorema}
 \newtheorem{definition}{Definizione}
-%\newtheorem{corollary}{Corollario}
+\newtheorem{oss}{Osservazione}
 %\newtheorem{lemma}{Lemma}
 
 
@@ -697,7 +697,7 @@ Possiamo dimostrare questo teorema attraverso l'assioma della scelta sia da dest
 
 
 \newpage
-\section{Principio di Induzione}
+\section{Principio di Induzione}\label{sec:principio_di_induzione}
 Il \underline{Principio di induzione} detto anche procedimento induttivo è un procedimento matematico per dimostrare la validità di una tesi attraverso la verifica della veridicità di due condizioni:
 \begin{itemize}
         \item \underline{passo zero}: $(n_0)$
@@ -746,7 +746,7 @@ Esistono tre tipi di induzione che spiegheremo di seguito.
 
 
 
-\subsection{Prima forma}
+\subsection{Prima forma}\label{sec:induzione_prima_forma}
 Il \underline{Principio di induzione prima forma} dice che con $P$ proposizione sui numeri naturali:
 \begin{enumerate}
         \item $P(0)$ è vera. 
@@ -756,7 +756,7 @@ Un esempio di ciò è~\ref{eq:esempio_induzione_1} e~\ref{eq:esempio_induzione_2
 
 
 
-\subsection{Seconda forma}
+\subsection{Seconda forma}\label{sec:induzione_seconda_forma}
 Il \underline{Principio di induzione seconda forma} dice che con $P$ proposizione sui numeri naturali e $n_0 \in \mathbb{N}$ dove $n_0$ è il \textbf{passo zero}, se vale:
 \begin{enumerate}
         \item $P(n_0)$ vera.
@@ -765,7 +765,7 @@ Il \underline{Principio di induzione seconda forma} dice che con $P$ proposizion
 Allora $P(n)$ è vera $\forall n \ge n_0$.
 
 
-\subsection{Terza forma}
+\subsection{Terza forma}\label{sec:induzione_terza_forma}
 Il \underline{Principio di induzione terza forma} dice che con $P$ proposizione su $\mathbb{Z}$ e $n_0 \in \mathbb{Z}$ dove $n_0$ è il \textbf{passo zero}, se vale:
 \begin{enumerate}
         \item $P(n_0)$ vera. 
@@ -779,23 +779,67 @@ Allora diciamo che $P(n)$ vera $\forall n \ge n_0$.
 
 
 \newpage
-\section{Algoritmo euclideo}
+\section{Approfondimenti sui numeri interi}\label{sec:numeri_interi}
+In questo capitolo andremo a vedere più in profondità alcune delle proprietà e dei teoremi dei numeri $ \mathbb{N} $ e $ \mathbb{Z} $.   
+
+\subsection{Divisione Euclidea}\label{sec:divisione_euclidea}
+\begin{definition}
+       Una \textbf{divisione euclidea} è il processo di dividere un numero $ \mathbb{Z} $ (\textbf{il dividendo}) per un altro numero $ \mathbb{Z} $ (\textbf{divisore}). \par
+       Se prendiamo $ a,b \in \mathbb{Z} $ diciamo che $ a $ è il \underline{divisore} di $ b $ oppure che $ b $ è il \underline{multiplo} di $ a $ oppure che $ a $ \underline{divide} $ b $        
+\end{definition}
+
+Se prendiamo $ b = ak $ con $ k \in \mathbb{Z} $ scriviamo:
+\begin{align*}
+        a \mid b \quad \mbox{Se a è divisore} \\
+        a \nmid b \quad \mbox{Se a \textbf{NON} è divisore}
+\end{align*}
+
+\begin{exmp}
+        Facciamo qualche esempio con qualche numero intero:
+        \begin{equation*}
+                2 \mid 4 \quad 3 \nmid 5 \quad 3 \mid 9 \quad 3 \nmid 2
+        \end{equation*} 
+\end{exmp}
+
+\begin{oss}
+       Possiamo dire che un numero è pari $ \Leftrightarrow 2 | a \wedge a \in \mathbb{Z} $  
+\end{oss}
+
+\begin{theorem}
+       $ a,b \in \mathbb{Z}, a > 0 $ allora $ \exists! q,r \in \mathbb{Z}  $ tali che:
+       \begin{itemize}
+               \item $ r $ è un numero $ 0 < r < a $.
+               \item $ b = aq + r $.  
+       \end{itemize}
+\end{theorem}
+
+\begin{exmp}
+        $ b = 24 $ e $ a = 13 $:
+        \begin{align*}
+                24 = 1 * 13 + 11 \\
+                b = q * a + r \\
+                0 < 11 < a
+        \end{align*}
+\end{exmp}
+
+\begin{proof}
+       Dimostramo l'esistenza attraverso l'induzione (terza forma~\ref{sec:induzione_terza_forma}):\newline
+       \begin{exmp}
+             Con $ b \ge 0 $ supponiamo che la tesi $ \forall n \le b   $  e proviamola per $ b + 1 $, \par
+             se $ b + 1 < a$ scelgo $ q = 0 \quad r = b + 1 < a $  
+       \end{exmp}  
+\end{proof}
 
 
 
 
-\subsection{Divisore e multiplo}
-\subsection{Divione euclidea}
 \subsection{Minimo comune multiplo}
+
+
 \subsection{Massimo comune divisore}
-\subsection{Algoritmo euclideo}
+\subsection{Algoritmo Euclideo}
 \subsection{Identità di Bezòut}
-
-
-\newpage
-\section{Equazioni Diofantee lineari}
-\subsection{Dimostrazione a sinistra}
-\subsection{Dimostrazione a destra}
+\subsection{Equazioni Diofantee lineari}
 
 
 
@@ -875,16 +919,15 @@ Abbiamo infatti trovato due nuovi numeri primi 3 e 5 quindi ci sono infiniti num
 
 
 
-
 \newpage
 \section{Numeri complessi}\label{sec:numeri_complessi}
 Noi definiamo numeri complessi quei numeri che
 
 
-$C = R x R$ denotiamo che $(x,y) \in R^2$ come $x + iy$ e consideriamo $i$ come unità immaginaria, definiamo due operazioni su C
+$\mathbb{C} = \mathbb{R} \times \mathbb{R}$ denotiamo che $(x,y) \in \mathbb{R}^2$ come $x + iy$ e consideriamo $i$ come unità immaginaria, definiamo due operazioni su C
 \begin{itemize}
-        \item \textbf{Somma} $(x + iy) + (u + iv) := (x+u) + i(y+v)$ con $x,y,u,v \in R$
-        \item \textbf{Prodotto} $(x + iy) * (u + iv) := (xu - yv) + i(xv+yu)$ con $x,y,u,v \in R$
+        \item \textbf{Somma} $(x + iy) + (u + iv) := (x+u) + i(y+v)$ con $x,y,u,v \in \mathbb{R}$
+        \item \textbf{Prodotto} $(x + iy) * (u + iv) := (xu - yv) + i(xv+yu)$ con $x,y,u,v \in \mathbb{R}$
 \end{itemize}
 
 Utiiziamo un esempio numerico:
@@ -894,9 +937,15 @@ Utiiziamo un esempio numerico:
 \end{align}
 
 Anche se i calcoli possono sembrare complssi possiamo semplificare il tutto con questo ragionamento:
-\begin{equation}
-        i + i = (0*0 - 1*1) + i(0+1 + 0+1) = -1+ i0 = -1
-\end{equation}
+\begin{align*}
+        i * i = (0*0 - 1*1) + i(0+1 + 0+1) = -1+ i0 = -1 \\
+        i^2 = -1 \quad i^3 = i * i^2 = -i = i^2 * i^2 = \ldots 
+\end{align*}
+
+\begin{oss}
+        $\boxed{ i^1 = i \quad i^2 = -1 \quad i^3 = -i \quad i^4 = i}$
+\end{oss}
+
 
 L'inverso di $x + iy$ rispetto al punto si denota con ${(x + iy)}^{-1}$ oppure $\frac{1}{x + iy}$
 
@@ -917,7 +966,7 @@ E quindi se $z \in \mathbb{R}$ allora $|z| = \sqrt{x^2}$
         \item $z+\overline{z}=2Re(z)$ \\
         \item $z - \overline{z}=2Im(z)$ \\
 \end{itemize}
-Cercare le dimostrazioni su internet perchè oggi il prof ha deciso di fare il cosplay di Flash.
+\todo{TEO:Cercare le dimostrazioni}
 
 Altre proprietà però con il modulo:
 \begin{itemize}
@@ -930,9 +979,7 @@ Altre proprietà però con il modulo:
 \todo{DEF:disugiaglainza triangolare}
 \todo{FIG:grafico con il modulo}
 
-$\theta = \arg(z)$
-argomento di z angolo formato da z e l'asse $Re$ $\theta$ è definito a meno di $Re$ multipli di $2\pi$
-
+$\theta = \arg(z)$ argomento di $ z $  angolo formato da $ z $  e l'asse $Re$ $\theta$ è definito a meno di $Re$ multipli di $2\pi$ abbiamo la \boxed{\textbf{forma trigonometrica di $ z $}}.
 \todo{FIG:forma trigonometrica $ \mathbb{Z} $ } 
 
 Ok facciamo un esempio, prendiamo $z = 2$, avremo quindi $|z| = \sqrt{2^2 = 2}$ e $\arg{z} = 0$.\par
@@ -949,6 +996,7 @@ $w \in \mathbb{C}, w \not = 0 := |z| (\cos(\theta) + i\sin(\theta))$ \newline
 
 \todo{TEO:formula di De Mouire}
 
+\subsection{Radici di un numero $ \mathbb{C} $}
 
 
 \subsection{Equazioni di secondo grado complesse}
@@ -973,7 +1021,7 @@ Mentre:
 
 
 
-\subsection{Radici complesse}
+\subsection{Radici complesse (di secondo grado)}
 le $Zk$ sono chiamate radici complesse che se le andassimo a disegnare sul piano di Gauss formerebbero i su \newline
 Facciamo un esempio, le radici cubiche $(n=3)$ di $z = -8 +i*0$ del modulo di $z, \quad|z| = \sqrt{Re(z^2)+In(z^2)} = \sqrt{-8^2 + 0^2} = \sqrt{(-8^2)} = 8$.
 
@@ -1171,9 +1219,9 @@ Prendiamo il lemma $A = {a_1,\ldots,a_n}$ insieme finito, $B$ insieme finito, $|
                    f \mapsto (f(a_1),\ldots,f(a_n))
 \end{align*}
 
-Corollario $A,B$ insiemi finiti, allora $AxB, B^A, P(A)$ sono insiemi finiti di cardinalità:
+Corollario $A,B$ insiemi finiti, allora $A \times B, B^A, P(A)$ sono insiemi finiti di cardinalità:
 \begin{itemize}
-        \item $|A*B| = |A|*|B|$	
+        \item $|A \times B| = |A| \times |B|$	
         \item $|B^A| = |B|^{|A|}$
         \item $P(A) = |{0,1}^A| = |\{0,1\}|^{|A|} = 2^{|A|}$	
 \end{itemize}

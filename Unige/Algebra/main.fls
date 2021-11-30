@@ -946,6 +946,8 @@ INPUT ./images/esempio_assioma_della_scelta.jpg
 INPUT ./images/esempio_assioma_della_scelta.jpg
 INPUT ./images/esempio_assioma_della_scelta.jpg
 INPUT ./images/esempio_assioma_della_scelta.jpg
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
