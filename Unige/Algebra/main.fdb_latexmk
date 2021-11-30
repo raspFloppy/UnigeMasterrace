@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1638120055 "main.tex" "main.pdf" "main" 1638120056
+["pdflatex"] 1638206794 "main.tex" "main.pdf" "main" 1638206795
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1617738065 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -181,6 +181,7 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1637915747 5045527 a0ef06d06af438d62994481e52c2af5f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1637915720 2812677 62f7e839e0799aa46ae8829152a73166 ""
   "images/es_funz_identita.png" 1637825909 1445 cbbca3df1fbd1b218ecaff630b34e899 ""
+  "images/esempio_assioma_della_scelta.jpg" 1638203771 129089 1b658128d0741d706d9a474faf42727c ""
   "images/esempio_funzione.jpg" 1637319361 10469 f17abe485f1b8adf1bb7bace6363b822 ""
   "images/esempio_funzione_composta.png" 1637831822 6898 a07965a42df8990efcf8d8bb619828b0 ""
   "images/esempio_funzione_parte_frazionaria.png" 1637831228 7313 8f7a9e3e2f5a5b60544587145ee024d4 ""
@@ -188,15 +189,15 @@
   "images/esempio_grafico_funzione.jpg" 1637829499 32505 1f1e05843a5879e9255347a8d4be9e6f ""
   "images/insiemi_numerici.png" 1636828388 135758 85a4ea5e5a5e0764346191eab18e4720 ""
   "images/relazioni.png" 1637318097 43141 db7349d48e3c902ca022021c7cceb562 ""
-  "main.aux" 1638120056 18689 7402ac3db27918b39e5531282a515f89 "pdflatex"
-  "main.out" 1638120056 13816 8ec7628c2096019be54859e78060664e "pdflatex"
-  "main.tdo" 1638120056 913 80c3d628e0dc5af95d1cfddabb447d3e "pdflatex"
-  "main.tex" 1638120055 62802 86da59da21a0545095478ef839b2133f ""
-  "main.toc" 1638120056 7283 283f0ecd7091f5bf8b5d0cd337d96366 "pdflatex"
+  "main.aux" 1638206795 19657 e93d8a46630053aea999ad1eade9075d "pdflatex"
+  "main.out" 1638206795 14131 1434f02fc62bcf57f5283c3af127d9d1 "pdflatex"
+  "main.tdo" 1638206795 1072 3a81d737804c0857f887c7585e84fe7f "pdflatex"
+  "main.tex" 1638206792 65782 ef3354a49eb2028842759d879955e265 ""
+  "main.toc" 1638206795 7407 92827a00cf4ad656c05ceb1f5ee19a86 "pdflatex"
   (generated)
-  "main.out"
-  "main.toc"
   "main.log"
+  "main.toc"
+  "main.out"
   "main.aux"
   "main.tdo"
   "main.pdf"

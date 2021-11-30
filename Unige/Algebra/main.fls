@@ -892,9 +892,9 @@ OUTPUT main.toc
 INPUT ./main.tdo
 INPUT main.tdo
 INPUT main.tdo
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 OUTPUT main.tdo
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
@@ -941,6 +941,11 @@ INPUT ./images/esempio_funzione_composta.png
 INPUT ./images/esempio_funzione_composta.png
 INPUT ./images/esempio_funzione_composta.png
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
+INPUT ./images/esempio_assioma_della_scelta.jpg
+INPUT ./images/esempio_assioma_della_scelta.jpg
+INPUT ./images/esempio_assioma_della_scelta.jpg
+INPUT ./images/esempio_assioma_della_scelta.jpg
+INPUT ./images/esempio_assioma_della_scelta.jpg
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out

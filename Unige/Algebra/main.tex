@@ -583,7 +583,7 @@ Una funzione può essere invertibile a \textbf{destra, sinistra, o in entrambi i
         \begin{equation*}
                 \exists h : Y \to X, f \circ h = Id_y 
         \end{equation*}
-        E si dice che $ h  $ è \underline{l'inversa sinistra} di $ f $.           
+        E si dice che $ h $ è \underline{l'inversa destra} di $ f $.           
 \end{definition}
 
 
@@ -626,14 +626,70 @@ Andiamo a dimostrarlo:
 
 \subsection{Assioma della scelta}\label{sec:assioma_della_scelta}
 \begin{definition}
-        Sia $ {A_i}_{i \in I} $ una famiglia di insiemi dove $ A_1 \not = \emptyset $ allora:
+        Sia $ {\{A_i\}}_{i \in I} $ una famiglia di insiemi dove $ A_1 \not = \emptyset $ allora:
         \begin{equation*}
                 \psi : I \to \bigcup_{i \in I}A_i \quad : \quad  \varphi(i) \in A_i 
         \end{equation*}
         $ \varphi $ viene detta \textbf{funzione di scelta}.
 \end{definition}
 
+\begin{exmp}
+Se vogliamo un esempio per analogia immaginiamo i cassetti come una famiglia di insiemi, abbiamo:
+\begin{itemize}
+        \item un cassetto $ A_1 = \{calzini\} $ 
+        \item un cassetto $ A_2 = \{pantaloni\} $ 
+        \item un cassetto $ A_3 = \{maglietta\} $ 
+\end{itemize}
+L'assioma della scelta dice che attraverso questi insiemi tu puoi vestirti, ovvero esiste un modo per scegliere un elemento per ognuno di questi insiemi  per creare un nuovo insieme contenente \textbf{i rappresentanti} (calzini, pantaloni, maglietta) degli elementi degli insiemi scelti.
+\end{exmp}
 
+\newpage
+\begin{figure}[!h]
+        \centering
+                \includegraphics[width=0.5\textwidth]{esempio_assioma_della_scelta.jpg}
+                \caption{Esempio grafico dell'assioma della scelta}\label{fig:esempio_assioma_della_scelta}
+\end{figure}
+Come possiamo vedere nella figura~\ref{fig:esempio_assioma_della_scelta} da 5 insiemi prendiamo un elemento rappresentante a scelta e andiamo a formare un insieme contenente questi rappresentanti (in questo caso: cerchio, triangolo, pentagono, esagono, rombo).
+
+
+\subsubsection{Dimostrazioni attraverso l'assioma della scelta}
+\begin{theorem}
+        Avendo $ f : X \to Y $ applicazione, allora $ f $ surriettiva $ \Leftrightarrow f $ è invertibile a destra.   
+\end{theorem}
+
+Possiamo dimostrare questo teorema attraverso l'assioma della scelta sia da destra che da sinistra:
+\begin{proof}
+       `$ \rightarrow$`  Assumiamo $ f $ surriettiva e costruiamo un'inversa a destra:
+        \begin{align*}
+                \forall y \in Y \quad f^{-1}(y) = \emptyset \\
+                A_y = f^{-1}(y) \quad \mbox{famiglia di insiemi} \quad  I = Y
+        \end{align*}
+        Secondo questi \textit{assunti}, per \underline{l'assioma della scelta}:
+        \begin{equation*}
+                \exists \varphi : Y \to \bigcup_{y \in Y}f^{-1}(y) = X 
+        \end{equation*}
+        Perchè ogni elemento di $ X $ ha un corrispettivo in $ Y $ perciò se prendo tutti gli elementi di $ f^{-1}(y) $ e come se stessi prendendo $ X $ stessa    
+\end{proof}
+\todo{RIP:Aggiungere la \textit{proof} `$ \leftarrow $`}
+
+\begin{exmp}
+        Prendiamo due insiemi $ X = \{1,2,3\} $ e $ Y = \{a,b,c,d\} $ con:
+        \begin{align*}
+                \eta : Y \to X \quad \mbox{surriettiva} \quad  \Rightarrow \exists \quad \mbox{Inversa dx} \\ 
+                a \mapsto 1 \\
+                b \mapsto 1 \\
+                c \mapsto 2 \\
+                d \mapsto 3
+        \end{align*}
+        
+        Con l'assioma della scelta noi avremo un insieme $ u_1 : X \to Y $ che:
+        \begin{align*}
+                1 \mapsto \mbox{?} \in \eta^{-1}(1) = \{a,b\} \quad \mbox{Posso scegliere tra a e b ed in base alla scelta si formerà un diverso insieme} \\
+                2 \mapsto \mbox{?} \in \eta^{-1}(2) = \{c\} \\
+                3 \mapsto \mbox{?} \in \eta^{-1}(3) = \{d\} 
+        \end{align*}
+\end{exmp}
+\todo{RIP:Funzione da riallineare}
 
 
 
@@ -724,6 +780,9 @@ Allora diciamo che $P(n)$ vera $\forall n \ge n_0$.
 
 \newpage
 \section{Algoritmo euclideo}
+
+
+
 
 \subsection{Divisore e multiplo}
 \subsection{Divione euclidea}
