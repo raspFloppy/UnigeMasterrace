@@ -839,12 +839,9 @@ Se prendiamo $ b = ak $ con $ k \in \mathbb{Z} $ scriviamo:
 \subsection{Massimo comune divisore}
 \subsection{Algoritmo Euclideo}
 \subsection{Identità di Bezòut}
-\subsection{Equazioni Diofantee lineari}
+\subsection{Equazioni Diofantee lineari}\label{sec:equazione_diofantea_lineare}
 
-
-
-\newpage
-\section{Esempio}
+\subsubsection{Esempio}
 Se considero la funzione:
 \begin{align}
         f :  \mathbb{Z}^{2} \rightarrow \mathbb{Z} \\
@@ -1559,7 +1556,9 @@ Con i numeri:
         (2,3) \mapsto 2 + 3 = 5
 \end{equation*}
 
-\section{Proprietà dell'aritmentica modulare}
+
+
+\subsection{Proprietà dell'aritmentica modulare}
 Se abbiamo $ * : A*A \to A $ operazione possiamo avere:
 \begin{itemize}
         \item $ * $  \underline{commutativa} $ \quad x * y = y * x \quad \forall x,y \in A $
@@ -1567,8 +1566,175 @@ Se abbiamo $ * : A*A \to A $ operazione possiamo avere:
         \item $ * $ \underline{un elemento neutro} $ \quad \exists e \in A $ tale che $ e * x= x * e = x  \quad  \forall x \in A$. 
 \end{itemize}
 
+%Funzione $ \mathbb{Z}_n = {\overline{0}, \overline{1},\ldots, \overline{n + 1}} $ classi di resto $ n $. 
 
 
+
+\subsection{Operazioni in $\mathbb{Z}_n$}
+%\begin{align*}
+%        + : \mathbb{Z}_n \times \mathbb{Z}_n \to \mathbb{Z}_n \\
+%        \quad (\overline{a}, \overline{b}) \mapsto a + b \\
+        %\quad \overline{a} * \overline{b} := \overliene{a * b}
+%\end{align*}
+
+%\begin{align*}
+%        * : \mathbb{Z}_n \times \mathbb{Z}_n \to \mathbb{Z}_n \\
+       % \quad (\overline{a}, \overline{b}) \mapsto a * b \\
+        %\quad \overline{a} * \overline{b} := \overliene{a * b}
+%\end{align*}
+
+
+Verifichiamo che le operazioni sono ben definite:
+\begin{equation*}
+        a,b,r,s \in \mathbb{Z} \quad \overline{a} = \overline{r} \quad ,\overline{b} = \overline{s}
+\end{equation*}
+
+Dobbiamo quindi verificare che:
+\begin{enumerate}
+        \item $\overline{a} + \overline{b} = \overline{r} + \overline{s}$  
+        \item $\overline{a} * \overline{b} = \overline{r} * \overline{s}$  
+\end{enumerate}
+
+
+Supponiamo che:
+$\overline{a} = \overline{r} \Rightarrow a - r = Kn \quad k \in \mathbb{Z}$ \par 
+$\overline{b} = \overline{s} \Rightarrow b - s = hn \quad h \in \mathbb{Z}$ \par 
+
+\begin{proof}
+        (1) Viene verificato con:
+       \begin{equation*}
+               a + b = r + Kn + s + hn = r+s + (K+h)n \Rightarrow \overline{a+b} = \overline{r + s}
+       \end{equation*}
+\end{proof}
+
+\begin{proof}
+       (2) Viene verificato con:
+       \begin{equation*}
+               a * b = (r + Kn) * (s + hn) = r*+s + (rh +sK + Khn)n \Rightarrow \overline{a*b} = \overline{r * s}
+       \end{equation*}
+\end{proof}
+
+
+\begin{definition}
+        Abbiamo quindi che le operazioni $+ , *$ sono \underline{commutativi} e \underline{associativi}. 
+\end{definition}
+
+
+\begin{definition}
+        La funzione $+$ e $ * $ hanno un elemento neutro:
+        \begin{itemize}
+                \item $+$ ha come elemento neutro lo $\overline{0}$ 
+                \item $*$ ha come elemento neutro l' $\overline{1}$ 
+        \end{itemize}
+\end{definition}
+
+\begin{oss}
+        Se $\overline{a} \in \mathbb{Z}$ allora:
+        \begin{equation*}
+                \exists \overline{b} \in \mathbb{Z}_n : \overline{a} + \overline{b} = \overline{0}.
+        \end{equation*}
+        Ovvero quando $ \overline{b}$ è opposto di $\overline{a}$.
+\end{oss}
+
+\begin{exmp}
+        $ \mathbb{Z}_6 \quad \overline{2}$ ha un opposto: $\overline{-2} = \overline{4}$ perchè:
+        \begin{equation*}
+                -2 \equiv 4 \mod 6
+        \end{equation*}
+\end{exmp}
+\todo{ES:Riguardare gli esempi della classe inversa 9:55}
+
+
+
+\subsection{Inversionedella classe}
+\begin{definition}
+        La classe di $\overline{a} \in \mathbb{Z}_n$ è \underline{invertibile} in $ \mathbb{Z}_n $ (Rispetto al $*$) se:
+        \begin{equation*}
+                \exists \overline{b} \in \mathbb{Z}_n : \overline{a} * \overline{b} = \overline{1}
+        \end{equation*}
+        In tal caso $\overline{b}$ si dice \underline{inverso} di $\overline{a}$ e si denota con:
+        \begin{equation*}
+                \overline{a}^{-1}, \overline{b}^{-1}
+        \end{equation*}
+        Altrimenti $\overline{a}$ si dice \underline{non invertibile} in $\mathbb{Z}_n$:
+        \begin{equation*}
+                \bigcup(\mathbb{Z}_n) := \{\overline{a} \in \mathbb{Z}_n : \overline{a} \quad \mbox{è invertibile}\} 
+        \end{equation*}
+\end{definition}
+
+
+\begin{exmp}
+        \begin{equation*}
+                \bigcup(\mathbb{Z}_4) = \{\overline{1}, \overline{3}\}
+        \end{equation*} 
+\end{exmp}
+
+
+\begin{oss}
+        Per ogni $n \ge 2$:
+        \begin{equation*}
+                \overline{0} \not \in \bigcup(\mathbb{Z}_n), \overline{1} \in \bigcup(\mathbb{Z}_n)
+        \end{equation*}
+
+\end{oss}
+
+\begin{theorem}
+        con $x \in \mathbb{Z}_n$ allora si ha che:\newline
+        $ \overline{x} $ è invertibile $\Leftrightarrow MCD(x,n) = 1$
+\end{theorem}
+
+\begin{proof}
+       Possiamo dimostrare~\ref{theorem:teorema_dell_invertibilità} osservando che se $y \in \mathbb{Z}$ tale che $\overline{x} = \overline{y}$ allora:
+       \begin{equation*}
+               x = y + hn, \quad h \in \mathbb{Z}
+       \end{equation*}
+
+       Quindi $MCD(x,n) = 1 \Leftrightarrow MCD(y,n) = 1$
+       Pertanto la condizione $MCD(x,n) = 1$ non dipende dalla scelta del rappresentante per $\overline{x}$ \newline
+       '$\Rightarrow$' sia $\overline{x} \in \mathbb{Z}_n$ invertibile $ \Rightarrow \exists \overline{z} \in \mathbb{Z}_n : \overline{x} * \overline{z} = \overline{1} \Rightarrow xz = 1 + Kn \in \mathbb{Z}, K \in \mathbb{Z}$
+\end{proof}
+
+\begin{oss}
+       Possiamo osservare che $xz - nk = 1$ non è altro che \underline{un'equazione Diofantea lineare}~\ref{sec:equazione_diofantea_lineare}.
+\end{oss}
+
+
+\subsection{Elementi in $ \bigcup(\mathbb{Z}_n) $}
+\begin{definition}
+        \underline{notazione} $m \in \mathbb{N}*, \underline{a} \in \mathbb{Z}_n$ definiamo:
+        \begin{equation*}
+                \underline{a}^m := \underbrace{\overline{a} * \overline{a} * \ldots * \overline{a}}_{\mbox{$m$ volte}}
+        \end{equation*}
+
+        Se $m \in \mathbb{Z}, m < 0$ e $\overline{a}$ è invertibile:
+        \begin{align*}
+                \overline{a}^m := {(\overline{a}^{-1})}^{-1} \\
+                m = 0, \overline{a} \not = \overline{0} \quad DEF \quad \overline{a}^0 := \overline{1}
+        \end{align*}
+\end{definition}
+
+
+
+\subsection{$ \varphi $ di Eulero}
+\begin{definition}
+        Definiamo $\varphi$ di \textbf{Eulero} $\varphi : \mathbb{N}* \to \mathbb{N}*$ come:
+        \begin{equation*}
+                \varphi(n) = \# \{m \in \mathbb{N}* : m \le n, MCD(m,n)=1\} = \#\bigcup(\mathbb{Z}_n)
+        \end{equation*}
+\end{definition}
+\todo{TEO:Approfondire la teoria di $\varphi$ di Eulero}
+
+é computazionalmente difficile fattorizzare $n$ se $n \gg 0$
+
+
+\begin{theorem}
+        (Eulero) se $n,x \in \mathbb{Z}, n \ge 2$ tali che $ MCD(x,n) = 1 $ allora:
+        \begin{align*}
+                x^{\varphi(n)} \equiv 1 \mod n \\
+                \mbox{cioè} \quad \overline{x}^{\varphi(n)} = \overline{1} \in \mathbb{Z}_n \\
+                \overline{x} * \overline{x}^{\varphi(n)-1} = \overline{1} \quad \mbox{quindi} \quad \overline{x}^{\varphi(n)-1} \quad \mbox{è l'inverso di} \quad \overline{x}
+        \end{align*}
+\end{theorem}
 
 
 \end{document}
