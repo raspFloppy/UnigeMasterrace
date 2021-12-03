@@ -10,9 +10,9 @@
 \graphicspath{{./images}}
 
 \newtheorem{exmp}{Esempio}[section]
-\newtheorem{theorem}{Teorema}
-\newtheorem{definition}{Definizione}
-\newtheorem{oss}{Osservazione}
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{definition}{Definizione}[section]
+\newtheorem{oss}{Osservazione}[section]
 %\newtheorem{lemma}{Lemma}
 
 
@@ -1715,14 +1715,14 @@ $\overline{b} = \overline{s} \Rightarrow b - s = hn \quad h \in \mathbb{Z}$ \par
 
 
 
-\subsection{$ \varphi $ di Eulero}
+\subsection{Teorema di Eulero}\label{sec:teorema_di_eulero}
 \begin{definition}
         Definiamo $\varphi$ di \textbf{Eulero} $\varphi : \mathbb{N}* \to \mathbb{N}*$ come:
         \begin{equation*}
                 \varphi(n) = \# \{m \in \mathbb{N}* : m \le n, MCD(m,n)=1\} = \#\bigcup(\mathbb{Z}_n)
         \end{equation*}
 \end{definition}
-\todo{TEO:Approfondire la teoria di $\varphi$ di Eulero}
+\todo{TEO:Approfondire il teorema di Eulero $\varphi$}
 
 é computazionalmente difficile fattorizzare $n$ se $n \gg 0$
 
@@ -1735,6 +1735,121 @@ $\overline{b} = \overline{s} \Rightarrow b - s = hn \quad h \in \mathbb{Z}$ \par
                 \overline{x} * \overline{x}^{\varphi(n)-1} = \overline{1} \quad \mbox{quindi} \quad \overline{x}^{\varphi(n)-1} \quad \mbox{è l'inverso di} \quad \overline{x}
         \end{align*}
 \end{theorem}
+Ovvero conta quanti interi $\varphi(n)$ ci sono.
+
+
+
+\subsection{Teorema di Fermart}\label{sec:teorema_di_fermart}
+\begin{definition}
+        Se $p \in \mathbb{Z}$ primo, $ x \in \mathbb{Z} $ $ p T x  $ allora:
+        \begin{equation*}
+                x^{\varphi-1} \equiv 1 \mod p
+        \end{equation*}
+        Che è come dire che:
+        \begin{equation*}
+                \overline{x}^{\varphi - 1} \in \mathbb{Z}
+        \end{equation*}
+        E ne consegue che:
+        \begin{equation*}
+                \overline{x}^{-1} = \overline{x}^{\varphi(n) - 1} \in \mathbb{Z}
+        \end{equation*}
+\end{definition}
+
+\begin{oss}
+        Se dimostriamo il teorema di Eulero~\ref{sec:teorema_di_eulero} allora dimostriamo anche il teorema di Fermart~\ref{sec:teorema_di_fermart}
+\end{oss}
+
+\begin{proof}
+        \begin{align*}
+                \bigcup(\mathbb{Z}_n) = \{\overline{a} \in \mathbb{Z} : MCD(a,n) = 1\} \\
+                = \{\overline{a} \in \mathbb{Z} : 1 \le a \le n, MCD(a,n) = 1\} \\
+                = \{\overline{a_1}, \overline{a_2},\ldots,\overline{a_{\varphi(n)}}\}
+        \end{align*} 
+\end{proof}
+\todo{TEO:Approfondire teorema di Fermart a casa}
+
+
+\subsection{Crittosistema}\label{sec:crittografia}
+\begin{definition}
+        Un crittosistema consiste di:
+        \begin{itemize}
+                \item Un \underline{alfabeto} $A$, un insieme finito ($A = \mathbb{Z}_n$).
+                \item Un \underline{insieme dei messaggi in chiaro} $m \subseteq \bigcup_{n \in \mathbb{N}*}A^n$.
+                \item Un \underline{insieme dei messaggi cifrati} $c \subseteq \bigcup_{n \in \mathbb{N}*}A^n$.
+                \item Un \underline{insieme di chiavi} $k$
+                \item \underline{funzione di cifratura} (encryption function).
+                \item \underline{funzione di decifratura} (decryption function).
+                \item \underline{Insieme di chiavi ammissibili} $S \subseteq K \times K : \forall(k,k^1) \in S$ avrò che \newline $D(k^1, E(k,x)) = x \quad \forall x \in M$. 
+        \end{itemize}
+
+        Per esempio una funzione che cifra si mostra come:
+        \begin{align*}
+                E : K \times M \to C \\
+                \quad (k,x) \mapsto E(h,x)
+        \end{align*}
+        
+        Per esempio una funzione che decifra si mostra come:
+        \begin{align*}
+                D : K \times C \to M \\
+                \quad (k^1,y) \mapsto D(h,y)
+        \end{align*}
+\end{definition}
+
+\begin{exmp}
+       Alice e Bob vogliono comunicare in modo sicuro, per farlo:
+       \begin{itemize}
+               \item Si mettono d'accordo su un crittoistema e scelgono preventivamente una coppia di chiavi $(k, k^1) \in S$
+               \item Se Alice vuole mandare il messaggio $x \in M$ a Bob, calcola $y = E(k,x)$.
+               \item Quindi Alice manda $y$ a Bob.
+               \item Bob riceve $y \in C$ e calcola $D(k^1,y)= D(k^1, E(k,x)) = x$.
+       \end{itemize}
+\end{exmp}
+
+\subsubsection{Tipi di crittosistemi}
+Esistono due tipi di crittosistemi:
+\begin{itemize}
+        \item \underline{a chiave private o simmetrico} se $S = \{(k,k) \in K^2\}$
+        \item \underline{a chiave pubblica o asimmetrico} se non è possibile ottenere (in tempo ragionevole) la chiave di decifratura conoscendo la chiave di cifratura
+\end{itemize}
+
+\subsubsection{Crittosistema RSA}
+\begin{definition}
+        Il crittosistema \textbf{RSA} è un tipo di crittosistema a chiave pubblica creato nel 1977 da (Rivest, Shamir, dleman).
+\end{definition}
+
+\begin{exmp}
+      Bob sceglie due $p,q \in \mathbb{Z}$, numeri primi grandi:
+      \begin{equation*}
+              p,q \approx 2^{512} \approx 10^{154}
+      \end{equation*}
+      Bob deve:
+      \begin{itemize}
+              \item Calcolare $n = p * q$.
+              \item Calcolare $\varphi(n) = (p-1) * (q-1) = pq - p - q + 1$.
+              \item Scegliere $e \in \mathbb{Z}$ invertibile modulo $\varphi(n)$.
+              \item Calcolare $d \in \mathbb{Z}$ inverso di $e$ modulo $\varphi(n)$.
+      \end{itemize}
+\end{exmp}
+
+
+\subsubsection{Cifrario di Cesare}
+Prendiamo un tipo di crittosistema, il \textbf{cifrario di Cesare} dove:
+\begin{align*}
+        A = M = C = \mathbb{Z}_n, K=\mathbb{Z}_n^1{\overline{0}} \\
+        S = \{(k,k) \in k^2 : k \in K\} \quad E : \mathbb{Z}_n^1{\overline{0} \times \mathbb{Z}_n \to \mathbb{Z}_n}\\
+        E(k,x) = x + k \quad D(k,y) = y - ki \quad D:\mathbb{Z}_n^1{\overline{0}} \times \mathbb{Z}_n \to \mathbb{Z}_n       
+\end{align*}
+
+\begin{exmp}
+       \begin{equation*}
+               \overline{k} = \overline{3} \quad x = C|A|E|S|A|R = \overline{3}|\overline{1}|\overline{5}|\overline{19}|\overline{1}|\overline{18}.
+       \end{equation*}
+       Che cifrato diventa:
+       \begin{equation*}
+               E(\overline{3}, \overline{3}) = \overline{3} + \overline{3} = \overline{6}
+       \end{equation*}
+\end{exmp}
+
 
 
 \end{document}

@@ -82,4 +82,9 @@
 \contentsline {subsection}{\numberline {12.2}Operazioni in $\mathbb {Z}_n$}{43}{subsection.12.2}%
 \contentsline {subsection}{\numberline {12.3}Inversionedella classe}{44}{subsection.12.3}%
 \contentsline {subsection}{\numberline {12.4}Elementi in $ \DOTSB \bigcup@ \slimits@ (\mathbb {Z}_n) $}{45}{subsection.12.4}%
-\contentsline {subsection}{\numberline {12.5}$ \varphi $ di Eulero}{45}{subsection.12.5}%
+\contentsline {subsection}{\numberline {12.5}Teorema di Eulero}{45}{subsection.12.5}%
+\contentsline {subsection}{\numberline {12.6}Teorema di Fermart}{45}{subsection.12.6}%
+\contentsline {subsection}{\numberline {12.7}Crittosistema}{46}{subsection.12.7}%
+\contentsline {subsubsection}{\numberline {12.7.1}Tipi di crittosistemi}{46}{subsubsection.12.7.1}%
+\contentsline {subsubsection}{\numberline {12.7.2}Crittosistema RSA}{47}{subsubsection.12.7.2}%
+\contentsline {subsubsection}{\numberline {12.7.3}Cifrario di Cesare}{47}{subsubsection.12.7.3}%
