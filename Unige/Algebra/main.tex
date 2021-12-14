@@ -13,14 +13,13 @@
 \newtheorem{theorem}{Teorema}[section]
 \newtheorem{definition}{Definizione}[section]
 \newtheorem{oss}{Osservazione}[section]
-%\newtheorem{lemma}{Lemma}
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{prop}{Proprietà}[section]
+
 
 
 
 \begin{document}
-
-
-
 
 \title{Appunti molto belli di Algebra}
 \author{Floppy Loppy}
@@ -1849,11 +1848,120 @@ Prendiamo un tipo di crittosistema, il \textbf{cifrario di Cesare} dove:
                E(\overline{3}, \overline{3}) = \overline{3} + \overline{3} = \overline{6}
        \end{equation*}
 \end{exmp}
+\todo{TEO:guardarsi la lezione sul RSA}
 
 
+
+
+\newpage
+\section{Monoidi e Gruppi}\label{sec:monoidi_e_gruppi}
+\begin{definition}
+        Un \textbf{semigruppo} è una coppia $(M, *)$ dove $M$ è un insieme e $*$ è un operazione su $M$ tale che $ *: M\times M $. 
+\end{definition}
+\begin{definition}
+       Un \textbf{monoide} è una tripla $ (M, *, \lambda) $ dove $(M, *) $ è un semigruppo e $ \lambda $ è un elemento neutro per *.
+\end{definition}
+
+\begin{exmp}
+        $  (\mathbb{N},+,0)$ Monoide:
+        \begin{itemize}
+                \item $(\mathbb{N}*, +)$ semigruppo, ma non monoide.
+        \end{itemize}
+\end{exmp}
+
+\begin{lemma}
+        L'elemento neutro di un monoide è unico.
+\end{lemma}
+\begin{proof}
+       Siano $\mu$ e $ \lambda $ due elementi neutri, possiamo scrivere:
+       \begin{equation*}
+               \mu = \mu * \lambda = \lambda
+       \end{equation*}
+\end{proof}
+
+\begin{definition}
+        Se $ * $ è commutativa, il monoide (i semigruppo) si dice \underline{commutativo o Abeliano}
+\end{definition}
+\begin{exmp}
+        $  (\mathbb{N}, *, 1)$  monoide commutativo, allora:
+        \begin{equation*}
+                (\mathbb{Z}, +, 0), (\mathbb{Z}, *, 1) \quad  \mbox{Monoidi commutativi}
+        \end{equation*}
+        Ma anche $ \mathbb{Q},\mathbb{R}, \mathbb{C}, \mathbb{Z}_n  $ sono monoidi\newline
+\textbf{$\mathbb{R} \ \mathbb{Q}$ non è un monoide né con $ + $ né con $ * $}.
+\end{exmp}
+
+
+Inoltre se abbiamo $X$ insieme, con $X \not = \emptyset$ allora:
 \begin{equation*}
-        \bigcup_{n \in X}A_x
+        X^x = \{f : X \to X \mbox{Funzione}\}
 \end{equation*}
+
+
+
+\subsection{Invertibilità di un monoide}\label{sec:invertibilità_di_un_monoide}
+\begin{definition}
+        $ (M, *, \lambda) $ monoide con $ a \in M $ si dice che:
+        \begin{enumerate}
+                \item $a$ si dice invertibile a sinistra se $ \exists b \in M : b*a = \lambda $, $b$ viene detto \textbf{\underline{inverso sinistro}} di $a$. 
+                \item $a$ si dice invertibile a sinistra se $ \exists b \in M : b*a = \lambda $, $c$ viene detto \textbf{\underline{inverso sinistro}} di $a$. 
+                \item $a$ si dice invertibile a destra se $ \exists d \in M : a*d = d*a = \lambda $, $d$ viene detto \textbf{\underline{inverso}} di $a$ e si denota con $a^{-1}$. 
+        \end{enumerate}
+\end{definition}
+
+\begin{prop}
+       $ (M, *, \lambda) $ monoide allora:
+       \begin{enumerate}
+               \item $ \lambda $ è inverso di se stesso $ (\lambda * \lambda = \lambda) $
+               \item $ a \in M $, $b$ inverso sinistro di $a$, $ c $ inverso destro di $a$ allora $ b=c $.
+               \item Se $ (M,*,\lambda) $ è commutativo allora $ a \in M $ ha inverso dx $ \Leftrightarrow $ ha inverso sx.
+       \end{enumerate}
+\end{prop}
+\begin{proof}
+        (2)
+        \begin{equation*}
+                b = b * \lambda = b * (a * c) = (b * a) * c = \lambda * c = c 
+        \end{equation*}
+\end{proof}
+\begin{exmp}
+       \begin{align*}
+               (\mathbb{Z}, +, 0) \quad \mbox{tutti gli elementi sono invertibili} \\
+               (\mathbb{Z}, *, 1) \quad \mbox{Gli unici eleenti invertibili sono } 1 -1 \\
+               (\mathbb{Z}_n, *, \overline{1}) \quad \overline{x} invertibile \Leftrightarrow MCD(x,n) = 1 \\
+               (X^x, \circ, Id_x) \quad f \in X^x \mbox{invertibile} \Leftrightarrow f \mbox{bigettiva}
+       \end{align*} 
+\end{exmp}
+
+
+\begin{definition}
+        Un monoide $ (M, *, \lambda) $ tale che ogni elemento è invertibile si dice \underline{gruppo} 
+\end{definition}
+
+
+
+
+\begin{definition}
+        $ (M, *, \lambda) $ monoide, $m \in \mathbb{N}*, g \in M$:
+        \begin{equation*}
+                g^m = g * \ldots * g
+        \end{equation*}
+\end{definition}
+\begin{exmp}
+       \begin{align*}
+               (\mathbb{Z}, *, 1) \quad g = 3 \quad m = 4 \quad g^m = g*g*g*g \\
+               (\mathbb{Z}, +, 0) \quad g = 3 \quad m = 4 \quad g^m = g+g+g+g \\
+       \end{align*} 
+\end{exmp}
+
+Quindi \underline{l'ordine} di $g$ è il più piccolo intero positivo $m$ tale che $ g^m = \lambda $.
+Scriviamo che l'ordine di $g = m$ \par
+Se tale insieme non esiste scriviamo $ ord_m(g) = infinito $
+\todo{TEO:Aggiungere ultima lezione 15:30 09/12/2021}
+
+
+
+
+
 
 
 \end{document}

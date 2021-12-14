@@ -88,3 +88,5 @@
 \contentsline {subsubsection}{\numberline {12.7.1}Tipi di crittosistemi}{46}{subsubsection.12.7.1}%
 \contentsline {subsubsection}{\numberline {12.7.2}Crittosistema RSA}{47}{subsubsection.12.7.2}%
 \contentsline {subsubsection}{\numberline {12.7.3}Cifrario di Cesare}{47}{subsubsection.12.7.3}%
+\contentsline {section}{\numberline {13}Monoidi e Gruppi}{48}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Invertibilità di un monoide}{48}{subsection.13.1}%
