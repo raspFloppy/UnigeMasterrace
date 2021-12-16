@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.12.3)  9 DEC 2021 15:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.12.3)  15 DEC 2021 10:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -611,39 +611,73 @@ File: tikzlibraryfadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 File: pgflibraryfadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )))
 \c@@todonotes@numberoftodonotes=\count303
+) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2020/10/09 version 4.42 text color boxes
+
+(/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks41
+\verbatim@line=\toks42
+\verbatim@in@stream=\read3
 )
-\c@exmp=\count304
-\c@theorem=\count305
-\c@definition=\count306
-\c@oss=\count307
-\c@lemma=\count308
-\c@prop=\count309
+(/usr/share/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count304
+)
+\tcb@titlebox=\box61
+\tcb@upperbox=\box62
+\tcb@lowerbox=\box63
+\tcb@phantombox=\box64
+\c@tcbbreakpart=\count305
+\c@tcblayer=\count306
+\c@tcolorbox@number=\count307
+\tcb@temp=\box65
+\tcb@temp=\box66
+\tcb@temp=\box67
+\tcb@temp=\box68
+\tcb@out=\write4
+\tcb@record@out=\write5
+)
+\c@exmp=\count308
+\c@theorem=\count309
+\c@definition=\count310
+\c@oss=\count311
+\c@lemma=\count312
+\c@prop=\count313
+\c@nb=\count314
+
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count310
-\l__pdf_internal_box=\box61
+\l__color_backend_stack_int=\count315
+\l__pdf_internal_box=\box69
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-Package hyperref Info: Link coloring OFF on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+Package hyperref Info: Link coloring OFF on input line 24.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -654,32 +688,32 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count311
+\c@section@level=\count316
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
 
 (./main.out) (./main.out)
-\@outlinefile=\write4
-\openout4 = `main.out'.
+\@outlinefile=\write6
+\openout6 = `main.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count312
+\scratchcounter=\count317
 \scratchdimen=\dimen277
-\scratchbox=\box62
-\nofMPsegments=\count313
-\nofMParguments=\count314
-\everyMPshowfont=\toks41
-\MPscratchCnt=\count315
+\scratchbox=\box70
+\nofMPsegments=\count318
+\nofMParguments=\count319
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count320
 \MPscratchDim=\dimen278
-\MPnumerator=\count316
-\makeMPintoPDFobject=\count317
-\everyMPtoPDFconversion=\toks42
+\MPnumerator=\count321
+\makeMPintoPDFobject=\count322
+\everyMPtoPDFconversion=\toks44
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -689,13 +723,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -703,130 +737,130 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./main.toc [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2])
-\tf@toc=\write5
-\openout5 = `main.toc'.
+\tf@toc=\write7
+\openout7 = `main.toc'.
 
  [3] (./main.tdo)
-\tf@tdo=\write6
-\openout6 = `main.tdo'.
+\tf@tdo=\write8
+\openout8 = `main.tdo'.
 
  [4]
-Overfull \hbox (3.16724pt too wide) in paragraph at lines 40--40
+Overfull \hbox (3.16724pt too wide) in paragraph at lines 42--42
 \OT1/cmr/m/n/10 dell'insieme stesso, per es-em-pio gli el-e-menti dell'insieme 
 dei nu-meri pari dovranno
  []
 
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 5
-5.
+7.
 (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
  [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--126
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--132
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--139
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
 [7]
-Overfull \hbox (19.54564pt too wide) in paragraph at lines 181--182
+Overfull \hbox (19.54564pt too wide) in paragraph at lines 183--184
 []$\OMS/cmsy/m/n/10 :9\OML/cmm/m/it/10 xP\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT
 1/cmr/m/n/10 )$, che sig-nifica che $[]$. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--204
+Underfull \hbox (badness 10000) in paragraph at lines 204--206
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 208--210
+Underfull \hbox (badness 10000) in paragraph at lines 210--212
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--235
+Underfull \hbox (badness 10000) in paragraph at lines 235--237
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 253--255
+Underfull \hbox (badness 10000) in paragraph at lines 255--257
 
  []
 
 
-Overfull \hbox (4.97287pt too wide) in paragraph at lines 264--265
+Overfull \hbox (4.97287pt too wide) in paragraph at lines 266--267
 \OT1/cmr/m/n/10 Ora mos-tri-amo al-cune pro-priet^^Ra degli in-siemi per poi su
 c-ces-si-va-mente di-mostrarli: 
  []
 
 
-Overfull \hbox (0.88951pt too wide) in paragraph at lines 273--274
+Overfull \hbox (0.88951pt too wide) in paragraph at lines 275--276
 []\OT1/cmr/m/n/10 olte di queste sono facil-mente di-mostra-bili, provi-amo ad 
 es-em-pio a di-mostrare
  []
 
 [10]
-<./images/insiemi_numerici.png, id=629, 1002.74625pt x 1002.74625pt>
+<./images/insiemi_numerici.png, id=646, 1002.74625pt x 1002.74625pt>
 File: ./images/insiemi_numerici.png Graphic file (type png)
 <use ./images/insiemi_numerici.png>
-Package pdftex.def Info: ./images/insiemi_numerici.png  used on input line 291.
+Package pdftex.def Info: ./images/insiemi_numerici.png  used on input line 293.
 
 (pdftex.def)             Requested size: 172.5pt x 172.49959pt.
  [11 <./images/insiemi_numerici.png>] [12]
-<./images/relazioni.png, id=645, 501.875pt x 216.81pt>
+<./images/relazioni.png, id=663, 501.875pt x 216.81pt>
 File: ./images/relazioni.png Graphic file (type png)
 <use ./images/relazioni.png>
-Package pdftex.def Info: ./images/relazioni.png  used on input line 342.
+Package pdftex.def Info: ./images/relazioni.png  used on input line 344.
 (pdftex.def)             Requested size: 258.75pt x 111.78575pt.
-<./images/esempio_funzione.jpg, id=646, 702.625pt x 242.9075pt>
+<./images/esempio_funzione.jpg, id=664, 702.625pt x 242.9075pt>
 File: ./images/esempio_funzione.jpg Graphic file (type jpg)
 <use ./images/esempio_funzione.jpg>
-Package pdftex.def Info: ./images/esempio_funzione.jpg  used on input line 371.
+Package pdftex.def Info: ./images/esempio_funzione.jpg  used on input line 373.
 
 (pdftex.def)             Requested size: 258.75pt x 89.45552pt.
  [13 <./images/relazioni.png>]
-Overfull \hbox (1.58037pt too wide) in paragraph at lines 387--388
+Overfull \hbox (1.58037pt too wide) in paragraph at lines 389--390
 []\OT1/cmr/m/n/10 Aggiungo che la fun-zione $\OML/cmm/m/it/10 ^^Z$ \OT1/cmr/m/n
 /10 ha una $\OML/cmm/m/it/10 y$ \OT1/cmr/m/n/10 a cui cor-rispon-dono due $\OML
 /cmm/m/it/10 x $ \OT1/cmr/m/n/10 ($(1\OML/cmm/m/it/10 ; c\OT1/cmr/m/n/10 )\OML/
@@ -834,12 +868,12 @@ cmm/m/it/10 ; \OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 ; c\OT1/cmr/m/n/10 )$)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--400
+Underfull \hbox (badness 10000) in paragraph at lines 400--402
 
  []
 
 [14 <./images/esempio_funzione.jpg>]
-Overfull \hbox (24.9468pt too wide) in paragraph at lines 408--409
+Overfull \hbox (24.9468pt too wide) in paragraph at lines 410--411
 []\OT1/cmr/m/n/10 Prendiamo come es-em-pio un in-sieme $\OML/cmm/m/it/10 X \OT1
 /cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/
 n/10 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OMS/cmsy/m/n/10 g$ \OT1/cmr/m/n/10 e
@@ -847,121 +881,111 @@ n/10 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OMS/cmsy/m/n/10 g$ \OT1/cmr/m/n/10 e
 /it/10 a; b; c; d; e; f\OMS/cmsy/m/n/10 g$
  []
 
-<./images/esempio_grafico_funzione.jpg, id=664, 688.07062pt x 425.33907pt>
+<./images/esempio_grafico_funzione.jpg, id=681, 688.07062pt x 425.33907pt>
 File: ./images/esempio_grafico_funzione.jpg Graphic file (type jpg)
 <use ./images/esempio_grafico_funzione.jpg>
 Package pdftex.def Info: ./images/esempio_grafico_funzione.jpg  used on input l
-ine 439.
+ine 441.
 (pdftex.def)             Requested size: 86.25pt x 53.31651pt.
 [15 <./images/esempio_grafico_funzione.jpg>]
-<./images/es_funz_identita.png, id=670, 253.69781pt x 225.09094pt>
+<./images/es_funz_identita.png, id=687, 253.69781pt x 225.09094pt>
 File: ./images/es_funz_identita.png Graphic file (type png)
 <use ./images/es_funz_identita.png>
-Package pdftex.def Info: ./images/es_funz_identita.png  used on input line 475.
+Package pdftex.def Info: ./images/es_funz_identita.png  used on input line 477.
 
 (pdftex.def)             Requested size: 258.75pt x 229.5794pt.
  [16 <./images/es_funz_identita.png>]
-<./images/esempio_funzione_parte_intera.png, id=678, 1405.25pt x 989.6975pt>
+<./images/esempio_funzione_parte_intera.png, id=695, 1405.25pt x 989.6975pt>
 File: ./images/esempio_funzione_parte_intera.png Graphic file (type png)
 <use ./images/esempio_funzione_parte_intera.png>
 Package pdftex.def Info: ./images/esempio_funzione_parte_intera.png  used on in
-put line 497.
+put line 499.
 (pdftex.def)             Requested size: 258.75pt x 182.23038pt.
  [17 <./images/esempio_funzione_parte_intera.png>]
-<./images/esempio_funzione_parte_frazionaria.png, id=685, 460.72125pt x 451.687
+<./images/esempio_funzione_parte_frazionaria.png, id=702, 460.72125pt x 451.687
 5pt>
 File: ./images/esempio_funzione_parte_frazionaria.png Graphic file (type png)
 <use ./images/esempio_funzione_parte_frazionaria.png>
 Package pdftex.def Info: ./images/esempio_funzione_parte_frazionaria.png  used 
-on input line 523.
+on input line 525.
 (pdftex.def)             Requested size: 103.50105pt x 101.46677pt.
-<./images/esempio_funzione_composta.png, id=686, 357.58594pt x 185.94469pt>
+<./images/esempio_funzione_composta.png, id=703, 357.58594pt x 185.94469pt>
 File: ./images/esempio_funzione_composta.png Graphic file (type png)
 <use ./images/esempio_funzione_composta.png>
 Package pdftex.def Info: ./images/esempio_funzione_composta.png  used on input 
-line 538.
+line 540.
 (pdftex.def)             Requested size: 258.75pt x 134.55817pt.
  [18 <./images/esempio_funzione_parte_frazionaria.png> <./images/esempio_funzio
 ne_composta.png>] [19]
 [20]
-<./images/esempio_assioma_della_scelta.jpg, id=712, 1606.0pt x 1710.39pt>
+<./images/esempio_assioma_della_scelta.jpg, id=729, 1606.0pt x 1710.39pt>
 File: ./images/esempio_assioma_della_scelta.jpg Graphic file (type jpg)
 <use ./images/esempio_assioma_della_scelta.jpg>
 Package pdftex.def Info: ./images/esempio_assioma_della_scelta.jpg  used on inp
-ut line 648.
+ut line 650.
 (pdftex.def)             Requested size: 172.5pt x 183.70674pt.
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 672.
+ine 674.
 
-Overfull \hbox (12.63902pt too wide) in paragraph at lines 672--672
+Overfull \hbox (12.63902pt too wide) in paragraph at lines 674--674
 [][][]\OT1/cmr/m/n/10 RIP:Aggiungere 
  []
 
 
-Overfull \hbox (12.63902pt too wide) in paragraph at lines 672--672
+Overfull \hbox (12.63902pt too wide) in paragraph at lines 674--674
 [][][]\OT1/cmr/m/n/10 RIP:Aggiungere 
  []
 
 [21 <./images/esempio_assioma_della_scelta.jpg>]
-Overfull \hbox (102.04604pt too wide) detected at line 689
+Overfull \hbox (102.04604pt too wide) detected at line 691
 []
  []
 
 
-Overfull \hbox (2.47234pt too wide) in paragraph at lines 691--691
+Overfull \hbox (2.47234pt too wide) in paragraph at lines 693--693
 [][][]\OT1/cmr/m/n/10 RIP:Funzione 
  []
 
 
-Overfull \hbox (2.47234pt too wide) in paragraph at lines 691--691
+Overfull \hbox (2.47234pt too wide) in paragraph at lines 693--693
 [][][]\OT1/cmr/m/n/10 RIP:Funzione 
  []
 
 [22] [23] [24]
-Underfull \hbox (badness 10000) in paragraph at lines 825--826
+Underfull \hbox (badness 10000) in paragraph at lines 827--828
 
  []
 
 [25]
-Overfull \hbox (52.67097pt too wide) in paragraph at lines 848--854
+Overfull \hbox (52.67097pt too wide) in paragraph at lines 850--856
 \OML/cmm/m/it/10 f[] \OMS/cmsy/m/n/10 , \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\U/m
 sb/m/n/10 Z[]\OT1/cmr/m/n/10 ) = 2$ e che quindi: $\OML/cmm/m/it/10 f\OT1/cmr/m
 /n/10 (\U/msb/m/n/10 Z[]\OT1/cmr/m/n/10 ) = []$ 
  []
 
 
-Overfull \hbox (29.75984pt too wide) in paragraph at lines 855--855
+Overfull \hbox (29.75984pt too wide) in paragraph at lines 857--857
 []\OT1/cmr/m/n/10 Quella che ab-bi-amo ap-pena scritto ^^Re una fun-zione \OT1/
 cmr/bx/n/10 Dio-fan-tea \OT1/cmr/m/n/10 ovvero $\OML/cmm/m/it/10 MCD\OT1/cmr/m/
 n/10 (21\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 15) :
  []
 
 [26]
-Overfull \hbox (16.0007pt too wide) in paragraph at lines 901--902
+Overfull \hbox (16.0007pt too wide) in paragraph at lines 903--904
 \OT1/cmr/m/n/10 Esistono in-finiti nu-meri primi e lo pos-si-amo di-mostrare at
 -traverso una di-mostrazione
  []
 
 
-Overfull \hbox (3.159pt too wide) in paragraph at lines 907--908
+Overfull \hbox (3.159pt too wide) in paragraph at lines 909--910
 []$\OML/cmm/m/it/10 p[][]N$ \OT1/cmr/m/n/10 ...$\OML/cmm/m/it/10 p[][]N$ \OT1/c
 mr/m/n/10 con-trad-dice il teo-rema prece-dente e perci^^Ro ab-bi-amo di-mostra
 to
  []
 
 [27]
-Overfull \hbox (53.78041pt too wide) detected at line 933
+Overfull \hbox (53.78041pt too wide) detected at line 935
 []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 959--960
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 960--961
-
  []
 
 
@@ -979,24 +1003,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 963--964
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 964--965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 965--966
+
+ []
+
 [28]
-Overfull \hbox (0.86119pt too wide) in paragraph at lines 965--965
+Overfull \hbox (0.86119pt too wide) in paragraph at lines 967--967
 [][][]\OT1/cmr/m/n/10 TEO:Cercare 
  []
 
 
-Overfull \hbox (0.86119pt too wide) in paragraph at lines 965--965
+Overfull \hbox (0.86119pt too wide) in paragraph at lines 967--967
 [][][]\OT1/cmr/m/n/10 TEO:Cercare 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 969--970
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 970--971
-
  []
 
 
@@ -1010,12 +1034,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 972--973
  []
 
 
-Overfull \hbox (27.80577pt too wide) in paragraph at lines 975--975
+Underfull \hbox (badness 10000) in paragraph at lines 973--974
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 974--975
+
+ []
+
+
+Overfull \hbox (27.80577pt too wide) in paragraph at lines 977--977
 [][][]\OT1/cmr/m/n/10 DEF:disugiaglainza 
  []
 
 
-Overfull \hbox (27.80577pt too wide) in paragraph at lines 975--975
+Overfull \hbox (27.80577pt too wide) in paragraph at lines 977--977
 [][][]\OT1/cmr/m/n/10 DEF:disugiaglainza 
  []
 
@@ -1026,7 +1060,7 @@ LaTeX Warning: Marginpar on page 29 moved.
 LaTeX Warning: Marginpar on page 29 moved.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 982--983
+Underfull \hbox (badness 10000) in paragraph at lines 984--985
 
  []
 
@@ -1034,17 +1068,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 982--983
 LaTeX Warning: Marginpar on page 29 moved.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 989--992
+Underfull \hbox (badness 10000) in paragraph at lines 991--994
 
  []
 
 
-Overfull \hbox (0.83348pt too wide) in paragraph at lines 993--993
+Overfull \hbox (0.83348pt too wide) in paragraph at lines 995--995
 [][][]\OT1/cmr/m/n/10 TEO:formula 
  []
 
 
-Overfull \hbox (0.83348pt too wide) in paragraph at lines 993--993
+Overfull \hbox (0.83348pt too wide) in paragraph at lines 995--995
 [][][]\OT1/cmr/m/n/10 TEO:formula 
  []
 
@@ -1053,107 +1087,102 @@ LaTeX Warning: Marginpar on page 29 moved.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 995.
+(hyperref)                removing `math shift' on input line 997.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 995.
+(hyperref)                removing `math shift' on input line 997.
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 1030--1031
+Underfull \hbox (badness 10000) in paragraph at lines 1032--1033
 
  []
 
 [30]
-Overfull \hbox (9.51906pt too wide) in paragraph at lines 1061--1061
+Overfull \hbox (9.51906pt too wide) in paragraph at lines 1063--1063
 \OT1/cmr/m/n/10 Sia $\OML/cmm/m/it/10 A$ \OT1/cmr/m/n/10 un in-sieme e sia $\U/
 msa/m/n/10 v$ \OT1/cmr/m/n/10 una re-lazione di equiv-alenza su $\OML/cmm/m/it/
 10 A$\OT1/cmr/m/n/10 . La $[]$
  []
 
 [31]
-Overfull \hbox (9.3612pt too wide) in paragraph at lines 1070--1070
+Overfull \hbox (9.3612pt too wide) in paragraph at lines 1072--1072
 [][][]\OT1/cmr/m/n/10 RIP:recuperare 
  []
 
 
-Overfull \hbox (9.3612pt too wide) in paragraph at lines 1070--1070
+Overfull \hbox (9.3612pt too wide) in paragraph at lines 1072--1072
 [][][]\OT1/cmr/m/n/10 RIP:recuperare 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1100--1102
+Underfull \hbox (badness 10000) in paragraph at lines 1102--1104
 
  []
 
 
-Overfull \hbox (4.72237pt too wide) in paragraph at lines 1116--1116
+Overfull \hbox (4.72237pt too wide) in paragraph at lines 1118--1118
 [][][]\OT1/cmr/m/n/10 ES:aggiungere 
  []
 
 
-Overfull \hbox (4.72237pt too wide) in paragraph at lines 1116--1116
+Overfull \hbox (4.72237pt too wide) in paragraph at lines 1118--1118
 [][][]\OT1/cmr/m/n/10 ES:aggiungere 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1131--1132
+Underfull \hbox (badness 10000) in paragraph at lines 1133--1134
 
  []
 
 [32] [33]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1227.
+(hyperref)                removing `math shift' on input line 1229.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1227.
+(hyperref)                removing `math shift' on input line 1229.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1237--1238
+Underfull \hbox (badness 10000) in paragraph at lines 1239--1240
 
  []
 
 [34]
-Overfull \hbox (10.34738pt too wide) in paragraph at lines 1239--1239
+Overfull \hbox (10.34738pt too wide) in paragraph at lines 1241--1241
 [][][]\OT1/cmr/m/n/10 FIG:cardinalit^^Ra 
  []
 
 
-Overfull \hbox (10.34738pt too wide) in paragraph at lines 1239--1239
+Overfull \hbox (10.34738pt too wide) in paragraph at lines 1241--1241
 [][][]\OT1/cmr/m/n/10 FIG:cardinalit^^Ra 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1241--1242
+Underfull \hbox (badness 10000) in paragraph at lines 1243--1244
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1245.
+(hyperref)                removing `math shift' on input line 1247.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1245.
+(hyperref)                removing `math shift' on input line 1247.
 
 [35] [36]
-Overfull \hbox (6.88902pt too wide) in paragraph at lines 1337--1337
+Overfull \hbox (6.88902pt too wide) in paragraph at lines 1339--1339
 [][][]\OT1/cmr/m/n/10 ES:Dimostrare 
  []
 
 
-Overfull \hbox (6.88902pt too wide) in paragraph at lines 1337--1337
+Overfull \hbox (6.88902pt too wide) in paragraph at lines 1339--1339
 [][][]\OT1/cmr/m/n/10 ES:Dimostrare 
  []
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 1375--1376
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 1377--1378
 
  []
@@ -1164,12 +1193,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1379--1380
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1389--1390
+Underfull \hbox (badness 10000) in paragraph at lines 1381--1382
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1391--1392
 
  []
 
 [38]
-Overfull \hbox (25.47176pt too wide) in paragraph at lines 1400--1400
+Overfull \hbox (25.47176pt too wide) in paragraph at lines 1402--1402
 \OT1/cmr/m/n/10 Definiamo $(\OML/cmm/m/it/10 A[]; \OMS/cmsy/m/n/10 4[]\OT1/cmr/
 m/n/10 )\OML/cmm/m/it/10 ; [] ; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A[]; \OMS/cms
 y/m/n/10 4[]\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 POSET$ \OT1/cmr/m/n/10 defin-imo
@@ -1177,26 +1211,26 @@ y/m/n/10 4[]\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 POSET$ \OT1/cmr/m/n/10 defin-imo
  []
 
 
-Overfull \hbox (16.20169pt too wide) detected at line 1412
+Overfull \hbox (16.20169pt too wide) detected at line 1414
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]; a[]; [] ; a[]\OT1/cmr/m/n/10 )\OMS/cmsy/
 m/n/10 4[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 b[]; b[]; [] ; b[]\OT1/cmr/m/n/10 )
  \OMS/cmsy/m/n/10 , []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1431--1432
+Underfull \hbox (badness 10000) in paragraph at lines 1433--1434
 
  []
 
 
-Overfull \hbox (55.30962pt too wide) detected at line 1441
+Overfull \hbox (55.30962pt too wide) detected at line 1443
 \OT1/cmr/m/n/10 (\U/msb/m/n/10 R[]\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 ^^T[]\OT1
 /cmr/m/n/10 ) [] (\U/msb/m/n/10 R[]\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 ^^T \OML
 /cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^T\OT1/cmr/m/n/10 ) []\OML/cmm/m/it/10 :
  []
 
 [39] [40]
-Overfull \hbox (7.87427pt too wide) in paragraph at lines 1507--1508
+Overfull \hbox (7.87427pt too wide) in paragraph at lines 1509--1510
 []\OT1/cmr/m/n/10 Se in-vece uti-lizzi-amo l'ordine \OT1/cmr/bx/n/10 LEX \OT1/c
 mr/m/n/10 con una cop-pia or-di-nata ($(\OML/cmm/m/it/10 x[]; \OMS/cmsy/m/n/10 
 4[]\OT1/cmr/m/n/10 )$) ($\OML/cmm/m/it/10 x[]; \OMS/cmsy/m/n/10 4[]$\OT1/cmr/m/
@@ -1204,48 +1238,48 @@ n/10 )
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1507--1508
+Underfull \hbox (badness 10000) in paragraph at lines 1509--1510
 
  []
 
 [41] [42]
-Overfull \hbox (15.8335pt too wide) in paragraph at lines 1541--1541
+Overfull \hbox (15.8335pt too wide) in paragraph at lines 1543--1543
 [][][]\OT1/cmr/m/n/10 DEF:Aggiungere 
  []
 
 
-Overfull \hbox (15.8335pt too wide) in paragraph at lines 1541--1541
+Overfull \hbox (15.8335pt too wide) in paragraph at lines 1543--1543
 [][][]\OT1/cmr/m/n/10 DEF:Aggiungere 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1572.
+(hyperref)                removing `math shift' on input line 1574.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1572.
+(hyperref)                removing `subscript' on input line 1574.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1572.
+(hyperref)                removing `math shift' on input line 1574.
 
 [43]
-Overfull \hbox (6.5557pt too wide) in paragraph at lines 1644--1644
+Overfull \hbox (6.5557pt too wide) in paragraph at lines 1646--1646
 [][][]\OT1/cmr/m/n/10 ES:Riguardare 
  []
 
 
-Overfull \hbox (6.5557pt too wide) in paragraph at lines 1644--1644
+Overfull \hbox (6.5557pt too wide) in paragraph at lines 1646--1646
 [][][]\OT1/cmr/m/n/10 ES:Riguardare 
  []
 
 
 LaTeX Warning: Reference `theorem:teorema_dell_invertibilità' on page 44 undef
-ined on input line 1686.
+ined on input line 1688.
 
 
-Overfull \hbox (18.16565pt too wide) in paragraph at lines 1691--1694
+Overfull \hbox (18.16565pt too wide) in paragraph at lines 1693--1696
 []\OT1/cmr/m/n/10 Quindi $\OML/cmm/m/it/10 MCD\OT1/cmr/m/n/10 (\OML/cmm/m/it/10
  x; n\OT1/cmr/m/n/10 ) = 1 \OMS/cmsy/m/n/10 , \OML/cmm/m/it/10 MCD\OT1/cmr/m/n/
 10 (\OML/cmm/m/it/10 y; n\OT1/cmr/m/n/10 ) = 1$ Per-tanto la con-dizione $\OML/
@@ -1254,79 +1288,97 @@ cmm/m/it/10 MCD\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; n\OT1/cmr/m/n/10 ) =
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1701.
+(hyperref)                removing `math shift' on input line 1703.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\bigcup@' on input line 1701.
+(hyperref)                removing `\bigcup@' on input line 1703.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\slimits@' on input line 1701.
+(hyperref)                removing `\slimits@' on input line 1703.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1701.
+(hyperref)                removing `subscript' on input line 1703.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1701.
+(hyperref)                removing `math shift' on input line 1703.
 
 [44]
-Overfull \hbox (25.30576pt too wide) in paragraph at lines 1724--1724
+Overfull \hbox (25.30576pt too wide) in paragraph at lines 1726--1726
 [][][]\OT1/cmr/m/n/10 TEO:Approfondire 
  []
 
 
-Overfull \hbox (25.30576pt too wide) in paragraph at lines 1724--1724
+Overfull \hbox (25.30576pt too wide) in paragraph at lines 1726--1726
 [][][]\OT1/cmr/m/n/10 TEO:Approfondire 
  []
 
 
-Overfull \hbox (25.30576pt too wide) in paragraph at lines 1768--1768
+Overfull \hbox (25.30576pt too wide) in paragraph at lines 1770--1770
 [][][]\OT1/cmr/m/n/10 TEO:Approfondire 
  []
 
 
-Overfull \hbox (25.30576pt too wide) in paragraph at lines 1768--1768
+Overfull \hbox (25.30576pt too wide) in paragraph at lines 1770--1770
 [][][]\OT1/cmr/m/n/10 TEO:Approfondire 
  []
 
 [45] [46]
-Overfull \hbox (8.13904pt too wide) in paragraph at lines 1851--1851
+Overfull \hbox (8.13904pt too wide) in paragraph at lines 1853--1853
 [][][]\OT1/cmr/m/n/10 TEO:guardarsi 
  []
 
 
-Overfull \hbox (8.13904pt too wide) in paragraph at lines 1851--1851
+Overfull \hbox (8.13904pt too wide) in paragraph at lines 1853--1853
 [][][]\OT1/cmr/m/n/10 TEO:guardarsi 
  []
 
 [47] [48]
-Overfull \hbox (16.66682pt too wide) in paragraph at lines 1959--1959
+Overfull \hbox (16.66682pt too wide) in paragraph at lines 1969--1969
 [][][]\OT1/cmr/m/n/10 TEO:Aggiungere 
  []
 
 
-Overfull \hbox (16.66682pt too wide) in paragraph at lines 1959--1959
+Overfull \hbox (16.66682pt too wide) in paragraph at lines 1969--1969
 [][][]\OT1/cmr/m/n/10 TEO:Aggiungere 
  []
 
-[49] (./main.aux)
+[49]
+Overfull \hbox (2.49985pt too wide) in paragraph at lines 2008--2009
+[][]\OT1/cmr/bx/n/10 Definizione 13.8. []$\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 G; 
+\OMS/cmsy/m/n/10 ^^C\OML/cmm/m/it/10 ; ^^U\OT1/cmr/m/n/10 )$ \OT1/cmr/m/it/10 g
+ruppo, re-lazione d'equivalenza $\OMS/cmsy/m/n/10 ^^X$ \OT1/cmr/m/it/10 su $\OM
+L/cmm/m/it/10 G$ \OT1/cmr/m/it/10 ^^Re $[]$
+ []
+
+
+Overfull \hbox (26.44464pt too wide) in paragraph at lines 2038--2038
+[][][]\OT1/cmr/m/n/10 TEO:dimostrazioni 
+ []
+
+
+Overfull \hbox (26.44464pt too wide) in paragraph at lines 2038--2038
+[][][]\OT1/cmr/m/n/10 TEO:dimostrazioni 
+ []
+
+[50] [51] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2BF35D27E5CDAD197C6926AC92D7F732;15803.
+(rerunfilecheck)             Checksum: 6EBC3A26AD06024484A4845480F31697;16255.
  ) 
 Here is how much of TeX's memory you used:
- 22414 strings out of 478994
- 407615 string characters out of 5864751
- 710447 words of memory out of 5000000
- 39203 multiletter control sequences out of 15000+600000
+ 24484 strings out of 478994
+ 455920 string characters out of 5864751
+ 761394 words of memory out of 5000000
+ 41233 multiletter control sequences out of 15000+600000
  412952 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,14n,102p,626b,954s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 102i,14n,102p,626b,1055s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -1345,10 +1397,10 @@ are/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/cm-super/sfrm1000.pfb>
-Output written on main.pdf (49 pages, 713166 bytes).
+Output written on main.pdf (51 pages, 722741 bytes).
 PDF statistics:
- 1066 PDF objects out of 1200 (max. 8388607)
- 956 compressed objects within 10 object streams
- 298 named destinations out of 1000 (max. 500000)
- 890 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1111 PDF objects out of 1200 (max. 8388607)
+ 999 compressed objects within 10 object streams
+ 320 named destinations out of 1000 (max. 500000)
+ 914 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -7,6 +7,7 @@
 \usepackage{mathtools}
 \usepackage{graphicx}
 \usepackage{todonotes}
+\usepackage{tcolorbox}
 \graphicspath{{./images}}
 
 \newtheorem{exmp}{Esempio}[section]
@@ -15,6 +16,7 @@
 \newtheorem{oss}{Osservazione}[section]
 \newtheorem{lemma}{Lemma}[section]
 \newtheorem{prop}{Proprietà}[section]
+\newtheorem{nb}{Nota Bene}[section]
 
 
 
@@ -1855,6 +1857,10 @@ Prendiamo un tipo di crittosistema, il \textbf{cifrario di Cesare} dove:
 
 \newpage
 \section{Monoidi e Gruppi}\label{sec:monoidi_e_gruppi}
+In questo capitolo finale andremo a spiegare quelli che sono i \textbf{Monoidi} e i \textbf{Gruppi}
+
+
+\subsection{Monoidi}\label{sec:monoidi}
 \begin{definition}
         Un \textbf{semigruppo} è una coppia $(M, *)$ dove $M$ è un insieme e $*$ è un operazione su $M$ tale che $ *: M\times M $. 
 \end{definition}
@@ -1872,12 +1878,14 @@ Prendiamo un tipo di crittosistema, il \textbf{cifrario di Cesare} dove:
 \begin{lemma}
         L'elemento neutro di un monoide è unico.
 \end{lemma}
+\begin{tcolorbox}
 \begin{proof}
        Siano $\mu$ e $ \lambda $ due elementi neutri, possiamo scrivere:
        \begin{equation*}
                \mu = \mu * \lambda = \lambda
        \end{equation*}
 \end{proof}
+\end{tcolorbox}
 
 \begin{definition}
         Se $ * $ è commutativa, il monoide (i semigruppo) si dice \underline{commutativo o Abeliano}
@@ -1898,8 +1906,7 @@ Inoltre se abbiamo $X$ insieme, con $X \not = \emptyset$ allora:
 \end{equation*}
 
 
-
-\subsection{Invertibilità di un monoide}\label{sec:invertibilità_di_un_monoide}
+\subsubsection{Invertibilità di un monoide}\label{sec:invertibilità_di_un_monoide}
 \begin{definition}
         $ (M, *, \lambda) $ monoide con $ a \in M $ si dice che:
         \begin{enumerate}
@@ -1917,12 +1924,15 @@ Inoltre se abbiamo $X$ insieme, con $X \not = \emptyset$ allora:
                \item Se $ (M,*,\lambda) $ è commutativo allora $ a \in M $ ha inverso dx $ \Leftrightarrow $ ha inverso sx.
        \end{enumerate}
 \end{prop}
+\begin{tcolorbox}
+        
 \begin{proof}
         (2)
         \begin{equation*}
                 b = b * \lambda = b * (a * c) = (b * a) * c = \lambda * c = c 
         \end{equation*}
 \end{proof}
+\end{tcolorbox}
 \begin{exmp}
        \begin{align*}
                (\mathbb{Z}, +, 0) \quad \mbox{tutti gli elementi sono invertibili} \\
@@ -1960,8 +1970,94 @@ Se tale insieme non esiste scriviamo $ ord_m(g) = infinito $
 
 
 
+\subsection{Gruppi}\label{sec:gruppi}
+\begin{definition}
+       Un \textbf{gruppo} $ (G, *, \lambda) $ ci chiediamo cos'è un sottogruppo di $ G $ ovvero un sottinsieme $ H \subseteq G $ tale che:
+       \begin{enumerate}
+               \item $ lambda \in H $,
+               \item $ a,b \in H \Rightarrow a*b \in H $.
+               \item $ a \in H \Rightarrow a^{-1} \in H $.
+       \end{enumerate}
+\end{definition}
+
+\begin{exmp}
+        \begin{align*}
+                * : G \to G \\
+                \mbox{Si restringe a} \\
+                (H, *, \lambda) \quad \mbox{è un gruppo}
+        \end{align*}
+\end{exmp}
+\begin{exmp}
+        \begin{align*}
+                (\mathbb{Z}, +, 0) \subseteq (\mathbb{Q}, +, 0) \\
+                \subseteq (\mathbb{R}, +, 0) \\
+                \subseteq (\mathbb{C}, +, 0)
+        \end{align*}
+\end{exmp}
 
 
+\begin{tcolorbox}
+\begin{oss}
+       Si può verificare che tutti i sottogruppi di $ (\mathbb{Z}, +, 0) $ sono di questa forma. 
+\end{oss}
+\end{tcolorbox}
 
+
+\subsubsection{Relazione di equivalenza tra gruppi}
+\begin{definition}
+       $ (G, *, \lambda) $ gruppo, relazione d'equivalenza $ \sim $ su $ G $ è \underline{compatibile} con $*$ se vale $ \forall a,b,c,d \in G $:
+       \begin{equation*}
+               (a \sim b) \wedge (c \sim d) \Rightarrow (a * c) \sim (b * d)
+       \end{equation*}
+       definiamo un'operazione $ [*] $ sul quoziente $ \frac{G}{\sim} $:
+       \begin{equation*}
+               [x][*][y] := [x*y] \quad \forall x,y \in G
+       \end{equation*}
+       $ (\frac{G}{\sim}, [*], [\lambda]) $ è un gruppo detto \underline{gruppo quiziente}.
+\end{definition}
+\begin{exmp}
+        $ (\mathbb{Z}, +, 0) \quad  n \in \mathbb{N}^*$ relazione di equivalenza modulare, cioè $ x \sim y \Leftrightarrow x \equiv y \mod n $:
+        \begin{equation*}
+                \frac{\mathbb{Z}}{\sim_n} = \mathbb{Z}_n = \{[0], [1], \ldots, [n-1]\}
+        \end{equation*}
+        $\sim_n$ è compatibile con la somma su $\mathbb{Z}$
+\end{exmp}
+
+\begin{definition}
+        $ (G, *, \lambda) $ gruppo, $ H \subseteq G $ sottogruppo induce la relazione:
+        \begin{equation*}
+                g, g^1 \in G \quad g \sim_s g^i \Leftrightarrow g^{-1} * g^i \in H
+        \end{equation*}
+        
+        Verifichiamo che $\sim_s$ è relazione di equivalenza:
+        \begin{enumerate}
+                \item \underline{Riflessiva} $ g \sim_s g^i \Leftrightarrow g^{-1} * g \in H $ \textbf{?}.
+                \item \underline{Simmetrica} $ g \sim_s g^i \Rightarrow g^i \sim_s g \in H $ \textbf{?}.
+                \item \underline{Transitiva} $ g \sim_s g^i \Rightarrow g^i \sim_s g^{ii}$ \textbf{?}.
+        \end{enumerate}
+        \todo{TEO:dimostrazioni lezione 15/12/2021 10:20}
+\end{definition}
+
+\begin{definition}
+        Le classi di equivalenza sono \underline{classi laterali destre}:
+        \begin{equation*}
+                H * g := [g] = \{x \in G : x \sim_{\Delta} g \} = \{x = K * g : K \in H\}
+        \end{equation*}
+\end{definition}
+
+\begin{tcolorbox}
+       \begin{nb}
+               \textbf{!} $ \frac{G}{H} $ e $ \frac{H}{G} $ sono equipotenti, ma sono in generali diversi.
+       \end{nb} 
+\end{tcolorbox}
+\begin{exmp}
+        $S_3 \quad H = \{Id, \phi \} $ sottogruppo, le classi laterali sinistre: $ g \circ H \quad  g \in S_3 $:
+        \begin{align*}
+                Id \circ H = \{Id \circ h : h \in H\} = \{Id \circ Id, Id \circ \phi \} = \{Id, \phi\} = H \\
+                \phi \circ H = \{\phi \circ h : h \in H\} = \{\phi \circ Id, \phi \circ \phi\} = \{\phi, Id\} \\
+                \varphi \circ H = \{\varphi \circ h : h \in H\} = \{\varphi \circ Id, \varphi \circ \phi\} = \{\varphi, \varphi \circ \phi\} \\
+                \varphi^2 \circ H = \{\varphi^2 :  \varphi^2 \circ \phi\} = \{\varphi^2, \varphi \circ \phi\} = (\phi \circ \varphi) \circ H \\
+        \end{align*}
+\end{exmp}
 
 \end{document}
