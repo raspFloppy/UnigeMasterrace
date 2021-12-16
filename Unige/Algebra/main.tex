@@ -12,6 +12,7 @@
 
 \newtheorem{exmp}{Esempio}[section]
 \newtheorem{theorem}{Teorema}[section]
+\theoremstyle{definition}
 \newtheorem{definition}{Definizione}[section]
 \newtheorem{oss}{Osservazione}[section]
 \newtheorem{lemma}{Lemma}[section]
@@ -315,7 +316,6 @@ Se avessimo $I = \{1,2,3,4,5\}$ sarebbe come scrivere:
 
 
 \subsection{Insiemi Indiciati}
-
 Facciamo un esempio, prendiamo $A_i = \{x \in \mathbb{N} : x \not = 2i\}$ con $I = \{1,2,3\}$, avremo che:
 \begin{itemize}
         \item $A_1 = \{\mathbb{N} \not = 2\}$
@@ -605,13 +605,16 @@ Una funzione può essere invertibile a \textbf{destra, sinistra, o in entrambi i
                f \quad \mbox{è iniettiva} \quad \Leftrightarrow \quad f \quad \mbox{è invertibile a sinistra}
        \end{equation*}
 \end{theorem}
-Andiamo a dimostrarlo:
+
+\begin{tcolorbox}
 \begin{proof}
         $ \leftarrow $ assiumiamo che $ \exists g : Y \to X \quad g \circ f = Id_x  $ \par
         Per essere iniettiva $ x_1 = x_2$ ma quindi possiamo dire che $ g(f(x_1)) = g(f(x_2)) $ \newline
         Ma ciò significa fare $ Id_x(x_1) = Id_x(x_2) $ che è come dire $ x_1 = x_2 $.  
 \end{proof}
+\end{tcolorbox}
 
+\begin{tcolorbox}
 \begin{proof}
         $ \rightarrow $ assiumiamo che $ f$ sia iniettiva \par
         Costruiamo quindi un $ g : Y \to X $ un'inversa sinistra di $ f $ e prendiamo un elemento $x_0 \in X$ e andiamo a definire un $ g(y) $ tale che:
@@ -622,7 +625,7 @@ Andiamo a dimostrarlo:
         \end{cases}
         \]
 \end{proof}
-
+\end{tcolorbox}
 
 
 \subsection{Assioma della scelta}\label{sec:assioma_della_scelta}
@@ -641,8 +644,8 @@ Se vogliamo un esempio per analogia immaginiamo i cassetti come una famiglia di 
         \item un cassetto $ A_2 = \{pantaloni\} $ 
         \item un cassetto $ A_3 = \{maglietta\} $ 
 \end{itemize}
-L'assioma della scelta dice che attraverso questi insiemi tu puoi vestirti, ovvero esiste un modo per scegliere un elemento per ognuno di questi insiemi  per creare un nuovo insieme contenente \textbf{i rappresentanti} (calzini, pantaloni, maglietta) degli elementi degli insiemi scelti.
 \end{exmp}
+L'assioma della scelta dice che attraverso questi insiemi tu puoi vestirti, ovvero esiste un modo per scegliere un elemento per ognuno di questi insiemi  per creare un nuovo insieme contenente \textbf{i rappresentanti} (calzini, pantaloni, maglietta) degli elementi degli insiemi scelti.
 
 \newpage
 \begin{figure}[!h]
@@ -654,11 +657,14 @@ Come possiamo vedere nella figura~\ref{fig:esempio_assioma_della_scelta} da 5 in
 
 
 \subsubsection{Dimostrazioni attraverso l'assioma della scelta}
+\begin{tcolorbox}
 \begin{theorem}
         Avendo $ f : X \to Y $ applicazione, allora $ f $ surriettiva $ \Leftrightarrow f $ è invertibile a destra.   
 \end{theorem}
+\end{tcolorbox}
 
 Possiamo dimostrare questo teorema attraverso l'assioma della scelta sia da destra che da sinistra:
+\begin{tcolorbox}
 \begin{proof}
        `$ \rightarrow$`  Assumiamo $ f $ surriettiva e costruiamo un'inversa a destra:
         \begin{align*}
@@ -671,6 +677,7 @@ Possiamo dimostrare questo teorema attraverso l'assioma della scelta sia da dest
         \end{equation*}
         Perchè ogni elemento di $ X $ ha un corrispettivo in $ Y $ perciò se prendo tutti gli elementi di $ f^{-1}(y) $ e come se stessi prendendo $ X $ stessa    
 \end{proof}
+\end{tcolorbox}
 \todo{RIP:Aggiungere la \textit{proof} `$ \leftarrow $`}
 
 \begin{exmp}
@@ -802,10 +809,13 @@ Se prendiamo $ b = ak $ con $ k \in \mathbb{Z} $ scriviamo:
         \end{equation*} 
 \end{exmp}
 
+\begin{tcolorbox}
 \begin{oss}
        Possiamo dire che un numero è pari $ \Leftrightarrow 2 | a \wedge a \in \mathbb{Z} $  
 \end{oss}
+\end{tcolorbox}
 
+\begin{tcolorbox}
 \begin{theorem}
        $ a,b \in \mathbb{Z}, a > 0 $ allora $ \exists! q,r \in \mathbb{Z}  $ tali che:
        \begin{itemize}
@@ -813,6 +823,7 @@ Se prendiamo $ b = ak $ con $ k \in \mathbb{Z} $ scriviamo:
                \item $ b = aq + r $.  
        \end{itemize}
 \end{theorem}
+\end{tcolorbox}
 
 \begin{exmp}
         $ b = 24 $ e $ a = 13 $:
@@ -823,6 +834,7 @@ Se prendiamo $ b = ak $ con $ k \in \mathbb{Z} $ scriviamo:
         \end{align*}
 \end{exmp}
 
+\begin{tcolorbox}
 \begin{proof}
        Dimostramo l'esistenza attraverso l'induzione (terza forma~\ref{sec:induzione_terza_forma}):\newline
        \begin{exmp}
@@ -830,6 +842,7 @@ Se prendiamo $ b = ak $ con $ k \in \mathbb{Z} $ scriviamo:
              se $ b + 1 < a$ scelgo $ q = 0 \quad r = b + 1 < a $  
        \end{exmp}  
 \end{proof}
+\end{tcolorbox}
 
 
 
@@ -877,16 +890,16 @@ E quindi possiamo dire con certezza che la funzione non è né surriettiva e né
        a \in \mathbb{Z}, a>1
 \end{align}
 
-Dimostramo ora un \textbf{Lemma} dei numeri primi:
-
+\begin{lemma}
+        
 \begin{align}
         a,b \in Z, p \in Z \quad \textrm{Primo} \\
         p | a \quad \textrm{o} p | a*b
 \end{align}
 Quindi supponiamo di avere $p T a$, dimostriamo che $p|b$
 $p | a*b \Rightarrow \exists k \in Z$ tale che $a*b = k*p$
-
-Possiamo dimostrarlo utilizzando anche \textbf{Bezout} (DA FARE A CASA).
+\end{lemma}
+\todo{DIM:Possiamo dimostrarlo utilizzando anche \textbf{Bezout}}
 
 
 
@@ -940,10 +953,11 @@ Anche se i calcoli possono sembrare complssi possiamo semplificare il tutto con 
         i^2 = -1 \quad i^3 = i * i^2 = -i = i^2 * i^2 = \ldots 
 \end{align*}
 
+\begin{tcolorbox}
 \begin{oss}
         $\boxed{ i^1 = i \quad i^2 = -1 \quad i^3 = -i \quad i^4 = i}$
 \end{oss}
-
+\end{tcolorbox}
 
 L'inverso di $x + iy$ rispetto al punto si denota con ${(x + iy)}^{-1}$ oppure $\frac{1}{x + iy}$
 
@@ -956,7 +970,6 @@ E quindi se $z \in \mathbb{R}$ allora $|z| = \sqrt{x^2}$
 
 
 \subsection{Proprietà dei numeri complessi}
-
 \begin{itemize}
         \item $\overline{zw} = z * \overline{w}$ \\
         \item $\overline{z} = z$ \\
@@ -1227,7 +1240,6 @@ Corollario $A,B$ insiemi finiti, allora $A \times B, B^A, P(A)$ sono insiemi fin
 
 
 \subsection{Cardinalità dei $\mathbb{Q}$}
-
 Prima di tutto diciamo che $\mathbb{Q}$ è numerabile, e lo possiamo dimostrare con:
 \begin{align*}
         \varphi : \mathbb{Q}\{0\} \to \mathbb{N}* \\
@@ -1237,12 +1249,11 @@ Prima di tutto diciamo che $\mathbb{Q}$ è numerabile, e lo possiamo dimostrare 
 Avendo $p,q \in \mathbb{Z}, p,q \not = 0, MCD(p,q)=1$ e quindi, $Q = {0} \cup \bigcup_{n \in \mathbb{N}}{\varphi^{-1}(n)}$.
 
 Si dice quindi che \underline{unione numerabile} di insiemi finiti $\not = 0$ e disgiunti $\Rightarrow Q $ numerabile. \newline
-
 \todo{FIG:cardinalità di Cantor}
 
-\underline{Lemma} prendiamo $\{X_m : m \in \mathbb{N}\}, |X_n| \le \aleph_0, X_m \not = \emptyset \forall n \in \mathbb{N}$ se $|Xm| < \aleph_0 \forall n \in \mathbb{N}$ allora $X_n \cap X_m = \emptyset$ se $n \not = m$ allora $|\bigcup_{n \in \mathbb{N}}^{1}X_n| = \aleph_0$ \newline
-
-
+\begin{lemma}
+        prendiamo $\{X_m : m \in \mathbb{N}\}, |X_n| \le \aleph_0, X_m \not = \emptyset \forall n \in \mathbb{N}$ se $|Xm| < \aleph_0 \forall n \in \mathbb{N}$ allora $X_n \cap X_m = \emptyset$ se $n \not = m$ allora $|\bigcup_{n \in \mathbb{N}}^{1}X_n| = \aleph_0$ \newline
+\end{lemma}
 
 \subsection{Cardinalità di $\mathbb{R}$}
 $ \mathbb{R}$ è equipotente a $P(\mathbb{N})$, in particolare è più che numerabile. \par
@@ -1271,10 +1282,12 @@ Iniziamo con una definizione, se abbiamo $X$ insieme infinito, \par ovvero: $\{X
         S_n = \{\{1,\ldots, n\} \to \{ 1,\ldots,n\} \quad \mbox{Bigettiva}\}.
 \end{equation*}
 
-E con il \textit{lemma} $X,Y$ insiemi finiti, $|X| = n \le m = |Y|$ Il numero delle applicazioni iniettive $X \to Y$ è uguale:
+\begin{lemma}
+$X,Y$ insiemi finiti, $|X| = n \le m = |Y|$ Il numero delle applicazioni iniettive $X \to Y$ è uguale:
 \begin{equation*}
         m * (m-1)*\ldots*(m-n+1)
 \end{equation*}
+\end{lemma}
 
 Osserviamo che se $n > m, \not \exists X \to Y$ iniettiva, facilmente dimostrabile con $|X| = n \Rightarrow X = \{x_1,x_2,\ldots,x_n\}$. \par
 Possiamo vedere in quanti modi possiamo definire $f:X \to Y$ iniettiva. 
@@ -1512,9 +1525,10 @@ Se invece utilizziamo l'ordine \textbf{LEX} con una coppia ordinata ($(x_1,\tria
 \subsection{Assioma del buon ordinamento}\label{Assioma_del_buon_ordinamento}
 Se prendiamo $X$ insieme, $X \not = \emptyset$ allora $\exists \triangle$ ordine prziale tale ce $(x,\triangle)$ bene ordinato. \par
 
+\begin{lemma}
 Citando il \textbf{Lemma di Zorn} $(x, \triangle)$ POSET, $X \not = \emptyset$ tale che ogni catena in $X$ possiede almeno un maggiorante, Allora $X$ possiede elementi massimali. \par
 \textit{(Assioma della scelta) $\Leftrightarrow$ (Assioma B.O.)  $\Leftrightarrow$ (Lemma di Zorn)}. \par
-
+\end{lemma}
 
 
 
@@ -1525,15 +1539,11 @@ Citando il \textbf{Lemma di Zorn} $(x, \triangle)$ POSET, $X \not = \emptyset$ t
 \todo{DEF:dare una definizione non matematica}
 
 Prendiamo $(x,\triangle)$ POSET ben definito, $\mathcal{P}$ affermazione sugli elementi di $X$ se vale:
-
 \begin{enumerate}
         \item $\mathcal{P}(x)$ vera $\forall x \in X$ minimale
         \item $\forall y,z \in X $ tale che $y \triangle z$ se $\mathcal{P}(y)$ vera allora $\mathcal{P}(z)$ vera 
 \end{enumerate}
 Allora $\mathcal{P}(x)$ vera $\forall x \in X$.
-
-
-
 
 
 
@@ -1566,23 +1576,21 @@ Se abbiamo $ * : A*A \to A $ operazione possiamo avere:
         \item $ * $  \underline{associativa} $ \quad x * (y * z) = (x * y) * z \quad \forall x,y,z \in A$
         \item $ * $ \underline{un elemento neutro} $ \quad \exists e \in A $ tale che $ e * x= x * e = x  \quad  \forall x \in A$. 
 \end{itemize}
-
-%Funzione $ \mathbb{Z}_n = {\overline{0}, \overline{1},\ldots, \overline{n + 1}} $ classi di resto $ n $. 
-
+Funzione $ \mathbb{Z}_n = {\overline{0}, \overline{1},\ldots, \overline{n + 1}} $ classi di resto $ n $. 
 
 
 \subsection{Operazioni in $\mathbb{Z}_n$}
-%\begin{align*}
-%        + : \mathbb{Z}_n \times \mathbb{Z}_n \to \mathbb{Z}_n \\
-%        \quad (\overline{a}, \overline{b}) \mapsto a + b \\
-        %\quad \overline{a} * \overline{b} := \overliene{a * b}
-%\end{align*}
+\begin{align*}
+        + : \mathbb{Z}_n \times \mathbb{Z}_n \to \mathbb{Z}_n \\
+        \quad (\overline{a}, \overline{b}) \mapsto a + b \\
+        \quad \overline{a} * \overline{b} := \overline{a * b}
+\end{align*}
 
-%\begin{align*}
-%        * : \mathbb{Z}_n \times \mathbb{Z}_n \to \mathbb{Z}_n \\
-       % \quad (\overline{a}, \overline{b}) \mapsto a * b \\
-        %\quad \overline{a} * \overline{b} := \overliene{a * b}
-%\end{align*}
+\begin{align*}
+        * : \mathbb{Z}_n \times \mathbb{Z}_n \to \mathbb{Z}_n \\
+        \quad (\overline{a}, \overline{b}) \mapsto a * b \\
+        \quad \overline{a} * \overline{b} := \overline{a * b}
+\end{align*}
 
 
 Verifichiamo che le operazioni sono ben definite:
@@ -2059,5 +2067,7 @@ Se tale insieme non esiste scriviamo $ ord_m(g) = infinito $
                 \varphi^2 \circ H = \{\varphi^2 :  \varphi^2 \circ \phi\} = \{\varphi^2, \varphi \circ \phi\} = (\phi \circ \varphi) \circ H \\
         \end{align*}
 \end{exmp}
+
+
 
 \end{document}
