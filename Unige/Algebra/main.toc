@@ -93,3 +93,4 @@
 \contentsline {subsubsection}{\numberline {13.1.1}Invertibilità di un monoide}{48}{subsubsection.13.1.1}%
 \contentsline {subsection}{\numberline {13.2}Gruppi}{49}{subsection.13.2}%
 \contentsline {subsubsection}{\numberline {13.2.1}Relazione di equivalenza tra gruppi}{50}{subsubsection.13.2.1}%
+\contentsline {subsection}{\numberline {13.3}Gruppo quoziente}{51}{subsection.13.3}%

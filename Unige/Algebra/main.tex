@@ -2069,5 +2069,36 @@ Se tale insieme non esiste scriviamo $ ord_m(g) = infinito $
 \end{exmp}
 
 
+\begin{oss}
+        Se $ G  $ commutativo $ x * H = H * x $ altrimenti possono essere diversi  
+\end{oss}
+\begin{definition}
+        Se vale $ x * H = H * x   \quad  \forall x\in G$  allora $ H $ si dice \underline{sottogruppo normale}    
+\end{definition}
+\begin{exmp}
+        $ G = S_3 \quad  H =    \{Id, \psi \}$ H non è normale perchè $ \psi \circ H \not = H \circ \psi $  mentre se prendo,
+        $ N = \{Id, \psi, \psi^2 \}$ è normale. \par
+        Se $ H \subseteq G$ sottogruppo normale, definiamo un'operazione $ *_H $ su $ \frac{G}{H} = \frac{G}{\sim_s} = \frac{G}{\sim_\triangle} $ Se $ H $ è normale $ \sim_s $ e $ \sim_\Delta $ coincidono:
+        \begin{align*}
+                [g] *_H [k] := [g * K] \quad \forall g,K \in G \\
+                g,g^i,K,K^i \in G \quad g \sim g^i, K \sim K^i \\
+                g \sim g^i \Leftrightarrow g^i = g * u \quad u \in H \\
+                K \sim K^i \Leftrightarrow K^i = K * v \quad u \in H \\
+        \end{align*}
+        L'obbiettivo e dimostrare che $ g^i * K^i = (g * K) * h \quad h \in H $, quindi prendo:
+        \begin{align*}
+                g^i * K^i = (g * u) * (K * v) = \\
+                u * K \in H * K = K * H \Rightarrow \exists u \in H : u^i * K = K * u^i \\
+        \end{align*}
+        e sapendo che $ u^i * v \in H $ allora $ h = u^i * v$.
+\end{exmp} 
+
+
+\subsection{Gruppo quoziente}
+Avendo $ (\frac{G}{H}, *_H, [\lambda]) $ è un gruppo detto \textbf{gruppo quiziente}, più concretamente:
+\begin{exmp}
+        $ (\mathbb{Z}, +, 0) $ sottogruppi $ n\mathbb{Z} = \{nK : K \in \mathbb{Z}\}$ 
+\end{exmp}
+\todo{TEO:Aggiungere parte 15:53}
 
 \end{document}
