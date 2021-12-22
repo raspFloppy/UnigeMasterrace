@@ -43,55 +43,55 @@
 \contentsline {subsection}{\numberline {4.5}Identità di Bezòut}{26}{subsection.4.5}%
 \contentsline {subsection}{\numberline {4.6}Equazioni Diofantee lineari}{26}{subsection.4.6}%
 \contentsline {subsubsection}{\numberline {4.6.1}Esempio}{26}{subsubsection.4.6.1}%
-\contentsline {section}{\numberline {5}Numeri Primi}{27}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Teoria fondamentale dell'aritmetica}{27}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Teorema di euclide}{27}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Numeri complessi}{28}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Piano di Gauss}{28}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Proprietà dei numeri complessi}{28}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Forma esponenziale}{29}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Radici di un numero $ \mathbb {C} $}{29}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Equazioni di secondo grado complesse}{29}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Radici complesse (di secondo grado)}{30}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}Teorema fondametale dell'Algebra}{30}{subsection.6.7}%
-\contentsline {section}{\numberline {7}Relazioni di Equivalenza}{31}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Equivalenza modulare}{31}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Classe di equivalenza}{31}{subsection.7.2}%
-\contentsline {section}{\numberline {8}Cardinalità}{32}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Teorema di Cantor-Bernstein}{33}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Impossibilità della surriettività dei numerabili}{33}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Argomento che il prof si tiene segreto}{34}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Cardinalità dei $\mathbb {Q}$}{34}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}Cardinalità di $\mathbb {R}$}{35}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}Ipotesi del continuo}{35}{subsection.8.6}%
-\contentsline {section}{\numberline {9}Calcolo Combinatorico}{36}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Mi inventerò un titolo}{36}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Coefficiente binomiale}{37}{subsection.9.2}%
-\contentsline {section}{\numberline {10}Relazioni d'ordine}{38}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Esempi di relazioni d'ordine}{38}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Tipi di ordini}{39}{subsection.10.2}%
-\contentsline {subsubsection}{\numberline {10.2.1}Ordine lessicografico (LEX)}{39}{subsubsection.10.2.1}%
-\contentsline {subsubsection}{\numberline {10.2.2}Ordine prodotto}{39}{subsubsection.10.2.2}%
-\contentsline {subsubsection}{\numberline {10.2.3}Ordine indotto}{40}{subsubsection.10.2.3}%
-\contentsline {subsection}{\numberline {10.3}Minimo e massimo}{40}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}Maggioranti e minoranti}{40}{subsection.10.4}%
-\contentsline {subsection}{\numberline {10.5}Assioma del buon ordinamento}{41}{subsection.10.5}%
-\contentsline {section}{\numberline {11}Principio di Induzione Strutturale}{42}{section.11}%
-\contentsline {section}{\numberline {12}Aritmetica modulare}{43}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Proprietà dell'aritmentica modulare}{43}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Operazioni in $\mathbb {Z}_n$}{43}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}Inversionedella classe}{44}{subsection.12.3}%
-\contentsline {subsection}{\numberline {12.4}Elementi in $ \DOTSB \bigcup@ \slimits@ (\mathbb {Z}_n) $}{45}{subsection.12.4}%
-\contentsline {subsection}{\numberline {12.5}Teorema di Eulero}{45}{subsection.12.5}%
-\contentsline {subsection}{\numberline {12.6}Teorema di Fermart}{46}{subsection.12.6}%
-\contentsline {subsection}{\numberline {12.7}Crittosistema}{46}{subsection.12.7}%
-\contentsline {subsubsection}{\numberline {12.7.1}Tipi di crittosistemi}{47}{subsubsection.12.7.1}%
-\contentsline {subsubsection}{\numberline {12.7.2}Crittosistema RSA}{47}{subsubsection.12.7.2}%
-\contentsline {subsubsection}{\numberline {12.7.3}Cifrario di Cesare}{47}{subsubsection.12.7.3}%
-\contentsline {section}{\numberline {13}Monoidi e Gruppi}{48}{section.13}%
-\contentsline {subsection}{\numberline {13.1}Monoidi}{48}{subsection.13.1}%
-\contentsline {subsubsection}{\numberline {13.1.1}Invertibilità di un monoide}{48}{subsubsection.13.1.1}%
-\contentsline {subsection}{\numberline {13.2}Gruppi}{49}{subsection.13.2}%
-\contentsline {subsubsection}{\numberline {13.2.1}Relazione di equivalenza tra gruppi}{50}{subsubsection.13.2.1}%
-\contentsline {subsection}{\numberline {13.3}Gruppo quoziente}{51}{subsection.13.3}%
-\contentsline {subsection}{\numberline {13.4}Teorema di Lagrange}{52}{subsection.13.4}%
+\contentsline {section}{\numberline {5}Numeri Primi}{28}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Teorema fondamentale dell'aritmetica}{28}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Teorema di euclide}{28}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Numeri complessi}{29}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Piano di Gauss}{29}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Proprietà dei numeri complessi}{29}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Forma esponenziale}{30}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Radici di un numero $ \mathbb {C} $}{30}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Equazioni di secondo grado complesse}{30}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Radici complesse (di secondo grado)}{31}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Teorema fondametale dell'Algebra}{31}{subsection.6.7}%
+\contentsline {section}{\numberline {7}Relazioni di Equivalenza}{32}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Equivalenza modulare}{32}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Classe di equivalenza}{32}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Cardinalità}{33}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Teorema di Cantor-Bernstein}{34}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Impossibilità della surriettività dei numerabili}{34}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Argomento che il prof si tiene segreto}{35}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Cardinalità dei $\mathbb {Q}$}{35}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Cardinalità di $\mathbb {R}$}{36}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Ipotesi del continuo}{36}{subsection.8.6}%
+\contentsline {section}{\numberline {9}Calcolo Combinatorico}{37}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Mi inventerò un titolo}{37}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Coefficiente binomiale}{38}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Relazioni d'ordine}{39}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Esempi di relazioni d'ordine}{39}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Tipi di ordini}{40}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}Ordine lessicografico (LEX)}{40}{subsubsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.2}Ordine prodotto}{40}{subsubsection.10.2.2}%
+\contentsline {subsubsection}{\numberline {10.2.3}Ordine indotto}{41}{subsubsection.10.2.3}%
+\contentsline {subsection}{\numberline {10.3}Minimo e massimo}{41}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Maggioranti e minoranti}{41}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}Assioma del buon ordinamento}{42}{subsection.10.5}%
+\contentsline {section}{\numberline {11}Principio di Induzione Strutturale}{43}{section.11}%
+\contentsline {section}{\numberline {12}Aritmetica modulare}{44}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Proprietà dell'aritmentica modulare}{44}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Operazioni in $\mathbb {Z}_n$}{44}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Inversionedella classe}{45}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Elementi in $ \DOTSB \bigcup@ \slimits@ (\mathbb {Z}_n) $}{46}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}Teorema di Eulero}{46}{subsection.12.5}%
+\contentsline {subsection}{\numberline {12.6}Teorema di Fermart}{47}{subsection.12.6}%
+\contentsline {subsection}{\numberline {12.7}Crittosistema}{47}{subsection.12.7}%
+\contentsline {subsubsection}{\numberline {12.7.1}Tipi di crittosistemi}{48}{subsubsection.12.7.1}%
+\contentsline {subsubsection}{\numberline {12.7.2}Crittosistema RSA}{48}{subsubsection.12.7.2}%
+\contentsline {subsubsection}{\numberline {12.7.3}Cifrario di Cesare}{48}{subsubsection.12.7.3}%
+\contentsline {section}{\numberline {13}Monoidi e Gruppi}{49}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Monoidi}{49}{subsection.13.1}%
+\contentsline {subsubsection}{\numberline {13.1.1}Invertibilità di un monoide}{49}{subsubsection.13.1.1}%
+\contentsline {subsection}{\numberline {13.2}Gruppi}{50}{subsection.13.2}%
+\contentsline {subsubsection}{\numberline {13.2.1}Relazione di equivalenza tra gruppi}{51}{subsubsection.13.2.1}%
+\contentsline {subsection}{\numberline {13.3}Gruppo quoziente}{52}{subsection.13.3}%
+\contentsline {subsection}{\numberline {13.4}Teorema di Lagrange}{53}{subsection.13.4}%

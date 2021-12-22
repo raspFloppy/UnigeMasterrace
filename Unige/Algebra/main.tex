@@ -847,10 +847,43 @@ Se prendiamo $ b = ak $ con $ k \in \mathbb{Z} $ scriviamo:
 
 
 
-\subsection{Minimo comune multiplo}
+\subsection{Minimo comune multiplo}\label{sec:mcm}
+\begin{definition}
+        \textbf{Il minimo comune multiplo (mcm)} è il più piccolo multiplo di ognuno dei numeri considerati, esso si trovva moltiplicando i fattori primi~\ref{sec:numeri_primi} comuni e non comuni presi una volta considerando il più grande esponente.  
+\end{definition}
+\begin{exmp}
+        Prendiamo in considerazione i numeri $ 360 $ e $ 300 $ essi sono formati rispettivamente da
+        \begin{align*}
+                360 = 2^3 * 3^2 * 5 \\
+                300 = 2^2 * 3 * 5^2 
+        \end{align*}
+\end{exmp}
 
 
-\subsection{Massimo comune divisore}
+\subsection{Massimo comune divisore}\label{sec:MCD}
+\begin{definition}
+        \textbf{Il massimo comune divisore (MCD)} è il più grande numero $ d $ per cui due numeri $ a,b \in \mathbb{Z} $ sono divisibili.
+\end{definition}
+L'MCD deve rispettare le seguenti proprietà:
+\begin{itemize}
+        \item $ d | a, d | b $.
+        \item se $c \in \mathbb{Z}, c | a$ e $ c | b $ allora $ c | d $.
+\end{itemize}
+
+\begin{oss}
+        Se $ a = b = 0 $, l'unico $ MCD $ di $ a $ e $ b $ è $ 0 $.
+\end{oss}
+
+\begin{tcolorbox}
+        \begin{theorem}
+        $ a,b \in \mathbb{Z}^*$ possiamo dire che esiste un $ MCD $ positivo $ d $ di $ a $ e $ b $, inoltre esistono $ \alpha, \beta \in \mathbb{Z} : d = \alpha a + \beta b$.                
+        \end{theorem}
+\end{tcolorbox}
+\begin{exmp}
+        
+\end{exmp}
+
+
 \subsection{Algoritmo Euclideo}
 \subsection{Identità di Bezòut}
 \subsection{Equazioni Diofantee lineari}\label{sec:equazione_diofantea_lineare}
@@ -866,7 +899,7 @@ Prendiamo quindi $f(1,1) = 21 - 15 = 6$ possiamo dire che \newline
 $f \textrm{surriettiva} \Leftrightarrow f(\mathbb{Z}^{2}) = 2$
 e che quindi:
 $f(\mathbb{Z}^{2}) = {n \in \mathbb{Z} : \exists(x,y) \in \mathbb{Z}^{2} n=f(x,y)=21x - 15y} $
-
+     
 Quella che abbiamo appena scritto è una funzione \textbf{Diofantea} ovvero $MCD(21,15) : n \Leftrightarrow f(\mathbb{Z}^{2})={3k : k \in \mathbb{Z}}$. \par
 
 E quindi possiamo dire con certezza che la funzione non è né surriettiva e né iniettiva perchè:
@@ -878,13 +911,8 @@ E quindi possiamo dire con certezza che la funzione non è né surriettiva e né
 
 
 
-
-
-
-
-
 \newpage
-\section{Numeri Primi}
+\section{Numeri Primi}\label{sec:numeri_primi}
 \textit{I numeri primi sono quei \textbf{numeri interi maggiori di 1 che sono divisibili solo per 1 e se stessi}, se questa proprietà non viene rispettata allora il numero è invece \textbf{composto}} che scritto in matematichese:
 \begin{align}
        a \in \mathbb{Z}, a>1
@@ -903,7 +931,7 @@ $p | a*b \Rightarrow \exists k \in Z$ tale che $a*b = k*p$
 
 
 
-\subsection{Teoria fondamentale dell'aritmetica}
+\subsection{Teorema fondamentale dell'aritmetica}
 Ok prepariamoci a scrivere un pò di formule. \newline
 si dice che: $a \in Z, a \not = 0,1,-1$ allora $a$ si scrive in un modo unico come prodotto di primi:
 \begin{equation}
@@ -2113,6 +2141,7 @@ Avendo $ (\frac{G}{H}, *_H, [\lambda]) $ è un gruppo detto \textbf{gruppo quizi
        L'ordine di un sottogruppo divide l'ordine del gruppo.
 \end{theorem}
 \end{tcolorbox}
+
 
 
 \end{document}
