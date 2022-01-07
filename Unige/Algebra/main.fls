@@ -754,13 +754,6 @@ INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlib
 INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
-INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
-INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
-INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
-INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
-INPUT /usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
-INPUT /usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
-OUTPUT main.pdf
 INPUT /usr/share/texmf-dist/tex/latex/tools/calc.sty
 INPUT /usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 INPUT /usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
@@ -878,6 +871,7 @@ INPUT ./main.out
 INPUT main.out
 INPUT ./main.out
 INPUT main.out
+OUTPUT main.pdf
 INPUT ./main.out
 INPUT ./main.out
 OUTPUT main.out
@@ -1002,6 +996,8 @@ INPUT ./images/esempio_assioma_della_scelta.jpg
 INPUT ./images/esempio_assioma_della_scelta.jpg
 INPUT ./images/esempio_assioma_della_scelta.jpg
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
 INPUT main.aux

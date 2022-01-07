@@ -42,7 +42,6 @@
 \contentsline {subsection}{\numberline {4.4}Algoritmo Euclideo}{26}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Identità di Bezòut}{26}{subsection.4.5}%
 \contentsline {subsection}{\numberline {4.6}Equazioni Diofantee lineari}{26}{subsection.4.6}%
-\contentsline {subsubsection}{\numberline {4.6.1}Esempio}{26}{subsubsection.4.6.1}%
 \contentsline {section}{\numberline {5}Numeri Primi}{28}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Teorema fondamentale dell'aritmetica}{28}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Teorema di euclide}{28}{subsection.5.2}%
@@ -93,5 +92,5 @@
 \contentsline {subsubsection}{\numberline {13.1.1}Invertibilità di un monoide}{49}{subsubsection.13.1.1}%
 \contentsline {subsection}{\numberline {13.2}Gruppi}{50}{subsection.13.2}%
 \contentsline {subsubsection}{\numberline {13.2.1}Relazione di equivalenza tra gruppi}{51}{subsubsection.13.2.1}%
-\contentsline {subsection}{\numberline {13.3}Gruppo quoziente}{52}{subsection.13.3}%
+\contentsline {subsection}{\numberline {13.3}Gruppo quoziente}{53}{subsection.13.3}%
 \contentsline {subsection}{\numberline {13.4}Teorema di Lagrange}{53}{subsection.13.4}%
