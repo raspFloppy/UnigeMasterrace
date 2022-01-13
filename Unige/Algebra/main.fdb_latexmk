@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1641303215 "main.tex" "main.pdf" "main" 1641303217
+["pdflatex"] 1642003792 "main.tex" "main.pdf" "main" 1642003794
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1640600964 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1640600964 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1640600964 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -196,11 +196,11 @@
   "images/esempio_grafico_funzione.jpg" 1637829499 32505 1f1e05843a5879e9255347a8d4be9e6f ""
   "images/insiemi_numerici.png" 1636828388 135758 85a4ea5e5a5e0764346191eab18e4720 ""
   "images/relazioni.png" 1637318097 43141 db7349d48e3c902ca022021c7cceb562 ""
-  "main.aux" 1641303216 25349 eea4e508e26489ed40ae05c9f0772838 "pdflatex"
-  "main.out" 1641303216 16461 71b35ead159503463c5d6fb30578e8cf "pdflatex"
-  "main.tdo" 1641303216 1814 1bd561bee1ce967c40c7878205962dd2 "pdflatex"
-  "main.tex" 1641303214 91390 c55216f7348eb88c02afe1dd901e76db ""
-  "main.toc" 1641303216 8699 22c77fbc3d75efb1dc07f80a1af7aaa8 "pdflatex"
+  "main.aux" 1642003794 25364 8582241362c10cfa154d6a32b6168139 "pdflatex"
+  "main.out" 1642003794 16478 e16f41fb5d4b379c146994567556edcf "pdflatex"
+  "main.tdo" 1642003794 1714 89ca81254518c9abc4175cd94618a9c1 "pdflatex"
+  "main.tex" 1642003792 96814 2518633e9e68332f2eaa97b9ef8cd63f ""
+  "main.toc" 1642003794 8711 dcf1751720fcd6bebc1f8ae2b271d60a "pdflatex"
   (generated)
   "main.aux"
   "main.log"

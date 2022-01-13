@@ -849,7 +849,10 @@ Se prendiamo $ b = ak $ con $ k \in \mathbb{Z} $ scriviamo:
 
 \subsection{Minimo comune multiplo}\label{sec:mcm}
 \begin{definition}
-        \textbf{Il minimo comune multiplo (mcm)} è il più piccolo multiplo di ognuno dei numeri considerati, esso si trovva moltiplicando i fattori primi~\ref{sec:numeri_primi} comuni e non comuni presi una volta considerando il più grande esponente.  
+        \textbf{Il minimo comune multiplo (mcm)} è il più piccolo multiplo di ognuno dei numeri considerati, esso si trovva moltiplicando i fattori primi~\ref{sec:numeri_primi} comuni e non comuni presi una volta considerando il più grande esponente ovvero:
+        \begin{equation*}
+                mcm(a,b) = \min\{n \in \mathbb{N}: a | n, b | n\}
+        \end{equation*}
 \end{definition}
 \begin{exmp}
         Prendiamo in considerazione i numeri $ 360 $ e $ 300 $ essi sono formati rispettivamente da
@@ -857,12 +860,16 @@ Se prendiamo $ b = ak $ con $ k \in \mathbb{Z} $ scriviamo:
                 360 = 2^3 * 3^2 * 5 \\
                 300 = 2^2 * 3 * 5^2 
         \end{align*}
+        $ mcm $ sarà uguale a $ 2^3 * 3^2 * 5^2 = 1800 $.  
 \end{exmp}
 
 
 \subsection{Massimo comune divisore}\label{sec:MCD}
 \begin{definition}
-        \textbf{Il massimo comune divisore (MCD)} è il più grande numero $ d $ per cui due numeri $ a,b \in \mathbb{Z} $ sono divisibili.
+        \textbf{Il massimo comune divisore (MCD)} è il più grande numero $ d $ per cui due numeri $ a,b \in \mathbb{Z} $ sono divisibili ovvero:
+        \begin{equation*}
+                MCD(a,b) = \max\{n \in \mathbb{N}: n | a, n|b\}
+        \end{equation*}
 \end{definition}
 L'MCD deve rispettare le seguenti proprietà:
 \begin{itemize}
@@ -879,16 +886,109 @@ L'MCD deve rispettare le seguenti proprietà:
         $ a,b \in \mathbb{Z}^*$ possiamo dire che esiste un $ MCD $ positivo $ d $ di $ a $ e $ b $, inoltre esistono $ \alpha, \beta \in \mathbb{Z} : d = \alpha a + \beta b$.                
         \end{theorem}
 \end{tcolorbox}
-\begin{exmp}
-        
-\end{exmp}
 
 
 \subsection{Algoritmo Euclideo}\label{sec:algoritmo_euclideo}
+\begin{definition}
+        \textbf{L'Algoritmo Euclideo} serve per trovare l'\textbf{MCD}~\ref{sec:MCD} tra due numeri $ a,b \in \mathbb{Z} $ e si basa sulla \textbf{Divisione euclidea}~\ref{sec:divisione_euclidea}.
+\end{definition}
+L'algoritmo euclideo funziona in questo modo, prendiamo due numeri $ a,b : 0 \le b \le a $:
+\begin{enumerate}
+        \item Se $ b = 0 $ allora $ MCD(a,b) = a $ e l'algoritmo termina.
+        \item Se $ b \not = 0 $ allora facciamo la divisione euclidea tra $ a $ e $ b $:\newline
+                $ a = b * q + r $, $\quad  0 \le r < b $. 
+        \item Sostituisco $ a=b $ e $ b=r $ e ripeto il punto 1.  
+\end{enumerate}
+$ MCD(a,b) $ sarà uguale all'ultimo resto $ r $ non nullo ovvero prima che $ b=0 $.
+
+\begin{exmp}\label{ex:algorimto_euclideo}
+        Prendiamo $ a=56 b=12 $, notiamo subito che $ b \not = 0 $ quindi procediamo:
+        \begin{align*}
+                a = 12 * 4 + 8 \quad \mbox{a=12, b=8 Si continua} \\ 
+                a = 8 * 1 + 4 \quad \mbox{a=8, b=4  Si continua} \\ 
+                a = 4 * 2 + 0 \quad \mbox{a=4, b=0  FINE}  
+        \end{align*}
+\end{exmp}
 
 
 \subsection{Identità di Bezòut}\label{sec:identita_di_bezout}
+\begin{definition}
+        \textbf{L'identità di Bezòut} afferma che se $ a,b \in \mathbb{Z}^* $ e il loro $ MCD $ è $ d $ allora $ \exists x,y \in \mathbb{Z} : ax + by = d $. \par
+        Questi due numeri possono essere trovati ripercorrendo a ritroso \textbf{L'algoritmo euclideo}~\ref{sec:algoritmo_euclideo}.  
+\end{definition}
+\begin{exmp}
+        Prendiamo $ a = 56, b = 12 $ e quindi $ d = 4 $ (potete provarlo con~\ref{ex:algorimto_euclideo}) ma facciamo tutti i passaggi:
+        \begin{align*}
+                56 = 12 * 4 + 8 \quad r=8 \\
+                12 = 8 * 1 + 4  \quad r=4 \\
+                 8 = 4 * 2 + 0  \quad r=0
+        \end{align*}
+        Quindi ora ripercorriamo a ritroso l'algoritmo:
+        \begin{align*}
+                8 = 56 - 12 * 4 \\
+                4 = 12 - 8 = 12 -(56 - 12 * 4) = -1 * 56 + 5 * 12
+        \end{align*}
+        E quindi avremo che l'identità di Bezòut sarà $ - 1 * 56 + 5 * 12 $ dove $ x = -1, y = 5 $.  
+\end{exmp}
+Tutto ciò possiamo dimostrarlo con il \textbf{Lemma di Euclide}:
+\begin{tcolorbox}
+        
+\begin{lemma}
+        Se un numero $ n \in \mathbb{Z} > 0 $ divide il prodotto di due numeri $ a $ e $ b $ interi positivi ed è comprimo con uno dei due allora è divisore dell'altro:
+        \begin{equation*}
+                n | ab \quad MCD(n,a) = 1 \Rightarrow n | b
+        \end{equation*}
+\end{lemma}
+\begin{exmp}
+        \begin{equation*}
+                6 | (25*12) \quad  MCD(6|25) = 1 \Rightarrow 6|12
+        \end{equation*}
+\end{exmp}
+\end{tcolorbox}
+
+
 \subsection{Equazioni Diofantee lineari}\label{sec:equazione_diofantea_lineare}
+\begin{definition}
+        \textbf{Un'equazione Diofantea lineare} è un'equazione nella forma $ ax + by = c  $ dove $ a,b,c \in \mathbb{Z} $, lo scopo è trovare le coppie di soluzioni intere $ (x,y) $    
+\end{definition}
+
+\begin{tcolorbox}
+\begin{theorem}
+        l'equazione $ ax + bx = c $ ha soluzioni se e sole se $ MCD(a,b) = d | c $.                  
+        In tal caso:
+        \begin{itemize}
+                \item Se $ c=0 $ le soluzioni sono:
+                        \begin{align*}
+                                x = \frac{b}{MCD(a,b)}*t \\
+                                y = -\frac{a}{MCD(a,b)}*t 
+                        \end{align*}
+                        Al variare di $ t \in Z $
+                \item Se $ c \not = 0 $ le soluzioni sono:
+                        \begin{align*}
+                                x = x_0 + \frac{b}{MCD(a,b)} * t \\
+                                y = y_0 + \frac{a}{MCD(a,b)} * t \\
+                        \end{align*}
+                        Al variare di $ t \in Z $
+        \end{itemize}
+\end{theorem}
+\end{tcolorbox}
+\begin{exmp}
+        Ora facciamo qualche esempio numerico per trovare le soluzioni intere:
+        \begin{enumerate}
+                \item $ 100x + 102y = 9 $: \newline
+                        Si ha che $ MCD(100,102) = 2 \nmid 9 $
+                \item $ 168x + 132y = 0 $: \newline
+                        Si ha che $ MCD(132,168) = 12$ e avendo $ c = 0 $ allora: \newline
+                        $ x = \frac{132}{MCD(168,132)} * t = 11t $ \newline 
+                        $ y = -\frac{168}{MCD(168,132)} * t = -14t $
+                \item  $ 168x + 132y = 36 $: \newline
+                        Si ha che $ MCD(168, 132) = 12 \mid 36 \rightarrow $ l'equazione ha soluzioni intere: \newline
+                        $ x_0 = \frac{36}{MCD(168, 132)}*\overline{x} = 3\overline{x}$ \newline
+                        $ y_0 = \frac{36}{MCD(168, 132)}*\overline{y} = 3\overline{y}$ \newline
+                        Dove $ \overline{x},\overline{y}$ sono i valori trovati applicando Bezòut~\ref{sec:identita_di_bezout}.  
+        \end{enumerate}
+\end{exmp}
+
 
 \begin{exmp}
 Se considero la funzione:
@@ -897,7 +997,7 @@ Se considero la funzione:
         (x,y) \rightarrow 21x - 15y
 \end{align}
 Dobbiamo dimostrare che la funzione è \textbf{iniettiva} o \textbf{surriettiva}.
-Prendiamo quindi $f(1,1) = 21 - 15 = 6$ possiamo dire che \newline
+Prendiamo quindi $f(1,1) = 21 - 15 = 6$ possiamo dire che:
 $f \textrm{surriettiva} \Leftrightarrow f(\mathbb{Z}^{2}) = 2$
 e che quindi:
 $f(\mathbb{Z}^{2}) = {n \in \mathbb{Z} : \exists(x,y) \in \mathbb{Z}^{2} n=f(x,y)=21x - 15y} $
@@ -905,51 +1005,56 @@ $f(\mathbb{Z}^{2}) = {n \in \mathbb{Z} : \exists(x,y) \in \mathbb{Z}^{2} n=f(x,y
 Quella che abbiamo appena scritto è una funzione \textbf{Diofantea} ovvero $MCD(21,15) : n \Leftrightarrow f(\mathbb{Z}^{2})={3k : k \in \mathbb{Z}}$. \par
 
 E quindi possiamo dire con certezza che la funzione non è né surriettiva e né iniettiva perchè:
-\begin{align*}
-        1 \notin f(\mathbb{Z}^{2}) \\
-        \textrm{Perchè fissato } & n \in 3Z
-\end{align*}
+\begin{itemize}
+        \item $  1 \notin f(\mathbb{Z}^{2}) $  
+        \item $  \textrm{Perchè fissato} \quad n \in 3\mathbb{Z}$   
+\end{itemize}
 \end{exmp}
 
 
-
-\newpage
-\section{Numeri Primi}\label{sec:numeri_primi}
-\textit{I numeri primi sono quei \textbf{numeri interi maggiori di 1 che sono divisibili solo per 1 e se stessi}, se questa proprietà non viene rispettata allora il numero è invece \textbf{composto}} che scritto in matematichese:
+\subsection{Numeri Primi}\label{sec:numeri_primi}
+\begin{definition}
+I numeri primi sono quei \textbf{numeri interi maggiori di 1 che sono divisibili solo per 1 e se stessi}, se questa proprietà non viene rispettata allora il numero è invece \textbf{composto} che scritto in matematichese:
+\end{definition}
 \begin{align}
        a \in \mathbb{Z}, a>1
 \end{align}
 
+\begin{tcolorbox}
 \begin{lemma}
-        
-\begin{align}
+\begin{align*}
         a,b \in Z, p \in Z \quad \textrm{Primo} \\
-        p | a \quad \textrm{o} p | a*b
-\end{align}
-Quindi supponiamo di avere $p T a$, dimostriamo che $p|b$
-$p | a*b \Rightarrow \exists k \in Z$ tale che $a*b = k*p$
+        p|a \quad \textrm{o} \quad p|a*b
+\end{align*}
+Quindi supponiamo di avere $p \nmid a$, dimostriamo che: \newline 
+$p|b,  p|a*b \Rightarrow \exists k \in Z$ tale che $a*b = k*p$
 \end{lemma}
-\todo{DIM:Possiamo dimostrarlo utilizzando anche \textbf{Bezout}}
+\end{tcolorbox}
 
 
-
-\subsection{Teorema fondamentale dell'aritmetica}
+\subsubsection{Teorema fondamentale dell'aritmetica}\label{sec:teorema_fondamentale_dell_aritmentica}
 Ok prepariamoci a scrivere un pò di formule. \newline
-si dice che: $a \in Z, a \not = 0,1,-1$ allora $a$ si scrive in un modo unico come prodotto di primi:
-\begin{equation}
-a =
-\end{equation}
+si dice che se $a \in \mathbb{Z}, a \not = 0,1,-1$ allora $a$ o è primo o è composto da numeri primi allora si scrive in modo unico come prodotto di primi.
+\begin{equation*}
+a = +- {p_1}^{n_1} * \ldots * {p_s}^{n_s} \\
+\end{equation*}
+Dove: $ p_1 \ldots p_s \quad \mbox{PRIMI}$ e $ \quad n_1 \ldots n_s \in \mathbb{N}$ 
 
 
-
-\subsection{Teorema di euclide}
+\subsubsection{Teorema di euclide}\label{secLteorema_di_euclide}
 Esistono infiniti numeri primi e lo possiamo dimostrare attraverso una dimostrazione per assurdo.
 Supponiamo infatti per assurdo che esistano soltato $p_1,\ldots,p_n$ numeri primi. \par
+
+\begin{tcolorbox}
+\begin{proof}
 Perfetto ora consideriamo un numero $N = p_1* \ldots * p_n$.
 La divisione euclidea di $N$ per $p_1$ da resto 1.
 Analogamente $N$ diviso per $N = p_1* \ldots * p_n$ da resto $1$ \par
+$p_1 \nmid N$ \ldots  $p_n \nmid N$ contraddice il teorema precedente e perciò abbiamo dimostrato che ci sono infiniti numeri primi.
+\end{proof}
+\end{tcolorbox}
 
-$p_1 \dag N$ \ldots  $p_n \dag N$ contraddice il teorema precedente e perciò abbiamo dimostrato che ci sono infiniti numeri primi, ok può non essere chiarissimo quindi vado ad utilizzare i numeri per fare un esempio:
+Ok può non essere chiarissimo quindi vado ad utilizzare i numeri per fare un esempio:
 \begin{align*}
         N = 2 * 7 + 1 = 14 + 1 = 15 \quad \textrm{Non è primo} \\
         3 | 15, 5 | 15
@@ -965,7 +1070,7 @@ Abbiamo infatti trovato due nuovi numeri primi 3 e 5 quindi ci sono infiniti num
 Noi definiamo numeri complessi quei numeri che
 
 
-$\mathbb{C} = \mathbb{R} \times \mathbb{R}$ denotiamo che $(x,y) \in \mathbb{R}^2$ come $x + iy$ e consideriamo $i$ come unità immaginaria, definiamo due operazioni su C
+$\mathbb{C} = \mathbb{R} \times \mathbb{R}$ denotiamo che $(x,y) \in \mathbb{R}^2$ come $x + iy$ e consideriamo $i$ come unità immaginaria, definiamo due operazioni su $ \mathbb{C} $.
 \begin{itemize}
         \item \textbf{Somma} $(x + iy) + (u + iv) := (x+u) + i(y+v)$ con $x,y,u,v \in \mathbb{R}$
         \item \textbf{Prodotto} $(x + iy) * (u + iv) := (xu - yv) + i(xv+yu)$ con $x,y,u,v \in \mathbb{R}$
@@ -1161,10 +1266,10 @@ $\mathbb{N} x \mathbb{N}$ è numerabile dimostriamo che $f: \mathbb{N} x \mathbb
 \todo{ES:aggiungere esempi}.
 
 Definiamo $A,B$ insiemi e scriviamo: 
-%\begin{itemize}
-%        \item $|A| \le |B|$ se $\exists f:A \to B$ iniettiva.
-%        \item $|A| < |B|$ se: $|A| \le |B|$ ($\exists f:A \to B)$ iniettiva. $|A| \not = |B|$ ($\not \exists f:A \to B)$ iniettiva$
-%\end{itemize}
+\begin{itemize}
+        \item $|A| \le |B|$ se $\exists f:A \to B$ iniettiva.
+        \item $|A| < |B|$ se: $|A| \le |B|$ $(\exists f:A \to B)$ iniettiva. $|A| \not = |B|$ $(\not \exists f:A \to B)$ iniettiva.
+\end{itemize}
 
 
 
