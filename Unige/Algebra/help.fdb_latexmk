@@ -1,9 +1,0 @@
-# Fdb version 3
-["pdflatex"] 1641304879 "/usr/share/vim/vim82/doc/help.txt" "help.pdf" "help" 1641304879
-  "/usr/share/texmf-dist/web2c/texmf.cnf" 1640600964 39911 2da6c67557ec033436fe5418a70a8a61 ""
-  "/usr/share/vim/vim82/doc/help.txt" 1640431060 9066 6218b243ea2740fbfe63eb0e652bc7d1 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1640815447 2920101 6e3061777757291347ebb0724d985648 ""
-  "help.aux" 1641304879 32 3985256e7290058c681f74d7a3565a19 ""
-  (generated)
-  "help.log"
-  "help.pdf"

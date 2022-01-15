@@ -13,6 +13,7 @@
 \newtheorem{exmp}{Esempio}[section]
 \newtheorem{theorem}{Teorema}[section]
 \theoremstyle{definition}
+\newtheorem{exer}{Esercizi}[section]
 \newtheorem{definition}{Definizione}[section]
 \newtheorem{oss}{Osservazione}[section]
 \newtheorem{lemma}{Lemma}[section]
@@ -272,8 +273,7 @@ Ora mostriamo alcune proprietà degli insiemi per poi successivamente dimostrarl
         \item $(A \cap B) \cap C = A \cap (B \cap C)$\label{itm:prop_associativa2} 
         \item $A \cap A = A$\label{itm:prop5}
 \end{enumerate}
-
-olte di queste sono facilmente dimostrabili, proviamo ad esempio a dimostrare la~\ref{itm:prop_associativa1} che è appunto la proprietà associativa: \newline
+Molte di queste sono facilmente dimostrabili, proviamo ad esempio a dimostrare la~\ref{itm:prop_associativa1} che è appunto la proprietà associativa: \newline
 Se noi abbiamo che $x \in (A \cup B) \cup C \Leftrightarrow (x \in A \cup B) \lor (x \in C)$ perchè appunto se $x$ appartiene all'insieme formato dall'unione di $A,B,C$ e conoscendo la definizione dell'unione~\ref{eq:def_unione}  sappiamo che $x$ deve appartenere almeno ad uno tra $A,B,C$ e quindi possiamo scrivere che $(x \in A) \lor (x \in B) \lor (x \in C)$ che può essere riscritta in $x \in A \lor ((x \in B) \lor (x \in C))$ che sarebbe come scrivere (se seguiamo la definizione di unione) $x \in A \lor (x \in B \cup C)$ che si può trasformare in $x \in A \cup (x \in B \cup C)$. \par
 Dimostrando che $x$ può appartenere all'insieme formato da $A,B,C$ anche cambiando l'ordine in è scritta l'unione dei tre insiemi, noi abbiamo dimostrato proprio che~\ref{itm:prop_associativa1} è vera e anche se non l'ho dimostrato anche~\ref{itm:prop_associativa2} è vera.\par
 Se avete capito il meccanismo con il quale ho dimostrato~\ref{itm:prop_associativa1} allora potete facilmente dimostrare~\ref{itm:prop1}~\ref{itm:prop3} e~\ref{itm:prop5}.
@@ -435,14 +435,11 @@ Una funzione può essere \textbf{iniettiva, surriettiva e bigettiva}, ora spiegh
 
 
 \subsection{Il grafico della funzione}
-
 \begin{figure}[!h]
 \centering
         \includegraphics[width=0.25\textwidth]{esempio_grafico_funzione.jpg}
         \caption{Esempio grafico di una parabola}\label{fig:esempio_grafico_funzione}
 \end{figure}
-
-
 Il grafico di una funzione $f$ è semplicemente la rappresentazione grafica di una funzione come può essere ad esempio la funzione della parabola.
 
 Noi dicamo che il grafico di una funzione è:
@@ -454,6 +451,7 @@ Noi dicamo che il grafico di una funzione è:
 
 \subsection{Tipi di funzione} 
 Esistono diversi tipi di funzione, di seguite ne mostrerò alcuni tipi.
+
 
 
 \subsubsection{Funzione Identità}
@@ -480,6 +478,7 @@ Se prendiamo per esempio $ 1 \in \mathbb{N} $ avremo $ Id(1) = 1 $ \par
 La funzione identità è \textbf{sempre bigettiva}.
 
 
+
 \subsubsection{Funzione Parte Intera}\label{sec:funzione_parte_intera}
 La \textbf{funzione parte intera (o funzione floor)} è una funzione che si indica con $ \lfloor x \rfloor $ che associa ad ogni numero $ \mathbb{Z} $  il numero stesso e ad un numero decimale, l'intero precedente. \par
 In matematichese questo si definisce come:
@@ -493,12 +492,12 @@ Facciamo qualche esempio:
         \item $ P( - \frac{1}{2}) = -1$ perchè $ - \frac{1}{2} = -0,5 $ dove in questo caso è $ -1 $ l'intero più vicino. 
 \end{itemize} 
 
-
 \begin{figure}[h]
         \centering
                 \includegraphics[width=0.75\textwidth]{esempio_funzione_parte_intera.png}
         \caption{Esempio di funzione parte intera}\label{fig:esempio_funzione_parte_intera}
 \end{figure}
+
 
 
 \subsubsection{Funzione Parte Frazionaria}\label{sec:funzione_parte_frazionaria}
@@ -519,12 +518,12 @@ Facciamo qualche esempio:
         \item $ M(-0,43) = -0,43 + 1 = 0,57 $ si trova il complementare che in questo caso rimane decimale. 
 \end{itemize} 
 
-
 \begin{figure}[!h]
         \centering
                 \includegraphics[width=0.3\textwidth]{esempio_funzione_parte_frazionaria.png}
                 \caption{Rappresentazione grafica di una funzione parte frazionaria}\label{fig:esempio_funzione_parte_frazionaria}
 \end{figure}
+
 
 
 \subsubsection{Funzione Composta}\label{sec:funzione_composta}
@@ -568,6 +567,7 @@ Di seguido elencherò alcune proprietà della funzione composta:\label{propriet�
 Una funzione può essere invertibile a \textbf{destra, sinistra, o in entrambi i lati (invertibile e basta)}, ora andremo a vedere come. 
 
 
+
 \subsubsection{Invertibile a sinistra}\label{sec:invertibile_a_sinistra}
 \begin{definition}     
         Una funzione $ f $  è invertibile a \textbf{sinistra} quando:
@@ -576,6 +576,7 @@ Una funzione può essere invertibile a \textbf{destra, sinistra, o in entrambi i
         \end{equation*}
         E si dice che $ g  $ è \underline{l'inversa sinistra} di $ f $.          
 \end{definition}
+
 
 
 \subsubsection{Invertibile a destra}\label{sec:invertibile_a_destra}
@@ -588,6 +589,7 @@ Una funzione può essere invertibile a \textbf{destra, sinistra, o in entrambi i
 \end{definition}
 
 
+
 \subsubsection{Invertibile a destra e sinistra}\label{sec:invertibile_a_destra_e_sinistra}
 \begin{definition}     
         Una funzione $ f $ è invertibile a \textbf{destra e sinistra} quando:
@@ -596,6 +598,7 @@ Una funzione può essere invertibile a \textbf{destra, sinistra, o in entrambi i
         \end{equation*}
         E si dice che $ t  $ è \underline{l'inversa} di $ f $ e si denota con $ f^{-1} $.           
 \end{definition}
+
 
 
 \subsubsection{Teorema dell'invertibilità}
@@ -628,6 +631,7 @@ Una funzione può essere invertibile a \textbf{destra, sinistra, o in entrambi i
 \end{tcolorbox}
 
 
+
 \subsection{Assioma della scelta}\label{sec:assioma_della_scelta}
 \begin{definition}
         Sia $ {\{A_i\}}_{i \in I} $ una famiglia di insiemi dove $ A_1 \not = \emptyset $ allora:
@@ -645,15 +649,15 @@ Se vogliamo un esempio per analogia immaginiamo i cassetti come una famiglia di 
         \item un cassetto $ A_3 = \{maglietta\} $ 
 \end{itemize}
 \end{exmp}
-L'assioma della scelta dice che attraverso questi insiemi tu puoi vestirti, ovvero esiste un modo per scegliere un elemento per ognuno di questi insiemi  per creare un nuovo insieme contenente \textbf{i rappresentanti} (calzini, pantaloni, maglietta) degli elementi degli insiemi scelti.
+L'assioma della scelta dice che attraverso questi insiemi tu puoi vestirti, ovvero esiste un modo per scegliere un elemento per ognuno di questi insiemi  per creare un nuovo insieme contenente \textbf{i rappresentanti} (calzini, pantaloni, maglietta) degli elementi degli insiemi scelti.\newpage
 
-\newpage
 \begin{figure}[!h]
         \centering
                 \includegraphics[width=0.5\textwidth]{esempio_assioma_della_scelta.jpg}
                 \caption{Esempio grafico dell'assioma della scelta}\label{fig:esempio_assioma_della_scelta}
 \end{figure}
 Come possiamo vedere nella figura~\ref{fig:esempio_assioma_della_scelta} da 5 insiemi prendiamo un elemento rappresentante a scelta e andiamo a formare un insieme contenente questi rappresentanti (in questo caso: cerchio, triangolo, pentagono, esagono, rombo).
+
 
 
 \subsubsection{Dimostrazioni attraverso l'assioma della scelta}
@@ -749,7 +753,6 @@ A questo punto secondo la proprietà dell'induzione anche $P(n+1)$ sarà vera ov
         S(1) = \frac{1*(1+1)}{2} = 1
 \end{equation}
 \end{exmp}
-
 Esistono tre tipi di induzione che spiegheremo di seguito.
 
 
@@ -773,6 +776,7 @@ Il \underline{Principio di induzione seconda forma} dice che con $P$ proposizion
 Allora $P(n)$ è vera $\forall n \ge n_0$.
 
 
+
 \subsection{Terza forma}\label{sec:induzione_terza_forma}
 Il \underline{Principio di induzione terza forma} dice che con $P$ proposizione su $\mathbb{Z}$ e $n_0 \in \mathbb{Z}$ dove $n_0$ è il \textbf{passo zero}, se vale:
 \begin{enumerate}
@@ -789,6 +793,7 @@ Allora diciamo che $P(n)$ vera $\forall n \ge n_0$.
 \newpage
 \section{Approfondimenti sui numeri interi}\label{sec:numeri_interi}
 In questo capitolo andremo a vedere più in profondità alcune delle proprietà e dei teoremi dei numeri $ \mathbb{N} $ e $ \mathbb{Z} $.   
+
 
 \subsection{Divisione Euclidea}\label{sec:divisione_euclidea}
 \begin{definition}
@@ -846,7 +851,6 @@ Se prendiamo $ b = ak $ con $ k \in \mathbb{Z} $ scriviamo:
 
 
 
-
 \subsection{Minimo comune multiplo}\label{sec:mcm}
 \begin{definition}
         \textbf{Il minimo comune multiplo (mcm)} è il più piccolo multiplo di ognuno dei numeri considerati, esso si trovva moltiplicando i fattori primi~\ref{sec:numeri_primi} comuni e non comuni presi una volta considerando il più grande esponente ovvero:
@@ -862,6 +866,7 @@ Se prendiamo $ b = ak $ con $ k \in \mathbb{Z} $ scriviamo:
         \end{align*}
         $ mcm $ sarà uguale a $ 2^3 * 3^2 * 5^2 = 1800 $.  
 \end{exmp}
+
 
 
 \subsection{Massimo comune divisore}\label{sec:MCD}
@@ -888,6 +893,7 @@ L'MCD deve rispettare le seguenti proprietà:
 \end{tcolorbox}
 
 
+
 \subsection{Algoritmo Euclideo}\label{sec:algoritmo_euclideo}
 \begin{definition}
         \textbf{L'Algoritmo Euclideo} serve per trovare l'\textbf{MCD}~\ref{sec:MCD} tra due numeri $ a,b \in \mathbb{Z} $ e si basa sulla \textbf{Divisione euclidea}~\ref{sec:divisione_euclidea}.
@@ -909,6 +915,7 @@ $ MCD(a,b) $ sarà uguale all'ultimo resto $ r $ non nullo ovvero prima che $ b=
                 a = 4 * 2 + 0 \quad \mbox{a=4, b=0  FINE}  
         \end{align*}
 \end{exmp}
+
 
 
 \subsection{Identità di Bezòut}\label{sec:identita_di_bezout}
@@ -945,6 +952,7 @@ Tutto ciò possiamo dimostrarlo con il \textbf{Lemma di Euclide}:
         \end{equation*}
 \end{exmp}
 \end{tcolorbox}
+
 
 
 \subsection{Equazioni Diofantee lineari}\label{sec:equazione_diofantea_lineare}
@@ -989,7 +997,6 @@ Tutto ciò possiamo dimostrarlo con il \textbf{Lemma di Euclide}:
         \end{enumerate}
 \end{exmp}
 
-
 \begin{exmp}
 Se considero la funzione:
 \begin{align}
@@ -1012,6 +1019,7 @@ E quindi possiamo dire con certezza che la funzione non è né surriettiva e né
 \end{exmp}
 
 
+
 \subsection{Numeri Primi}\label{sec:numeri_primi}
 \begin{definition}
 I numeri primi sono quei \textbf{numeri interi maggiori di 1 che sono divisibili solo per 1 e se stessi}, se questa proprietà non viene rispettata allora il numero è invece \textbf{composto} che scritto in matematichese:
@@ -1022,14 +1030,15 @@ I numeri primi sono quei \textbf{numeri interi maggiori di 1 che sono divisibili
 
 \begin{tcolorbox}
 \begin{lemma}
-\begin{align*}
-        a,b \in Z, p \in Z \quad \textrm{Primo} \\
-        p|a \quad \textrm{o} \quad p|a*b
-\end{align*}
+        \begin{align*}
+                a,b \in Z, p \in Z \quad \textrm{Primo} \\
+                p|a \quad \textrm{o} \quad p|a*b
+        \end{align*}
 Quindi supponiamo di avere $p \nmid a$, dimostriamo che: \newline 
 $p|b,  p|a*b \Rightarrow \exists k \in Z$ tale che $a*b = k*p$
 \end{lemma}
 \end{tcolorbox}
+
 
 
 \subsubsection{Teorema fondamentale dell'aritmetica}\label{sec:teorema_fondamentale_dell_aritmentica}
@@ -1038,28 +1047,37 @@ si dice che se $a \in \mathbb{Z}, a \not = 0,1,-1$ allora $a$ o è primo o è co
 \begin{equation*}
 a = +- {p_1}^{n_1} * \ldots * {p_s}^{n_s} \\
 \end{equation*}
-Dove: $ p_1 \ldots p_s \quad \mbox{PRIMI}$ e $ \quad n_1 \ldots n_s \in \mathbb{N}$ 
+Dove:
+\begin{itemize}
+        \item  $ p_1 \ldots p_s$ Primi. 
+        \item  $ n_1 \ldots n_s \in \mathbb{N}$.
+\end{itemize}
 
 
-\subsubsection{Teorema di euclide}\label{secLteorema_di_euclide}
+
+
+\subsubsection{Teorema di euclide}\label{sec:teorema_di_euclide}
 Esistono infiniti numeri primi e lo possiamo dimostrare attraverso una dimostrazione per assurdo.
 Supponiamo infatti per assurdo che esistano soltato $p_1,\ldots,p_n$ numeri primi. \par
 
 \begin{tcolorbox}
 \begin{proof}
-Perfetto ora consideriamo un numero $N = p_1* \ldots * p_n$.
-La divisione euclidea di $N$ per $p_1$ da resto 1.
+Perfetto ora consideriamo un numero $N = p_1* \ldots * p_n$. \par
+La divisione euclidea di $N$ per $p_1$ da resto 1. \par
 Analogamente $N$ diviso per $N = p_1* \ldots * p_n$ da resto $1$ \par
 $p_1 \nmid N$ \ldots  $p_n \nmid N$ contraddice il teorema precedente e perciò abbiamo dimostrato che ci sono infiniti numeri primi.
 \end{proof}
 \end{tcolorbox}
 
+
 Ok può non essere chiarissimo quindi vado ad utilizzare i numeri per fare un esempio:
-\begin{align*}
-        N = 2 * 7 + 1 = 14 + 1 = 15 \quad \textrm{Non è primo} \\
-        3 | 15, 5 | 15
-\end{align*}
+\begin{exmp}
+        \begin{align*}
+                N = 2 * 7 + 1 = 14 + 1 = 15 \quad \textrm{Non è primo} \\
+                3 | 15, 5 | 15
+        \end{align*}
 Abbiamo infatti trovato due nuovi numeri primi 3 e 5 quindi ci sono infiniti numeri primi.
+\end{exmp}
 
 
 
@@ -1067,8 +1085,15 @@ Abbiamo infatti trovato due nuovi numeri primi 3 e 5 quindi ci sono infiniti num
 
 \newpage
 \section{Numeri complessi}\label{sec:numeri_complessi}
-Noi definiamo numeri complessi quei numeri che
-
+\begin{definition}
+        Noi definiamo \textbf{numero complesso} quel numero nella forma \boxed{$ x + yi $} dove:
+        \begin{itemize}
+                \item $ x,y \in \mathbb{R} $.
+                \item $ i $ soluzione dell'equazione $ x^2 = -1 $  
+        \end{itemize} 
+        $ i $  viene detta \textbf{unità immaginaria}. \par
+        Questa unità immaginaria $ i $ serve per risolvere le radici di numeri negativi ($ \sqrt{-1}, \sqrt{-16} $). 
+\end{definition}
 
 $\mathbb{C} = \mathbb{R} \times \mathbb{R}$ denotiamo che $(x,y) \in \mathbb{R}^2$ come $x + iy$ e consideriamo $i$ come unità immaginaria, definiamo due operazioni su $ \mathbb{C} $.
 \begin{itemize}
@@ -1076,11 +1101,13 @@ $\mathbb{C} = \mathbb{R} \times \mathbb{R}$ denotiamo che $(x,y) \in \mathbb{R}^
         \item \textbf{Prodotto} $(x + iy) * (u + iv) := (xu - yv) + i(xv+yu)$ con $x,y,u,v \in \mathbb{R}$
 \end{itemize}
 
+\begin{exmp}
 Utiiziamo un esempio numerico:
-\begin{align}
-        \textrm{Somma: } \quad (2 + 3i) + (4 + 5i) = (2 + 4) + i(3 + 5) = 6 + 8i \\
-        \textrm{Prodotto: } \quad (2 + 3i) + (4 + 5i) = (2 * 4) + i(2*5 + 3*4) = (8-15 + i(10+12)) = 7 + 22i
-\end{align}
+        \begin{itemize}
+                \item \textbf{Somma}:  $ (2 + 3i) + (4 + 5i) = (2 + 4) + i(3 + 5) = 6 + 8i $  
+                \item \textbf{Prodotto}: $(2 + 3i) + (4 + 5i) = (2 * 4) + i(2*5 + 3*4) = 7 + 22i$ 
+        \end{itemize}
+\end{exmp}
 
 Anche se i calcoli possono sembrare complssi possiamo semplificare il tutto con questo ragionamento:
 \begin{align*}
@@ -1093,18 +1120,53 @@ Anche se i calcoli possono sembrare complssi possiamo semplificare il tutto con 
         $\boxed{ i^1 = i \quad i^2 = -1 \quad i^3 = -i \quad i^4 = i}$
 \end{oss}
 \end{tcolorbox}
+L'inverso di $x + iy$ rispetto al punto si denota con ${(x + iy)}^{-1}$ oppure $\frac{1}{x + iy}$ \newline
 
-L'inverso di $x + iy$ rispetto al punto si denota con ${(x + iy)}^{-1}$ oppure $\frac{1}{x + iy}$
+In generale i numeri complessi sono definiti dall'equazione:
+\begin{equation*}
+        \boxed{z = x + iy}
+\end{equation*}
+dove $ x,y \in \mathbb{R} $, $ i $ parte immaginaria e $ z \in \mathbb{C} $.   
+
+
+\newpage
+\begin{exer}
+       Prendiamo $ z_1 = 3 + 2i$  e $ z_2 = 1 - 3i $:\newline
+       \underline{Somma}:
+       \begin{equation*}
+                z_1 + z_2 = 3 + 2i + (1 - 3i) = 3 + 2i + 1 - 3i = 4 - i\\
+                2 
+       \end{equation*}
+       \underline{Prodotto}:
+       \begin{align*}
+               z_1 * z_2 = (3 + 2i)(1 - 3i) = 3 - 9i + 2i - 6{i}^{2} = 3 \\
+               \mbox{Sappiamo che $ i^2 = -1 $ quindi:} \\
+               = 3 - 7i + 6 = 9 - 7i 
+       \end{align*}
+\end{exer}
 
 
 
-\subsection{Piano di Gauss}
+
+\newpage
+\subsection{Piano di Gauss}\label{sec:piano_di_gauss}
 Con $\mathbb{C} = \mathbb{R}^2$ consideriamo un piano cartesiano possiamo rappresentare tutti i numeri complessi utilizzando però delle coordinate dette \textbf{Polari}.
 Da un punto $x$ e un punto $y$ troviamo un punto $z$ possiamo infatti dire che $z = x+iy$ dove il $|z|$  rappresenta la distanza del punto $z$ dall'origine (l'intersezione dell'asse x e y) e lo si può calcolare attraverso \textbf{Pitagora} con $|z| := \sqrt{x^2+y^2}$. \par
 E quindi se $z \in \mathbb{R}$ allora $|z| = \sqrt{x^2}$
 
 
-\subsection{Proprietà dei numeri complessi}
+
+
+
+\subsection{Proprietà dei numeri complessi}\label{sec:proprieta_dei_numeri_complessi}
+\begin{tcolorbox}
+\begin{oss}
+        Alcune osservazioni per il seguente capitolo: \newline
+        $ Re $ significa parte reale. \par
+        $ Im $ significa parte immaginaria. 
+\end{oss}
+\end{tcolorbox}
+
 \begin{itemize}
         \item $\overline{zw} = z * \overline{w}$ \\
         \item $\overline{z} = z$ \\
@@ -1131,11 +1193,9 @@ $\theta = \arg(z)$ argomento di $ z $  angolo formato da $ z $  e l'asse $Re$ $\
 Ok facciamo un esempio, prendiamo $z = 2$, avremo quindi $|z| = \sqrt{2^2 = 2}$ e $\arg{z} = 0$.\par
 A questo punto possiamo dire che $z = 2(\cos(0) + i\sin(0))$ \newline
 
-\todo{REM:Re sta per parte reale} 
 
 
-
-\subsection{Forma esponenziale}
+\subsection{Forma esponenziale}\label{sec:forma_esponenziale}
 Avendo $z \in \mathbb{C}, z \not = 0$ \newline
 $\theta = \arg z$ e  $z = | z | e^i*\arg(z)$ \newline
 $w \in \mathbb{C}, w \not = 0 := |z| (\cos(\theta) + i\sin(\theta))$ \newline
@@ -1145,7 +1205,7 @@ $w \in \mathbb{C}, w \not = 0 := |z| (\cos(\theta) + i\sin(\theta))$ \newline
 \subsection{Radici di un numero $ \mathbb{C} $}
 
 
-\subsection{Equazioni di secondo grado complesse}
+\subsection{Equazioni di secondo grado complesse}\label{equazioni_di_secondo_grado_complesse}
 Una radice semplice si calcola quando si hanno equazioni di grado inferiore al terzo, nello specifico ogni equazione di secondo grado $ax^2+bx+c = 0$ con $a,b,c \in \mathbb{C}$ ha due soluzioni in $\mathbb{C}$. \par
 Si trovano così  $\Delta := b^2 - 4ac$ dove:
 \begin{itemize}
@@ -1188,7 +1248,7 @@ Cioè $p(x)$ si può decomporre come $p(x) = {a_(x-w_1)}^{m_1} \cdots {(x-w_r)}^
 
 
 \newpage
-\section{Relazioni di Equivalenza}
+\section{Relazioni di Equivalenza}\label{sec:relazioni_di_equivalenza}
 Prima di tutto definiamo un insieme $A$, una relazione $R \subseteq AxA$ si dice di equivalenza se soddisfa:
 \begin{enumerate}
         \item \underline{Riflessiva} ($\forall a \in A (a,a) \in \mathbb{R})$

@@ -1,5 +1,0 @@
-PWD /home/riot/Riot/School/Unige/UnigeMasterace/Unige/Algebra
-INPUT /usr/share/texmf-dist/web2c/texmf.cnf
-INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /usr/share/vim/vim82/doc/help.txt
-OUTPUT help.log
