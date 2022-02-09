@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{float}
 \usepackage{amsthm}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -17,6 +18,7 @@
 \newtheorem{definition}{Definizione}[section]
 \newtheorem{oss}{Osservazione}[section]
 \newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollario}{Corollario}[section]
 \newtheorem{prop}{Proprietà}[section]
 \newtheorem{nb}{Nota Bene}[section]
 
@@ -314,8 +316,7 @@ Se avessimo $I = \{1,2,3,4,5\}$ sarebbe come scrivere:
 \end{equation*}
 
 
-
-\subsection{Insiemi Indiciati}
+\begin{exmp}
 Facciamo un esempio, prendiamo $A_i = \{x \in \mathbb{N} : x \not = 2i\}$ con $I = \{1,2,3\}$, avremo che:
 \begin{itemize}
         \item $A_1 = \{\mathbb{N} \not = 2\}$
@@ -324,7 +325,7 @@ Facciamo un esempio, prendiamo $A_i = \{x \in \mathbb{N} : x \not = 2i\}$ con $I
         \item $A_1 \cup A_2 \cup A_3 = \mathbb{N}$ oppure $\mathcal{F} = {\{A_i\}}_{i \in I} = \mathbb{N}$
         \item $A_1 \cap A_2 \cap A_3 = \{\mathbb{N} \not = 2, \mathbb{N} \not = 4, \mathbb{N} \not = 6\}$
 \end{itemize}
-
+\end{exmp} 
 Prendete con le pinze questa definizione, ma potremo immaginare gli insiemi indiciati come array di array che hanno le stesse proprietà.
 
 
@@ -682,26 +683,24 @@ Possiamo dimostrare questo teorema attraverso l'assioma della scelta sia da dest
         Perchè ogni elemento di $ X $ ha un corrispettivo in $ Y $ perciò se prendo tutti gli elementi di $ f^{-1}(y) $ e come se stessi prendendo $ X $ stessa    
 \end{proof}
 \end{tcolorbox}
-\todo{RIP:Aggiungere la \textit{proof} `$ \leftarrow $`}
 
 \begin{exmp}
         Prendiamo due insiemi $ X = \{1,2,3\} $ e $ Y = \{a,b,c,d\} $ con:
         \begin{align*}
-                \eta : Y \to X \quad \mbox{surriettiva} \quad  \Rightarrow \exists \quad \mbox{Inversa dx} \\ 
-                a \mapsto 1 \\
-                b \mapsto 1 \\
-                c \mapsto 2 \\
-                d \mapsto 3
+                &\eta : Y \to X \quad \mbox{surriettiva} \quad  \Rightarrow \exists \quad \mbox{Inversa dx} \\ 
+                & a \mapsto 1 \\
+                & b \mapsto 1 \\
+                & c \mapsto 2 \\
+                & d \mapsto 3
         \end{align*}
         
         Con l'assioma della scelta noi avremo un insieme $ u_1 : X \to Y $ che:
         \begin{align*}
-                1 \mapsto \mbox{?} \in \eta^{-1}(1) = \{a,b\} \quad \mbox{Posso scegliere tra a e b ed in base alla scelta si formerà un diverso insieme} \\
-                2 \mapsto \mbox{?} \in \eta^{-1}(2) = \{c\} \\
-                3 \mapsto \mbox{?} \in \eta^{-1}(3) = \{d\} 
+                & 1 \mapsto \mbox{?} \in \eta^{-1}(1) = \{a,b\} \quad \mbox{Posso scegliere tra a e b ed in base alla scelta si formerà un diverso insieme} \\
+                & 2 \mapsto \mbox{?} \in \eta^{-1}(2) = \{c\} \\
+                & 3 \mapsto \mbox{?} \in \eta^{-1}(3) = \{d\} 
         \end{align*}
 \end{exmp}
-\todo{RIP:Funzione da riallineare}
 
 
 
@@ -1083,10 +1082,11 @@ Abbiamo infatti trovato due nuovi numeri primi 3 e 5 quindi ci sono infiniti num
 
 
 
+
 \newpage
 \section{Numeri complessi}\label{sec:numeri_complessi}
 \begin{definition}
-        Noi definiamo \textbf{numero complesso} quel numero nella forma \boxed{$ x + yi $} dove:
+        Noi definiamo \textbf{numero complesso} quel numero nella forma \boxed{$ x + yi $} (\textbf{forma algebrica}) dove:
         \begin{itemize}
                 \item $ x,y \in \mathbb{R} $.
                 \item $ i $ soluzione dell'equazione $ x^2 = -1 $  
@@ -1150,11 +1150,17 @@ dove $ x,y \in \mathbb{R} $, $ i $ parte immaginaria e $ z \in \mathbb{C} $.
 
 \newpage
 \subsection{Piano di Gauss}\label{sec:piano_di_gauss}
-Con $\mathbb{C} = \mathbb{R}^2$ consideriamo un piano cartesiano possiamo rappresentare tutti i numeri complessi utilizzando però delle coordinate dette \textbf{Polari}.
-Da un punto $x$ e un punto $y$ troviamo un punto $z$ possiamo infatti dire che $z = x+iy$ dove il $|z|$  rappresenta la distanza del punto $z$ dall'origine (l'intersezione dell'asse x e y) e lo si può calcolare attraverso \textbf{Pitagora} con $|z| := \sqrt{x^2+y^2}$. \par
-E quindi se $z \in \mathbb{R}$ allora $|z| = \sqrt{x^2}$
-
-
+\begin{definition}
+        Il piano di Gauss è lo strumento grafico per rappresentare (appunto) graficamente di $ z \in \mathbb{C} $.
+        \begin{figure}[h]
+                \centering
+                        \includegraphics[width=0.5\textwidth]{piano_di_gauss.png}
+                        \caption{Rappresentazione del piano di Guass}\label{fig:piano_di_gauss}
+        \end{figure}\newline
+        Nello specifici con $\mathbb{C} = \mathbb{R}^2$ consideriamo un piano cartesiano nel quale rappresentare tutti i numeri complessi utilizzando però delle coordinate dette \textbf{Polari}. \par
+Da un punto $x$ e un punto $y$ troviamo un punto $z$ possiamo infatti dire che $z = x+iy $ dove il $|z|$  rappresenta la distanza del punto $z$ dall'origine (l'intersezione dell'asse x e y) e lo si può calcolare attraverso \textbf{Pitagora} con $|z| := \sqrt{x^2+y^2}$. \par
+E quindi se $z \in \mathbb{R}$ allora $|z| = \sqrt{x^2}$. \par
+\end{definition}
 
 
 
@@ -1168,13 +1174,12 @@ E quindi se $z \in \mathbb{R}$ allora $|z| = \sqrt{x^2}$
 \end{tcolorbox}
 
 \begin{itemize}
-        \item $\overline{zw} = z * \overline{w}$ \\
         \item $\overline{z} = z$ \\
+        \item $\overline{zw} = z * \overline{w}$ \\
         \item $\overline{z+w} = \overline{z} + \overline{w}$ \\
         \item $z+\overline{z}=2Re(z)$ \\
         \item $z - \overline{z}=2Im(z)$ \\
 \end{itemize}
-\todo{TEO:Cercare le dimostrazioni}
 
 Altre proprietà però con il modulo:
 \begin{itemize}
@@ -1184,61 +1189,159 @@ Altre proprietà però con il modulo:
         \item $z \not = 0 \quad z^{-1} = \frac{\overline{z}}{|z|^{2}} $ \\
 \end{itemize}
 
-\todo{DEF:disugiaglainza triangolare}
-\todo{FIG:grafico con il modulo}
 
-$\theta = \arg(z)$ argomento di $ z $  angolo formato da $ z $  e l'asse $Re$ $\theta$ è definito a meno di $Re$ multipli di $2\pi$ abbiamo la \boxed{\textbf{forma trigonometrica di $ z $}}.
-\todo{FIG:forma trigonometrica $ \mathbb{Z} $ } 
+\subsection{Disuguaglianza triangolare}\label{sec:disuguaglianza_triangolare}
+\begin{definition}
+        Per disuguaglianza triangolare si afferma che il valore assoluto della somma di due numeri $ \mathbb{R} $ è minore o uguale alla somma dei loro moduli, ovvero:
+        \begin{equation*}
+                |x + y| \le |x| + |y|
+        \end{equation*}
+        Per i numeri complessi questo serve a dimostrare la proprietà $ |z+w| \le |z| + |w| $.
+        \begin{tcolorbox}
+                
+        \begin{proof}
+                \begin{align*}
+                        |z + w|^2 = (z + w)(\overline{z + w}) = (z + w)(\overline{z} + \overline{w}) = \\
+                        |z|^2 + 2\mathfrak{Re}(w\overline{z}) + |w|^2 \le |z|^2 + 2|w\overline{z}| + |w|^2 = \\
+                        |z|^2 + 2|w| |z| + |w|^2 = {(|z| + |w|)}^{2}
+                \end{align*}
+        \end{proof}
+        \end{tcolorbox}
+\end{definition}
+\begin{figure}[h]
+        \centering
+                \includegraphics[width=0.3\textwidth]{disuguaglianza_triangolare.png}
+                \caption{Rappresentazione grafica della disuguaglianza triangolare}\label{fig:disuguaglianza_triangolare}
+\end{figure}
 
-Ok facciamo un esempio, prendiamo $z = 2$, avremo quindi $|z| = \sqrt{2^2 = 2}$ e $\arg{z} = 0$.\par
-A questo punto possiamo dire che $z = 2(\cos(0) + i\sin(0))$ \newline
+
+
+\subsection{Forma trigonometrica}\label{sec:forma_trigonometrica}
+\begin{figure}[H]
+        \centering
+                \includegraphics[width=0.75\textwidth]{forma_goniometrica.jpg}
+                \caption{Grafico di $ |z| $}\label{fig:forma_goniometrica}
+\end{figure}
+
+\begin{definition}
+        
+La forma trigonometrica permette di esprimere un numero $ z \in \mathbb{C} $ mediante due valore detti \textbf{modulo e argomento} nella forma:
+\begin{equation*}
+        \boxed{z = r[\cos(\theta) + i*\sin(\theta)]}
+\end{equation*}
+E siccome $  z = (a, b) $ con $ a,b \in \mathbb{R} $ possiamo rappresentate il tutto nel già descritto \textbf{piano di Gauss}~\ref{sec:piano_di_gauss}. 
+\end{definition}
+
+Abbiamo $ r $ numero reale non negativo:
+\begin{equation*}
+        r \ge 1
+\end{equation*}
+
+$ i $ unità immaginaria. \newline 
+
+Abbiamo $\boxed{\theta = \arg(z)}$ argomento di $ z $ ovvero l'angolo formato da $ z $  e l'asse $\mathfrak{Re}$ e in base a ciò $\theta$ è un angolo che può soddisfare una di queste due condizioni:
+\begin{equation*}
+        -\pi < \theta \le \pi \quad \mbox{oppure} \quad 0 \le \theta < 2\pi
+\end{equation*}
+
+\begin{tcolorbox}
+Se scegliamo l'intervallo $ \theta := -\pi < \arg(z) \le \pi $ allora:
+\[ \theta := \arg(z) =
+\begin{cases}
+        \frac{\pi}{2} \quad \mbox{se} \quad a=0, b>0 \\ 
+        -\frac{\pi}{2} \quad \mbox{se} \quad a=0, b<0 \\ 
+        \mbox{non definito se} \quad a=0, b=0 \\ 
+        \arctan(\frac{b}{a}) \quad \mbox{se} \quad a>0, b \quad \mbox{qualsiasi} \\ 
+        \arctan(\frac{b}{a}) + \pi \quad \mbox{se} \quad a<0, b \ge 0 \\ 
+        \arctan(\frac{b}{a}) - \pi \quad \mbox{se} \quad a<0, b<0 \\ 
+\end{cases}
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}
+Se scegliamo l'intervallo $ \theta := 0 \le \arg(z) < 2\pi $ allora:
+\[ \theta := \arg(z) =
+\begin{cases}
+        \frac{\pi}{2} \quad \mbox{se} \quad a=0, b>0 \\ 
+        \frac{3\pi}{2} \quad \mbox{se} \quad a=0, b<0 \\ 
+        \mbox{non definito se} \quad a=0, b=0 \\ 
+        \arctan(\frac{b}{a}) \quad \mbox{se} \quad a>0, b \ge 0 \\ 
+        \arctan(\frac{b}{a}) + 2\pi \quad \mbox{se} \quad a>0, b<0 \\ 
+        \arctan(\frac{b}{a}) + \pi \quad \mbox{se} \quad a<0, b \quad \mbox{qualsiasi}  
+\end{cases}
+\]
+\end{tcolorbox}
 
 
 
 \subsection{Forma esponenziale}\label{sec:forma_esponenziale}
-Avendo $z \in \mathbb{C}, z \not = 0$ \newline
-$\theta = \arg z$ e  $z = | z | e^i*\arg(z)$ \newline
+La forma esponenziale di un numero $ z \in \mathbb{C} $ ovvero $ z^n $ con $ n \in \mathbb{N} $ si può risolvere in due modi in basi alla forma di $ z  $.
+
+Se ci troviamo nella forma $ z = x + yi $ (possiamo sostituire $ x,y $ con $ a,b  $ o altre lettere) allora prima di tutto dobbiamo portare la nostra $ z $ in \textbf{forma trigonometrica}~\ref{sec:forma_trigonometrica}
+
+\begin{tcolorbox}
+La forma esponenziale è cosi' espressa: \newline
+$z \in \mathbb{C}, z \not = 0$ \newline
+$\theta = \arg(z)$ e  $z = | z | e^{i*\arg(z)}$ \newline
 $w \in \mathbb{C}, w \not = 0 := |z| (\cos(\theta) + i\sin(\theta))$ \newline
+\end{tcolorbox}
 
-\todo{TEO:formula di De Mouire}
+\begin{tcolorbox}
+\begin{corollario}
+        (FORMULA DI DE MOIVRE) Se $z = \partial(\cos \varphi + i\sin\varphi)$ è un numero complesso scritto in forma trigonometrica e $ n \in \mathbb{N}$, allora:
+        \begin{equation*}
+                z^n = \partial^n(\cos n\varphi + i\sin n \varphi)
+        \end{equation*}
 
-\subsection{Radici di un numero $ \mathbb{C} $}
+        \begin{proof}
+                \begin{equation*}
+                        z^n = z^0 = 1 \quad \mbox{e} \quad \partial^n(\cos n\varphi + i\sin n\varphi) = \partial^0(\cos 0 + i\sin 0) 
+                \end{equation*}        
+        \end{proof}
+\end{corollario}
+\end{tcolorbox}
+
 
 
 \subsection{Equazioni di secondo grado complesse}\label{equazioni_di_secondo_grado_complesse}
 Una radice semplice si calcola quando si hanno equazioni di grado inferiore al terzo, nello specifico ogni equazione di secondo grado $ax^2+bx+c = 0$ con $a,b,c \in \mathbb{C}$ ha due soluzioni in $\mathbb{C}$. \par
-Si trovano così  $\Delta := b^2 - 4ac$ dove:
+Si trovana $\Delta := b^2 - 4ac$ dove se:
 \begin{itemize}
         \item $\Delta = 0 \quad \mbox{prendo} \quad \delta_1 = \delta_2 = 0$	
         \item $\Delta \not = 0 \quad \mbox{per il teorema} \quad \exists \delta_1,\delta_2 \in \mathbb{C} \quad \mbox{distinti, tali che} \quad \delta_1^2 = \delta_2^2 = \Delta$	
 \end{itemize}
 
 Le soluzioni dell'equazione di secondo grado si trovano facendo:
-\begin{align}
+\begin{align*}
         z_1 = \frac{-b + \delta_1}{2a} \\
         z_1 = \frac{-b + \delta_2}{2a} 
-\end{align}
+\end{align*}
 
 Mentre:
-\begin{align}
+\begin{align*}
         \mbox{Se} \quad \Delta = 0, \delta_1=\delta_2 \quad \mbox{quindi} \quad z_1=z_2 \\
         \mbox{Se} \quad \Delta < 0, \delta_1 \not = \delta_2 \quad \mbox{quindi} \quad z_1 \not = z_2 
-\end{align}
+\end{align*}
 
 
 
-\subsection{Radici complesse (di secondo grado)}
-le $Zk$ sono chiamate radici complesse che se le andassimo a disegnare sul piano di Gauss formerebbero i su \newline
-Facciamo un esempio, le radici cubiche $(n=3)$ di $z = -8 +i*0$ del modulo di $z, \quad|z| = \sqrt{Re(z^2)+In(z^2)} = \sqrt{-8^2 + 0^2} = \sqrt{(-8^2)} = 8$.
+\subsection{Radici complesse}\label{sec:radici_complesse}
+\begin{tcolorbox}
+        \begin{corollario}
+               Sia $ n \ge 1 $ un numero $ \mathbb{Z}  $. Le radici n-esime dell'unità, ossia i numeri complessi $ z $ tali che $ z^n = 1 $ sono tutti e soli numeri complessi.:
+               \begin{equation*}
+                       z_h = \sqrt[n]{|z|} * \cos(\frac{\arg(z) + 2h\pi}{n}) + i\sin(\frac{\arg(z) + 2h\pi}{n}) \quad \quad h \in \mathbb{Z}
+               \end{equation*}
+        \end{corollario}
+\end{tcolorbox}
 
 
 
-\subsection{Teorema fondametale dell'Algebra}
+\subsection{Teorema fondametale dell'Algebra}\label{sec:teorema_fondamentale_dell_algebra}
 Il teorema fondamentale dell'algebra dice che ogni polinomio in $\mathbb{R}$ o $\mathbb{C}$ di grado $\geq 1$ ha soluzioni nei $\mathbb{C}$ \newline 
 Ovvero sia $p(x) = a_n X^n + a_{n-1} X^{n-1} + \cdots + a_1 X + a_0$ un polinomio, $p(x) = a_n  + a_{n-1} + \cdots + a_1 + a_0 \in \mathbb{C} a_n \not = 0$ di grado $n$ \par
 Allora $p(x)$ ha $n$ soluzioni in $\mathbb{C}$ contate con la loro molteciplità.\par
 Cioè $p(x)$ si può decomporre come $p(x) = {a_(x-w_1)}^{m_1} \cdots {(x-w_r)}^{m_r}$ \newline
-
 (a detta del prof è troppo complesso dimostrarlo e se lo dice lui io mi fido)
 
 
@@ -1249,45 +1352,97 @@ Cioè $p(x)$ si può decomporre come $p(x) = {a_(x-w_1)}^{m_1} \cdots {(x-w_r)}^
 
 \newpage
 \section{Relazioni di Equivalenza}\label{sec:relazioni_di_equivalenza}
-Prima di tutto definiamo un insieme $A$, una relazione $R \subseteq AxA$ si dice di equivalenza se soddisfa:
-\begin{enumerate}
-        \item \underline{Riflessiva} ($\forall a \in A (a,a) \in \mathbb{R})$
-        \item \underline{Simmetrica} ($(a,b) \in \mathbb{R} \Rightarrow (b,a) \in \mathbb{R}$)
-        \item \underline{Transitiva} ($(a,b) \in \mathbb{R},(b,c) \in \mathbb{R} \Rightarrow (a,c) \in \mathbb{R}$)
-\end{enumerate}
+\begin{definition}
+Dati due insiemi $ A $ e $ B $ si definisce \textbf{Relazione binaria} la terna:
+\begin{align*}
+        & (A, B, \rho) \\
+        & \forall a \in A, \forall b \in B (a \rho b) \Leftrightarrow (a, b) \in \rho
+\end{align*}
+\end{definition}
 
+
+
+\subsection{Proprietà}
+Adesso definiamo un insieme $A$, una relazione $R \subseteq A \times A$ si dice di equivalenza se soddisfa:
+
+\begin{tcolorbox}
+        
+\begin{enumerate}
+        \item \underline{Riflessiva} ($\forall a \in A, (a,a) \in R)$
+        \item \underline{Simmetrica} ($(a,b) \in R \Rightarrow (b,a) \in R$)
+        \item \underline{Transitiva} ($(a,b) \in R, (b,c) \in R \Rightarrow (a,c) \in R$)
+\end{enumerate}
+Una relazione $ \rho $ è una relazione di equivalenza se e solo se rispetta queste tre prorpietà. \newline
+\end{tcolorbox}
 Generalmente indichiamo una relazione d'equivalenza con un simbolo  $\backsim$ oppure $\equiv$ e scriviamo $a \backsim b$ oppure $a \equiv b$ oppure $aRb$ per indicare $(a,b) \in \mathbb{R}$
 
+\begin{exmp}
+        Prendiamo due insiemi come esempio:
+        \begin{itemize}
+                \item $ A = Z \newline \forall x, y \in Z $ \newline 
+                        $ x \rho_1 y \Leftrightarrow x^2 = y^2$ \newline 
+                        $ x \rho_2 y \Leftrightarrow x + y $ è dispari.
+                \item $ A = P(s) \forall x,y \in P(s) $ \newline
+                        $ x \rho_3 y \Leftrightarrow x \cap y = \emptyset $ 
+        \end{itemize}
+        \begin{figure}[h]
+                \centering
+                        \includegraphics[width=0.75\textwidth]{esempio_relazione_dordine.png}
+                        \caption{Soluzioni}\label{fig:esempio_relazione_dordine}
+        \end{figure}        
+\end{exmp}
 
 
-\subsection{Equivalenza modulare}
-$A = \mathbb{Z}$ fissiamo $n \in \mathbb{Z}, n \geq 1$ definiamo $\backsim_n$ \par
-$x \backsim_n y \Leftrightarrow \exists k \in \mathbb{Z}$ tale che $x-y = Kn$ si diche che $x$ è congruo a $y$ mmodulo $n$ e si scrive $x \equiv y MOD n$.
-$\forall x \in \mathbb{Z} \mbox{vale} \quad x \equiv x \mod n$ perchè $\exists K \in \mathbb{Z}$ tale che $x-x = K*n$ 
+\subsection{Equivalenza modulare}\label{sec:equivalenza_modulare}
+$A = \mathbb{Z}$ fissiamo $n \in \mathbb{Z}, n \geq 1$ e definiamo $\backsim_n$: \par
+
+\begin{tcolorbox}
+$x \backsim_n y \Leftrightarrow \exists k \in \mathbb{Z}$ tale che $x-y = Kn$ si diche che $x$ è congruo a $y$ modulo $n$ e si scrive $x \equiv y \mod n$. \par
+$\forall x \in \mathbb{Z}$ vale $x \equiv x \mod n$ perchè $\exists K \in \mathbb{Z}$ tale che $x-x = K*n$ 
+\end{tcolorbox}
 
 
-
-\subsection{Classe di equivalenza}
+\subsection{Classe di equivalenza}\label{sec:classe_di_equivalenza}
+\begin{definition}
 Sia $A$ un insieme e sia $\backsim$ una relazione di equivalenza su $A$. La \underline{classe di equivalenza} di un elemento $a \in A$ con $\overline{a} = [a] := \{b\in A : b \backsim a\}$ è un insieme. \par
-$a$ si chiama rappresentante della classe $[a]$ e notare bene che $a \in [a]$ perchè $a \backsim a$.
+\end{definition}
+$a$ si chiama rappresentante della classe $[a]$. \par
 
+\begin{tcolorbox}
+notare che $a \in [a]$ perchè $a \backsim a$ (\textbf{Riflessività}) \par
+notare che $ a \in [b] \Rightarrow b \in [x] $ (\textbf{Simmetria})\par
+notare che $ x \not \backsim y \Rightarrow [x]\cap[y] = \emptyset $ 
+\end{tcolorbox}
 
+\begin{exmp}
+        Prendiamo come esempio un insieme $ A = \{0,1,2,3,4,5\} $  con $ a \backsim b \Leftrightarrow x + y $ pari:   
+        \begin{align*}
+                [0] = \{0, 2, 4\} \\
+                [1] = \{1, 3, 5\} \\
+                [0] \cup [1] = A
+        \end{align*}
+\end{exmp}
 
 
 
 
 \newpage
-\section{Cardinalità}\todo{RIP:recuperare lezione sulla cardinalità}
+\section{Cardinalità}\label{sec:cardinalità}
+\begin{definition}
 Con \textbf{cardinalità} noi intendiamo definire quali e quanti elementi fanno parte di un certo insieme utilizzando il linguaggio matematico. \par
-
+\end{definition}
 Supponiamo per esempio che $A,B$ sono insiemi, possiamo dire che $A,B$ sono \textbf{equipotenti} se $\exists f:A \rightarrow B$ bigettiva, in tal caso scriviamo $|A| = |B|$. \par
 
+
+\subsection{Proprietà}
 Ok detto questo mostriamo alcune proprietà:
+\begin{tcolorbox}
 \begin{enumerate}
-        \item \textbf{Riflessiva} A è equipotente con $A$ tramite $id_A A \rightarrow A$ bigettiva.
-        \item \textbf{Simmetrica} $A$ è equipotente a $B$ $\Rightarrow \exists f:A \rightarrow B$ bigettiva. 
+        \item \textbf{Riflessiva} $A$ è equipotente con $A$ tramite $id_A A \rightarrow A$ \underline{bigettiva}.
+        \item \textbf{Simmetrica} $A$ è equipotente a $B$ $\Rightarrow \exists f:A \rightarrow B$ \underline{{bigettiva}}.
         \item \textbf{Transitiva} $A$ equipotente a $B$, $B$ equipotente a $C$.	
 \end{enumerate}
+\end{tcolorbox}
 
 Con X insieme diciamo che:
 \begin{itemize}
@@ -1300,9 +1455,11 @@ Con X insieme diciamo che:
         \end{enumerate}
 \end{itemize}
 
-$X$ si dice \textbf{numerabile} (o di cardinalità numerabile) se $|X| = |\mathbb{N}|$ e scriviamo $|X| = X_0$ e lo si chiama \textbf{Aleph Zero}. \par
+\begin{tcolorbox}
+$X$ si dice \textbf{numerabile} (o di cardinalità numerabile) se $|X| = |\mathbb{N}|$ e scriviamo $|X| = X_0$ chiamandolo \textbf{Aleph Zero}. \par
 Se $X$ è numerabile $\Rightarrow X$ infinito. \newline
 $f \circ s \circ f^{-1} X \rightarrow X$ iniettiva, ma non surriettiva.
+\end{tcolorbox}
 
 Esempio proviamo a vedere se $\mathbb{Z}$ che contiene $\mathbb{N}$. \par
 \begin{equation}
@@ -1321,7 +1478,7 @@ f(n) =
 se invece $f$ è bigettiva, l'inversa è $f^{-1}: \mathbb{Z} \to \mathbb{N}$
 
 
-$\mathbb{N} x \mathbb{N}$ è numerabile dimostriamo che $f: \mathbb{N} x \mathbb{N} \to \mathbb{N}$.
+$\mathbb{N} \times \mathbb{N}$ è numerabile dimostriamo che $f: \mathbb{N} x \mathbb{N} \to \mathbb{N}$.
 
 \todo{ES:aggiungere esempi}.
 
@@ -1333,15 +1490,16 @@ Definiamo $A,B$ insiemi e scriviamo:
 
 
 
-\subsection{Teorema di Cantor-Bernstein}
+\subsection{Teorema di Cantor-Bernstein}\label{sec:teorema_di_cantor}
+\begin{tcolorbox}
+        
 $A,B$ insiemi, $\exists f : A \to B$ iniettiva, $g: B \to A$ iniettiva, allora esiste una funzione $\exists h: A \to B$ bigettiva. \par
 In formule questo ci dice che se:
-\begin{equation}
+\begin{equation*}
         |A| \le |B| \quad |B| \le |A| \Rightarrow |A| = |B|
-\end{equation} \newline
+\end{equation*} \newline
 
 Se $A,B$ finiti, $|A| = n, \quad |B|= m \quad n,m \in \mathbb{N}$ allora: 
-
 \[n=m :
 \begin{cases}
         |A| \le |B| \Rightarrow n \le m \\
@@ -1355,6 +1513,7 @@ Definiamo $X$ insieme, diciamo che:
         \item X è \underline{al più numerabile} se $|X| \le |\mathbb{N}|$	
         \item X è \underline{più che numerabile} se $|X| > |\mathbb{N}|$
 \end{itemize}
+\end{tcolorbox}
 
 
 
@@ -1380,26 +1539,26 @@ La proposione precedente ci dice che $|X| < |P(x)|$ ad esempio per $X = \mathbb{
 $|P(\mathbb{N})| > |\mathbb{N}| = \aleph_0 $ dove $P(\mathbb{N})$ è più che numerabile.
 
 
-\subsection{Argomento che il prof si tiene segreto}
-Definiamo $A,B$ insiemi.
-\begin{equation}
+
+\subsection{Esponenti cardinalità}\label{sec:a_a}
+Definiamo $A,B$ insiemi:
+\begin{equation*}
         B^A := {f:A \to B \quad \mbox{funzione}}
-\end{equation}
+\end{equation*}
 E nel caso in cui $B = {0,1}$ si usa indicare ${0,1}^A$ con $2^A$.
+Vogliamo $X$ insieme dove $X \not = \emptyset$ allora $\mathcal{P}(x)$ è equipotente a ${0,1}^x$. \newline
+$|\mathcal{P}(X)| = |{0,1}^x|$.
 
-
-Vogliamo $X$ insieme dove $X \not = \emptyset$ allora $P(x)$ è equipotente a ${0,1}^x$. \newline
-$|P(x)| = |{0,1}^x|$.
-
-Dimostriamo (quello che ho scritto senza sapere cosa stavo scrivendo) con:
+\begin{tcolorbox}
+\begin{proof}
+Dimostriamo con:
 \begin{align*}
-        \phi : {0,1}^x \to P(x) \\
-        f \mapsto {f(1)}^{-1} = \{x \in X : f(x) = 1\} \subseteq X
+        & \phi : {0,1}^x \to \mathcal{P}(x) \\
+        & f \mapsto {f(1)}^{-1} = \{x \in X : f(x) = 1\} \subseteq X
 \end{align*}
 
 Iniziamo con le dimostrazioni:
-\underline{$\phi$ surriettiva} sia $A \in P(x), A \subseteq X$ sottoinsieme e considero $X_A : X \to {0,1}$.
-
+\underline{$\phi$ surriettiva} sia $A \in \mathcal{P}(x), A \subseteq X$ sottoinsieme e considero $X_A : X \to {0,1}$.
 
 \[x \mapsto  
 \begin{cases}
@@ -1409,15 +1568,21 @@ Iniziamo con le dimostrazioni:
 \]
 
 \begin{align*}
-X_A \in {0,1}^X \\
-\varphi(X_A) = {X_A}{-1}(1) = \{x \in X : X_A(x) = 1\} = \{x \in X : x \in A\} = A.
+& X_A \in {0,1}^X \\
+& \varphi(X_A) = {X_A}{-1}(1) = \{x \in X : X_A(x) = 1\} = \{x \in X : x \in A\} = A.
 \end{align*}
+\end{proof}  
+\end{tcolorbox}
 
-Ora che non so che cazzo ho scritto prendiamo $\phi$ iniettiva e $f,g \in {0,1}^x, f \not = g$ tesi $\phi(f) \not = \phi(g)$.
+\begin{tcolorbox}
+\begin{proof}
+Prendiamo $\phi$ iniettiva e $f,g \in {0,1}^x, f \not = g$ tesi $\phi(f) \not = \phi(g)$.
 $f,g : X \to {0,1}$ \newline
 $f \not = g \Rightarrow \exists x \in X$ tale che $f(x) \not = g(x)$.
 Supponiamo che $f(x) = 1 \Rightarrow g(x) = 0$ \newline
 $\Rightarrow x \in {f}{-1} = \varphi(f) x \not \in {g}{-1}(1) = \varphi(g) \Rightarrow \varphi(f) \not = \varphi(g)$
+\end{proof}
+\end{tcolorbox}
 
 Prendiamo il lemma $A = {a_1,\ldots,a_n}$ insieme finito, $B$ insieme finito, $|B^A| = |B^n|$ che (a quanto dice il prof) è facilmente dimostrabile:
 \begin{align*}
@@ -1425,44 +1590,57 @@ Prendiamo il lemma $A = {a_1,\ldots,a_n}$ insieme finito, $B$ insieme finito, $|
                    f \mapsto (f(a_1),\ldots,f(a_n))
 \end{align*}
 
-Corollario $A,B$ insiemi finiti, allora $A \times B, B^A, P(A)$ sono insiemi finiti di cardinalità:
+\begin{tcolorbox}
+\begin{corollario}
+$A,B$ insiemi finiti, allora $A \times B, B^A, P(A)$ sono insiemi finiti di cardinalità:
 \begin{itemize}
         \item $|A \times B| = |A| \times |B|$	
         \item $|B^A| = |B|^{|A|}$
         \item $P(A) = |{0,1}^A| = |\{0,1\}|^{|A|} = 2^{|A|}$	
 \end{itemize}
+\end{corollario}        
+\end{tcolorbox}
 
 
-
-\subsection{Cardinalità dei $\mathbb{Q}$}
-Prima di tutto diciamo che $\mathbb{Q}$ è numerabile, e lo possiamo dimostrare con:
+\subsection{Cardinalità dei $\mathbb{Q}$}\label{sec:cardinalita_dei_Q}
+Prima di tutto diciamo che \textbf{$\mathbb{Q}$ è numerabile}, e lo possiamo dimostrare con:
+\begin{tcolorbox}
+\begin{proof}
 \begin{align*}
         \varphi : \mathbb{Q}\{0\} \to \mathbb{N}* \\
         \frac{p}{q} \mapsto |p| + |q|
 \end{align*}
-
-Avendo $p,q \in \mathbb{Z}, p,q \not = 0, MCD(p,q)=1$ e quindi, $Q = {0} \cup \bigcup_{n \in \mathbb{N}}{\varphi^{-1}(n)}$.
+Avendo $p,q \in \mathbb{Z}, p,q \not = 0, MCD(p,q)=1$ e quindi,\[Q={0}\cup\bigcup_{n\in\mathbb{N}}\varphi^{-1}(n)\]
+\end{proof}
+\end{tcolorbox}
 
 Si dice quindi che \underline{unione numerabile} di insiemi finiti $\not = 0$ e disgiunti $\Rightarrow Q $ numerabile. \newline
-\todo{FIG:cardinalità di Cantor}
+\begin{figure}[h]
+        \centering
+                \includegraphics[width=0.5\textwidth]{cardinalita_cantor.jpeg}
+                \caption{Rappresentazione grafica della Cardinalita di Cantor (o del continuo)}\label{fig:cardinalita_cantor}
+\end{figure}
 
+\begin{tcolorbox}
 \begin{lemma}
         prendiamo $\{X_m : m \in \mathbb{N}\}, |X_n| \le \aleph_0, X_m \not = \emptyset \forall n \in \mathbb{N}$ se $|Xm| < \aleph_0 \forall n \in \mathbb{N}$ allora $X_n \cap X_m = \emptyset$ se $n \not = m$ allora $|\bigcup_{n \in \mathbb{N}}^{1}X_n| = \aleph_0$ \newline
 \end{lemma}
+\end{tcolorbox}
 
-\subsection{Cardinalità di $\mathbb{R}$}
-$ \mathbb{R}$ è equipotente a $P(\mathbb{N})$, in particolare è più che numerabile. \par
+
+
+\subsection{Cardinalità di $\mathbb{R}$}\label{sec:cardinalita_di_R}
+$ \mathbb{R}$ è equipotente a $\mathcal{P}(\mathbb{N})$, in particolare è più che numerabile. \par
 
 \begin{align*}
-        \mbox{Cardinalità} \quad 0,1,2,\ldots n\ldots,\aleph_0 \\
-        \mbox{Insiemi} \quad \emptyset, {*}, {1,2}, \ldots, {1,\ldots,n},\ldots,\mathbb{N},\mathbb{Z},\mathbb{Q},\ldots        
+        & \mbox{Cardinalità} \quad 0,1,2,\ldots n\ldots,\aleph_0 \\
+        & \mbox{Insiemi} \quad \emptyset, {*}, {1,2}, \ldots, {1,\ldots,n},\ldots,\mathbb{N},\mathbb{Z},\mathbb{Q},\ldots        
 \end{align*}
 
 
 
-\subsection{Ipotesi del continuo}
-Questa ipotesi, formulata da \underline{Cantor} chiede se $ \exists A$ insieme tale che $\aleph_0 < |A| < 2^{\aleph_0}$?? 
-\textit{BTW questi problemi non verrano trattati nel corso ma sono good to know}.
+\subsection{Ipotesi del continuo}\label{sec:ipotesi_del_continuo}
+Ipotesi formulata da \underline{Cantor} chiede se $ \exists A$ insieme tale che $\boxed{\aleph_0 < |A| < 2^{\aleph_0}}$.
 
 
 
@@ -1470,20 +1648,26 @@ Questa ipotesi, formulata da \underline{Cantor} chiede se $ \exists A$ insieme t
 
 
 \newpage
-\section{Calcolo Combinatorico}
-
-Iniziamo con una definizione, se abbiamo $X$ insieme infinito, \par ovvero: $\{X \to X \quad \mbox{Bigettiva}\}$ è l'insieme delle \underline{permutazioni di $X$}, nel caso in cui $X = \{1,\ldots, n\}$, l'insieme è detto \textbf{Insieme delle permutazioni} si denota con:
+\section{Calcolo Combinatorio}\label{sec:calcolo_combinatorio}
+\begin{definition}
+Iniziamo con una definizione, se abbiamo $X$ insieme infinito, \newline ovvero: $\{X \to X \quad \mbox{Bigettiva}\}$ è l'insieme delle \underline{permutazioni di $X$}, nel caso in cui $X = \{1,\ldots, n\}$, l'insieme è detto \textbf{Insieme delle permutazioni} si denota con:
 \begin{equation*}
-        S_n = \{\{1,\ldots, n\} \to \{ 1,\ldots,n\} \quad \mbox{Bigettiva}\}.
+        \boxed{S_n = \{\{1,\ldots, n\} \to \{ 1,\ldots,n\} \quad \mbox{Bigettiva}\}}.
 \end{equation*}
+\end{definition}
 
+\begin{tcolorbox}
+        
 \begin{lemma}
 $X,Y$ insiemi finiti, $|X| = n \le m = |Y|$ Il numero delle applicazioni iniettive $X \to Y$ è uguale:
 \begin{equation*}
         m * (m-1)*\ldots*(m-n+1)
 \end{equation*}
 \end{lemma}
+\end{tcolorbox}
 
+\begin{tcolorbox}
+\begin{oss}
 Osserviamo che se $n > m, \not \exists X \to Y$ iniettiva, facilmente dimostrabile con $|X| = n \Rightarrow X = \{x_1,x_2,\ldots,x_n\}$. \par
 Possiamo vedere in quanti modi possiamo definire $f:X \to Y$ iniettiva. 
 Prendimo $X = \{x_1,\ldots,x_n\} \to Y = \{y_1,\ldots,y_n\}$:
@@ -1493,9 +1677,12 @@ Prendimo $X = \{x_1,\ldots,x_n\} \to Y = \{y_1,\ldots,y_n\}$:
         \item $x_3 \mapsto \mbox{?}$ ho $m-2$ possibili scelte.
         \item $x_n \mapsto \mbox{?}$ ho $m-(n-1)$ possibili scelte.
 \end{itemize}
+In tutto quindi avremo $m(m-1),\ldots,(m-n+1)$ possibili funzioni $X \to Y$ iniettive. $\square$ \par
+\end{oss}
+\end{tcolorbox}
 
-In tutto quindi avremo $m(m-1),\ldots,(m-n+1)$ possibili funzioni $X \to Y$ iniettive $\square$. \par
-
+\begin{tcolorbox}
+\begin{corollario}
 Corollario $|X| = |Y| = n$ ci sono $n(n-1),\ldots,(n-n+1) = n(n-1),\ldots,(2)$ funzioni bigettive da $X$ a $Y$. \par
 Definiamo $n \in \mathbb{N}$, il \underline{fattoriale} di $n$:
 \[ n! = 
@@ -1504,19 +1691,26 @@ Definiamo $n \in \mathbb{N}$, il \underline{fattoriale} di $n$:
         1 \quad \quad \mbox{se} \quad n = 0
 \end{cases}
 \]
+\end{corollario}
+\end{tcolorbox}
 
+\begin{tcolorbox}
+\begin{corollario}
 Un altro corollario, $|S_n| = n$! che definiamo con:
-\begin{align*}
-        n,k \in \mathbb{N}, n \ge 1, 0 \le k \le n, \quad \mbox{\underline{il coefficiente binomiale}} \\
-        (n k) := \frac{n!}{k!(n-k)!}
-\end{align*}
+        \begin{align*}
+                n,k \in \mathbb{N}, n \ge 1, 0 \le k \le n, \quad \mbox{\underline{il coefficiente binomiale}} \\
+                (n k) := \frac{n!}{k!(n-k)!}
+        \end{align*}
+\end{corollario}
+\end{tcolorbox}
 
 
 
-
-\subsection{Mi inventerò un titolo}\todo{RIP:trovare il titolo di questa subsection}
-X insieme finito, $|X| = n$ per ogni intero $0 \le k \le n$ il numero di sottoinsiemi di $X$ con $k$ elementi è $(n su k)$.
-Dimostrimolo:
+\subsection{Dimostrazione coefficiente combinatorio}
+X insieme finito, $|X| = n$ per ogni intero $0 \le k \le n$ il numero di sottoinsiemi di $X$ con $k$ elementi è \Big($n \atop k$\Big) \par 
+\begin{tcolorbox}
+\begin{proof}
+Andiamo a dimostrare:
 \begin{itemize}
         \item $k=0$, c'è solo un insieme con 0 elementi: $\emptyset$
         \item $k=n$, c'è solo un insieme con n elementi: $(n su n) = (n su 0) = 1$
@@ -1530,42 +1724,53 @@ Ora proviamo a cotruire un $Y \subseteq X$ con $\#Y = k$ e $0 < k < n$ \par
 
 Devo dividere per il numero di permutazioni di una stringa con $k$ elementi:
 \begin{equation*}
-        \frac{n(n-1)\ldots(n-k+1)}{k!} = (n su k) \square
+        \frac{n(n-1)\ldots(n-k+1)}{k!} = \Big(\overset{n}{k}\Big)
 \end{equation*}
+\end{proof}
+\end{tcolorbox}
 
-\underline{Lemma} $(n su k) = (n-1 su k) + (m-1 k-1)$ 
+\begin{tcolorbox}
+\begin{lemma}
+$\Big(\overset{n}{k}\Big) = \Big(\overset{n-1}{k}\Big) + (m-1 k-1)$ 
+\end{lemma}
+\end{tcolorbox}
 
 
 
 \subsection{Coefficiente binomiale}
 Il coefficiente binoiale è $x,y \in \mathbb{C}, n \in \mathbb{N}*$ allora:
 \begin{equation*}
-        {(x+y)}^{n} = \sum_{k=0}^{n}(n su k)x^{n-k}y^k
+        {(x+y)}^{n} = \sum_{k=0}^{n}\Big(\overset{n}{k}\Big)x^{n-k}y^k
 \end{equation*}
 
-Dimostriamolo attraverso l'induzione: \newline
-\todo{ES:Dimostrare il coefficiente binomiale attraverso l'induzione}
-
-Corollario $X$ insieme finito, $|X| = n$ allora $|P(x)| = 2^n$ dimostrabile $\forall 0 \le k \le n$ il numero di sottoinsiemi di $k$ elementi di $X$ è (n su k). \par
+\begin{tcolorbox}
+\begin{corollario}
+$X$ insieme finito, $|X| = n$ allora $|\mathcal{P}(x)| = 2^n$ dimostrabile $\forall 0 \le k \le n$ il numero di sottoinsiemi di $k$ elementi di $X$ è (n su k). \par
 Il numero di sottoinsiemi di $X$ è: 
 \begin{equation*}
-        \sum_{k=0}^{n}(n su k) = 2^n
+        \sum_{k=0}^{n}\Big(\overset{n}{k}\Big) = 2^n
 \end{equation*}
-
+\end{corollario}
+\end{tcolorbox}
 
 
 
 
 
 \newpage
-\section{Relazioni d'ordine}
-Le relazioni d'ordine sono un tipo di relazione che hanno come modello la disuguaglianza per esempio tra insiemi di diverso tipo oppure oggetti che non necessariamente sono numeri. \par
+\section{Relazioni d'ordine}\label{sec:relazioni_d_ordine}
+\begin{definition}
+\textbf{Le relazioni d'ordine} sono un tipo di relazione che hanno come modello la disuguaglianza, come ad esempio tra insiemi di diverso tipo oppure oggetti che non necessariamente sono numeri. \par
 Se vogliamo dare una definizione più precisa possiamo dire che se $ X $  insieme, $ R \subseteq X * X $ relazione $ R $ è un \underline{preordine} se:
+\end{definition}
+
+\begin{tcolorbox}
 \begin{itemize}
         \item \underline{Riflessiva}: $ \forall x \in X \quad (x,x) \in R$ 
         \item \underline{Transitiva}: $ (x,y) \in R \quad (y,z)  \in R \Rightarrow (x,z) \in R$ 
         \item \underline{Antisimmetrica}: $ ((x,y) \in R) \land ((y,x) \in R) \Rightarrow x = y $ 
 \end{itemize}
+\end{tcolorbox}
 
 si dice che $ R $ è un ordine parziale. \newline
 In questo caso $ X $ si dice \underline{parzialmente ordinato} (POSET) \par
@@ -1574,7 +1779,8 @@ Scriviamo $ (x,y) \in R $ come $ x \triangle y $ oppure $ x \le y | (x, \triangl
 Definiamo meglio $ (x, \triangle) \quad  POSET \quad x,y \in X$, si dicono \underline{confrontabili} se vale $ (x \triangle y) \lor (y \triangle x) $, altrimenti si dicono non confrontabili  se tutti gli elementi di $ X $ sono confrontabili, $ \triangle $ si dice \underline{ordine totale}.  \par
 
 
-\subsection{Esempi di relazioni d'ordine}
+
+\subsection{Esempi di relazioni d'ordine}\label{sec:esempi_di_relazione_d_ordine}
 Prendiamo come adesso alcuni esempi: \newline 
 $ \mathbb{R}, \le $ è totalmente ordinato ($ \le $ è un ordine totale su $ \mathbb{R} $) 1.:
 \begin{itemize}
@@ -1606,12 +1812,13 @@ $ \subseteq $ non è totale, esempio $ X = \{1,2,5\}, A = \{1,2\}, B = \{2,3\} $
 
 
 
-\subsection{Tipi di ordini}
+\subsection{Tipi di ordini}\label{sec:tipi_di_ordine}
 Definiamo $(A_1, \triangle_1), \ldots, (A_n, \triangle_n) \quad POSET$ definimo ordini parziali su $A_1x, \ldots, xA_n$. \par
 Esistono diversi tipi di ordini che ora andremo a spiegare nel dettaglio.
 
 
-\subsubsection{Ordine lessicografico (LEX)}
+        
+\subsubsection{Ordine lessicografico (LEX)}\label{sec:ordine_lessicografico_LEX}
 \underline{Ordine lessicografico (LEX)}:
 \[ 
 (a_1,a_2,\ldots, a_n) \triangle_{lex} (b_1,b_2,\ldots, b_n) \Leftrightarrow   
@@ -1622,7 +1829,8 @@ Esistono diversi tipi di ordini che ora andremo a spiegare nel dettaglio.
 \]
 
 
-\subsubsection{Ordine prodotto}
+        
+\subsubsection{Ordine prodotto}\label{sec:ordine_prodotto}
 \underline{Ordine prodotto} $\triangle_1x,\ldots,\triangle_n$:
 \begin{equation*}
         (a_1,\ldots,a_n) \triangle_1x,\ldots, x\triangle_n(b_1,\ldots,b_n) \Leftrightarrow a_i \triangle_i b_i \forall i = 1,\ldots,n
@@ -1641,30 +1849,35 @@ Facciamo un altro esempio, prendiamo $(2,3) \le x \le(2,5)$ perchè $2 \le 2$ e 
 Facciamo un ultimo esempio, prendiamo $(2,3) \le_{LEX} x \le(2,5)$ perchè $2 = 2$ e $3 \le 5$. \newline
 
 Se tutti i $POSET$ sono totalmente ordinati allora anche l'ordine $LEX$ è totalmente ordinato, scriviamo quindi:
-
 \begin{equation*}
         (A_1,\triangle_1), \ldots, (A_n, \triangle_n) \Rightarrow (A_1x,\ldots,xA_n,\triangle_{LEX})
 \end{equation*}
+
+\begin{exmp}
 Esempio:
 \begin{equation*}
         (\mathbb{R}^2, \le_{LEX}) \quad \mbox{TOTALMENTE ORDINATO} \quad (\mathbb{R}^2, \le x \le) \quad \mbox{non è competamente ordintato}. 
 \end{equation*}
+\end{exmp}
 
 
-\subsubsection{Ordine indotto}
+
+\subsubsection{Ordine indotto}\label{sec:ordine_indotto}
 Diciamo ordine indotto $(X, \triangle) \quad POSET$, $ Y \subseteq X$ con:
 \begin{equation*}
         y_1 \triangle_y,y_2 \Leftrightarrow y_1 \triangle y_2 \quad \forall y_1,y_2 \in Y \subseteq X
 \end{equation*}
-
 Diciamo che $Y$ è una \textbf{catena} se $(Y, \triangle y)$ è totalmente ordinato. \par
 
+\begin{exmp}
+        
 Esempio, prendiamo $(\mathbb{N}*, I) \quad POSET$ non è totalmente ordinato perchè se prendiamo $2$ e $3$ \textbf{non sono confrontabili}. \par
-\textbf{Aggiungere l'esempio (MIN 0:40)}
+\todo{Aggiungere l'esempio (MIN 0:40)}
+\end{exmp}
 
 
 
-\subsection{Minimo e massimo}
+\subsection{Minimo e massimo}\label{sec:minimo_e_massimo}
 Definiamo con $(X, \triangle), Y \subseteq X, Y \not = \emptyset$:
 \begin{itemize}
         \item $y$ è \underline{minimo} di $Y$ se $\forall x \in Y$  vale $y \triangle x$ scriviamo $y = \min Y$
@@ -1691,7 +1904,7 @@ Un ottimo metodo per trovare i minimali e i massimali è il \textbf{Diagramma di
 
 
 
-\subsection{Maggioranti e minoranti}
+\subsection{Maggioranti e minoranti}\label{sec:maggioranti_e_minoranti}
 Definiamo $(X, \triangle)$ POSET, $Y \subseteq X, Y \not = \emptyset, z \in X$:
 
 \begin{itemize}
@@ -1717,37 +1930,44 @@ Ci piacciono gli esempi quindi prendiamo anche $\mathbb{N}*\mathbb{N}, \le * \le
 Se invece utilizziamo l'ordine \textbf{LEX} con una coppia ordinata ($(x_1,\triangle_1)$) ($x_2,\triangle_2$) POSET.\newline
 
 
+
 \subsection{Assioma del buon ordinamento}\label{Assioma_del_buon_ordinamento}
 Se prendiamo $X$ insieme, $X \not = \emptyset$ allora $\exists \triangle$ ordine prziale tale ce $(x,\triangle)$ bene ordinato. \par
 
+\begin{tcolorbox}
 \begin{lemma}
 Citando il \textbf{Lemma di Zorn} $(x, \triangle)$ POSET, $X \not = \emptyset$ tale che ogni catena in $X$ possiede almeno un maggiorante, Allora $X$ possiede elementi massimali. \par
 \textit{(Assioma della scelta) $\Leftrightarrow$ (Assioma B.O.)  $\Leftrightarrow$ (Lemma di Zorn)}. \par
 \end{lemma}
-
+\end{tcolorbox}
 
 
 
 
 \newpage
-\section{Principio di Induzione Strutturale}
-\todo{DEF:dare una definizione non matematica}
+\section{Principio di Induzione Strutturale}\label{sec:principio_di_induzione_strutturale}
+\begin{definition}
+L'induzione strutturale è un metodo induttivo che serve a dimostrare la veridicità di una certa proprietà per tutti gli elementi di un insieme definito induttivamente.
+\end{definition}
 
-Prendiamo $(x,\triangle)$ POSET ben definito, $\mathcal{P}$ affermazione sugli elementi di $X$ se vale:
+Prendiamo $(x,\triangle)$ POSET ben definito, $\mathcal{P}$ è un'affermazione sugli elementi di $X$ se vale:
 \begin{enumerate}
         \item $\mathcal{P}(x)$ vera $\forall x \in X$ minimale
         \item $\forall y,z \in X $ tale che $y \triangle z$ se $\mathcal{P}(y)$ vera allora $\mathcal{P}(z)$ vera 
 \end{enumerate}
-Allora $\mathcal{P}(x)$ vera $\forall x \in X$.
+Allora $\boxed{\mathcal{P}(x) \quad \mbox{vera} \quad  \forall x \in X}$.
 
 
 
 
 \newpage
-\section{Aritmetica modulare}
-\todo{DEF:Aggiungere una definizione non matematica}
+\section{Aritmetica modulare}\label{sec:aritmetica_modulare}
+\begin{definition}
+        \textbf{L'aritmetica modulare} è un sistema che tratta gli $ n \in \mathbb{Z} $ che si avvolgono in su se stessi ogni volta che questi numeri raggiungono il multiplo di un numero $ n\in \mathbb{Z}$ detto \textbf{modulo}.    
+\end{definition}
 
-Definiamo un insieme $ A $, \underline{operazione (binaria)} su $ A $ è una funzione che:
+Definiamo un insieme $ A $, con $ * $ simbolo che rappresenta un'\underline{operazione binaria} su $ A $ \par
+è una funzione che:
 \begin{equation*}
         * : A * A \to A
 \end{equation*}
@@ -1764,7 +1984,7 @@ Con i numeri:
 
 
 
-\subsection{Proprietà dell'aritmentica modulare}
+\subsection{Proprietà dell'aritmetica modulare}\label{sec:proprieta_dell_aritmetica_modulare}
 Se abbiamo $ * : A*A \to A $ operazione possiamo avere:
 \begin{itemize}
         \item $ * $  \underline{commutativa} $ \quad x * y = y * x \quad \forall x,y \in A $
@@ -1774,7 +1994,7 @@ Se abbiamo $ * : A*A \to A $ operazione possiamo avere:
 Funzione $ \mathbb{Z}_n = {\overline{0}, \overline{1},\ldots, \overline{n + 1}} $ classi di resto $ n $. 
 
 
-\subsection{Operazioni in $\mathbb{Z}_n$}
+\subsection{Operazioni in $\mathbb{Z}_n$}\label{sec:operazioni_in_Zn}
 \begin{align*}
         + : \mathbb{Z}_n \times \mathbb{Z}_n \to \mathbb{Z}_n \\
         \quad (\overline{a}, \overline{b}) \mapsto a + b \\
@@ -1787,7 +2007,6 @@ Funzione $ \mathbb{Z}_n = {\overline{0}, \overline{1},\ldots, \overline{n + 1}} 
         \quad \overline{a} * \overline{b} := \overline{a * b}
 \end{align*}
 
-
 Verifichiamo che le operazioni sono ben definite:
 \begin{equation*}
         a,b,r,s \in \mathbb{Z} \quad \overline{a} = \overline{r} \quad ,\overline{b} = \overline{s}
@@ -1799,25 +2018,30 @@ Dobbiamo quindi verificare che:
         \item $\overline{a} * \overline{b} = \overline{r} * \overline{s}$  
 \end{enumerate}
 
-
 Supponiamo che:
 $\overline{a} = \overline{r} \Rightarrow a - r = Kn \quad k \in \mathbb{Z}$ \par 
 $\overline{b} = \overline{s} \Rightarrow b - s = hn \quad h \in \mathbb{Z}$ \par 
 
+\begin{tcolorbox}
 \begin{proof}
         (1) Viene verificato con:
        \begin{equation*}
-               a + b = r + Kn + s + hn = r+s + (K+h)n \Rightarrow \overline{a+b} = \overline{r + s}
+               a + b = r + kn + s + hn = r+s + (k+h)n \Rightarrow \overline{a+b} = \overline{r + s}
        \end{equation*}
 \end{proof}
+\end{tcolorbox}
 
+\begin{tcolorbox}
 \begin{proof}
        (2) Viene verificato con:
-       \begin{equation*}
-               a * b = (r + Kn) * (s + hn) = r*+s + (rh +sK + Khn)n \Rightarrow \overline{a*b} = \overline{r * s}
-       \end{equation*}
+       \begin{align*}
+               a * b = \\
+               (r + kn) * (s + hn) = \\
+              rs + rhn + skn + kn^2 = \\
+               rs + (rh +sk + khn)n \Rightarrow \overline{a*b} = \overline{r * s}
+       \end{align*}
 \end{proof}
-
+\end{tcolorbox}
 
 \begin{definition}
         Abbiamo quindi che le operazioni $+ , *$ sono \underline{commutativi} e \underline{associativi}. 
@@ -1832,6 +2056,7 @@ $\overline{b} = \overline{s} \Rightarrow b - s = hn \quad h \in \mathbb{Z}$ \par
         \end{itemize}
 \end{definition}
 
+\begin{tcolorbox}
 \begin{oss}
         Se $\overline{a} \in \mathbb{Z}$ allora:
         \begin{equation*}
@@ -1839,6 +2064,8 @@ $\overline{b} = \overline{s} \Rightarrow b - s = hn \quad h \in \mathbb{Z}$ \par
         \end{equation*}
         Ovvero quando $ \overline{b}$ è opposto di $\overline{a}$.
 \end{oss}
+\end{tcolorbox}
+
 
 \begin{exmp}
         $ \mathbb{Z}_6 \quad \overline{2}$ ha un opposto: $\overline{-2} = \overline{4}$ perchè:
@@ -1873,7 +2100,8 @@ $\overline{b} = \overline{s} \Rightarrow b - s = hn \quad h \in \mathbb{Z}$ \par
         \end{equation*} 
 \end{exmp}
 
-
+\begin{tcolorbox}
+        
 \begin{oss}
         Per ogni $n \ge 2$:
         \begin{equation*}
@@ -1881,12 +2109,17 @@ $\overline{b} = \overline{s} \Rightarrow b - s = hn \quad h \in \mathbb{Z}$ \par
         \end{equation*}
 
 \end{oss}
+\end{tcolorbox}
 
+\begin{tcolorbox}
 \begin{theorem}
         con $x \in \mathbb{Z}_n$ allora si ha che:\newline
         $ \overline{x} $ è invertibile $\Leftrightarrow MCD(x,n) = 1$
 \end{theorem}
+\end{tcolorbox}
 
+\begin{tcolorbox}
+        
 \begin{proof}
        Possiamo dimostrare~\ref{theorem:teorema_dell_invertibilità} osservando che se $y \in \mathbb{Z}$ tale che $\overline{x} = \overline{y}$ allora:
        \begin{equation*}
@@ -1897,10 +2130,13 @@ $\overline{b} = \overline{s} \Rightarrow b - s = hn \quad h \in \mathbb{Z}$ \par
        Pertanto la condizione $MCD(x,n) = 1$ non dipende dalla scelta del rappresentante per $\overline{x}$ \newline
        '$\Rightarrow$' sia $\overline{x} \in \mathbb{Z}_n$ invertibile $ \Rightarrow \exists \overline{z} \in \mathbb{Z}_n : \overline{x} * \overline{z} = \overline{1} \Rightarrow xz = 1 + Kn \in \mathbb{Z}, K \in \mathbb{Z}$
 \end{proof}
+\end{tcolorbox}
 
+\begin{tcolorbox}
 \begin{oss}
        Possiamo osservare che $xz - nk = 1$ non è altro che \underline{un'equazione Diofantea lineare}~\ref{sec:equazione_diofantea_lineare}.
 \end{oss}
+\end{tcolorbox}
 
 
 \subsection{Elementi in $ \bigcup(\mathbb{Z}_n) $}
@@ -1930,15 +2166,16 @@ $\overline{b} = \overline{s} \Rightarrow b - s = hn \quad h \in \mathbb{Z}$ \par
 
 é computazionalmente difficile fattorizzare $n$ se $n \gg 0$
 
-
+\begin{tcolorbox}
 \begin{theorem}
         (Eulero) se $n,x \in \mathbb{Z}, n \ge 2$ tali che $ MCD(x,n) = 1 $ allora:
         \begin{align*}
-                x^{\varphi(n)} \equiv 1 \mod n \\
-                \mbox{cioè} \quad \overline{x}^{\varphi(n)} = \overline{1} \in \mathbb{Z}_n \\
-                \overline{x} * \overline{x}^{\varphi(n)-1} = \overline{1} \quad \mbox{quindi} \quad \overline{x}^{\varphi(n)-1} \quad \mbox{è l'inverso di} \quad \overline{x}
+                & x^{\varphi(n)} \equiv 1 \mod n \\
+                & \mbox{cioè} \quad \overline{x}^{\varphi(n)} = \overline{1} \in \mathbb{Z}_n \\
+                & \overline{x} * \overline{x}^{\varphi(n)-1} = \overline{1} \quad \mbox{quindi} \quad \overline{x}^{\varphi(n)-1} \quad \mbox{è l'inverso di} \quad \overline{x}
         \end{align*}
 \end{theorem}
+\end{tcolorbox}
 Ovvero conta quanti interi $\varphi(n)$ ci sono.
 
 
@@ -1959,10 +2196,13 @@ Ovvero conta quanti interi $\varphi(n)$ ci sono.
         \end{equation*}
 \end{definition}
 
+\begin{tcolorbox}
 \begin{oss}
         Se dimostriamo il teorema di Eulero~\ref{sec:teorema_di_eulero} allora dimostriamo anche il teorema di Fermart~\ref{sec:teorema_di_fermart}
 \end{oss}
+\end{tcolorbox}
 
+\begin{tcolorbox}
 \begin{proof}
         \begin{align*}
                 \bigcup(\mathbb{Z}_n) = \{\overline{a} \in \mathbb{Z} : MCD(a,n) = 1\} \\
@@ -1970,7 +2210,9 @@ Ovvero conta quanti interi $\varphi(n)$ ci sono.
                 = \{\overline{a_1}, \overline{a_2},\ldots,\overline{a_{\varphi(n)}}\}
         \end{align*} 
 \end{proof}
+\end{tcolorbox}
 \todo{TEO:Approfondire teorema di Fermart a casa}
+
 
 
 \subsection{Crittosistema}\label{sec:crittografia}
@@ -2053,7 +2295,8 @@ Prendiamo un tipo di crittosistema, il \textbf{cifrario di Cesare} dove:
                E(\overline{3}, \overline{3}) = \overline{3} + \overline{3} = \overline{6}
        \end{equation*}
 \end{exmp}
-\todo{TEO:guardarsi la lezione sul RSA}
+
+
 
 
 
@@ -2078,10 +2321,13 @@ In questo capitolo finale andremo a spiegare quelli che sono i \textbf{Monoidi} 
         \end{itemize}
 \end{exmp}
 
+\begin{tcolorbox}
 \begin{lemma}
         L'elemento neutro di un monoide è unico.
 \end{lemma}
-\begin{tcolorbox}
+\end{tcolorbox}
+
+ \begin{tcolorbox}
 \begin{proof}
        Siano $\mu$ e $ \lambda $ due elementi neutri, possiamo scrivere:
        \begin{equation*}
@@ -2168,16 +2414,16 @@ Inoltre se abbiamo $X$ insieme, con $X \not = \emptyset$ allora:
 
 Quindi \underline{l'ordine} di $g$ è il più piccolo intero positivo $m$ tale che $ g^m = \lambda $.
 Scriviamo che l'ordine di $g = m$ \par
-Se tale insieme non esiste scriviamo $ ord_m(g) = infinito $
-\todo{TEO:Aggiungere ultima lezione 15:30 09/12/2021}
+Se tale insieme non esiste scriviamo $ ord_m(g) = \infty$
 
 
 
+\newpage
 \subsection{Gruppi}\label{sec:gruppi}
 \begin{definition}
        Un \textbf{gruppo} $ (G, *, \lambda) $ ci chiediamo cos'è un sottogruppo di $ G $ ovvero un sottinsieme $ H \subseteq G $ tale che:
        \begin{enumerate}
-               \item $ lambda \in H $,
+               \item $ \lambda \in H $,
                \item $ a,b \in H \Rightarrow a*b \in H $.
                \item $ a \in H \Rightarrow a^{-1} \in H $.
        \end{enumerate}
@@ -2238,8 +2484,8 @@ Se tale insieme non esiste scriviamo $ ord_m(g) = infinito $
                 \item \underline{Simmetrica} $ g \sim_s g^i \Rightarrow g^i \sim_s g \in H $ \textbf{?}.
                 \item \underline{Transitiva} $ g \sim_s g^i \Rightarrow g^i \sim_s g^{ii}$ \textbf{?}.
         \end{enumerate}
-        \todo{TEO:dimostrazioni lezione 15/12/2021 10:20}
 \end{definition}
+
 
 \begin{definition}
         Le classi di equivalenza sono \underline{classi laterali destre}:
