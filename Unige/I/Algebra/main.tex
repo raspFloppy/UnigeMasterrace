@@ -33,7 +33,6 @@
 \maketitle
 \tableofcontents
 \newpage
-\listoftodos\
 
 
 
@@ -832,9 +831,9 @@ Se prendiamo $ b = ak $ con $ k \in \mathbb{Z} $ scriviamo:
 \begin{exmp}
         $ b = 24 $ e $ a = 13 $:
         \begin{align*}
-                24 = 1 * 13 + 11 \\
-                b = q * a + r \\
-                0 < 11 < a
+                & 24 = 1 * 13 + 11 \\
+                & b = q * a + r \\
+                & 0 < 11 < a
         \end{align*}
 \end{exmp}
 
@@ -860,8 +859,8 @@ Se prendiamo $ b = ak $ con $ k \in \mathbb{Z} $ scriviamo:
 \begin{exmp}
         Prendiamo in considerazione i numeri $ 360 $ e $ 300 $ essi sono formati rispettivamente da
         \begin{align*}
-                360 = 2^3 * 3^2 * 5 \\
-                300 = 2^2 * 3 * 5^2 
+                & 360 = 2^3 * 3^2 * 5 \\
+                & 300 = 2^2 * 3 * 5^2 
         \end{align*}
         $ mcm $ sarà uguale a $ 2^3 * 3^2 * 5^2 = 1800 $.  
 \end{exmp}
@@ -881,9 +880,11 @@ L'MCD deve rispettare le seguenti proprietà:
         \item se $c \in \mathbb{Z}, c | a$ e $ c | b $ allora $ c | d $.
 \end{itemize}
 
+\begin{tcolorbox}
 \begin{oss}
         Se $ a = b = 0 $, l'unico $ MCD $ di $ a $ e $ b $ è $ 0 $.
 \end{oss}
+\end{tcolorbox}
 
 \begin{tcolorbox}
         \begin{theorem}
@@ -925,20 +926,19 @@ $ MCD(a,b) $ sarà uguale all'ultimo resto $ r $ non nullo ovvero prima che $ b=
 \begin{exmp}
         Prendiamo $ a = 56, b = 12 $ e quindi $ d = 4 $ (potete provarlo con~\ref{ex:algorimto_euclideo}) ma facciamo tutti i passaggi:
         \begin{align*}
-                56 = 12 * 4 + 8 \quad r=8 \\
-                12 = 8 * 1 + 4  \quad r=4 \\
-                 8 = 4 * 2 + 0  \quad r=0
+                & 56 = 12 * 4 + 8 \quad r=8 \\
+                & 12 = 8 * 1 + 4  \quad r=4 \\
+                & 8 = 4 * 2 + 0  \quad r=0
         \end{align*}
         Quindi ora ripercorriamo a ritroso l'algoritmo:
         \begin{align*}
-                8 = 56 - 12 * 4 \\
-                4 = 12 - 8 = 12 -(56 - 12 * 4) = -1 * 56 + 5 * 12
+                & 8 = 56 - 12 * 4 \\
+                & 4 = 12 - 8 = 12 -(56 - 12 * 4) = -1 * 56 + 5 * 12
         \end{align*}
         E quindi avremo che l'identità di Bezòut sarà $ - 1 * 56 + 5 * 12 $ dove $ x = -1, y = 5 $.  
 \end{exmp}
 Tutto ciò possiamo dimostrarlo con il \textbf{Lemma di Euclide}:
 \begin{tcolorbox}
-        
 \begin{lemma}
         Se un numero $ n \in \mathbb{Z} > 0 $ divide il prodotto di due numeri $ a $ e $ b $ interi positivi ed è comprimo con uno dei due allora è divisore dell'altro:
         \begin{equation*}
@@ -977,6 +977,7 @@ Tutto ciò possiamo dimostrarlo con il \textbf{Lemma di Euclide}:
                         \end{align*}
                         Al variare di $ t \in Z $
         \end{itemize}
+
 \end{theorem}
 \end{tcolorbox}
 \begin{exmp}
@@ -990,25 +991,31 @@ Tutto ciò possiamo dimostrarlo con il \textbf{Lemma di Euclide}:
                         $ y = -\frac{168}{MCD(168,132)} * t = -14t $
                 \item  $ 168x + 132y = 36 $: \newline
                         Si ha che $ MCD(168, 132) = 12 \mid 36 \rightarrow $ l'equazione ha soluzioni intere: \newline
-                        $ x_0 = \frac{36}{MCD(168, 132)}*\overline{x} = 3\overline{x}$ \newline
-                        $ y_0 = \frac{36}{MCD(168, 132)}*\overline{y} = 3\overline{y}$ \newline
+                        $ x_0 = \frac{168}{MCD(168, 132)}*\overline{x} = 14\overline{x}$ \newline
+                        $ y_0 = \frac{132}{MCD(168, 132)}*\overline{y} = 11\overline{y}$ \newline
                         Dove $ \overline{x},\overline{y}$ sono i valori trovati applicando Bezòut~\ref{sec:identita_di_bezout}.  
         \end{enumerate}
 \end{exmp}
 
 \begin{exmp}
 Se considero la funzione:
-\begin{align}
-        f :  \mathbb{Z}^{2} \rightarrow \mathbb{Z} \\
-        (x,y) \rightarrow 21x - 15y
-\end{align}
+\begin{align*}
+        & f :  \mathbb{Z}^{2} \rightarrow \mathbb{Z} \\
+        & (x,y) \rightarrow 21x - 15y
+\end{align*}
 Dobbiamo dimostrare che la funzione è \textbf{iniettiva} o \textbf{surriettiva}.
 Prendiamo quindi $f(1,1) = 21 - 15 = 6$ possiamo dire che:
 $f \textrm{surriettiva} \Leftrightarrow f(\mathbb{Z}^{2}) = 2$
 e che quindi:
-$f(\mathbb{Z}^{2}) = {n \in \mathbb{Z} : \exists(x,y) \in \mathbb{Z}^{2} n=f(x,y)=21x - 15y} $
-     
-Quella che abbiamo appena scritto è una funzione \textbf{Diofantea} ovvero $MCD(21,15) : n \Leftrightarrow f(\mathbb{Z}^{2})={3k : k \in \mathbb{Z}}$. \par
+\begin{equation*}
+        f(\mathbb{Z}^{2}) = {n \in \mathbb{Z} : \exists(x,y) \in \mathbb{Z}^{2} n=f(x,y)=21x - 15y}
+\end{equation*}
+
+Quella che abbiamo appena scritto è una funzione \textbf{Diofantea} ovvero:
+\begin{equation*}
+        MCD(21,15) : n \Leftrightarrow f(\mathbb{Z}^{2})={3k : k \in \mathbb{Z}}
+\end{equation*}
+Inoltre notare che la forma $\boxed{ab = 1 + kn}$ \par
 
 E quindi possiamo dire con certezza che la funzione non è né surriettiva e né iniettiva perchè:
 \begin{itemize}
@@ -1224,7 +1231,6 @@ Altre proprietà però con il modulo:
 \end{figure}
 
 \begin{definition}
-        
 La forma trigonometrica permette di esprimere un numero $ z \in \mathbb{C} $ mediante due valore detti \textbf{modulo e argomento} nella forma:
 \begin{equation*}
         \boxed{z = r[\cos(\theta) + i*\sin(\theta)]}
@@ -1477,11 +1483,6 @@ f(n) =
 
 se invece $f$ è bigettiva, l'inversa è $f^{-1}: \mathbb{Z} \to \mathbb{N}$
 
-
-$\mathbb{N} \times \mathbb{N}$ è numerabile dimostriamo che $f: \mathbb{N} x \mathbb{N} \to \mathbb{N}$.
-
-\todo{ES:aggiungere esempi}.
-
 Definiamo $A,B$ insiemi e scriviamo: 
 \begin{itemize}
         \item $|A| \le |B|$ se $\exists f:A \to B$ iniettiva.
@@ -1492,7 +1493,6 @@ Definiamo $A,B$ insiemi e scriviamo:
 
 \subsection{Teorema di Cantor-Bernstein}\label{sec:teorema_di_cantor}
 \begin{tcolorbox}
-        
 $A,B$ insiemi, $\exists f : A \to B$ iniettiva, $g: B \to A$ iniettiva, allora esiste una funzione $\exists h: A \to B$ bigettiva. \par
 In formule questo ci dice che se:
 \begin{equation*}
@@ -1771,13 +1771,18 @@ Se vogliamo dare una definizione più precisa possiamo dire che se $ X $  insiem
         \item \underline{Antisimmetrica}: $ ((x,y) \in R) \land ((y,x) \in R) \Rightarrow x = y $ 
 \end{itemize}
 \end{tcolorbox}
-
-si dice che $ R $ è un ordine parziale. \newline
+Si dice che $ R $ è un ordine parziale. \newline
 In questo caso $ X $ si dice \underline{parzialmente ordinato} (POSET) \par
-Scriviamo $ (x,y) \in R $ come $ x \triangle y $ oppure $ x \le y | (x, \triangle)$  dove $x$ è un insieme e $ \triangle $ è un \textbf{ordine parziale} su $ X $    
+Scriviamo $ (x,y) \in R $ come $ x \triangle y $ oppure $ x \le y | (x, \triangle)$ dove: \par
+\begin{itemize}
+        \item $X$ è un insieme.
+        \item $ \triangle $ è un \textbf{ordine parziale} su $ X $.    
+\end{itemize}
 
-Definiamo meglio $ (x, \triangle) \quad  POSET \quad x,y \in X$, si dicono \underline{confrontabili} se vale $ (x \triangle y) \lor (y \triangle x) $, altrimenti si dicono non confrontabili  se tutti gli elementi di $ X $ sono confrontabili, $ \triangle $ si dice \underline{ordine totale}.  \par
-
+\subsection{Confrontabilità relazioni d'ordine}
+\begin{definition}
+Definiamo $ (x, \triangle) \quad  POSET \quad x,y \in X$, si dicono \underline{confrontabili} se vale $ (x \triangle y) \lor (y \triangle x) $, altrimenti si dicono non confrontabili  se tutti gli elementi di $ X $ sono confrontabili, $ \triangle $ si dice \underline{ordine totale}.  \par
+\end{definition}
 
 
 \subsection{Esempi di relazioni d'ordine}\label{sec:esempi_di_relazione_d_ordine}
@@ -1869,13 +1874,6 @@ Diciamo ordine indotto $(X, \triangle) \quad POSET$, $ Y \subseteq X$ con:
 \end{equation*}
 Diciamo che $Y$ è una \textbf{catena} se $(Y, \triangle y)$ è totalmente ordinato. \par
 
-\begin{exmp}
-        
-Esempio, prendiamo $(\mathbb{N}*, I) \quad POSET$ non è totalmente ordinato perchè se prendiamo $2$ e $3$ \textbf{non sono confrontabili}. \par
-\todo{Aggiungere l'esempio (MIN 0:40)}
-\end{exmp}
-
-
 
 \subsection{Minimo e massimo}\label{sec:minimo_e_massimo}
 Definiamo con $(X, \triangle), Y \subseteq X, Y \not = \emptyset$:
@@ -1899,7 +1897,6 @@ Ad esempio se prendiamo come $POSET \quad (\mathbb{N}, \le), Y = \mathbb{N}$ pos
         \item Se $\triangle$ è totale, esiste un elemento minimale $\Leftrightarrow$ esiste il minimo.
         \item Se $\triangle$ è totale, esiste un elemento massimale $\Leftrightarrow$ esiste il massimo. 
 \end{itemize}
-
 Un ottimo metodo per trovare i minimali e i massimali è il \textbf{Diagramma di Hasse}. \par
 
 
@@ -1919,12 +1916,10 @@ Esempio prendiamo $(\mathbb{R}, \le) \quad Y = (0,1)$ intervallo aperto $= \{x \
 \begin{itemize}
         \item 2 è maggiorante per y in quanto $2 \ge y \forall y \in Y$
 \end{itemize}
-
 Per esempio prendiamo $(\mathbb{R}, \le) \quad Y = (0,1)$ intervallo aperto dove $ = \{x \in \mathbb{R} : 0 < x < 1\}$ in qunto $2$ è maggiorante per $y \quad $ visto che $2 \ge y \quad  \forall Y$.
 
-
 Definiamo $(X, \triangle)$ POSET, diciamo che $X$ è \underline{Bene ordinato} se ogni sottoinsieme  $\not = \emptyset$ ammette minimo. \par
-Ad esempio se prendiamo $(\mathbb{N}, \le)$ è bene ordinato
+Ad esempio se prendiamo $(\mathbb{N}, \le)$ è bene ordinato \par
 Ad esempio se prendiamo $(\mathbb{Z}, \le)$ non è bene ordinato. \par
 Ci piacciono gli esempi quindi prendiamo anche $\mathbb{N}*\mathbb{N}, \le * \le  $ non è bene ordintato \par
 Se invece utilizziamo l'ordine \textbf{LEX} con una coppia ordinata ($(x_1,\triangle_1)$) ($x_2,\triangle_2$) POSET.\newline
@@ -1932,7 +1927,7 @@ Se invece utilizziamo l'ordine \textbf{LEX} con una coppia ordinata ($(x_1,\tria
 
 
 \subsection{Assioma del buon ordinamento}\label{Assioma_del_buon_ordinamento}
-Se prendiamo $X$ insieme, $X \not = \emptyset$ allora $\exists \triangle$ ordine prziale tale ce $(x,\triangle)$ bene ordinato. \par
+Se prendiamo $X$ insieme, $X \not = \emptyset$ allora $\exists \triangle$ ordine prziale tale che $(x,\triangle)$ bene ordinato. \par
 
 \begin{tcolorbox}
 \begin{lemma}
@@ -1940,6 +1935,8 @@ Citando il \textbf{Lemma di Zorn} $(x, \triangle)$ POSET, $X \not = \emptyset$ t
 \textit{(Assioma della scelta) $\Leftrightarrow$ (Assioma B.O.)  $\Leftrightarrow$ (Lemma di Zorn)}. \par
 \end{lemma}
 \end{tcolorbox}
+
+
 
 
 
@@ -1956,6 +1953,8 @@ Prendiamo $(x,\triangle)$ POSET ben definito, $\mathcal{P}$ è un'affermazione s
         \item $\forall y,z \in X $ tale che $y \triangle z$ se $\mathcal{P}(y)$ vera allora $\mathcal{P}(z)$ vera 
 \end{enumerate}
 Allora $\boxed{\mathcal{P}(x) \quad \mbox{vera} \quad  \forall x \in X}$.
+
+
 
 
 
@@ -1992,6 +1991,7 @@ Se abbiamo $ * : A*A \to A $ operazione possiamo avere:
         \item $ * $ \underline{un elemento neutro} $ \quad \exists e \in A $ tale che $ e * x= x * e = x  \quad  \forall x \in A$. 
 \end{itemize}
 Funzione $ \mathbb{Z}_n = {\overline{0}, \overline{1},\ldots, \overline{n + 1}} $ classi di resto $ n $. 
+
 
 
 \subsection{Operazioni in $\mathbb{Z}_n$}\label{sec:operazioni_in_Zn}
@@ -2066,14 +2066,12 @@ $\overline{b} = \overline{s} \Rightarrow b - s = hn \quad h \in \mathbb{Z}$ \par
 \end{oss}
 \end{tcolorbox}
 
-
 \begin{exmp}
         $ \mathbb{Z}_6 \quad \overline{2}$ ha un opposto: $\overline{-2} = \overline{4}$ perchè:
         \begin{equation*}
                 -2 \equiv 4 \mod 6
         \end{equation*}
 \end{exmp}
-\todo{ES:Riguardare gli esempi della classe inversa 9:55}
 
 
 
@@ -2162,7 +2160,6 @@ $\overline{b} = \overline{s} \Rightarrow b - s = hn \quad h \in \mathbb{Z}$ \par
                 \varphi(n) = \# \{m \in \mathbb{N}* : m \le n, MCD(m,n)=1\} = \#\bigcup(\mathbb{Z}_n)
         \end{equation*}
 \end{definition}
-\todo{TEO:Approfondire il teorema di Eulero $\varphi$}
 
 é computazionalmente difficile fattorizzare $n$ se $n \gg 0$
 
@@ -2211,7 +2208,6 @@ Ovvero conta quanti interi $\varphi(n)$ ci sono.
         \end{align*} 
 \end{proof}
 \end{tcolorbox}
-\todo{TEO:Approfondire teorema di Fermart a casa}
 
 
 
@@ -2540,7 +2536,7 @@ Avendo $ (\frac{G}{H}, *_H, [\lambda]) $ è un gruppo detto \textbf{gruppo quizi
 \begin{exmp}
         $ (\mathbb{Z}, +, 0) $ sottogruppi $ n\mathbb{Z} = \{nK : K \in \mathbb{Z}\}$ 
 \end{exmp}
-\todo{TEO:Aggiungere parte 15:53}
+
 
 
 \subsection{Teorema di Lagrange}

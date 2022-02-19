@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}Che cos'è il ragionamento}{2}{section.1}%
+\contentsline {section}{\numberline {2}Tipi di ragionamento}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Deduzione}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Induzione}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Abduzione}{3}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Valutare un ragionamento}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Valida/Invalida}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Corretta/Scorretta}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Buona/Fallace}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Respingere un ragionamento}{5}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Fallacie}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Fallacie formali}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Fallace Informali}{7}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Fallacia di rilevanza}{7}{subsubsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.3}Fallacia di semantica}{8}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Fallacia d'induzione}{8}{subsection.4.4}%
