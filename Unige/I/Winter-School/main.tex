@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[letterpaper 12pt]{article}
 \usepackage{float}
 \usepackage{amsthm}
 \usepackage{amsmath}
@@ -7,19 +7,14 @@
 \usepackage{caption}
 \usepackage{mathtools}
 \usepackage{graphicx}
-\usepackage{todonotes}
 \usepackage{tcolorbox}
+\usepackage{subfiles}
 \graphicspath{{./images}}
 
 \newtheorem{exmp}{Esempio}[section]
-\newtheorem{theorem}{Teorema}[section]
 \theoremstyle{definition}
 \newtheorem{cit}{Citazione}[section]
 \newtheorem{definition}{Definizione}[section]
-\newtheorem{oss}{Osservazione}[section]
-\newtheorem{lemma}{Lemma}[section]
-\newtheorem{corollario}{Corollario}[section]
-\newtheorem{prop}{Proprietà}[section]
 \newtheorem{nb}{Nota Bene}[section]
 
 
@@ -27,338 +22,45 @@
 
 \begin{document}
 
-\title{Crit}
+\title{Critical Thinking}
 \author{Floppy Loppy}
-\date{September 2021}
+\date{Feb, 2022}
 \maketitle
 \tableofcontents
 \newpage
 
 
 
+
 \section{Che cos'è il ragionamento}
-\begin{tcolorbox}
-        
-\begin{cit}
-        \textbf{Aristotele:} Gli esseri umani sono animali razionali. 
-\end{cit}
-\end{tcolorbox}
-\begin{definition}
-       Ragionare significa \textbf{dare ragioni o svolgere inferenze}  
-\end{definition}
-\begin{definition}
-        Inferenza: \newline
-        \begin{itemize}
-                \item L'azione di passare da delle premesse a una conclusione secondo regole, ragionando possiamo, partendo da nozioni gia note, arrivare a conclusioni secondo certe regole.
-                \item La struttura di tale pasaggio è definito \textbf{Schema di inferenza}. 
-        \end{itemize}
-\end{definition}
-Nella nostra vita quotidiana svolgiamo attività di inferenza in continuazione, seguendo anche regole di inferenza attivamente o passivamente.
-
-\begin{exmp}
-        Esempi di inferenze: \newline
-        Se piove mi bagno \newline
-        Piove \newline
-        Mi bagno 
-\end{exmp}
-
-\begin{tcolorbox}
-        Possiamo tradurlo logicamente con: \newline
-        Se $ P $ allora $ Q $ \newline
-        $ P $ \newline
-        $ Q $ \newline 
-\end{tcolorbox}
-Questo scema di ragionamento si chiama \textbf{Modus Ponens} \par
-
-L'opposto di questo schema si chiama \textbf{Modus Tollens} e si compone in questo modo:
-\begin{tcolorbox}
-        Possiamo tradurlo logicamente con: \newline
-        Se $ P $ allora $ Q $ \newline
-        non $ P $ \newline
-        non $ Q $ \newline 
-\end{tcolorbox}
-
-
-
-
+\subfile{sections/section1.tex}
 
 
 \newpage
 \section{Tipi di ragionamento}
-Esistono tre tipi di ragionamenti:
-\begin{itemize}
-        \item Deduzione
-        \item Induzione
-        \item Abduzione
-\end{itemize}
-
-Questi tipi di ragionamento sono formati da:
-\begin{itemize}
-\item \textbf{REGOLA}.
-\item \textbf{CASO}.
-\item \textbf{RISULTATO}.
-\end{itemize}
-
-
-
-\subsection{Deduzione}
-La deduzione è la forma di ragionamento più diffusa e conosciuta in quanto  tutti i ragionamenti deduttivi portano ad una conclusione certa.
-\begin{definition}
-        La deduzione e composta da:
-        \begin{exmp}
-                \begin{itemize}
-                        \item\textbf{REGOLA}: tutti i fagioli di questo sacchetto sono bianchi.
-                        \item\textbf{CASO}: Questi fagioli vengono da questo sacchetto.
-                        \item \textbf{Risultato}: Questi fagioli sono bianchi. 
-                \end{itemize}
-        \end{exmp}
-\end{definition}
-
-
-
-\subsection{Induzione}
-L'induzione porta ad un risultato non certo ma \textbf{probabile}, facciamo un esempio:
-\begin{exmp}
-        \begin{itemize}
-                \item \textbf{RISULTATO}: Questi fagioli sono bianchi. 
-                \item\textbf{CASO}: Questi fagioli vengono da questo sacchetto.
-                \item\textbf{REGOLA}: tutti i fagioli (probabilmente) di questo sacchetto sono bianchi.
-        \end{itemize}
-\end{exmp}
-
-
-
-\subsection{Abduzione}
-Questo tipo di ragionamento è quello che solitamente mettiamo in pratica nella nostra vita quotidiana, vediamo un esempio:
-\begin{exmp}
-        \begin{itemize}
-                \item \textbf{RISULTATO}: Questi fagioli sono bianchi. 
-                \item\textbf{REGOLA}: tutti i fagioli di questo sacchetto sono bianchi.
-                \item\textbf{CASO}: Questi fagioli vengono da questo sacchetto.
-        \end{itemize}
-\end{exmp}
-
-
-
-
+\subfile{sections/section2.tex}
 
 
 \newpage
 \section{Valutare un ragionamento}
-Valutare un ragionamento può servire a vincere un dibattito correggento la propria argomentazione e trovare le fallacie~\ref{sec:fallacie} logiche dell'avversario. \par
-
-\begin{tcolorbox}
-Prima di tutto bisogna distiguere il problema della verità dalla validità.
-\end{tcolorbox}
-
-\subsection{Valida/Invalida}\label{sec:valida_invalida}
-Un'argomentazione risulta valida se la conclusione segue le premesse. \newline
-Un'argomentazione risulta invalida se la conclusione \textbf{NON} segue le premesse. \newline
-\begin{exmp}
-        Esempio di argomentazione valida: \newline
-        \begin{itemize}
-                \item Gli italiani sono mafiosi
-                \item I milanesi sono italiani
-                \item I milanesi sono mafiosi
-        \end{itemize}
-        Valida ma Scorretta in quanto le premesse sono false vedi~\ref{sec:corretta_scorretta}.
-\end{exmp}
-\begin{exmp}
-        Esempio di argomentazione invalida: \newline
-        \begin{itemize}
-                \item Gli italiani sono mafiosi
-                \item I milanesi sono mafiosi 
-                \item I milanesi sono italiani 
-        \end{itemize}
-        La conclusione non segue la premessa in quanto non viene specificato che i milanesi sono italiani.
-\end{exmp}
-
-
-
-\subsection{Corretta/Scorretta}\label{sec:corretta_scorretta}
-Un argomentazione valida si dice corretta se le premesse sono vere \newline
-Un argomentazione valida si dice scorretta se le premesse non sono vere \newline
-\begin{exmp}
-        Esempio di un ragionamento corretto:
-        \begin{itemize}
-                \item O ti piace il pesto o giochi a calcio
-                \item Non giochi a calcio
-                \item Ti piace il pesto
-        \end{itemize}
-        Questa è corretta ma non risulta plausibile o convincente.
-\end{exmp}
-\begin{exmp}
-        Esempio di un ragionamento scorretto è quello visto qui~\ref{sec:valida_invalida}
-\end{exmp}
-
-
-
-\subsection{Buona/Fallace}
-Un buon ragionamento deve essere:
-\begin{itemize}
-        \item Valido.
-        \item Corretto.
-        \item Psicologicamente plausibile.
-\end{itemize}
-Se non lo è allora il ragionamento è \textbf{FALLACE} 
-\begin{exmp}
-        Un buon ragionamento è composto cosi':
-        \begin{itemize}
-                \item Gli italiani sono europei
-                \item I milanesi sono italiani
-                \item i milanesi sono europei
-        \end{itemize}
-\end{exmp}
-
-
-
-\subsection{Respingere un ragionamento}
-Un ragionamento che non suona plausibile è respingibile con un \textbf{controesempio} ovvero: \par
-\begin{definition}
-        Applicare lo stesso schema di inferenza usato nel ragionamento che sembra convincente con la stessa struttura di ragionamento.
-\end{definition}
-\begin{exmp}
-        Costruiamo un controesempio: \newline
-        \underline{Ragionamento errato}:
-        \begin{itemize}
-                \item I mafiosi sono siciliani
-                \item i palermitato sono siciliani
-                \item i palermitani sono mafiosi
-        \end{itemize}
-
-        \underline{Controesempio}:
-        \begin{itemize}
-                \item Gli italiani sono europei
-                \item I francesi sono europei
-                \item I francesi sono italiani 
-        \end{itemize}
-\end{exmp}
-
-
-
-
+\subfile{sections/section3.tex}
 
 
 \newpage
 \section{Fallacie}\label{sec:fallacie}
-\begin{definition}
-        Una fallacia è un ragionamento che sembra valido e corretto ma non lo è oppure essendo persuasivo e psicologicamente convincente non lo è. \par
-\end{definition}
-
-Esistono diversi tipi di fallacie:
-\begin{itemize}
-        \item \textbf{FALLACIE FORMALI}: quelle che violano le regole delle logiche di inferenza 
-        \item \textbf{FALLACIE INFORMALI}: Sfruttano espedienti retorici o linguistici 
-\end{itemize}
-
-\subsection{Fallacie formali}
-\begin{tcolorbox}
-        Modus Ponens: \newline 
-        Se $ P $ allora $ Q $ \newline
-        $ P $ \newline
-        $ Q $ \newline 
-\end{tcolorbox} 
-\begin{exmp}
-        Esempio: \newline
-        Se HO UNA CAROTA allora HO UNA VERDURA \newline
-        HO UNA CAROTA \newline
-        HO UNA VERDURA \newline 
-\end{exmp}
-
-\begin{tcolorbox}
-        Affermazione del conseguente: \newline
-        Se $ P $ allora $ Q $ \newline
-        $ Q $ \newline
-        $ P $ \newline 
-\end{tcolorbox}
-\begin{exmp}
-        Esempio: \newline
-        Se HO UNA CAROTA allora HO UNA VERDURA \newline
-        HO UNA VERDURA \newline 
-        HO UNA CAROTA \newline
-\end{exmp}
-
-\begin{tcolorbox}
-        Modus Tollens\newline 
-        Se $ P $ allora $ Q $ \newline
-        non $ Q $ \newline 
-        non $ P $ \newline
-\end{tcolorbox}
-\begin{exmp}
-        Esempio: \newline
-        Se HO UNA CAROTA allora HO UNA VERDURA \newline
-        NON HO UNA VERDURA \newline 
-        NON HO UNA CAROTA \newline
-\end{exmp}
+\subfile{sections/section4.tex}
 
 
-\begin{tcolorbox}
-        Affermazione del conseguente: \newline
-        Se $ P $ allora $ Q $ \newline
-        non $ P $ \newline
-        non $ Q $ \newline 
-\end{tcolorbox}
-\begin{exmp}
-        Esempio: \newline
-        Se HO UNA CAROTA allora HO UNA VERDURA \newline
-        NON HO UNA CAROTA \newline
-        NON HO UNA VERDURA \newline 
-\end{exmp}
-
-
-
-\subsection{Fallace Informali}
-Sono errori di ragionamento che dipendono da una molteplicità di criteri. \par
-\begin{itemize}
-        \item \textbf{Rilevanza}
-        \item \textbf{Semantica}
-        \item\textbf{Induttive}
-\end{itemize}
-è il contenuto del ragionamento ad essere fallace in questo caso.
-
-
-\subsubsection{Fallacia di rilevanza}
-Quanto le premesse non hanno rilevanza per la conclusione ovvero in quei casi in cui la conclusione è proprio nella premessa:
-\begin{exmp}
-        Esempio: \newline
-        Dio esiste perchè lo dice la Bibbia \newline
-        Come fai a sapere che la Bibbia dice la verità? \newline
-        Perchè è la parola di Dio \newline
-\end{exmp}
-Viene detto \textbf{ragionamento circolare}. \par
-
-Possiamo trovare anche casi in cui la premessa non ha proprio conessioni con la conclusione:
-\begin{exmp}
-        Esempio: \newline
-        Nessuno ha mai provato che gli OGM siano dannosi \newline
-        Gli OGM non sono dannosi \newline
-\end{exmp}
-Oppure:
-\begin{exmp}
-        Esempio: \newline
-        Tizio X famoso dice che i vaccini non funzionano\newline
-        I vaccini non funzionano \newline
-\end{exmp}
-
-
-
-\subsection{Fallacia di semantica}
-Le fallacie semantiche sono tutte quelle che vanno a peccare di valenza del significato. 
-
-
-\subsection{Fallacia d'induzione}
-Sono tutte quelle fallacie che vanno erroneamente ad utilizzare la probabilità dell'induzione
-\begin{exmp}
-        Quattro immigrati hanno aggredito una persona \newline
-        Tutti gli immigrati sono criminali \newline
-\end{exmp}
-
-
-\newline
+\newpage
 \section{Consigli di lettura}
 \begin{itemize}
         \item Argomentazione Andrea Iacona
         \item Come non detto 
         \item verità avvelenata Agostini Bollati
+        \item Critical Thinking Canale Ciuni Frigerio Tuzet
+        \item pensieri lenti e veloci
 \end{itemize}
+
+
+
 \end{document}

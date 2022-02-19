@@ -12,5 +12,6 @@
 \contentsline {subsection}{\numberline {4.1}Fallacie formali}{6}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Fallace Informali}{7}{subsection.4.2}%
 \contentsline {subsubsection}{\numberline {4.2.1}Fallacia di rilevanza}{7}{subsubsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.3}Fallacia di semantica}{8}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Fallacia d'induzione}{8}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.2.2}Fallacia di semantica}{8}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Fallacia d'induzione}{8}{subsubsection.4.2.3}%
+\contentsline {section}{\numberline {5}Consigli di lettura}{9}{section.5}%
