@@ -2142,6 +2142,25 @@ Avendo $ (\frac{G}{H}, *_H, [\lambda]) $ è un gruppo detto \textbf{gruppo quizi
 \end{theorem}
 \end{tcolorbox}
 
+$ G $ gruppo finito, $ g \in G $ allora:
+\begin{equation*}
+        <g> := \{\lambda, g, g^2, g^3, g^4,\ldots,g^{ord(g)-1},g^{ord(g)}\}
+\end{equation*}
+\begin{equation*}
+                ord(g) = \min \{n \in \mathbb{N}^* : g^n = \lambda\}
+\end{equation*}
+ovvero: $\#<g> = ord(g)$
 
+\begin{exmp}
+        Sottogruppi di $(\mathbb{Z}_4, +)$ \newline 
+        Sappiamo che $ \mathbb{Z}_4 = \{\overline{0},\overline{1},\overline{2},\overline{3}\} $ in quanto $ \mathbb{Z}_4 = 4 $. \newline
+        Quindi avendo $ H \subseteq \mathbb{Z}_4 $ sottogruppo:
+        \begin{align*}
+                |H| = 1 \Rightarrow H = \{\overline{0}\} \\
+                |H| = 2 \Rightarrow H = \{\overline{0},\overline{2}\} \\
+                |H| = 4 \Rightarrow H = \mathbb{Z}_4
+        \end{align*}
+\end{exmp}
+\todo{TEO:Riguardarsi la lezione del 22/12/2021}
 
 \end{document}
