@@ -1,0 +1,143 @@
+\documentclass[../main.tex, class=article, 12pt]{subfiles}
+\usepackage{float}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{todonotes}
+\usepackage{tcolorbox}
+\graphicspath{{./images}}
+
+\newtheorem{exmp}{Esempio}[section]
+\theoremstyle{definition}
+\newtheorem{cit}{Citazione}[section]
+\newtheorem{definition}{Definizione}[section]
+\newtheorem{nb}{Nota Bene}[section]
+
+
+
+
+
+\begin{document}
+\begin{definition}
+        Una fallacia è un ragionamento che sembra valido e corretto ma non lo è oppure essendo persuasivo e psicologicamente convincente non lo è. \par
+\end{definition}
+
+Esistono diversi tipi di fallacie:
+\begin{itemize}
+        \item \textbf{FALLACIE FORMALI}: quelle che violano le regole delle logiche di inferenza 
+        \item \textbf{FALLACIE INFORMALI}: Sfruttano espedienti retorici o linguistici 
+\end{itemize}
+
+
+
+\subsection{Fallacie formali}\label{sec:fallacie_formali}
+\begin{tcolorbox}
+        Modus Ponens: \newline 
+        Se $ P $ allora $ Q $ \newline
+        $ P $ \newline
+        $ Q $ \newline 
+\end{tcolorbox} 
+\begin{exmp}
+        Esempio: \newline
+        Se HO UNA CAROTA allora HO UNA VERDURA \newline
+        HO UNA CAROTA \newline
+        HO UNA VERDURA \newline 
+\end{exmp}
+
+\begin{tcolorbox}
+        Affermazione del conseguente: \newline
+        Se $ P $ allora $ Q $ \newline
+        $ Q $ \newline
+        $ P $ \newline 
+\end{tcolorbox}
+\begin{exmp}
+        Esempio: \newline
+        Se HO UNA CAROTA allora HO UNA VERDURA \newline
+        HO UNA VERDURA \newline 
+        HO UNA CAROTA \newline
+\end{exmp}
+
+\begin{tcolorbox}
+        Modus Tollens\newline 
+        Se $ P $ allora $ Q $ \newline
+        non $ Q $ \newline 
+        non $ P $ \newline
+\end{tcolorbox}
+\begin{exmp}
+        Esempio: \newline
+        Se HO UNA CAROTA allora HO UNA VERDURA \newline
+        NON HO UNA VERDURA \newline 
+        NON HO UNA CAROTA \newline
+\end{exmp}
+
+\begin{tcolorbox}
+        Affermazione del conseguente: \newline
+        Se $ P $ allora $ Q $ \newline
+        non $ P $ \newline
+        non $ Q $ \newline 
+\end{tcolorbox}
+\begin{exmp}
+        Esempio: \newline
+        Se HO UNA CAROTA allora HO UNA VERDURA \newline
+        NON HO UNA CAROTA \newline
+        NON HO UNA VERDURA \newline 
+\end{exmp}
+
+
+
+\subsection{Fallace Informali}
+Sono errori di ragionamento che dipendono da una molteplicità di criteri. \par
+\begin{itemize}
+        \item \textbf{Rilevanza}
+        \item \textbf{Semantica}
+        \item\textbf{Induttive}
+\end{itemize}
+è il contenuto del ragionamento ad essere fallace in questo caso.
+
+
+
+\subsubsection{Fallacia di rilevanza}
+Quanto le premesse non hanno rilevanza per la conclusione ovvero in quei casi in cui la conclusione è proprio nella premessa:
+\begin{exmp}
+        Esempio: \newline
+        Dio esiste perchè lo dice la Bibbia \newline
+        Come fai a sapere che la Bibbia dice la verità? \newline
+        Perchè è la parola di Dio \newline
+\end{exmp}
+Viene detto \textbf{ragionamento circolare}. \par
+
+Possiamo trovare anche casi in cui la premessa non ha proprio conessioni con la conclusione:
+\begin{exmp}
+        Esempio: \newline
+        Nessuno ha mai provato che gli OGM siano dannosi \newline
+        Gli OGM non sono dannosi \newline
+\end{exmp}
+Oppure:
+\begin{exmp}
+        Esempio: \newline
+        Tizio X famoso dice che i vaccini non funzionano\newline
+        I vaccini non funzionano \newline
+\end{exmp}
+
+
+
+\subsubsection{Fallacia di semantica}
+Le fallacie semantiche sono tutte quelle che vanno a peccare di valenza del significato. 
+
+
+
+\subsubsection{Fallacia d'induzione}
+Sono tutte quelle fallacie che vanno erroneamente ad utilizzare la probabilità dell'induzione
+\begin{exmp}
+ 
+        Quattro immigrati hanno aggredito una persona \newline
+        Tutti gli immigrati sono criminali \newline
+\end{exmp}
+
+
+
+\end{document}

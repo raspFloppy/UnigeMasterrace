@@ -1,0 +1,76 @@
+\documentclass[../main.tex, class=letterpaper]{subfiles}
+\usepackage{float}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{todonotes}
+\usepackage{tcolorbox}
+\graphicspath{{./images}}
+
+\newtheorem{exmp}{Esempio}[section]
+\theoremstyle{definition}
+\newtheorem{cit}{Citazione}[section]
+\newtheorem{definition}{Definizione}[section]
+\newtheorem{nb}{Nota Bene}[section]
+
+
+\begin{document}
+Esistono tre tipi di ragionamenti:
+\begin{itemize}
+        \item Deduzione
+        \item Induzione
+        \item Abduzione
+\end{itemize}
+
+Questi tipi di ragionamento sono formati da:
+\begin{itemize}
+\item \textbf{REGOLA}.
+\item \textbf{CASO}.
+\item \textbf{RISULTATO}.
+\end{itemize}
+
+
+
+\subsection{Deduzione}
+La deduzione è la forma di ragionamento più diffusa e conosciuta in quanto  tutti i ragionamenti deduttivi portano ad una conclusione certa.
+\begin{definition}
+        La deduzione e composta da:
+        \begin{exmp}
+                \begin{itemize}
+                        \item\textbf{REGOLA}: tutti i fagioli di questo sacchetto sono bianchi.
+                        \item\textbf{CASO}: Questi fagioli vengono da questo sacchetto.
+                        \item \textbf{Risultato}: Questi fagioli sono bianchi. 
+                \end{itemize}
+        \end{exmp}
+\end{definition}
+
+
+
+\subsection{Induzione}
+L'induzione porta ad un risultato non certo ma \textbf{probabile}, facciamo un esempio:
+\begin{exmp}
+        \begin{itemize}
+                \item \textbf{RISULTATO}: Questi fagioli sono bianchi. 
+                \item\textbf{CASO}: Questi fagioli vengono da questo sacchetto.
+                \item\textbf{REGOLA}: tutti i fagioli (probabilmente) di questo sacchetto sono bianchi.
+        \end{itemize}
+\end{exmp}
+
+
+
+\subsection{Abduzione}
+Questo tipo di ragionamento è quello che solitamente mettiamo in pratica nella nostra vita quotidiana, vediamo un esempio:
+\begin{exmp}
+        \begin{itemize}
+                \item \textbf{RISULTATO}: Questi fagioli sono bianchi. 
+                \item\textbf{REGOLA}: tutti i fagioli di questo sacchetto sono bianchi.
+                \item\textbf{CASO}: Questi fagioli vengono da questo sacchetto.
+        \end{itemize}
+\end{exmp}
+
+
+\end{document}

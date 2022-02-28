@@ -1,0 +1,112 @@
+\documentclass[../main.tex, class=article, 12pt]{subfiles}
+\usepackage{float}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{todonotes}
+\usepackage{tcolorbox}
+\graphicspath{{./images}}
+
+\newtheorem{exmp}{Esempio}[section]
+\theoremstyle{definition}
+\newtheorem{cit}{Citazione}[section]
+\newtheorem{definition}{Definizione}[section]
+\newtheorem{nb}{Nota Bene}[section]
+
+
+\begin{document}
+Valutare un ragionamento può servire a vincere un dibattito correggento la propria argomentazione e trovare le fallacie~\ref{sec:fallacie} logiche dell'avversario. \par
+
+\begin{tcolorbox}
+Prima di tutto bisogna distiguere il problema della verità dalla validità.
+\end{tcolorbox}
+
+\subsection{Valida/Invalida}\label{sec:valida_invalida}
+Un'argomentazione risulta valida se la conclusione segue le premesse. \newline
+Un'argomentazione risulta invalida se la conclusione \textbf{NON} segue le premesse. \newline
+\begin{exmp}
+        Esempio di argomentazione valida: \newline
+        \begin{itemize}
+                \item Gli italiani sono mafiosi
+                \item I milanesi sono italiani
+                \item I milanesi sono mafiosi
+        \end{itemize}
+        Valida ma Scorretta in quanto le premesse sono false vedi~\ref{sec:corretta_scorretta}.
+\end{exmp}
+\begin{exmp}
+        Esempio di argomentazione invalida: \newline
+        \begin{itemize}
+                \item Gli italiani sono mafiosi
+                \item I milanesi sono mafiosi 
+                \item I milanesi sono italiani 
+        \end{itemize}
+        La conclusione non segue la premessa in quanto non viene specificato che i milanesi sono italiani.
+\end{exmp}
+
+
+
+\subsection{Corretta/Scorretta}\label{sec:corretta_scorretta}
+Un argomentazione valida si dice corretta se le premesse sono vere \newline
+Un argomentazione valida si dice scorretta se le premesse non sono vere \newline
+\begin{exmp}
+        Esempio di un ragionamento corretto:
+        \begin{itemize}
+                \item O ti piace il pesto o giochi a calcio
+                \item Non giochi a calcio
+                \item Ti piace il pesto
+        \end{itemize}
+        Questa è corretta ma non risulta plausibile o convincente.
+\end{exmp}
+\begin{exmp}
+        Esempio di un ragionamento scorretto è quello visto qui~\ref{sec:valida_invalida}
+\end{exmp}
+
+
+
+\subsection{Buona/Fallace}
+Un buon ragionamento deve essere:
+\begin{itemize}
+        \item Valido.
+        \item Corretto.
+        \item Psicologicamente plausibile.
+\end{itemize}
+Se non lo è allora il ragionamento è \textbf{FALLACE} 
+\begin{exmp}
+        Un buon ragionamento è composto cosi':
+        \begin{itemize}
+                \item Gli italiani sono europei
+                \item I milanesi sono italiani
+                \item i milanesi sono europei
+        \end{itemize}
+\end{exmp}
+
+
+
+\subsection{Respingere un ragionamento}
+Un ragionamento che non suona plausibile è respingibile con un \textbf{controesempio} ovvero: \par
+\begin{definition}
+        Applicare lo stesso schema di inferenza usato nel ragionamento che sembra convincente con la stessa struttura di ragionamento.
+\end{definition}
+\begin{exmp}
+        Costruiamo un controesempio: \newline
+        \underline{Ragionamento errato}:
+        \begin{itemize}
+                \item I mafiosi sono siciliani
+                \item i palermitato sono siciliani
+                \item i palermitani sono mafiosi
+        \end{itemize}
+
+        \underline{Controesempio}:
+        \begin{itemize}
+                \item Gli italiani sono europei
+                \item I francesi sono europei
+                \item I francesi sono italiani 
+        \end{itemize}
+\end{exmp}
+
+
+\end{document}

@@ -1,0 +1,99 @@
+\contentsline {section}{\numberline {1}Insiemi}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Proprietà degli insiemi}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Connettivi Logici}{5}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Quantificatori universali}{6}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Ordine dei quantificatori}{6}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Quantificatori Equivalenti}{7}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Negazione di un quantificatore}{7}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Definizioni}{7}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Insieme delle parti}{9}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}Proprietà degli insiemi}{9}{subsection.1.9}%
+\contentsline {subsection}{\numberline {1.10}Insiemi numerici}{10}{subsection.1.10}%
+\contentsline {subsection}{\numberline {1.11}Insiemi Indiciati}{10}{subsection.1.11}%
+\contentsline {section}{\numberline {2}Relazioni e Funzioni}{12}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Relazioni}{12}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Funzioni}{12}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Immagine e controimmagine}{13}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Immagine}{13}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Controimmagine}{14}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}Iniettività, Surgettività e Bigettività}{14}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Il grafico della funzione}{14}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Tipi di funzione}{15}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Funzione Identità}{15}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}Funzione Parte Intera}{16}{subsubsection.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.6.3}Funzione Parte Frazionaria}{16}{subsubsection.2.6.3}%
+\contentsline {subsubsection}{\numberline {2.6.4}Funzione Composta}{17}{subsubsection.2.6.4}%
+\contentsline {subsection}{\numberline {2.7}Invertibilità di una funzione}{18}{subsection.2.7}%
+\contentsline {subsubsection}{\numberline {2.7.1}Invertibile a sinistra}{18}{subsubsection.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.7.2}Invertibile a destra}{18}{subsubsection.2.7.2}%
+\contentsline {subsubsection}{\numberline {2.7.3}Invertibile a destra e sinistra}{18}{subsubsection.2.7.3}%
+\contentsline {subsubsection}{\numberline {2.7.4}Teorema dell'invertibilità}{19}{subsubsection.2.7.4}%
+\contentsline {subsection}{\numberline {2.8}Assioma della scelta}{19}{subsection.2.8}%
+\contentsline {subsubsection}{\numberline {2.8.1}Dimostrazioni attraverso l'assioma della scelta}{20}{subsubsection.2.8.1}%
+\contentsline {section}{\numberline {3}Principio di Induzione}{22}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Prima forma}{23}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Seconda forma}{23}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Terza forma}{23}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Approfondimenti sui numeri interi}{24}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Divisione Euclidea}{24}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Minimo comune multiplo}{25}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Massimo comune divisore}{25}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Algoritmo Euclideo}{25}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Identità di Bezòut}{26}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Equazioni Diofantee lineari}{26}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Numeri Primi}{28}{subsection.4.7}%
+\contentsline {subsubsection}{\numberline {4.7.1}Teorema fondamentale dell'aritmetica}{28}{subsubsection.4.7.1}%
+\contentsline {subsubsection}{\numberline {4.7.2}Teorema di euclide}{29}{subsubsection.4.7.2}%
+\contentsline {section}{\numberline {5}Numeri complessi}{30}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Piano di Gauss}{32}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Proprietà dei numeri complessi}{32}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Disuguaglianza triangolare}{33}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Forma trigonometrica}{34}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Forma esponenziale}{35}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Equazioni di secondo grado complesse}{35}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Radici complesse}{36}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Teorema fondametale dell'Algebra}{36}{subsection.5.8}%
+\contentsline {section}{\numberline {6}Relazioni di Equivalenza}{37}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Proprietà}{37}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Equivalenza modulare}{38}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Classe di equivalenza}{38}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Cardinalità}{39}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Proprietà}{39}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Teorema di Cantor-Bernstein}{40}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Impossibilità della surriettività dei numerabili}{40}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Esponenti cardinalità}{41}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Cardinalità dei $\mathbb {Q}$}{42}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Cardinalità di $\mathbb {R}$}{43}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}Ipotesi del continuo}{43}{subsection.7.7}%
+\contentsline {section}{\numberline {8}Calcolo Combinatorio}{44}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Dimostrazione coefficiente combinatorio}{45}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Coefficiente binomiale}{45}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Relazioni d'ordine}{46}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Confrontabilità relazioni d'ordine}{46}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Esempi di relazioni d'ordine}{46}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Tipi di ordini}{47}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Ordine lessicografico (LEX)}{47}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Ordine prodotto}{47}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}Ordine indotto}{48}{subsubsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.4}Minimo e massimo}{48}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Maggioranti e minoranti}{49}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Assioma del buon ordinamento}{49}{subsection.9.6}%
+\contentsline {section}{\numberline {10}Principio di Induzione Strutturale}{50}{section.10}%
+\contentsline {section}{\numberline {11}Aritmetica modulare}{51}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Proprietà dell'aritmetica modulare}{51}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Operazioni in $\mathbb {Z}_n$}{51}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Inversionedella classe}{52}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Elementi in $ \DOTSB \bigcup@ \slimits@ (\mathbb {Z}_n) $}{53}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Teorema di Eulero}{54}{subsection.11.5}%
+\contentsline {subsection}{\numberline {11.6}Teorema di Fermart}{54}{subsection.11.6}%
+\contentsline {subsection}{\numberline {11.7}Crittosistema}{54}{subsection.11.7}%
+\contentsline {subsubsection}{\numberline {11.7.1}Tipi di crittosistemi}{55}{subsubsection.11.7.1}%
+\contentsline {subsubsection}{\numberline {11.7.2}Crittosistema RSA}{56}{subsubsection.11.7.2}%
+\contentsline {subsubsection}{\numberline {11.7.3}Cifrario di Cesare}{56}{subsubsection.11.7.3}%
+\contentsline {section}{\numberline {12}Monoidi e Gruppi}{57}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Monoidi}{57}{subsection.12.1}%
+\contentsline {subsubsection}{\numberline {12.1.1}Invertibilità di un monoide}{57}{subsubsection.12.1.1}%
+\contentsline {subsection}{\numberline {12.2}Gruppi}{59}{subsection.12.2}%
+\contentsline {subsubsection}{\numberline {12.2.1}Relazione di equivalenza tra gruppi}{59}{subsubsection.12.2.1}%
+\contentsline {subsection}{\numberline {12.3}Gruppo quoziente}{61}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Teorema di Lagrange}{61}{subsection.12.4}%

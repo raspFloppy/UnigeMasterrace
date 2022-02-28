@@ -1,8 +1,0 @@
-\contentsline {section}{\numberline {1}Cos'e' la Logica}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Teorema}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Proposizione}{2}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Logica proposizionale}{3}{section.2}%
-\contentsline {section}{\numberline {3}Alberi}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Connettivo principale}{4}{subsection.3.1}%
-\contentsline {section}{\numberline {4}Logica del prim'ordine}{5}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Contesto nella logica del prim'ordine}{5}{subsection.4.1}%

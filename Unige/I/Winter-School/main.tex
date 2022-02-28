@@ -1,0 +1,66 @@
+\documentclass[letterpaper 12pt]{article}
+\usepackage{float}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{subfiles}
+\graphicspath{{./images}}
+
+\newtheorem{exmp}{Esempio}[section]
+\theoremstyle{definition}
+\newtheorem{cit}{Citazione}[section]
+\newtheorem{definition}{Definizione}[section]
+\newtheorem{nb}{Nota Bene}[section]
+
+
+
+
+\begin{document}
+
+\title{Critical Thinking}
+\author{Floppy Loppy}
+\date{Feb, 2022}
+\maketitle
+\tableofcontents
+\newpage
+
+
+
+
+\section{Che cos'è il ragionamento}
+\subfile{sections/section1.tex}
+
+
+\newpage
+\section{Tipi di ragionamento}
+\subfile{sections/section2.tex}
+
+
+\newpage
+\section{Valutare un ragionamento}
+\subfile{sections/section3.tex}
+
+
+\newpage
+\section{Fallacie}\label{sec:fallacie}
+\subfile{sections/section4.tex}
+
+
+\newpage
+\section{Consigli di lettura}
+\begin{itemize}
+        \item Argomentazione Andrea Iacona
+        \item Come non detto 
+        \item verità avvelenata Agostini Bollati
+        \item Critical Thinking Canale Ciuni Frigerio Tuzet
+        \item pensieri lenti e veloci
+\end{itemize}
+
+
+
+\end{document}
