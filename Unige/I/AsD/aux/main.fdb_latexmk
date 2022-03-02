@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1646042442 "main.tex" "output/main.pdf" "main" 1646042443
+["pdflatex"] 1646131935 "main.tex" "output/main.pdf" "main" 1646131936
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1640600964 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1640600964 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1640600964 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -170,11 +170,14 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1640600964 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1640777772 334353 c825108cbc13fa4a18a274c473196142 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1640777764 2920102 1183218d8aa0d28e1b1ac12933c26125 ""
-  "aux/main.aux" 1646042443 1040 815a7b9ea56722a1ccd10153e00f4b55 "pdflatex"
-  "aux/main.out" 1646042443 210 f62aebdd4faab4569a43212edc0ca143 "pdflatex"
-  "aux/main.tdo" 1646042443 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "aux/main.toc" 1646042443 144 3851744bf737320490fd7c6ce0857040 "pdflatex"
-  "main.tex" 1646040793 1663 1dba14d6aec9f13c60f5c517f6bde0f8 ""
+  "aux/main.aux" 1646131936 1879 8cc2752e8bc6046bd03e0be1910a6c3a "pdflatex"
+  "aux/main.out" 1646131936 729 58bde38eef0a0debbf28f77a30309924 "pdflatex"
+  "aux/main.tdo" 1646131936 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "aux/main.toc" 1646131936 456 f6df6870855faab255856453ab241f10 "pdflatex"
+  "images/big-o_complexity.png" 1646130236 18398 e400c3e7ffa7767eda4f91a01fbc568b ""
+  "main.tex" 1646131876 1728 b3047ee047b386cd2def85cf0dce5962 ""
+  "sections/introduction.tex" 1646131787 1425 8848f052c603accd6c370f4bd8eb4846 ""
+  "sections/sorts.tex" 1646131934 274 30ddd2af136a493dc3c259c2bf966945 ""
   (generated)
   "aux/main.aux"
   "aux/main.log"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.12.29)  28 FEB 2022 11:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.12.29)  1 MAR 2022 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -672,7 +672,14 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 File: l3backend-pdftex.def 2021-12-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count327
 \l__pdf_internal_box=\box74
-) (aux/main.aux)
+) (aux/main.aux
+
+LaTeX Warning: Label `sec:selection_sort' multiply defined.
+
+
+LaTeX Warning: Label `sec:selection_sort' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
@@ -694,7 +701,7 @@ LaTeX Font Info:    ... okay on input line 55.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
 Package hyperref Info: Link coloring OFF on input line 55.
-(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+ (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
 (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -768,18 +775,28 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout6 = `main.tdo'.
 
  [2]
-(./sections/introduction.tex [3]) [4] (aux/main.aux)
+(./sections/introduction.tex [3]
+<./images/big-o_complexity.png, id=64, 768.8725pt x 416.55624pt>
+File: ./images/big-o_complexity.png Graphic file (type png)
+<use ./images/big-o_complexity.png>
+Package pdftex.def Info: ./images/big-o_complexity.png  used on input line 49.
+(pdftex.def)             Requested size: 390.0pt x 211.29677pt.
+) [4 <./images/big-o_complexity.png (PNG copy)>] (./sections/sorts.tex) [5] (au
+x/main.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F62AEBDD4FAAB4569A43212EDC0CA143;210.
+(rerunfilecheck)             Checksum: 58BDE38EEF0A0DEBBF28F77A30309924;729.
  ) 
 Here is how much of TeX's memory you used:
- 25843 strings out of 478353
- 487163 string characters out of 5854634
- 747431 words of memory out of 5000000
- 43548 multiletter control sequences out of 15000+600000
+ 25878 strings out of 478353
+ 487838 string characters out of 5854634
+ 747514 words of memory out of 5000000
+ 43570 multiletter control sequences out of 15000+600000
  412540 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,6n,94p,436b,412s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,6n,94p,436b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -788,10 +805,10 @@ mr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
 share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti12.pfb>
-Output written on aux/main.pdf (4 pages, 96305 bytes).
+Output written on aux/main.pdf (5 pages, 118174 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
- 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 118 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
