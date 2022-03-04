@@ -1,0 +1,98 @@
+\documentclass[../main.tex, class=article, 12pt]{subfiles}
+\graphicspath{{./images}}
+
+
+
+
+\begin{document}
+Sottoinsiemi di $ \mathbb{R} $ sono:
+\begin{itemize}
+        \item $ \mathbb{N} = \{0,1,2,3,\ldots\} $
+        \item $ \mathbb{Z} = \{\ldots,-2,-1,0,1,2,\ldots\} $
+        \item $ \mathbb{Q} = \{\frac{m}{n}: m \in \mathbb{Z} \wedge n \in \mathbb{N}^*\} $
+\end{itemize}
+
+\begin{tcolorbox}
+       \begin{oss}
+        In particolare $ \mathbb{Q} $ è detto \textbf{denso} ovvero  presi due qualunque punti $ x,y \in \mathbb{R} $ esiste sempre un razionale $ \mathbb{Q}  $ tra di essi.
+       \end{oss} 
+        \begin{exmp}
+                Proviamo a dimostrarlo attraverso unaretta:
+        \end{exmp}
+\end{tcolorbox}
+\todo{Aggiungere esempio con una retta}
+
+
+\begin{tcolorbox}
+\begin{prop}
+Fondamentale Proprietà di $ \mathbb{R} $ è un insieme \textbf{totalmente ordinato}.
+\end{prop}
+\end{tcolorbox}
+
+\begin{lemma}
+       $ \forall x,y \in \mathbb{R} $ con $ x < y $ 
+\end{lemma}
+
+
+\subsection{Sottoinsiemi particolari di $\mathbb{R}$}\label{sec:sottoinsiemi_particolari_di_R}
+
+Esistono diversi tipi di intervalli, elenchiamoli per categoria
+
+
+\subsubsection{Intervalli limitati}
+\begin{itemize}
+        \item $ (a,b) = \{x \in \mathbb{R} : x>a \wedge x<b\} $ intervallo aperto
+        \item $ [a,b] = \{x \in \mathbb{R} : x\ge a \wedge x\le b\} $ intervallo chuso
+        \item $ [a,b) = \{x \in \mathbb{R} : x\ge a \wedge x<b\} $ intervallo semi-aperti
+        \item $ (a,b] = \{x \in \mathbb{R} : x>a \wedge x\le b\} $ itervallo semi-aperti
+\end{itemize}
+
+
+\subsubsection{Intervalli illimitati}
+Gli intervalli illimitati sono rappresentate geometricamente da semirette
+
+\begin{itemize}
+        \item $ (a,+\infty) = \{x \in \mathbb{R} : x>a \wedge x<+\infty\} $ intervallo aperto
+        \item $ [a,+\infty] = \{x \in \mathbb{R} : x\ge a \wedge x\le +\infty\} $ intervallo chuso
+        \item $ [-\infty,b) = \{x \in \mathbb{R} : x\ge -\infty \wedge x<b\} $ intervallo semi-aperti
+        \item $ (-\infty,b] = \{x \in \mathbb{R} : x>-\infty \wedge x\le b\} $ itervallo semi-aperti
+\end{itemize}
+
+
+\subsection{Dominio e Codominio}\label{sec:}
+\todo{recuperare lezione mannaggia il cazzo}
+
+\begin{definition}
+        (Funzione) Una funzione $ f:A \to R $ non è altro che una associazione \underline{univoca} di un elemento di $ A $ con uno di $ \mathbb{R} $. \par
+        In particolare:
+\begin{equation*}
+        \forall x \in A \quad \exists! y\in\mathbb{R} : f(x) = g.
+\end{equation*}
+\end{definition}
+
+
+\begin{tcolorbox}
+\begin{prop}
+       Una particolarità dei reali è che possiamo rappresentare il grafico della funzione:
+\end{prop}
+\end{tcolorbox}
+\todo{Disegnare retta}
+Come la retta rappresenta l'insieme $ \mathbb{R} $ il piano rappresenta l'insieme:
+\begin{equation*}
+        \mathbb{R}\times\mathbb{R} = \{(x,y): x\in \mathbb{R}, y \in \mathbb{R}\}
+\end{equation*}
+Il grafico di $ f $ non è altro che:
+\begin{equation*}
+        graph(f) = \{(x, f(x)) : x \in A = dom(f)\}\le \mathbb{R}^2
+\end{equation*}
+
+\begin{tcolorbox}
+\begin{oss}
+        Data una curva $ M \subseteq \mathbb{R}^2 $, essa è grafico di una funzione solo se $ \forall x \in \mathbb{R}$ esiste al più un punto $ y $ tale che $ (x,y) \in M $, cioè $ M $ intergetta le rette verticali al più di un punto
+\end{oss}
+\end{tcolorbox}
+\todo{Inserire Esempio grafico 10:30}
+
+
+
+\end{document}
