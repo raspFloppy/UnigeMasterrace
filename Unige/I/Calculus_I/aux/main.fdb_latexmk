@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1646386550 "main.tex" "output/main.pdf" "main" 1646386552
+["pdflatex"] 1646387214 "main.tex" "output/main.pdf" "main" 1646387216
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1640600964 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1640600964 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1640600964 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -221,13 +221,14 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1640600964 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1646296789 4243317 6cd4c1d3b72728bfa7db8ef2e14c0430 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1646296772 2920114 9df1e2ae37eb2fde203d3acef25ee087 ""
-  "aux/main.aux" 1646386552 4580 14a13f70a6a7336c9d4c05114e67edbc "pdflatex"
-  "aux/main.out" 1646386552 1616 5bc0cfb70857a644c023069ca69368ff "pdflatex"
-  "aux/main.toc" 1646386552 931 b7ad059ffe47d4484d64830520961d83 "pdflatex"
+  "aux/main.aux" 1646387216 5025 dc80b05e9bf930fd108f6d2b253f9b0e "pdflatex"
+  "aux/main.out" 1646387216 1616 5bc0cfb70857a644c023069ca69368ff "pdflatex"
+  "aux/main.toc" 1646387216 931 b7ad059ffe47d4484d64830520961d83 "pdflatex"
   "images/dim_iniettivita.png" 1646386006 21286 63a9c7c7676802198935e1c05a1b6c6b ""
   "images/dim_surriettivita.png" 1646383026 87991 a13e001717df5e9e735c1d400881fc9a ""
+  "images/es_funzione_inversa.png" 1646386890 38282 f5fa773b3cc5dda31fff137f3dc1f3ac ""
   "main.tex" 1646384926 1064 b890c11557436f6ba2553102c928edb4 ""
-  "sections/proprieta_funzioni.tex" 1646386549 4092 7570858ce90ba322b92ab1fa74041570 ""
+  "sections/proprieta_funzioni.tex" 1646387213 4453 2cdafe82f85de8025555f1c5eb027904 ""
   "sections/reali.tex" 1646382155 3383 418497c1a0e89aab1b6833ff58d7c051 ""
   (generated)
   "aux/main.aux"
