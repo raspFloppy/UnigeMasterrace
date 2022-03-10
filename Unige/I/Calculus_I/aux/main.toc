@@ -9,3 +9,10 @@
 \contentsline {subsection}{\numberline {2.3}Biiettiva}{5}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Operazioni tra funzioni}{6}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Funzioni inverse}{7}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Monotonia}{7}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Proprietà delle funzioni monotone}{9}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Trasformazioni geometriche}{11}{section.3}%
+\contentsline {subsection}{\numberline {3.1}traslazioni verticali}{11}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}traslazioni orizzontali}{11}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}dilatazioni e contrazioni verticali}{11}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}dilatazioni e contrazioni orizzontali}{11}{subsection.3.4}%

@@ -123,26 +123,99 @@ Una funzione inversa molto comune è l'operazione di radice.
 
 
 
+\subsection{Monotonia}\label{sec:monotonia}
+\begin{definition}
+        $ f:A \to \mathbb{R} $ si dice monotona crescente se $ \forall x_1,x_2 \in A$ si ha:
+        \begin{equation*}
+                x_1 < x_2 \Rightarrow f(x_1) \le f(x_2)
+        \end{equation*}
+\end{definition}
+\begin{definition}
+        $ f:A \to \mathbb{R} $ si dice \underline{monotona decrescente} se $ \forall x_1,x_2 \in A$ si ha:
+        \begin{equation*}
+                x_1 > x_2 \Rightarrow f(x_1) \ge f(x_2)
+        \end{equation*}
+\end{definition}
 
 
 
+\begin{exmp}
+        Crescente spostandosi verso destra del grafico devo salire:
+        \begin{figure}[H]
+          	\includegraphics[width=\linewidth]{monotonia_crescente.png}
+          	\caption{Esempio di monotonia crescente}
+                \label{fig:monotonia_crescente}
+        \end{figure}
+        
+        Decrescente spostandosi verso destra devo andare verso il basso:
+
+       \begin{figure}[H]
+         	\includegraphics[width=\linewidth]{monotonia_decrescente}
+         	\caption{Esempio di monotonia decrescente}
+               \label{fig:monotonia_decrescente}
+       \end{figure}
+       
+       Esistono casi in cui una funzione è crescente per un intervallo e decrescente per un altro intervallo, per esempio $ f(x) = x^2 $
+      
 
 
+       \begin{align*}
+               & \mbox{Crescente nell'intervallo} \quad (0, +\infty) \\
+               & \mbox{Decrescente nell'intervallo} \quad (-\infty, 0)
+       \end{align*}
+
+       \begin{tcolorbox}
+       \begin{oss}
+               se $ f $ è sia crescente che decrescente in $ A $ 
+       \end{oss}
+       \end{tcolorbox}
+
+        \begin{prop}
+               Se $ f:A \to \mathbb{R} $ è strettamente monotona allora $ f $ è iniettiva (dunque invertibile). 
+               \begin{tcolorbox}
+                       
+               \begin{proof}
+                      presi $ x_1,x_2 \in A $ con $ x_1 \not = x_2 $                    possiamo assumere che:
+                      \begin{enumerate}
+                              \item $ x_1 < x_2 $ avremo che $ f(x_1) < f(x_2) $. In particolare se strettamente crescente $ f(x_1) \not = f(x_2) $
+                              \item $ x_2 < x_1 $ avremo che $ f(x_2) < f(x_1) $, in particolare se strettamente decrescente $ f(x_2) \not = f(x_1) $
+                      \end{enumerate}
+               \end{proof}
+               \end{tcolorbox}
+       \end{prop}
+\end{exmp}
 
 
+\subsection{Proprietà delle funzioni monotone}\label{sec:}
+
+Se $ f(x),g(x) $ sono finiti crescente:
+\begin{itemize}
+        \item $ f(x) + g(x) $ è funzione crescente 
+        \item $\lambda * f(x)  $ è \underline{crescente} per \underline{$ \lambda > 0 $} e decrescente per \underline{$ \lambda < 0 $}
+        \item se $ f(x)>0 $ sempre e $ g(x)>0 $ sempre allora $ f(x)*g(x) $ è crescente
+\end{itemize}
+
+\begin{tcolorbox}
+\begin{oss}
+        In generale se $ f(x) $ e $ g(x) $ sono entrambe monotone e non cambiano segno allora $ f(x)*g(x) $ è anch'essa monotona;
+\end{oss}
+\end{tcolorbox}
+
+Se $ f $ e $ g $ sono monotone, anche $ f \circ g $ è monotona e segue la regola dei segni ($\nearrow =+, \searrow=- $).
 
 
+\begin{exmp}
+Con $ f(x) = \frac{1}{x} $ che ha $ A = dom(f) = \mathbb{R} \ {0} $ 
 
+Avremo che la funzione è decrescente:
+\begin{figure}[H]
+  	\includegraphics[width=\linewidth]{monotonia_iperbole.png}
+  	\caption{Esempio iperbole}
+        \label{fig:monotonia_iperbole}
+\end{figure}
+Dove $ x_1 < x_2 $ e quindi $ f(x_1) < f(x_2) $.
 
-
-
-
-
-
-
-
-
-
+\end{exmp}
 
 
 
