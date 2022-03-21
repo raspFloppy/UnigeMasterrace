@@ -22,7 +22,7 @@ int main(){
 		printf("\t%d,%c",s[i],((i+1)%10)?' ':'\n');
 
 /*** TO BE DONE START ***/
-
+        printf("%s", s);
 
 /*** TO BE DONE END ***/
 

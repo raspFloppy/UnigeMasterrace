@@ -104,8 +104,18 @@ int main(int argc, char ** argv){
 	printf("In effetti, ora abbiamo i seguenti caratteri nell'array \"q\":");
 
 /*** TO BE COMPLETED START ***/
-
-
+	printf("%.4s\n\n", q);
+	printf("Anche \"p\" e` un puntatore a carattere esattamente come \"q\", ma poiche` e` stato\n"
+    	   "inizializzato al valore NULL (che corrisponde al valore 0), non puo` essere usato\n"
+           "per accedere alla memoria, pena un Segmentation Fault.\n");
+    printf("Solo dopo avergli assegnato un valore appropriato diverso da NULL, per esempio\n"
+           "eseguendo l'istruzione \"p=c;\" lo si puo` correttamente usare per indirizzare la\n"
+           "memoria, per esempio eseguendo l'istruzione:\n"
+           "\"if(argc>1&&strlen(argv[1])>1&&argv[1][1]==p[0])i+=2;\"\n",q);
+	p=c;
+    if(argc>1&&strlen(argv[1])>1&&argv[1][1]==p[0])i+=2;
+    p=q[i];
+    printf(s_format,p);
 /*** TO BE COMPLETED END ***/
 
 	exit(0);

@@ -7,7 +7,7 @@ void my_printf(char*p){
 	char s[strlen(p)+1], *q=s;
         strcpy(s,p);
 
-/*** TO BE DONE START ***/for(;!isalpha(*q);q++);*q=toupper(*q);puts(s);/*** TO BE DONE END ***/
+/*** TO BE DONE START ***/for(;isspace(*q);q++);*q=toupper(*q);puts(s);/*** TO BE DONE END ***/
 
 }
 
