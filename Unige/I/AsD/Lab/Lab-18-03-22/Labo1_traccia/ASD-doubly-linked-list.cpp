@@ -91,18 +91,19 @@ void list::addRear(Elem e,  const List& l) {
         List aux = new node;
         aux->info = e;
         
-
         aux->prev = l->prev;
         aux->next = l;
+        l->prev->next = aux;
+        l->prev = aux;
 }
 
 /* inserisce l'elemento all'inizio della lista */
 void list::addFront(Elem e, const List& l) {
         List aux = new node;
         aux->info = e;
+
         aux->prev = l;
         aux->next = l->next;
-        
         if(aux->next == l) {
                 l->prev = aux;
         } else {
