@@ -67,13 +67,23 @@ void list::createEmpty(List& l) {
 
 /* "smantella" la lista svuotandola */
 void list::clear(const List& l) {
-        
+        List last = l->prev;
+        List tmp = new node;
+
+        while(last != l) {
+                tmp = last;
+                last = last->prev;
+                last->next = l;
+                l->prev = last;
+                delete tmp;
+        }
 }
 
 /* restituisce l'elemento in posizione pos se presente; restituisce un elemento 
 che per convenzione si decide che rappresenta l'elemento vuoto altrimenti*/
 Elem list::get(int pos, const List& l) {
         
+
 }
 
 /* modifica l'elemento in posizione pos, se la posizione e' ammissibile */
@@ -89,28 +99,28 @@ void list::add(int pos, Elem e, const List& l) {
 /* inserisce l'elemento alla fine della lista */
 void list::addRear(Elem e,  const List& l) {
         List aux = new node;
-        aux->info = e;
         
+        aux->info = e;
         aux->prev = l->prev;
         aux->next = l;
+       
         l->prev->next = aux;
         l->prev = aux;
 }
 
 /* inserisce l'elemento all'inizio della lista */
 void list::addFront(Elem e, const List& l) {
+        List last = new node;
         List aux = new node;
+        
         aux->info = e;
-
-        aux->prev = l;
         aux->next = l->next;
-        if(aux->next == l) {
-                l->prev = aux;
-        } else {
-                l->next->prev = aux;
-        }       
-
-        l->next=aux;
+        aux->prev = l;
+        
+        last->next = aux;
+        
+        l->next->prev = aux;
+        l->next = aux;
 }
 
 /* cancella l'elemento in posizione pos dalla lista */
@@ -120,7 +130,18 @@ void list::removePos(int pos, const List& l) {
 
  /* cancella tutte le occorrenze dell'elemento elem, se presenti, dalla lista */
 void list::removeEl(Elem e, const List& l) {
+        List last = l->prev;
+        List tmp = new node;
 
+        while(last != l) {
+                last = last->prev;
+                if(last->next->info == e) {
+                        tmp = last->next;
+                        last->next = l;
+                        l->prev = last;
+                        delete tmp;
+                }
+        }
 }
 
 /* restituisce true se la lista e' vuota (ed e' vuota se il next di l, e' l stessa */
@@ -130,7 +151,7 @@ bool list::isEmpty(const List& l) {
 
  /* restituisce la dimensione della lista */
 int list::size(const List& l) {
-        unsigned int size_l = 0;
+        int size_l = 0;
         List aux = l->next;
 
         while(aux != l) {

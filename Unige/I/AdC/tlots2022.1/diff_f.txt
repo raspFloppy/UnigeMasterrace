@@ -1,0 +1,15 @@
+50c50,60
+< In effetti, ora abbiamo i seguenti caratteri nell'array "q":
+\ No newline at end of file
+---
+> In effetti, ora abbiamo i seguenti caratteri nell'array "q":oaie
+> 
+> Anche "p" e` un puntatore a carattere esattamente come "q", ma poiche` e` stato
+> inizializzato al valore NULL (che corrisponde al valore 0), non puo` essere usato
+> per accedere alla memoria, pena un Segmentation Fault.
+> Solo dopo avergli assegnato un valore appropriato diverso da NULL, per esempio
+> eseguendo l'istruzione "p=c;" lo si puo` correttamente usare per indirizzare la
+> memoria, per esempio eseguendo l'istruzione:
+> "if(argc>1&&strlen(argv[1])>1&&argv[1][1]==p[0])i+=2;"
+> 
+> Brava!
