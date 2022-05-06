@@ -6,6 +6,10 @@
 
 \begin{document}
 
+In questo capitolo andremo a descrivere alcune proprietà fondamentali delle funzioni.
+
+
+
 \subsection{Iniettività}\label{sec:iniettività}
 \begin{definition}
         $ f : A \to \mathbb{R} $ è iniettiva se $ \forall x_1,x_2 \in A $ se $ x_1 \not = x_2 \Rightarrow f(x_1) \not = f(x_2) $.
@@ -26,8 +30,6 @@
   	\caption{Dimostrazione Iniettività}
         \label{fig:dim_iniettivita}
 \end{figure}
-
-
 \end{definition}
 
 
@@ -59,13 +61,14 @@ $ f : A \to \mathbb{R} $ è biiettiva se:
         \item ogni retta orizzontale intersca il grafico di $ f $ in un punto. 
         \item $ \forall y \in \mathbb{R} \quad f(x) = y$ ha al più una soluzione
 \end{itemize}
-
+Essenzialmente una funzione è biietiva quando $ f $ è sia iniettiva~\ref{sec:iniettività} che surriettiva~\ref{sec:surriettività}.
 
 
 
 \newpage
 \subsection{Operazioni tra funzioni}\label{sec:operazioni_tra_funzioni}
-date $ f,g : A \to \mathbb{R} $ (posso avere anche domini diversi ma allora la funzione che risulterà alla fine avrà come dominio l'intersezione di $ dom(f) $ e $ dom(g) $).
+Date  due funzioni $ f,g : A \to \mathbb{R} $
+(posso avere anche domini diversi ma allora la funzione che risulterà alla fine avrà come dominio l'intersezione di $ dom(f) $ e $ dom(g) $).
 
 \begin{itemize}
         \item $(f + y)(x) = f(x) + g(x)$
@@ -82,8 +85,11 @@ Possiamo immaginare le funzioni come una black box nella quale inseriamo una val
 
 
 Il dominio di $ f \circ g $ è quel numero che:
-\todo{Aggiungere il dominio della funzione composta LEZ:4/3}
+\begin{equation*}
+        \boxed{(f \circ g) = \{ x \in Dom(f): f(x) \in Dom(g)\}}
+\end{equation*}
 
+\subsubsection{Funzione composta}\label{sec:funzione_composta}
 \begin{exmp}
         Mostriamo alcuni esempi di funzioni composte:
         \begin{align*}
@@ -97,13 +103,15 @@ Il dominio di $ f \circ g $ è quel numero che:
 
 \newpage
 \subsection{Funzioni inverse}\label{sec:funzione_inversa}
+\begin{definition}
+        
 Se $ f : A \to \mathbb{R} $ è iniettiva possiamo costruire la funzione inversa, vedi figura~\ref{fig:dim_iniettivita}. \par
 Data $ y \in Im(f) $ posso definire $ x = g(y) $ come l'unica soluzione di $ y = f(x) $
 \begin{align*}
         dom(f^{-1}) = Im(f) \\
         Im(f^{-1}) = dom(f) \\
 \end{align*}
-
+\end{definition}
 Una funzione inversa molto comune è l'operazione di radice.
 
 \begin{exmp}
@@ -115,23 +123,27 @@ Una funzione inversa molto comune è l'operazione di radice.
         \end{figure}
 
         Vediamo se è iniettiva:
-        \begin{equation*}
-                \frac{x-1}{x+1} = \frac{y-1}{y+1} 
-        \end{equation*}
-        \todo{aggiungere dimostrazione LEZ:4/3}
+        \begin{align*}
+                & \frac{x-1}{x+1} = \frac{y-1}{y+1} =  \\
+                & (y+1)(x+1) * \frac{x-1}{x+1} = \frac{y-1}{y+1} * (x+1)(y+1) = \\
+                & xy - y + x - 1 = xy - x + y - 1 = \\
+                & 2x = 2y = \\
+                & \boxed{x = y}
+        \end{align*}
 \end{exmp}
 
 
 
+\newpage
 \subsection{Monotonia}\label{sec:monotonia}
 \begin{definition}
-        $ f:A \to \mathbb{R} $ si dice monotona crescente se $ \forall x_1,x_2 \in A$ si ha:
+        $ f:A \to \mathbb{R} $ si dice \textbf{monotona crescente} se $ \forall x_1,x_2 \in A$ si ha:
         \begin{equation*}
                 x_1 < x_2 \Rightarrow f(x_1) \le f(x_2)
         \end{equation*}
 \end{definition}
 \begin{definition}
-        $ f:A \to \mathbb{R} $ si dice \underline{monotona decrescente} se $ \forall x_1,x_2 \in A$ si ha:
+        $ f:A \to \mathbb{R} $ si dice \textbf{monotona decrescente} se $ \forall x_1,x_2 \in A$ si ha:
         \begin{equation*}
                 x_1 > x_2 \Rightarrow f(x_1) \ge f(x_2)
         \end{equation*}
@@ -169,11 +181,10 @@ Una funzione inversa molto comune è l'operazione di radice.
                se $ f $ è sia crescente che decrescente in $ A $ 
        \end{oss}
        \end{tcolorbox}
-
+        
+       \begin{tcolorbox}
         \begin{prop}
                Se $ f:A \to \mathbb{R} $ è strettamente monotona allora $ f $ è iniettiva (dunque invertibile). 
-               \begin{tcolorbox}
-                       
                \begin{proof}
                       presi $ x_1,x_2 \in A $ con $ x_1 \not = x_2 $                    possiamo assumere che:
                       \begin{enumerate}
@@ -181,8 +192,8 @@ Una funzione inversa molto comune è l'operazione di radice.
                               \item $ x_2 < x_1 $ avremo che $ f(x_2) < f(x_1) $, in particolare se strettamente decrescente $ f(x_2) \not = f(x_1) $
                       \end{enumerate}
                \end{proof}
-               \end{tcolorbox}
        \end{prop}
+       \end{tcolorbox}
 \end{exmp}
 
 
@@ -216,10 +227,4 @@ Avremo che la funzione è decrescente:
 Dove $ x_1 < x_2 $ e quindi $ f(x_1) < f(x_2) $.
 
 \end{exmp}
-
-
-
-
-
-
 \end{document}

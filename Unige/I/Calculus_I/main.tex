@@ -1,3 +1,4 @@
+% !TeX root = main.tex
 \documentclass[a4paper]{article}
 \usepackage{tikz}
 \usepackage{float}
@@ -5,6 +6,9 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{caption}
+\usepackage{paracol}
+\usepackage{geometry}
+\usepackage{multicol}
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{pgfplots}
@@ -13,7 +17,7 @@
 \usepackage{todonotes}
 \usepackage{tcolorbox}
 \graphicspath{{./images}}
-
+\setlength{\columnseprule}{0.2pt}
 
 \newtheorem{exmp}{Esempio}[section]
 \newtheorem{theorem}{Teorema}[section]
@@ -33,7 +37,8 @@
 \date{March 2022}
 \maketitle
 \tableofcontents
-
+\newpage
+\listoftodos/
 
 
 
@@ -42,25 +47,38 @@
 \subfile{sections/reali.tex}
 
 
-\newpage
-\section{Proprietà Funzioni}\label{sec:proprietà_funzioni}
-\subfile{sections/proprieta_funzioni.tex}
-
-
-\newpage
-\section{Trasformazioni geometriche}\label{sec:trasformazioni_gemoetriche}
-\subfile{sections/trasformazioni_geometriche.tex}
-
-
-\newpage
-\section{Funzioni elementari}\label{sec:funzioni_elementari}
-\subfile{sections/funzioni_elementari.tex}
-
-
-\newpage
-\section{Limiti}\label{sec:limiti}
-\subfile{sections/limiti.tex}
-
-
+%
+%
+%\newpage
+%\section{Proprietà Funzioni}\label{sec:proprietà_funzioni}
+%\subfile{sections/proprieta_funzioni.tex}
+%
+%
+%\newpage
+%\section{Trasformazioni geometriche}\label{sec:trasformazioni_gemoetriche}
+%\subfile{sections/trasformazioni_geometriche.tex}
+%
+%
+%\newpage
+%\section{Funzioni elementari}\label{sec:funzioni_elementari}
+%\subfile{sections/funzioni_elementari.tex}
+%
+%
+%\newpage
+%\section{Limiti}\label{sec:limiti}
+%\subfile{sections/limiti.tex}
+%
+%
+%\newpage
+%\section{Numero di Nepero}\label{sec:numero_di_nepero}
+%\subfile{sections/nepero.tex}
+%
+%\newpage
+%\section{Limiti inferiori e superiori}\label{sec:limiti_inferiori_superiori}
+%\subfile{sections/inferiore_superiore.tex}
+%
+%\newpage
+%\section{Derivata}\label{sec:derivata}
+%\subfile{sections/derivata.tex}
 
 \end{document}

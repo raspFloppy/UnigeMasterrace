@@ -1,51 +1,86 @@
-\documentclass[../main.tex, class=article, 12pt]{subfiles}
-\usepackage{float}
-\usepackage{amsthm}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{hyperref}
-\usepackage{caption}
-\usepackage{mathtools}
-\usepackage{graphicx}
-\usepackage{todonotes}
-\usepackage{tcolorbox}
+\documentclass[../main.tex, class=article]{subfiles}
 \graphicspath{{./images}}
 
 
 
 
 \begin{document}
+\subsection{Funzioni tipo potenza}\label{sec:funzioni_tipo_potenza}
+Una funzione tipo potenza è una funzione nella forma:
+\begin{equation*}
+        f(x) = x^n
+\end{equation*}
+
+dove $ x^n = \underbrace{x*x*x*x*x\ldots*x}_\text{n volte} $.
+
+
+\begin{procol}{2}
+
+n pari:
+\begin{itemize}
+        \item $ dom(f) = \mathbb{R} $
+        \item $ Im(f) = [) $
+\end{itemize}
+        
+\switchcolumn\
+
+n dispari:
+\begin{itemize}
+        \item $ dom(f) = \mathbb{R} $
+        \item $ Im(f) = \mathbb{R} $
+        \item \textit{strettamente costante}
+        \item  a 
+        \item $f(-x) = -f(x)$
+        \item $ f $ è dispari.
+\end{itemize}
+
+\end{procol}
+
+
+
+
+
+
+
+\todo{Aggiungere lezione 4}
+
 \subsection{Proprietà dell'esponenziale e del logaritmo}
 
-Alcune proprietà degli esponenziali
+\begin{paracol}{2}
+Alcune proprietà degli esponenziali:
 \begin{itemize}
-        \item $a^{x+y} = a^x + a^y$
+        \item $a^{x+y} = a^x * a^y$
         \item $a^{x*b} = (a^x)^b$
-        \item $a^{-x} = (a^x)^{-1}$
+        \item $a^{-x} = (a^x)^{-1} = \frac{1}{a^x}$
         \item $a^0 = 1$
         \item $a^1 = a$
 \end{itemize}
 
+\switchcolumn
+
 Alcune proprietà dei logaritmi: 
 \begin{itemize}
         \item $\log_a(x*y) = \log_a(x) + \log_a(y)$
-        \item $  $
-        \item $\log = 0$
+        \item $\log_a(x^b) = b * \log_a(x) $
+        \item $\log_a(\frac{1}{x}) = \log_a(x^{-1}) = -\log_a(x) $
+        \item $\log_a(1) = 0$
         \item $\log_a(a) = 1$
 \end{itemize}
+\end{paracol}
+
+\bigskip
 
 $ \log(x) $ è stato introdotto come funzione inversa dell'esponenziale $ a^x $ infatti dire: $ \log a(y) $ vuol dire trovare $ x $ tale
 che:
 \begin{align*}
-       \log_2 (3) = 2^x = 3 
+       \log_a(y) = x \Leftrightarrow a^x = y \\
+       \log_2(4) = x \Leftrightarrow 2^x = 4
 \end{align*}
-Una base $ a $ particolare è la $ \mathcal{e} $ ovvero \textbf{Numero di Nepero}.
-
-In particolare:
+Una base $ a $ particolare è la $ e $ ovvero \textbf{Numero di Nepero}~\ref{sec:numero_di_nepero}, in particolare:
 \begin{equation*}
-        \log_e(x) = ln(x)
-\end{equation*}i
-Dove $ ln $ è il \underline{logaritmo naturale}
+        \log_e(x) = \ln(x)
+\end{equation*}
+Dove $ \ln $ è il \textbf{logaritmo naturale}
 
 
 
@@ -85,5 +120,8 @@ In generale un angolo in radianti è:
         \item $ cotg(x) = \dfrac{\cos(x)}{\sin(x)} $
         \item geometricamente noto che $PH \le PA \le QA $ e $ \sin(x) $
 \end{itemize}
+
+
+
 
 \end{document}
