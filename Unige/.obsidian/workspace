@@ -1,0 +1,130 @@
+{
+  "main": {
+    "id": "2b658414c5453c18",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d91c9040ac3cfde",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "I/Calculus_I/sections/Studio di funzioni.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "88e12b28db2cfdee",
+    "type": "split",
+    "children": [
+      {
+        "id": "cfc426d51294569f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58361809c3142add",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "d448287968c59633",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d3df4e3f73f12950",
+    "type": "split",
+    "children": [
+      {
+        "id": "a4ca2f747762c552",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8a1ac72445c897b0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "I/Calculus_I/sections/Studio di funzioni.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "cc76e97ea8513a08",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "4ecd1b1efe4a65d3",
+            "type": "leaf",
+            "state": {
+              "type": "online.larslockefeer.obsidian-plugin-todo",
+              "state": {}
+            }
+          },
+          {
+            "id": "4152af97448ccde7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "I/Calculus_I/sections/Studio di funzioni.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "3d91c9040ac3cfde",
+  "lastOpenFiles": [
+    "I/Calculus_I/sections/Studio di funzioni.md",
+    "I/Calculus_I/Main.md",
+    "I/Calculus_I/sections/Derivate Successive.md",
+    "I/Calculus_I/sections/Primitive.md",
+    "I/AsD/Algoritmi di Ordinamento.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "I/Calculus_I/main.pdf",
+    "I/AsD/Main.md",
+    "I/AsD/Calcolo Complessità.md"
+  ]
+}

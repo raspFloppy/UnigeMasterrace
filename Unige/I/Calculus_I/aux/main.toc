@@ -1,5 +1,0 @@
-\contentsline {section}{\numberline {1}Numeri Reali}{3}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Sottoinsiemi particolari di $\mathbb {R}$}{3}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}Intervalli limitati}{3}{subsubsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.2}Intervalli illimitati}{3}{subsubsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.2}Dominio e Codominio}{3}{subsection.1.2}%

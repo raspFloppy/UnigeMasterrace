@@ -27,7 +27,7 @@ int main(){
 
 /*** TO BE DONE START ***/
 			printf("\t\'\\\\\',");break;
-    	case'\'':printf("\t\'\\\'\',");break;
+    x	case'\'':printf("\t\'\\\'\',");break;
     	default: printf("\t\'%c\',", c);break;
 /*** TO BE DONE END ***/
 
