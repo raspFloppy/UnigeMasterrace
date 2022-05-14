@@ -5,7 +5,7 @@
 
 
 
-### Informazioni geometriche di $f^{ii}$ sul grafico di $f$
+## Informazioni geometriche di $f^{ii}$ sul grafico di $f$
 - $f(x)$ è l'altezza del grafico 
 - $f^1(x)$ è la pendenza della retta tangente
 - $f^{11}(x)$ è una misura della 
@@ -29,7 +29,7 @@ $f$ è convessa se per ogni due punti del suo grafico il **segmento** che li con
 $f$ è concava se per ogni due punti del suo grafico il **segmento che li congiunge** resta $\boxed{\text{sotto il grafico di } f}$$
 
 
-### Definizione
+### Definizione:
 
 >**Def:** Una funzione $f : I \to \mathbb{R}$ dove I è un intervallo si dice convessa se per ogni $x,y \in I$ e per ogni $t \in (0,1)$ si ha: $$(1 - t) f(x) + tf(y) \ge f((1-t)x + ty) $$
 >**Def:** Una funzione $f : I \to \mathbb{R}$ dove I è un intervallo si dice concava se per ogni $x,y \in I$ e per ogni $t \in (0,1)$ si ha: $$(1 - t) f(x) + tf(y) \le f((1-t)x + ty) $$
@@ -47,7 +47,7 @@ $f$ è concava se per ogni due punti del suo grafico il **segmento che li congiu
 >(iii) $f$ è derivabile due volte e $f^{ii}(x) \ge 0 \quad \forall x \in I$
 >(iv) $f$ è derivabile è $f^{i(x)}$ è una funzione crescente.
 
-### Esempi
+### Esempi:
 
 ##### Esempio 1:
 ![[Pasted image 20220512100536.png]]

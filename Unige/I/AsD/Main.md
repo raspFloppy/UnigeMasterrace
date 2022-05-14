@@ -1,12 +1,16 @@
 # Algoritmi & Strututre dati
 
-
 ```toc
 title: Contents
 
 ```
 
 
+
+## Calcolo Complessità
+![[Calcolo Complessità]]
+
+<div style="page-break-after: always; visibility:hidden">\pagebreak</div>
 
 ## Algoritmi di Ordinamento
 ![[Algoritmi di Ordinamento]]
@@ -23,12 +27,10 @@ title: Contents
 \pagebreak 
 </div>
 
-## Calcolo Complessità
-![[Calcolo Complessità]]
+## Fonti
 
-
-<div style="page-break-after: always; visibility: hidden"> 
-\pagebreak 
-</div>
-
-
+- *Calcolo Complesità*: 
+	- [Andrea Minini](https://www.andreaminini.com/informatica/algoritmo/complessita-algoritmo)
+- *Algoritmi di ordinamento*: 
+	- [programiz](https://www.programiz.com/dsa/sorting-algorithm)
+- *Strutture dati:*
