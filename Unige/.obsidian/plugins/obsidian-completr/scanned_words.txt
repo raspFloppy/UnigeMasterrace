@@ -70,6 +70,7 @@ ShK
 Svl
 Space
 Stabilit
+Stability
 No
 NO
 Nk
@@ -359,6 +360,7 @@ dht
 dH
 dtRFfjbd
 dsa
+dopo
 Ordinamento
 Ogni
 Of
@@ -413,6 +415,7 @@ Ow
 ORa
 Ovt
 OWr
+Osserviamo
 Quick
 QrN
 QOq
@@ -663,6 +666,8 @@ aAb
 aqD
 aL
 algorithm
+alcuni
+andando
 che
 con
 codice
@@ -842,6 +847,10 @@ sa
 sogC
 sorting
 spiegato
+stabilit
+stiamo
+scritto
+segue
 basa
 base
 break
@@ -939,6 +948,7 @@ uHU
 ut
 uq
 uk
+uguali
 pivot
 partizionare
 pu
@@ -1314,6 +1324,8 @@ ruI
 rp
 rC
 rU
+riferiamo
+relativa
 implementazione
 in
 il
@@ -1756,6 +1768,7 @@ mfI
 mT
 mhG
 mt
+mantengono
 Calcolo
 Complessit
 Complesit
@@ -2894,6 +2907,7 @@ lm
 lOHz
 lti
 lX
+loro
 woq
 weT
 ww
