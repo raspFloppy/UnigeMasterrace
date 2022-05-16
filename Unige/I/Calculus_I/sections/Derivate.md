@@ -1,0 +1,15 @@
+## Preliminari
+
+Geometria del piano in particolare rette: $$y = mx + q$$
+![[Pasted image 20220515193556.png]]
+
+Dati due punti $P_0(x_0, y_0)$ e $P_1(x_1, y_1)$ tali che
+$P_0 \not = P_1$, qual'è la retta che passa per $P_0$ e $P_1$.
+
+Impongo il passaggio $r = \{y = mx + q\}$ allora
+$P\in r \Leftrightarrow (x_0, y_0) \in \{y = mx + q\} \Leftarrow x_0,y_0$
+verificata l'equazione $y = mx + q$: 
+
+$$
+	y = mx + q \rightarrow \cases{P_{0} \in r \\ P_{1} \in r } \rightarrow \cases{y_0 = mx_{0} + q \\ y_1 = mx_{1} + q} \rightarrow \cases{y_{0} = mx_{0}+q \\ y_{1} - y_{0} = m(x_{1}-x_{0}) + q } \rightarrow \cases{y_{0} = \ldots \\ m = \dfrac{y_1-y_0}{x_1-x_0} * x_0}
+$$

@@ -1,11 +1,16 @@
----
-title: Appunti Belli di Floppy
-author: Floppy
----
+# Appunti belli di Calculus
+
 
 ```toc
 title: Contents
 ```
+
+<div style="page-break-after: always; visibility:hidden">\pagebreak</div>
+
+
+## Reali
+![[I/Calculus_I/sections/Reali]]
+
 
 <div style="page-break-after: always; visibility:hidden">\pagebreak</div>
 
