@@ -9,7 +9,6 @@ Introduziam i sottoinsiemi di $\mathbb{R}$ sono:
 
 ```ad-quote
 title: Osservazione
-icon: 
 In particolare $\mathbb{Q}$ è detto **denso** ovvero presi due qualunque
 punti $x,y \in \mathbb{R}$ esiste sempre un razionale $\mathbb{Q}$ tra
 di essi.
@@ -23,8 +22,8 @@ ordinato**.
 
 ```ad-note
 title: Lemma
+icon: spider
 $\forall x,y \in \mathbb{R}$ con $x < y$
-
 ```
 
 ## Sottoinsiemi particolari di $\mathbb{R}$ 

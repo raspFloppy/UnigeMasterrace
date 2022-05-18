@@ -18,17 +18,14 @@ Dimostriamo con alcuni esempi pratici:
  
 ##### esempio 1
 $A = (0, 1), x_0 = 5$ è un punto di accumulazione per $A$.
-
-. In questo caso per $\epsilon < 1$ non trovo elementi di $A$ che siano
+In questo caso per $\epsilon < 1$ non trovo elementi di $A$ che siano
 dentro $(5-\epsilon, 5+\epsilon)$.
-:::
 
-##### esempio 
+##### esempio 2
 
 -   Se $A = \mathbb{N}$ i punti di accumulazione saranno:
 
-    ![Esempio](accumulazione_naturali.png){#fig:accumulazione_naturali
-    width="\\linewidth"}
+    ![Esempio](accumulazione_naturali.png)
 
 -   Se $x \not \in \mathbb{N}$ allora non è di accumulazione.
 
@@ -38,7 +35,7 @@ dentro $(5-\epsilon, 5+\epsilon)$.
     $g \in \mathbb{N} \quad x - \epsilon \le g \le \epsilon + x \Rightarrow g = x$
     che non va bene per la definizione.
 
-::: tcolorbox
+
 **NOTA:**
 :::
 
@@ -74,10 +71,9 @@ $x_0 \in \mathbb{R}, x_0 = + \infty, x_0 = -\infty$.
 
 ### Esempi con $x_0 = +\infty$
 
-::: exmp
-2: $$\boxed{\lim_{x \to +\infty} f(x) = +\infty}$$
+#### esempio 1 $$\boxed{\lim_{x \to +\infty} f(x) = +\infty}$$
 
-![](lim_es_2_+.png){width="\\linewidth"}
+![](lim_es_2_+.png)
 
 $\forall M > 0 \quad  \exists k > 0$ tale che $\forall x \in A, x > k$
 si ha:
