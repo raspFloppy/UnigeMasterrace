@@ -1,13 +1,14 @@
 {
-  "snippets_file": "snippets : It is an obsidian plugin, that replaces your selected text.\n\nbreak : <div style=\"page-break-after: always; visibility:hidden\">\\pagebreak</div>\n\n\nprop : ```ad-note$nl$title: Proprietà$nl$$end$$nl$```\ntheo : ```ad-note$nl$title: Teorema$nl$$end$$nl$```\ndef : ```ad-note$nl$title: Definizione$nl$$end$$nl$```\noss : ```ad-note$nl$title: Osservazione$nl$$end$$nl$```\nlemma : ```ad-note$nl$title: Lemma$nl$icon: spider$nl$$end$$nl$```",
+  "snippets_file": "snippets : It is an obsidian plugin, that replaces your selected text.\n\nbreak : <div style=\"page-break-after: always; visibility:hidden\">\\pagebreak</div>\n\n\nprop : ```ad-note$nl$title: Proprietà$nl$icon: clipboard-list$nl$$end$$nl$```\ntheo : ```ad-note$nl$title: Teorema$nl$icon: bullhorn$nl$$end$$nl$```\ndef : ```ad-note$nl$title: Definizione$nl$$end$$nl$```\noss : ```ad-note$nl$title: Osservazione$nl$icon: eye$nl$$end$$nl$```\nlemma : ```ad-note$nl$title: Lemma$nl$icon: spider$nl$$end$$nl$```\ncor : ```ad-note$nl$title: Corollario$nl$icon: spider$nl$$end$$nl$```\n\n\n\n",
   "snippets": [
     "snippets : It is an obsidian plugin, that replaces your selected text.",
     "break : <div style=\"page-break-after: always; visibility:hidden\">\\pagebreak</div>",
-    "prop : ```ad-note$nl$title: Proprietà$nl$$end$$nl$```",
-    "theo : ```ad-note$nl$title: Teorema$nl$$end$$nl$```",
+    "prop : ```ad-note$nl$title: Proprietà$nl$icon: clipboard-list$nl$$end$$nl$```",
+    "theo : ```ad-note$nl$title: Teorema$nl$icon: bullhorn$nl$$end$$nl$```",
     "def : ```ad-note$nl$title: Definizione$nl$$end$$nl$```",
-    "oss : ```ad-note$nl$title: Osservazione$nl$$end$$nl$```",
-    "lemma : ```ad-note$nl$title: Lemma$nl$icon: spider$nl$$end$$nl$```"
+    "oss : ```ad-note$nl$title: Osservazione$nl$icon: eye$nl$$end$$nl$```",
+    "lemma : ```ad-note$nl$title: Lemma$nl$icon: spider$nl$$end$$nl$```",
+    "cor : ```ad-note$nl$title: Corollario$nl$icon: spider$nl$$end$$nl$```"
   ],
   "endSymbol": "$end$",
   "newlineSymbol": "$nl$",

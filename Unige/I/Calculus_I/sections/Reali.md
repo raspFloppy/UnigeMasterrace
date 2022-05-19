@@ -7,8 +7,10 @@ Introduziam i sottoinsiemi di $\mathbb{R}$ sono:
 -   $\mathbb{Q} = \{\frac{m}{n}: m \in \mathbb{Z} \wedge n \in \mathbb{N}^*\}$
 
 
+
 ```ad-quote
 title: Osservazione
+icon: eye
 In particolare $\mathbb{Q}$ è detto **denso** ovvero presi due qualunque
 punti $x,y \in \mathbb{R}$ esiste sempre un razionale $\mathbb{Q}$ tra
 di essi.
@@ -16,6 +18,7 @@ di essi.
 
 ```ad-note
 title: Proprietà
+icon: clipboard-list
 Fondamentale proprietà di $\mathbb{R}$ è un insieme **totalmente
 ordinato**.
 ```
@@ -26,21 +29,25 @@ icon: spider
 $\forall x,y \in \mathbb{R}$ con $x < y$
 ```
 
+
+
+<div style="page-break-after: always; visibility:hidden">\pagebreak</div>
+
 ## Sottoinsiemi particolari di $\mathbb{R}$ 
 Esistono diversi tipi di intervalli, elenchiamoli per categoria
 
 ### Intervalli limitati
 
--   $(a,b) = \{x \in \mathbb{R} : x>a \wedge x<b\}$ intervallo aperto
+-   $(a,b) = \{x \in \mathbb{R} : x>a \wedge x<b\}$ **intervallo aperto**
 
--   $[a,b] = \{x \in \mathbb{R} : x\ge a \wedge x\le b\}$ intervallo
-    chuso
+-   $[a,b] = \{x \in \mathbb{R} : x\ge a \wedge x\le b\}$ **intervallo
+    chuso**
 
--   $[a,b) = \{x \in \mathbb{R} : x\ge a \wedge x<b\}$ intervallo
-    semi-aperti
+-   $[a,b) = \{x \in \mathbb{R} : x\ge a \wedge x<b\}$ **intervallo
+    semi-aperti**
 
--   $(a,b] = \{x \in \mathbb{R} : x>a \wedge x\le b\}$ itervallo
-    semi-aperti
+-   $(a,b] = \{x \in \mathbb{R} : x>a \wedge x\le b\}$ **itervallo
+    semi-aperti**
 
 ### Intervalli illimitati
 
@@ -48,16 +55,16 @@ Gli intervalli illimitati sono rappresentate geometricamente da
 semirette
 
 -   $(a,+\infty) = \{x \in \mathbb{R} : x>a \wedge x<+\infty\}$
-    intervallo aperto
+    **intervallo aperto**
 
 -   $[a,+\infty] = \{x \in \mathbb{R} : x\ge a \wedge x\le +\infty\}$
-    intervallo chuso
+    **intervallo chuso**
 
 -   $[-\infty,b) = \{x \in \mathbb{R} : x\ge -\infty \wedge x<b\}$
-    intervallo semi-aperti
+    **intervallo semi-aperti**
 
 -   $(-\infty,b] = \{x \in \mathbb{R} : x>-\infty \wedge x\le b\}$
-    itervallo semi-aperti
+    **itervallo semi-aperti**
 
 <div style="page-break-after: always; visibility:hidden">\pagebreak</div>
 

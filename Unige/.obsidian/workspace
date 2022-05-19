@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "I/Calculus_I/Main.md",
+            "file": "I/Calculus_I/sections/Proprietà funzioni.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "I/Calculus_I/Main.md",
+                "file": "I/Calculus_I/sections/Proprietà funzioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "I/Calculus_I/Main.md"
+                "file": "I/Calculus_I/sections/Proprietà funzioni.md"
               }
             }
           }
@@ -108,15 +108,15 @@
   },
   "active": "71ff0e8d65251e7c",
   "lastOpenFiles": [
-    "I/Calculus_I/Main.md",
-    "I/Calculus_I/sections/Integrali per sostituzione.md",
+    "I/Calculus_I/sections/Proprietà funzioni.md",
     "I/Calculus_I/sections/Reali.md",
+    "I/Calculus_I/2022-Calculus1.pdf",
+    "I/Calculus_I/Main.md",
     "I/Calculus_I/sections/Limiti.md",
+    "I/Calculus_I/sections/Nepero.md",
+    "I/Calculus_I/sections/Integrali per sostituzione.md",
     "I/AsD/Main.md",
     "I/AsD/sections/Calcolo Complessità.md",
-    "I/Calculus_I/sections/Studio di funzioni.md",
-    "I/Calculus_I/2022-Calculus1.pdf",
-    "I/Calculus_I/main.pdf",
-    "I/Calculus_I/sections/Funzioni elementari.md"
+    "I/Calculus_I/sections/Studio di funzioni.md"
   ]
 }
