@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "I/Calculus_I/sections/Proprietà funzioni.md",
+            "file": "I/CALCULUS_I/sections/10. Integrali di funzioni razionali.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "I/Calculus_I/sections/Proprietà funzioni.md",
+                "file": "I/CALCULUS_I/sections/10. Integrali di funzioni razionali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -81,25 +81,17 @@
             }
           },
           {
-            "id": "cc76e97ea8513a08",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {}
-            }
-          },
-          {
             "id": "4152af97448ccde7",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "I/Calculus_I/sections/Proprietà funzioni.md"
+                "file": "I/CALCULUS_I/sections/10. Integrali di funzioni razionali.md"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -108,15 +100,15 @@
   },
   "active": "71ff0e8d65251e7c",
   "lastOpenFiles": [
-    "I/Calculus_I/sections/Proprietà funzioni.md",
-    "I/Calculus_I/sections/Reali.md",
-    "I/Calculus_I/2022-Calculus1.pdf",
-    "I/Calculus_I/Main.md",
-    "I/Calculus_I/sections/Limiti.md",
-    "I/Calculus_I/sections/Nepero.md",
-    "I/Calculus_I/sections/Integrali per sostituzione.md",
-    "I/AsD/Main.md",
-    "I/AsD/sections/Calcolo Complessità.md",
-    "I/Calculus_I/sections/Studio di funzioni.md"
+    "I/CALCULUS_I/sections/10. Integrali di funzioni razionali.md",
+    "I/CALCULUS_I/sections/9. Integrali per sostituzione.md",
+    "II/DATABASE/Main.md",
+    "II/ALAN/Main.md",
+    "II/APA/Main.md",
+    "II/Untitled.md",
+    "I/CALCULUS_I/Main.md",
+    "I/CALCULUS_I/sections/1. Reali.md",
+    "I/ADC/Main.md",
+    "I/CALCULUS_I/sections/3. Funzioni elementari.md"
   ]
 }

@@ -152,6 +152,7 @@ SEMPRE
 SOPRA
 Successioni
 Surriettivit
+Sistema
 No
 NO
 Nk
@@ -284,6 +285,7 @@ NOTA
 Newton
 Numero
 Nepero
+Numerica
 tu
 temporale
 tzo
@@ -690,6 +692,7 @@ Avendo
 ALTITUDINE
 Avremo
 Alcune
+Algebra
 dati
 di
 da
@@ -1565,6 +1568,7 @@ assumere
 anch
 arco
 angolo
+analoga
 che
 con
 codice
@@ -1746,6 +1750,7 @@ cambiano
 costante
 cerchio
 circonferenza
+cosa
 si
 sulla
 scelta
@@ -2188,6 +2193,7 @@ uGg
 univoca
 underline
 unica
+unit
 pivot
 partizionare
 pu
@@ -2342,6 +2348,9 @@ procol
 paracol
 propiret
 presente
+polinomi
+principalmente
+poliniomio
 numeri
 nuovo
 nl
@@ -2475,6 +2484,7 @@ notare
 nepero
 naturale
 noto
+numeratore
 ordinare
 ottenuto
 obj
@@ -3039,6 +3049,10 @@ restituisce
 radice
 radianti
 retto
+rapporto
+razionali
+radici
+resto
 implementazione
 in
 il
@@ -3194,6 +3208,7 @@ invertibile
 iperbole
 introdotto
 inversione
+intergrazioni
 funzioni
 faI
 fW
@@ -3338,6 +3353,10 @@ fondamentali
 fine
 figura
 finiti
+forall
+focaliziamo
+finale
+fondamentale
 Bubble
 Be
 BA
@@ -3446,6 +3465,7 @@ BUk
 BaseFont
 Binomio
 Biiettiva
+BLU
 Merge
 MpJ
 MkL
@@ -3932,6 +3952,9 @@ graph
 grafica
 graficamente
 goniometrica
+grado
+generalizza
+generali
 merge
 mD
 mW
@@ -4074,6 +4097,7 @@ massimo
 minimo
 monotona
 monotone
+mathbb
 Calcolo
 Complessit
 Complesit
@@ -5301,6 +5325,9 @@ Rconx
 Rnon
 RLl
 RESTO
+ROSSO
+Rightarrow
+Riduzione
 XD
 XIQ
 XDP
@@ -5543,6 +5570,7 @@ Dimostriamo
 Date
 Decrescente
 Dove
+Divisione
 yr
 yR
 yE
@@ -6167,6 +6195,8 @@ EDo
 EvG
 EQH
 Essenzialmente
+Esercizi
+Esercizio
 UU
 UV
 UJ

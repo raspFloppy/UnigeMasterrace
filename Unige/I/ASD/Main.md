@@ -8,12 +8,12 @@ title: Contents
 
 
 ## Calcolo Complessità
-![[Calcolo Complessità]]
+![[1. Calcolo Complessità]]
 
 <div style="page-break-after: always; visibility:hidden">\pagebreak</div>
 
 ## Algoritmi di Ordinamento
-![[Algoritmi di Ordinamento]]
+![[2. Algoritmi di Ordinamento]]
 
 
 <div style="page-break-after: always; visibility: hidden"> 
@@ -21,7 +21,7 @@ title: Contents
 </div>
 
 ## Strutture dati
-![[Strutture dati]]
+![[3. Strutture dati]]
 
 <div style="page-break-after: always; visibility: hidden"> 
 \pagebreak 

@@ -9,23 +9,23 @@ title: Contents
 
 
 ## Reali
-![[I/Calculus_I/sections/Reali]]
+![[1. Reali]]
 
 
 <div style="page-break-after: always; visibility:hidden">\pagebreak</div>
 
 ## Derivate Successive
 
-![[Derivate Successive]]
+![[8. Derivate Successive]]
 
 <div style="page-break-after: always; visibility:hidden">\pagebreak</div>
 
 ## Studio di funzioni
 
-![[Studio di funzioni]]
+![[11. Studio di funzioni]]
 
 
 <div style="page-break-after: always; visibility:hidden">\pagebreak</div>
 
 ## Primitive
-![[Primitive]]
+![[8. Primitive]]
