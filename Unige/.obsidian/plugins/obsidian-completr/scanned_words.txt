@@ -153,6 +153,7 @@ SOPRA
 Successioni
 Surriettivit
 Sistema
+Sostema
 No
 NO
 Nk
@@ -578,6 +579,7 @@ Tratteremo
 TOk
 TJL
 Tartaglia
+Trovare
 Algoritmi
 Architettura
 Ae
@@ -1252,6 +1254,7 @@ IVO
 Impongo
 Iniettivit
 Introduziam
+Iniiettiva
 quicksort
 quell
 quick
@@ -1951,6 +1954,8 @@ segni
 stato
 sapendo
 sar
+siamo
+situazione
 basa
 base
 break
@@ -2351,6 +2356,7 @@ presente
 polinomi
 principalmente
 poliniomio
+passo
 numeri
 nuovo
 nl
@@ -3209,6 +3215,7 @@ iperbole
 introdotto
 inversione
 intergrazioni
+integrale
 funzioni
 faI
 fW
@@ -5571,6 +5578,7 @@ Date
 Decrescente
 Dove
 Divisione
+Dopo
 yr
 yR
 yE

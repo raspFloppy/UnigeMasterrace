@@ -11,8 +11,17 @@ title: Contents
 ## Reali
 ![[1. Reali]]
 
-
 <div style="page-break-after: always; visibility:hidden">\pagebreak</div>
+
+## Proprietà delle funzioni
+![[2. Proprietà funzioni]]
+<div style="page-break-after: always; visibility:hidden">\pagebreak</div>
+
+## Funzioni elementari
+![[3. Funzioni elementari]]
+<div style="page-break-after: always; visibility:hidden">\pagebreak</div>
+
+
 
 ## Derivate Successive
 
@@ -22,7 +31,7 @@ title: Contents
 
 ## Studio di funzioni
 
-![[11. Studio di funzioni]]
+![[12. Studio di funzioni]]
 
 
 <div style="page-break-after: always; visibility:hidden">\pagebreak</div>

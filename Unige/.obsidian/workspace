@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "I/CALCULUS_I/sections/10. Integrali di funzioni razionali.md",
+            "file": "I/CALCULUS_I/Main.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d3df4e3f73f12950",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "I/CALCULUS_I/sections/10. Integrali di funzioni razionali.md",
+                "file": "I/CALCULUS_I/Main.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "I/CALCULUS_I/sections/10. Integrali di funzioni razionali.md"
+                "file": "I/CALCULUS_I/Main.md"
               }
             }
           }
@@ -100,15 +101,15 @@
   },
   "active": "71ff0e8d65251e7c",
   "lastOpenFiles": [
-    "I/CALCULUS_I/sections/10. Integrali di funzioni razionali.md",
-    "I/CALCULUS_I/sections/9. Integrali per sostituzione.md",
-    "II/DATABASE/Main.md",
-    "II/ALAN/Main.md",
-    "II/APA/Main.md",
-    "II/Untitled.md",
     "I/CALCULUS_I/Main.md",
+    "I/CALCULUS_I/main.pdf",
+    "I/CALCULUS_I/sections/3. Funzioni elementari.md",
+    "I/CALCULUS_I/sections/4. Trasformazioni geometriche.md",
+    "I/CALCULUS_I/sections/5. Inferiori e Superiori.md",
+    "I/CALCULUS_I/sections/6. Limiti.md",
+    "I/CALCULUS_I/sections/2. Proprietà funzioni.md",
     "I/CALCULUS_I/sections/1. Reali.md",
-    "I/ADC/Main.md",
-    "I/CALCULUS_I/sections/3. Funzioni elementari.md"
+    "I/CALCULUS_I/sections/11. Integrali definiti.md",
+    "I/CALCULUS_I/sections/12. Studio di funzioni.md"
   ]
 }
