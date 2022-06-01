@@ -37,4 +37,4 @@ title: Contents
 <div style="page-break-after: always; visibility:hidden">\pagebreak</div>
 
 ## Primitive
-![[8. Primitive]]
+![[9. Integrali]]
