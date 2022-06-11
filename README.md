@@ -22,5 +22,4 @@ Unige
     ├── main.pdf
     ├── ...             #File di log, Cartelle immagini, file vari
 ...
-
 ```
