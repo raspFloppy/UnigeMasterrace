@@ -86,3 +86,5 @@ Percio' sappiamo che:
 $$\#\bigcup\mathbb{Z_{8}} = 4$$
 
 - $$ \{\overline{1},\overline{3},\overline{5},\overline{7}\}$$
+
+
